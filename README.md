@@ -360,7 +360,7 @@ Here's a recommended order of operations running one by one:
     cd backend # navigate to the backend folder
     python -m autogen.main --case_num <case-num>
     ```
-    Different `case-num`: 1 (baseline), 2 (with fallback), 3 (with critic), or 4 (full system)
+    Different `case-num`: 1 (baseline), 2 (fallback only), 3 (critic only), or 4 (full system - with fallback and critic)
 
 ---
 
@@ -390,7 +390,7 @@ The 40 sets of [plans](./backend/autogen/evaluation/analysis/data/plans.jsonl), 
 ```bash
 python -m autogen.main --case_num <case-num>
 ```
-Different `case-num`: 1 (baseline), 2 (with fallback), 3 (with critic), or 4 (full system)
+Different `case-num`: 1 (baseline), 2 (fallback only), 3 (critic only), or 4 (full system - with fallback and critic)
 
 #### C. `CriticAgent` Analysis Datasets
 
