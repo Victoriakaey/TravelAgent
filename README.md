@@ -11,9 +11,9 @@ A dynamic conversational travel system built on a multi-agent architecture. It o
     - [Setup Docker](#2-setup-docker)
     - [Setup Redis](#3-setup-redis)
     - [Setup SearXNG](#4-setup-searxng)
-    - [Ollama Setup](#5-ollama-setup)
-    - [Perplexica Setup](#6-perplexica-setup)
-    - [SearchAgent Setup](#7-searchagent-setup)
+    - [Setup Ollama](#5-setup-ollama)
+    - [Setup Perplexica](#6-setup-perplexica)
+    - [Setup SearchAgent](#7-setup-searchagent)
 - [How to Run](#how-to-run)
     - [Running the End-to-End Pipeline](#running-the-end-to-end-pipeline)
     - [Running Sub-agents Individually](#running-sub-agents-individually)
@@ -35,12 +35,35 @@ TravelAgent is built on [Microsoft’s AutoGen framework](https://github.com/mic
 | **SelectorGroupChat**    | Routing layer that dynamically selects which agent should act next                                                     | [`qwen2.5:7b`](https://ollama.com/library/qwen2.5)                                                 |
 | **UserProxyAgent**       | Interfaces with the user via `input()` and requests clarification whenever the input is missing, ambiguous, or internally inconsistent      | /                 |
 | **WebScraperAgent**      | Retrieves and filters open-domain travel content using `Perplexica` + `SearXNG`, followed by multi-stage NLP filtering to ensure factuality, safety, relevance, and preference alignment         | [`qwen2.5:7b`](https://ollama.com/library/qwen2.5) (text generation) <br> [`snowflake-arctic-embed:335m`](https://ollama.com/library/snowflake-arctic-embed) (embeddings) |
-| **SearchAgent**          | Performs agentic function calls to query structured travel data (flights, hotels, routes, POIs) from the `Amadeus` and `Google Maps` APIs                           | [`qwen2.5:7b`](https://ollama.com/library/qwen2.5)                                                 |
-| **ContentGenerationAgent** | Generate the final itinerary in Markdown using the `filtered_content` from the WebScraperAgent and the `searched_result` from the `SearchAgent`                                  | [`gemma2:9b`](https://ollama.com/library/gemma2)                                                  |
+| **SearchAgent**          | Performs agentic API calls to query structured travel data (flights, hotels, routes, POIs) from the `Amadeus` and `Google Maps` APIs                           | [`qwen2.5:7b`](https://ollama.com/library/qwen2.5)                                                 |
+| **ContentGenerationAgent** | Generate the final itinerary in Markdown using the `filtered_content` from the WebScraperAgent and the `searched_results` from the `SearchAgent`                                  | [`gemma2:9b`](https://ollama.com/library/gemma2)                                                  |
 | **CriticAgent**          | Evaluates itinerary for factuality, feasibility, safety, and hard-constraint compliance; returns `ACCEPT` / `RE-WRITE` | [`deepseek-r1:8b`](https://ollama.com/library/deepseek-r1)                                             |
 | **TransactionAgent**     | Provides a lightweight placeholder booking confirmation to complete the end-to-end flow (triggered only after an `ACCEPT` decision from the CriticAgent)                                          | [`qwen2.5:7b`](https://ollama.com/library/qwen2.5)                                                 |
 
-To improve reliability, TravelAgent incorporates **fallback mechanisms** (re-scraping, re-searching) and a **self-critique loop**, in which the CriticAgent judges each itinerary and requests targeted rewrites. This combination helps correct missing evidence, reduce logical inconsistencies, and better satisfy hard constraints such as accessibility limits, walking distance restrictions, or timing feasibility.
+To improve reliability, TravelAgent combines **agent-level fallback mechanisms** with **a system-level self-critique loop**.
+
+The **agent-level fallback mechanisms** maintain data quality by:
+
+- Triggering a re-scrape in the `WebScraperAgent` when **fewer than five chunks are marked `KEEP`**, and
+
+- Escalating `SearchAgent` API call failures (e.g., user-requested travel dates earlier than today, mismatched amenity codes, invalid parameters, etc) to a **human-in-the-loop** path coordinated by the `PlanningAgent`. 
+
+    - In this path, the `UserProxyAgent` requests any missing information from the user or assists the user in troubleshooting using the error message returned by the `SearchAgent`.
+
+The **system-level self-critique loop** ensures the final itinerary satisfies the user’s travel needs by:
+
+- Having the `CriticAgent` evaluate each draft itinerary for information accuracy, logical feasibility, factual grounding, and explicit hard constraints. The critic outputs a structured raw_response containing:
+
+    - a checklist of criteria met,
+
+    - six evaluation scores (confidence, relevance, accuracy, safety, feasibility, personalization, each on a 0–5 scale),
+    - a binary decision (ACCEPT or RE-WRITE),
+    - a rationale explaining the decision, and
+    - a targeted suggestion for how the plan should be revised.
+
+- Routing any `RE-WRITE` decision through the `PlanningAgent`, which forwards the critic’s full `raw_response` to the `ContentGenerationAgent` for targeted regeneration conditioned on the critic’s guidance and the current evidence base (`filtered_content` and `search_results`).
+
+A more detailed [project report](./docs/TravelAgent_An_End_to_End_Multi_Agent_System_with_Critic_Driven_Self_Improvement_for_Personalized_Travel_Planning.pdf) — which includes the system architecture, design decisions, and evaluation results — along with the accompanying [iteration journal](./docs/iteration-journal.md) documenting the full development process, are available in the [`docs`](./docs/) folder.
 
 
 ## Required Services
@@ -132,7 +155,7 @@ For manual installation instructions, refer to the [SearXNG official documentati
 
 ---
 
-### 5. Ollama Setup
+### 5. Setup Ollama
 
 Ollama serves as the local LLM runtime, hosting all models used by the TravelAgent system.
 
@@ -159,7 +182,7 @@ curl http://localhost:11434/api/tags
 
 ---
 
-### 6. Perplexica Setup 
+### 6. Setup Perplexica 
 
 Perplexica performs open-domain web search + agentic RAG for the `WebScraperAgent`.
 
@@ -231,7 +254,7 @@ http://localhost:3000
 
 ---
 
-### 7. SearchAgent Setup
+### 7. Setup SearchAgent
 
 The SearchAgent integrates `Amadeus` (flights/hotels) and `Google Maps` (places, photos, routing).
 
@@ -358,7 +381,7 @@ Different `test-mode`:
 
 #### A. User Cases and Queries (requests) Datasets
 
-Data are curated using the selected [10 user cases](./user_cases_ablation_study.json) from [an original 53 user cases](./user_cases_complete.json) and [the queries (request)](./user_query_requests.jsonl) are curated using the [`generate_user_query`](./backend/autogen/agents/source/_user_query_generation.py). 
+Data are curated using the selected [10 user cases](./data/user_cases_ablation_study.json) from [an original 53 user cases](./data/user_cases_complete.json) and [the queries (request)](./data/user_query_requests.jsonl) are curated using the [`generate_user_query`](./backend/autogen/agents/source/_user_query_generation.py). 
 
 #### B. System Analysis Datasets
 
@@ -377,7 +400,7 @@ The 40 sets of critic agent's [scores (confidence, relevance, accuracy, safety, 
 python -m autogen.evaluation.ground_truth_curation.critic_agent_evaluation
 ```
 
-The 40 sets of ground truth, i.e., [human decisions (`ACCEPT` or RE-`WRITE`)](./backend/autogen/evaluation/analysis/data/human_decision.jsonl) and [human scores (relevance, accuracy, safety, feasibility, and personalization)](./backend/autogen/evaluation/analysis/data/human_scores.jsonl) are curated by 1 human annotator by running the [`human_evaluation.py`](./backend/autogen/evaluation/ground_truth_curation/human_evaluation.py) script. Logs of [the human evaluation process](./backend/autogen/evaluation/logs/human_evaluation/) could be found in the [logs](./backend/autogen/evaluation/logs/) folder.
+The 40 sets of ground truth, i.e., [human decisions (`ACCEPT` or `RE-WRITE`)](./backend/autogen/evaluation/analysis/data/human_decision.jsonl) and [human scores (relevance, accuracy, safety, feasibility, and personalization)](./backend/autogen/evaluation/analysis/data/human_scores.jsonl) are curated by 1 human annotator by running the [`human_evaluation.py`](./backend/autogen/evaluation/ground_truth_curation/human_evaluation.py) script. Logs of [the human evaluation process](./backend/autogen/evaluation/logs/human_evaluation/) could be found in the [logs](./backend/autogen/evaluation/logs/) folder.
 
 ```bash
 python -m autogen.evaluation.ground_truth_curation.human_evaluation
