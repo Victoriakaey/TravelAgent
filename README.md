@@ -1,10 +1,32 @@
 # TravelAgent System
 
+A dynamic conversational travel system built on a multi-agent architecture. It orchestrates open-domain web scraping, structured API search, personalized itinerary generation, and self-critique–driven refinement, enabling users to plan and book complete trips through an intelligent end-to-end workflow.
+
+## Table of Content
+
+- [Overview](#overview)
+- [Required Services](#required-services)
+- [How to Setup](#how-to-setup)
+    - [Create Conda Virtual Environment](#1-create-conda-virtual-environment)
+    - [Setup Docker](#2-setup-docker)
+    - [Setup Redis](#3-setup-redis)
+    - [Setup SearXNG](#4-setup-searxng)
+    - [Ollama Setup](#5-ollama-setup)
+    - [Perplexica Setup](#6-perplexica-setup)
+    - [SearchAgent Setup](#7-searchagent-setup)
+- [How to Run](#how-to-run)
+    - [Running the End-to-End Pipeline](#running-the-end-to-end-pipeline)
+    - [Running Sub-agents Individually](#running-sub-agents-individually)
+- [Analysis of the System](#analysis-of-the-system)
+    - [Evaluation Datasets Curation](#evaluation-datasets-curation)
+        - [User Cases and Queries (requests) Datasets](#a-user-cases-and-queries-requests-datasets)
+        - [System Analysis Datasets](#b-system-analysis-datasets)
+        - [`CriticAgent` Analysis Datasets](#c-criticagent-analysis-datasets)
+    - [Evaluation Scripts](#evaluation-scripts)
+
 ## Overview
 
-TravelAgent is a modular, multi-agent AI system that transforms natural-language travel requests into coherent, constraint-aligned itineraries. 
-
-Built on [Microsoft’s AutoGen framework](https://github.com/microsoft/autogen), the system uses a centrally orchestrated [`SelectorGroupChat`](https://microsoft.github.io/autogen/stable//user-guide/agentchat-user-guide/selector-group-chat.html) architecture in which a `PlanningAgent` delegates work to a coordinated set of specialized agents:
+TravelAgent is built on [Microsoft’s AutoGen framework](https://github.com/microsoft/autogen), the system uses a centrally orchestrated [`SelectorGroupChat`](https://microsoft.github.io/autogen/stable//user-guide/agentchat-user-guide/selector-group-chat.html) architecture in which a `PlanningAgent` delegates work to a coordinated set of specialized agents:
 
 
 | Agent                    | Core Function                                                                                                        | Model(s) Used                                                |
@@ -13,7 +35,7 @@ Built on [Microsoft’s AutoGen framework](https://github.com/microsoft/autogen)
 | **SelectorGroupChat**    | Routing layer that dynamically selects which agent should act next                                                     | [`qwen2.5:7b`](https://ollama.com/library/qwen2.5)                                                 |
 | **UserProxyAgent**       | Interfaces with the user via `input()` and requests clarification whenever the input is missing, ambiguous, or internally inconsistent      | /                 |
 | **WebScraperAgent**      | Retrieves and filters open-domain travel content using `Perplexica` + `SearXNG`, followed by multi-stage NLP filtering to ensure factuality, safety, relevance, and preference alignment         | [`qwen2.5:7b`](https://ollama.com/library/qwen2.5) (text generation) <br> [`snowflake-arctic-embed:335m`](https://ollama.com/library/snowflake-arctic-embed) (embeddings) |
-| **SearchAgent**          | Queries structured travel data (flights, hotels, routes, POIs) from the `Amadeus` and `Google Maps` APIs                           | [`qwen2.5:7b`](https://ollama.com/library/qwen2.5)                                                 |
+| **SearchAgent**          | Performs agentic function calls to query structured travel data (flights, hotels, routes, POIs) from the `Amadeus` and `Google Maps` APIs                           | [`qwen2.5:7b`](https://ollama.com/library/qwen2.5)                                                 |
 | **ContentGenerationAgent** | Generate the final itinerary in Markdown using the `filtered_content` from the WebScraperAgent and the `searched_result` from the `SearchAgent`                                  | [`gemma2:9b`](https://ollama.com/library/gemma2)                                                  |
 | **CriticAgent**          | Evaluates itinerary for factuality, feasibility, safety, and hard-constraint compliance; returns `ACCEPT` / `RE-WRITE` | [`deepseek-r1:8b`](https://ollama.com/library/deepseek-r1)                                             |
 | **TransactionAgent**     | Provides a lightweight placeholder booking confirmation to complete the end-to-end flow (triggered only after an `ACCEPT` decision from the CriticAgent)                                          | [`qwen2.5:7b`](https://ollama.com/library/qwen2.5)                                                 |
