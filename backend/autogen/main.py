@@ -53,7 +53,7 @@ async def run_autogen_agent(message: str, user_profile: dict, user_travel_detail
 def run_system(case_num: int, folder: str = ""):
     # print(f"Starting Autogen Agent Ablation Study with case number {case_num}.")
     ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    user_cases_path = os.path.join(ROOT_DIR, "user_cases_ablation_study.json")
+    user_cases_path = os.path.join(ROOT_DIR, "data/user_cases_ablation_study.json")
 
     with open(user_cases_path, "r") as f:
         test_cases = json.load(f)
