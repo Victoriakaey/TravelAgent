@@ -46,13 +46,13 @@ The **agent-level fallback mechanisms** maintain data quality by:
 
 - Triggering a re-scrape in the `WebScraperAgent` when **fewer than five chunks are marked `KEEP`**, and
 
-- Escalating `SearchAgent` API call failures (e.g., user-requested travel dates earlier than today, mismatched amenity codes, invalid parameters, etc) to a **human-in-the-loop** path coordinated by the `PlanningAgent`. 
+- Escalating `SearchAgent` **API call failures** (e.g., user-requested travel dates earlier than today, mismatched amenity codes, invalid parameters, etc) to a **human-in-the-loop** path coordinated by the `PlanningAgent`. 
 
     - In this path, the `UserProxyAgent` requests any missing information from the user or assists the user in troubleshooting using the error message returned by the `SearchAgent`.
 
 The **system-level self-critique loop** ensures the final itinerary satisfies the user’s travel needs by:
 
-- Having the `CriticAgent` evaluate each draft itinerary for information accuracy, logical feasibility, factual grounding, and explicit hard constraints. The critic outputs a structured raw_response containing:
+- Having the `CriticAgent` evaluate each draft itinerary for **information accuracy, logical feasibility, factual grounding, and explicit hard constraints**. The critic outputs a structured `raw_response` containing:
 
     - a checklist of criteria met,
 
@@ -61,7 +61,7 @@ The **system-level self-critique loop** ensures the final itinerary satisfies th
     - a rationale explaining the decision, and
     - a targeted suggestion for how the plan should be revised.
 
-- Routing any `RE-WRITE` decision through the `PlanningAgent`, which forwards the critic’s full `raw_response` to the `ContentGenerationAgent` for targeted regeneration conditioned on the critic’s guidance and the current evidence base (`filtered_content` and `search_results`).
+- Routing the `RE-WRITE` decision through the `PlanningAgent`, which forwards the critic’s full `raw_response` to the `ContentGenerationAgent` for targeted regeneration conditioned on the critic’s guidance and the current evidence base (`filtered_content` and `search_results`).
 
 A more detailed [project report](./docs/TravelAgent_An_End_to_End_Multi_Agent_System_with_Critic_Driven_Self_Improvement_for_Personalized_Travel_Planning.pdf) — which includes the system architecture, design decisions, and evaluation results — along with the accompanying [iteration journal](./docs/iteration-journal.md) documenting the full development process, are available in the [`docs`](./docs/) folder.
 
