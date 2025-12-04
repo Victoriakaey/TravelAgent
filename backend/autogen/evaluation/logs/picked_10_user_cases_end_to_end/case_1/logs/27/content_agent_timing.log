@@ -1,0 +1,157 @@
+Execution times for user_id=27 at Sat Nov  1 15:29:56 2025
+webscraper:1_web_scraping: 263.07 seconds
+webscraper:1_running_nlp_filter: 7.72 seconds
+webscraper:1_running_filter: 7.73 seconds
+webscraper:1_streaming: 271.54 seconds
+----------------------------------------
+Execution times for user_id=27 at Sat Nov  1 15:30:17 2025
+webscraper:1_web_scraping: 263.07 seconds
+webscraper:1_running_nlp_filter: 7.72 seconds
+webscraper:1_running_filter: 7.73 seconds
+webscraper:1_streaming: 271.54 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 11.64 seconds
+----------------------------------------
+Execution times for user_id=27 at Sat Nov  1 15:30:35 2025
+webscraper:1_web_scraping: 263.07 seconds
+webscraper:1_running_nlp_filter: 7.72 seconds
+webscraper:1_running_filter: 7.73 seconds
+webscraper:1_streaming: 271.54 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 11.64 seconds
+search:2_hotel_by_city_search: 1.03 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_get_searched_modes: 0.00 seconds
+search:2_has_valid_results: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 10.69 seconds
+----------------------------------------
+Execution times for user_id=27 at Sat Nov  1 15:30:59 2025
+webscraper:1_web_scraping: 263.07 seconds
+webscraper:1_running_nlp_filter: 7.72 seconds
+webscraper:1_running_filter: 7.73 seconds
+webscraper:1_streaming: 271.54 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 11.64 seconds
+search:2_hotel_by_city_search: 1.03 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_get_searched_modes: 0.00 seconds
+search:2_has_valid_results: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 10.69 seconds
+search:3_requested_search_mode: 0.00 seconds
+search:3_get_searched_modes: 0.00 seconds
+search:3_is_requested_and_performed_search_align: 0.00 seconds
+search:3_streaming_run: 16.44 seconds
+----------------------------------------
+Execution times for user_id=27 at Sat Nov  1 15:31:22 2025
+webscraper:1_web_scraping: 263.07 seconds
+webscraper:1_running_nlp_filter: 7.72 seconds
+webscraper:1_running_filter: 7.73 seconds
+webscraper:1_streaming: 271.54 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 11.64 seconds
+search:2_hotel_by_city_search: 1.03 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_get_searched_modes: 0.00 seconds
+search:2_has_valid_results: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 10.69 seconds
+search:3_requested_search_mode: 0.00 seconds
+search:3_get_searched_modes: 0.00 seconds
+search:3_is_requested_and_performed_search_align: 0.00 seconds
+search:3_streaming_run: 16.44 seconds
+search:4_places_search: 0.69 seconds
+search:4_requested_search_mode: 0.00 seconds
+search:4_get_searched_modes: 0.00 seconds
+search:4_has_valid_results: 0.00 seconds
+search:4_is_requested_and_performed_search_align: 0.00 seconds
+search:4_streaming_run: 15.13 seconds
+----------------------------------------
+Execution times for user_id=27 at Sat Nov  1 15:32:28 2025
+webscraper:1_web_scraping: 263.07 seconds
+webscraper:1_running_nlp_filter: 7.72 seconds
+webscraper:1_running_filter: 7.73 seconds
+webscraper:1_streaming: 271.54 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 11.64 seconds
+search:2_hotel_by_city_search: 1.03 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_get_searched_modes: 0.00 seconds
+search:2_has_valid_results: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 10.69 seconds
+search:3_requested_search_mode: 0.00 seconds
+search:3_get_searched_modes: 0.00 seconds
+search:3_is_requested_and_performed_search_align: 0.00 seconds
+search:3_streaming_run: 16.44 seconds
+search:4_places_search: 0.69 seconds
+search:4_requested_search_mode: 0.00 seconds
+search:4_get_searched_modes: 0.00 seconds
+search:4_has_valid_results: 0.00 seconds
+search:4_is_requested_and_performed_search_align: 0.00 seconds
+search:4_streaming_run: 15.13 seconds
+content_generation:1_fetch_critic_scores_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_suggestions_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_reasoning_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_preference_constraint_counts_from_redis: 0.00 seconds
+content_generation:1_determine_rewrite_instructions: 0.00 seconds
+content_generation:1_fetch_filtered_content_from_redis: 0.00 seconds
+content_generation:1_fetch_flight_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_hotel_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_tour_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_places_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_all_search_results_from_redis: 0.01 seconds
+content_generation:1_convert_search_results_to_markdown: 0.00 seconds
+content_generation:1_streaming_run: 57.00 seconds
+----------------------------------------
+Execution times for user_id=27 at Sat Nov  1 15:32:43 2025
+webscraper:1_web_scraping: 263.07 seconds
+webscraper:1_running_nlp_filter: 7.72 seconds
+webscraper:1_running_filter: 7.73 seconds
+webscraper:1_streaming: 271.54 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 11.64 seconds
+search:2_hotel_by_city_search: 1.03 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_get_searched_modes: 0.00 seconds
+search:2_has_valid_results: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 10.69 seconds
+search:3_requested_search_mode: 0.00 seconds
+search:3_get_searched_modes: 0.00 seconds
+search:3_is_requested_and_performed_search_align: 0.00 seconds
+search:3_streaming_run: 16.44 seconds
+search:4_places_search: 0.69 seconds
+search:4_requested_search_mode: 0.00 seconds
+search:4_get_searched_modes: 0.00 seconds
+search:4_has_valid_results: 0.00 seconds
+search:4_is_requested_and_performed_search_align: 0.00 seconds
+search:4_streaming_run: 15.13 seconds
+content_generation:1_fetch_critic_scores_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_suggestions_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_reasoning_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_preference_constraint_counts_from_redis: 0.00 seconds
+content_generation:1_determine_rewrite_instructions: 0.00 seconds
+content_generation:1_fetch_filtered_content_from_redis: 0.00 seconds
+content_generation:1_fetch_flight_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_hotel_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_tour_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_places_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_all_search_results_from_redis: 0.01 seconds
+content_generation:1_convert_search_results_to_markdown: 0.00 seconds
+content_generation:1_streaming_run: 57.00 seconds
+transaction:1_streaming_run: 6.77 seconds
+----------------------------------------

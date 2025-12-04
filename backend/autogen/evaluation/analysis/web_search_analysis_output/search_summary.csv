@@ -1,0 +1,5 @@
+mode,records,times_requested,records_with_len_field,success_count(>0 items),success_rate_%,error_count,error_rate_overall_%,avg_items_all_records,avg_items_success_only
+flight,40,43,40,31,77.5,11,27.5,3.75,4.84
+hotel,40,31,40,20,50.0,24,60.0,1.95,3.9
+place,40,38,40,33,82.5,0,0.0,1.15,1.39
+tour,40,30,40,18,45.0,0,0.0,9.32,20.72

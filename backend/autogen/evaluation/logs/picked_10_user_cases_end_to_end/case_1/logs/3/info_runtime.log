@@ -1,0 +1,446 @@
+
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-11-01 11:17:33 
+================================================================================
+
+2025-11-01 11:17:33 - __main__ - INFO - Saving info logs to log/system_log_without_critic/14_test/3_778708f8-0585-49b7-983f-a1a2009dec6c/info_runtime.log
+2025-11-01 11:17:33 - __main__ - INFO - Saving verbose logs to log/system_log_without_critic/14_test/3_778708f8-0585-49b7-983f-a1a2009dec6c/verbose_runtime.log
+2025-11-01 11:17:33 - __main__ - INFO - Saving timing logs to log/system_log_without_critic/14_test/3_778708f8-0585-49b7-983f-a1a2009dec6c/content_agent_timing.log
+2025-11-01 11:17:33 - __main__ - INFO - 
+User Profile:
+
+{'user_id': 3, 'age': 50, 'date_of_birth': '1975-03-22', 'name': 'Carlos Martinez', 'first_name': 'Carlos', 'last_name': 'Martinez', 'email': 'carlos.martinez@example.com', 'preferred_language': 'Spanish', 'gender': 'male', 'transportation': ['American Airlines'], 'accommodation': ['Boutique Hotel'], 'preferences': ['museums', 'historical tours', 'wine tasting'], 'constraints': ['moderate budget', 'no long walks']}
+
+2025-11-01 11:17:33 - __main__ - INFO - 
+User Travel Details:
+
+{'user_id': 3, 'origin': 'Austin, TX, USA', 'destination': 'Rome, Italy', 'travelers': 2, 'travel_companions': 'Spouse', 'duration': '10 days', 'start_date': '2025-12-02', 'end_date': '2025-12-11', 'currency': 'EUR'}
+
+2025-11-01 11:17:38 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:17:38 - autogen.services.utils - INFO - Speaker: user
+
+2025-11-01 11:17:38 - autogen.services.utils - INFO - Content: Hello, I need help with my travel plans.I'm planning a 10 days trip from Austin, TX, USA to Rome, Italy, starting on December 02, 2025 and ending on December 11, 2025.  I'll be traveling with Spouse, and would prefer to stay at either Boutique Hotel. I plan to get around using American Airlines.
+I'm especially interested in museums, historical tours, wine tasting — though I do have some limitations, such as moderate budget, no long walks.
+
+2025-11-01 11:17:38 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:17:43 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:17:43 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 11:17:43 - autogen.services.utils - INFO - Content: UserProxyAgent: Please confirm your travel dates are December 2-11, 2025, and you prefer to stay at a Boutique Hotel in Rome. Also, please let me know if you have any dietary restrictions or specific accessibility needs for the hotels and tours.
+
+2025-11-01 11:17:43 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:17:43 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:17:43 - autogen.services.utils - INFO - Speaker: UserProxyAgent
+
+2025-11-01 11:17:43 - autogen.services.utils - INFO - Content: Confirmed, no more preference or contraints
+
+2025-11-01 11:17:43 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:17:44 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:17:44 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 11:17:44 - autogen.services.utils - INFO - Content: WebScraperAgent: Gather content on boutique hotels, museums, historical tours, and wine tasting in Rome, Italy.
+
+2025-11-01 11:17:44 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:17:44 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Starting streaming web scraping for messages for the 1-th times...
+2025-11-01 11:17:44 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Received messages for web scraping...
+2025-11-01 11:17:44 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Log path set to: log/system_log_with_critic/14_test/3_778708f8-0585-49b7-983f-a1a2009dec6c
+2025-11-01 11:17:44 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Generated query: I'm planning a 10 days trip from Austin, TX, USA to Rome, Italy, starting on December 02, 2025 and ending on December 11, 2025.  I'll be traveling with Spouse, and would prefer to stay at either Boutique Hotel. I plan to get around using American Airlines.
+I'm especially interested in museums, historical tours, wine tasting — though I do have some limitations, such as moderate budget, no long walks.
+Additional Instructions:
+gather content on boutique hotels, museums, historical tours, and wine tasting in rome, italy.
+Can you help me find some information about this to better plan this trip?
+2025-11-01 11:17:44 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Sending request to http://localhost:3000/api/search with payload
+2025-11-01 11:19:44 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://not_needed ======
+2025-11-01 11:19:44 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_static_html] Error fetching https://not_needed: HTTPSConnectionPool(host='not_needed', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x15b449510>: Failed to resolve 'not_needed' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-11-01 11:19:44 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Static fetch too short, trying dynamic...
+2025-11-01 11:19:46 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Navigating to: https://not_needed
+2025-11-01 11:19:46 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [fetch_dynamic_html] networkidle failed: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://not_needed/
+Call log:
+  - navigating to "https://not_needed/", waiting until "networkidle"
+, retrying with domcontentloaded
+2025-11-01 11:19:46 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Error fetching https://not_needed: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://not_needed/
+Call log:
+  - navigating to "https://not_needed/", waiting until "domcontentloaded"
+
+2025-11-01 11:19:46 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [Pipeline] No content extracted from https://not_needed
+2025-11-01 11:19:46 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 0 segments.
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Starting to process scraped content...
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Successfully scraped 1 chunks of information.
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Saving scraped content to local state service
+
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Initial Web scraping completed in 122.03 seconds seconds.
+
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] - Running NLP-based filtering on scraped content...
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Filtering scraped content...
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 1/1...
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Total Kept: 0, Dropped: 0
+
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processed 1 chunks of scraped content, and kept 0 relevant chunks after filtering.
+
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Finished filtering in 0.00 seconds seconds.
+
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Saving filtered content to local state service
+
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Filtering completed in 0.00 seconds seconds.
+
+2025-11-01 11:19:46 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Finished streaming web scraping in 122.03 seconds seconds.
+
+2025-11-01 11:19:46 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:19:46 - autogen.services.utils - INFO - Speaker: WebScraperAgent
+
+2025-11-01 11:19:46 - autogen.services.utils - INFO - Content: Finished scraping and filtering web searched content, and saving data to state for session `778708f8-0585-49b7-983f-a1a2009dec6c`
+
+2025-11-01 11:19:46 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:19:53 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:19:53 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 11:19:53 - autogen.services.utils - INFO - Content: SearchAgent: Search for flights from Austin, TX, USA to Rome, Italy, departing on December 2, 2025.
+
+2025-11-01 11:19:53 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:19:53 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 1-th times...
+2025-11-01 11:20:03 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Initiating flight search with parameters: origin=AUS, destination=Rome FCO, departure_date=2025-12-02, return_date=None, adults=1
+2025-11-01 11:20:04 - autogen.agents.search.SearchAgent - ERROR - [SearchAgent] Flight search error: {"errors":[{"status":400,"code":477,"title":"INVALID FORMAT","detail":"destinationLocationCode must be a 3-letter code","source":{"pointer":"destinationLocationCode","example":"LON"}}]}
+2025-11-01 11:20:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) [], spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'flight' not in searched modes, returning False, spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 11.30 seconds seconds to ran.
+2025-11-01 11:20:04 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:04 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 11:20:04 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `778708f8-0585-49b7-983f-a1a2009dec6c`.
+
+2025-11-01 11:20:04 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:12 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:12 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 11:20:12 - autogen.services.utils - INFO - Content: SearchAgent: Search for boutique hotels in Rome, Italy, available from December 2-11, 2025.
+
+2025-11-01 11:20:12 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:12 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 2-th times...
+2025-11-01 11:20:22 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Searching hotels in city RIM within 5 km with amenities ['KITCHEN', 'DISABLED_FACILITIES', 'WIFI']
+2025-11-01 11:20:23 - autogen.agents.search.SearchAgent - ERROR - [SearchAgent] Hotel search error: {"errors":[{"code":895,"detail":"Nothing found for the requested criteria","status":400,"title":"NOTHING FOUND FOR REQUESTED CITY"}]}
+2025-11-01 11:20:23 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be hotel, spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:23 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be hotel, spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:23 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) [], spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:23 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'hotel' not in searched modes, returning False, spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:23 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 11.37 seconds seconds to ran.
+2025-11-01 11:20:23 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:23 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 11:20:23 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `778708f8-0585-49b7-983f-a1a2009dec6c`.
+
+2025-11-01 11:20:23 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:31 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:31 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 11:20:31 - autogen.services.utils - INFO - Content: SearchAgent: Search for historical tours in Rome, Italy, available from December 2-11, 2025.
+
+2025-11-01 11:20:31 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:31 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 3-th times...
+2025-11-01 11:20:41 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed places search, spent 0.49 seconds seconds to ran.
+2025-11-01 11:20:41 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be tour, spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:41 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be tour, spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:41 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['place'], spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:41 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'tour' not in searched modes, returning False, spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:41 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 10.05 seconds seconds to ran.
+2025-11-01 11:20:41 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:41 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 11:20:41 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `778708f8-0585-49b7-983f-a1a2009dec6c`.
+
+2025-11-01 11:20:41 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:48 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:48 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 11:20:48 - autogen.services.utils - INFO - Content: SearchAgent: Search for wine tasting experiences in Rome, Italy, available from December 2-11, 2025.
+
+2025-11-01 11:20:48 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:48 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 4-th times...
+2025-11-01 11:20:59 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed places search, spent 0.37 seconds seconds to ran.
+2025-11-01 11:20:59 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:59 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:59 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] No specific search mode requested, returning True by default, spent 0.00 seconds seconds to ran.
+2025-11-01 11:20:59 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 10.63 seconds seconds to ran.
+2025-11-01 11:20:59 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:20:59 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 11:20:59 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `778708f8-0585-49b7-983f-a1a2009dec6c`.
+
+2025-11-01 11:20:59 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:21:08 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:21:08 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 11:21:08 - autogen.services.utils - INFO - Content: ContentGenerationAgent: Generate the travel plan using data from WebScraperAgent and SearchAgent. Include flights, hotels, historical tours, wine tasting experiences, and transportation details.
+
+2025-11-01 11:21:08 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting streaming content generation for messages for the 1-th times...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Received messages for content generation...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic scores for session 778708f8-0585-49b7-983f-a1a2009dec6c...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic scores found, and spent 0.00 seconds seconds to ran.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic suggestions for session 778708f8-0585-49b7-983f-a1a2009dec6c...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic suggestions found, and spent 0.00 seconds seconds to ran.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic reasoning for session 778708f8-0585-49b7-983f-a1a2009dec6c...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic reasoning found, and spent 0.00 seconds seconds to ran.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic preference_constraint_counts for session 778708f8-0585-49b7-983f-a1a2009dec6c...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic preference_constraint_counts found, and spent 0.00 seconds seconds to ran.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved scores='', suggestions='', reasoning=''
+Current counts met: 
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No rewrite triggered.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No filtered content found, and spent 0.00 seconds seconds to ran.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching search results for session 778708f8-0585-49b7-983f-a1a2009dec6c...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching flight search results for session 778708f8-0585-49b7-983f-a1a2009dec6c...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching hotel search results for session 778708f8-0585-49b7-983f-a1a2009dec6c...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching tour search results for session 778708f8-0585-49b7-983f-a1a2009dec6c...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching places search results for session 778708f8-0585-49b7-983f-a1a2009dec6c...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 2 search results.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.00 seconds seconds to ran.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Combined search results: {'flight': [], 'hotel': [], 'tour': [], 'places': [{'id': 'ChIJKW4AH1VgLxMRXmFdxUZrtbk', 'types': ['tour_agency', 'travel_agency', 'point_of_interest', 'establishment'], 'formattedAddress': 'Piazza di Spagna, 26, 00100 Roma RM, Italy', 'location': {'latitude': 41.905730999999996, 'longitude': 12.4825267}, 'rating': 4.9, 'displayName': {'text': 'Rome', 'languageCode': 'en'}}, {'id': 'ChIJsRjmt1pgLxMRwCL0zMhHdsk', 'types': ['restaurant', 'wine_bar', 'italian_restaurant', 'bar', 'food', 'point_of_interest', 'establishment'], 'formattedAddress': 'Via del Conservatorio, 58, 00186 Roma RM, Italy', 'location': {'latitude': 41.892712499999995, 'longitude': 12.472769999999999}, 'rating': 4.5, 'displayName': {'text': 'Rimessa Roscioli', 'languageCode': 'it'}, 'currentOpeningHours': {'openNow': True, 'periods': [{'open': {'day': 0, 'hour': 12, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 2}}, 'close': {'day': 0, 'hour': 15, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 2}}}, {'open': {'day': 0, 'hour': 17, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 2}}, 'close': {'day': 0, 'hour': 23, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 2}}}, {'open': {'day': 1, 'hour': 17, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 3}}, 'close': {'day': 1, 'hour': 23, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 3}}}, {'open': {'day': 2, 'hour': 17, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 4}}, 'close': {'day': 2, 'hour': 23, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 4}}}, {'open': {'day': 3, 'hour': 17, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 5}}, 'close': {'day': 3, 'hour': 23, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 5}}}, {'open': {'day': 4, 'hour': 17, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 6}}, 'close': {'day': 4, 'hour': 23, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 6}}}, {'open': {'day': 5, 'hour': 17, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 7}}, 'close': {'day': 5, 'hour': 23, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 7}}}, {'open': {'day': 6, 'hour': 12, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 1}}, 'close': {'day': 6, 'hour': 15, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 1}}}, {'open': {'day': 6, 'hour': 17, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 1}}, 'close': {'day': 6, 'hour': 23, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 1}}}], 'weekdayDescriptions': ['Monday: 5:00\u2009–\u200911:00\u202fPM', 'Tuesday: 5:00\u2009–\u200911:00\u202fPM', 'Wednesday: 5:00\u2009–\u200911:00\u202fPM', 'Thursday: 5:00\u2009–\u200911:00\u202fPM', 'Friday: 5:00\u2009–\u200911:00\u202fPM', 'Saturday: 12:00\u2009–\u20093:00\u202fPM, 5:00\u2009–\u200911:00\u202fPM', 'Sunday: 12:00\u2009–\u20093:00\u202fPM, 5:00\u2009–\u200911:00\u202fPM'], 'nextCloseTime': '2025-11-01T22:00:00Z'}}]}
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetched 0 flight, 0 hotel, 0 tour, and 2 places search results, and spent 0.00 seconds seconds to ran.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Converted search results to markdown tables, and spent 0.00 seconds seconds to ran.
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-01 11:21:08 - autogen.agents.generation.ContentGenerationTool - INFO - [ContentGenerationTool] Running content generation...
+2025-11-01 11:21:08 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-01 11:21:54 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-01 11:21:54 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-01 11:21:54 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: # Rome Travel Itinerary
+
+## Overview
+- **Duration**: 10 days
+- **Start Date**: December 2, 2025
+- **End Date**: December 11, 2025
+- **Destination**: Rome, Italy
+- **Companions**: Spouse
+- **Budget**: Moderate
+- **Activity Level**: Moderate (with consideration for no long walks)
+
+## Day 1: Arrival and Exploration
+### Morning: Welcome to Rome
+- **Flight Details**: Arrive at Fiumicino Airport using American Airlines.
+- **Transportation**: Pre-booked airport transfer to the boutique hotel in central Rome.
+
+### Afternoon: Piazza di Spagna
+- Visit *Piazza di Spagna* with a focus on its iconic Fontana della Barcaccia and Trinità dei Monti church. Enjoy a light meal at Rimessa Roscioli for traditional Italian cuisine.
+
+## Day 2: Historical Tours
+### Morning: Colosseum & Roman Forum
+- Guided tour of the *Colosseum* and *Roman Forum*, followed by a walk to Palatine Hill.
+
+### Afternoon: Vatican City
+- Visit St. Peter's Basilica, Vatican Museums, and Sistine Chapel for a cultural experience.
+
+## Day 3: Historical Sites & Shopping
+### Morning: Pantheon & Piazza Navona
+- Explore the *Pantheon* and stroll through Piazza Navona with its fountains and cafes.
+
+### Afternoon: Markets & Local Shops
+- Visit local markets such as Campo de' Fiori for fresh produce, cheeses, and other Italian delicacies. Relax in Trastevere district for a leisurely afternoon.
+
+## Day 4: Wine Tasting Experience
+### Morning: Full Day Tour to Frascati Wine Region
+- Depart early morning for a wine tasting experience at *Frascati*, known for its white wine production.
+- Return to Rome by late afternoon, enjoy dinner at a local restaurant in the city center.
+
+## Day 5: Ancient Ruins & Art
+### Morning: Circus Maximus & Palatine Hill
+- Explore the ruins of *Circus Maximus* and climb up to *Palatine Hill* for panoramic views.
+
+### Afternoon: Appian Way & Tomb of Cecilia Metella
+- Walk along the ancient *Appian Way* and visit the *Tomb of Cecilia Metella*, a well-preserved Roman tomb.
+
+## Day 6: Fountains & Water Features
+### Morning: Trevi Fountain
+- Throw a coin into the *Trevi Fountain* for good luck. Make sure to ask your spouse for a double wish!
+
+### Afternoon: Villa Borghese Gardens
+- Enjoy a leisurely stroll through the beautiful *Villa Borghese Gardens* and visit the Galleria Borghese for art.
+
+## Day 7: Night Tour of Rome
+### Evening: Stroll Around Trastevere
+- Experience the vibrant nightlife in Trastevere, known for its lively atmosphere, bars, and street performances.
+
+## Day 8: Historical Walks & Local Cuisine
+### Morning: Appian Way & Catacombs
+- Visit the ancient *Appian Way* and explore the catacombs of San Callisto.
+
+### Afternoon: Testaccio Market
+- Sample local delicacies at the *Testaccio Market*, known for its authentic Roman cuisine.
+
+## Day 9: Historical Sites in Ostia Antica
+### Full Day Tour:
+- Travel to *Ostia Antica* for a historical tour of this ancient seaside town, now a UNESCO World Heritage Site. Enjoy lunch there and explore the ruins at your own pace.
+
+## Day 10: Departure from Rome
+### Morning: Last Walk in Historic Center
+- Spend some time walking around the historic center of Rome, perhaps visiting places that were missed or revisiting favorites.
+
+### Afternoon: Farewell to Rome
+- Transfer to Fiumicino Airport for your return flight. Reflect on an unforgettable trip through Italy's rich history and culture.
+
+---
+
+## Accommodation
+- **Boutique Hotel**: Stay in a centrally located boutique hotel, ensuring easy access to major attractions and local amenities.
+
+---
+
+## Transportation Details
+- **Flights**: Booked with American Airlines.
+- **Airport Transfer**: Pre-booked transfer service from the airport to your hotel.
+- **City Transport**: Use public transportation such as metro or taxi for convenience and flexibility during your stay.
+2025-11-01 11:21:54 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: # Rome Travel Itinerary
+
+## Overview
+- **Duration**: 10 days
+- **Start Date**: December 2, 2025
+- **End Date**: December 11, 2025
+- **Destination**: Rome, Italy
+- **Companions**: Spouse
+- **Budget**: Moderate
+- **Activity Level**: Moderate (with consideration for no long walks)
+
+## Day 1: Arrival and Exploration
+### Morning: Welcome to Rome
+- **Flight Details**: Arrive at Fiumicino Airport using American Airlines.
+- **Transportation**: Pre-booked airport transfer to the boutique hotel in central Rome.
+
+### Afternoon: Piazza di Spagna
+- Visit *Piazza di Spagna* with a focus on its iconic Fontana della Barcaccia and Trinità dei Monti church. Enjoy a light meal at Rimessa Roscioli for traditional Italian cuisine.
+
+## Day 2: Historical Tours
+### Morning: Colosseum & Roman Forum
+- Guided tour of the *Colosseum* and *Roman Forum*, followed by a walk to Palatine Hill.
+
+### Afternoon: Vatican City
+- Visit St. Peter's Basilica, Vatican Museums, and Sistine Chapel for a cultural experience.
+
+## Day 3: Historical Sites & Shopping
+### Morning: Pantheon & Piazza Navona
+- Explore the *Pantheon* and stroll through Piazza Navona with its fountains and cafes.
+
+### Afternoon: Markets & Local Shops
+- Visit local markets such as Campo de' Fiori for fresh produce, cheeses, and other Italian delicacies. Relax in Trastevere district for a leisurely afternoon.
+
+## Day 4: Wine Tasting Experience
+### Morning: Full Day Tour to Frascati Wine Region
+- Depart early morning for a wine tasting experience at *Frascati*, known for its white wine production.
+- Return to Rome by late afternoon, enjoy dinner at a local restaurant in the city center.
+
+## Day 5: Ancient Ruins & Art
+### Morning: Circus Maximus & Palatine Hill
+- Explore the ruins of *Circus Maximus* and climb up to *Palatine Hill* for panoramic views.
+
+### Afternoon: Appian Way & Tomb of Cecilia Metella
+- Walk along the ancient *Appian Way* and visit the *Tomb of Cecilia Metella*, a well-preserved Roman tomb.
+
+## Day 6: Fountains & Water Features
+### Morning: Trevi Fountain
+- Throw a coin into the *Trevi Fountain* for good luck. Make sure to ask your spouse for a double wish!
+
+### Afternoon: Villa Borghese Gardens
+- Enjoy a leisurely stroll through the beautiful *Villa Borghese Gardens* and visit the Galleria Borghese for art.
+
+## Day 7: Night Tour of Rome
+### Evening: Stroll Around Trastevere
+- Experience the vibrant nightlife in Trastevere, known for its lively atmosphere, bars, and street performances.
+
+## Day 8: Historical Walks & Local Cuisine
+### Morning: Appian Way & Catacombs
+- Visit the ancient *Appian Way* and explore the catacombs of San Callisto.
+
+### Afternoon: Testaccio Market
+- Sample local delicacies at the *Testaccio Market*, known for its authentic Roman cuisine.
+
+## Day 9: Historical Sites in Ostia Antica
+### Full Day Tour:
+- Travel to *Ostia Antica* for a historical tour of this ancient seaside town, now a UNESCO World Heritage Site. Enjoy lunch there and explore the ruins at your own pace.
+
+## Day 10: Departure from Rome
+### Morning: Last Walk in Historic Center
+- Spend some time walking around the historic center of Rome, perhaps visiting places that were missed or revisiting favorites.
+
+### Afternoon: Farewell to Rome
+- Transfer to Fiumicino Airport for your return flight. Reflect on an unforgettable trip through Italy's rich history and culture.
+
+---
+
+## Accommodation
+- **Boutique Hotel**: Stay in a centrally located boutique hotel, ensuring easy access to major attractions and local amenities.
+
+---
+
+## Transportation Details
+- **Flights**: Booked with American Airlines.
+- **Airport Transfer**: Pre-booked transfer service from the airport to your hotel.
+- **City Transport**: Use public transportation such as metro or taxi for convenience and flexibility during your stay. and saving plan to Redis for session 778708f8-0585-49b7-983f-a1a2009dec6c
+2025-11-01 11:21:54 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Finished streaming content generation for messages and spent 46.09 seconds seconds to ran.
+2025-11-01 11:21:54 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:21:54 - autogen.services.utils - INFO - Speaker: ContentGenerationAgent
+
+2025-11-01 11:21:54 - autogen.services.utils - INFO - Content: Travel plan generated successfully, and saving data to state for session `778708f8-0585-49b7-983f-a1a2009dec6c`
+
+2025-11-01 11:21:54 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:22:02 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:22:02 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 11:22:02 - autogen.services.utils - INFO - Content: TransactionAgent: Book the flight, hotel, historical tours, and wine tasting experiences as per the generated travel plan. Also, arrange for transportation using American Airlines as preferred carrier.
+
+2025-11-01 11:22:02 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:22:08 - autogen.agents.transaction.TransactionAgent - INFO - [TransactionAgent] Finished processing transaction, and spent 5.03 seconds seconds.
+2025-11-01 11:22:08 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:22:08 - autogen.services.utils - INFO - Speaker: TransactionAgent
+
+2025-11-01 11:22:08 - autogen.services.utils - INFO - Content: [TransactionAgent] Finished processing transaction and saving data to state for session `778708f8-0585-49b7-983f-a1a2009dec6c`.
+
+2025-11-01 11:22:08 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:22:15 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:22:15 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 11:22:15 - autogen.services.utils - INFO - Content: TERMINATE
+
+2025-11-01 11:22:15 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 11:22:15 - __main__ - INFO - [Main] Retrieved generated plan for session 778708f8-0585-49b7-983f-a1a2009dec6c, and spent 0.00 seconds seconds to ran.
+2025-11-01 11:22:15 - __main__ - INFO - All number of rounds from agents: {'web_scraper_agent_rounds': 1, 'search_agent_rounds': 4, 'content_generation_agent_rounds': 1, 'transaction_agent_rounds': 1}
+2025-11-01 11:22:15 - __main__ - INFO - Finished autogen agent iteration 3 for user_id 3
+2025-11-01 11:22:15 - __main__ - INFO - Running autogen agent iteration 4 for user_id 4

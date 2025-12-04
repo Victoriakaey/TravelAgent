@@ -1,0 +1,551 @@
+
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-11-01 18:14:30 
+================================================================================
+
+2025-11-01 18:14:30 - __main__ - INFO - Saving info logs to log/system_log_without_critic/14_test/53_f9f8332a-ed1b-4cdf-bd1d-d2042d39e997/info_runtime.log
+2025-11-01 18:14:30 - __main__ - INFO - Saving verbose logs to log/system_log_without_critic/14_test/53_f9f8332a-ed1b-4cdf-bd1d-d2042d39e997/verbose_runtime.log
+2025-11-01 18:14:30 - __main__ - INFO - Saving timing logs to log/system_log_without_critic/14_test/53_f9f8332a-ed1b-4cdf-bd1d-d2042d39e997/content_agent_timing.log
+2025-11-01 18:14:30 - __main__ - INFO - 
+User Profile:
+
+{'user_id': 53, 'age': 52, 'date_of_birth': '1973-11-18', 'name': 'Naoko Fujimoto', 'first_name': 'Naoko', 'last_name': 'Fujimoto', 'email': 'naoko.fujimoto@example.com', 'preferred_language': 'Japanese', 'gender': 'female', 'transportation': ['Shinkansen', 'Taxi'], 'accommodation': ['Ryokan', 'Onsen Retreat'], 'preferences': ['onsen', 'tea ceremony', 'zen meditation', 'kaiseki cuisine', 'flower viewing'], 'constraints': ['avoid rush', 'low activity level', 'quiet environment']}
+
+2025-11-01 18:14:30 - __main__ - INFO - 
+User Travel Details:
+
+{'user_id': 53, 'origin': 'Tokyo, Japan', 'destination': 'Kyoto, Japan', 'travelers': 1, 'travel_companions': '', 'duration': '4 days', 'start_date': '2026-04-10', 'end_date': '2026-04-13', 'currency': 'JPY'}
+
+2025-11-01 18:14:35 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:14:35 - autogen.services.utils - INFO - Speaker: user
+
+2025-11-01 18:14:35 - autogen.services.utils - INFO - Content: Hello, I need help with my travel plans.I'm planning a 4 days trip from Tokyo, Japan to Kyoto, Japan, starting on April 10, 2026 and ending on April 13, 2026.  I'll be traveling alone, and would prefer to stay at either Ryokan, Onsen Retreat. I plan to get around using Shinkansen, Taxi.
+I'm especially interested in onsen, tea ceremony, zen meditation, kaiseki cuisine, flower viewing — though I do have some limitations, such as avoid rush, low activity level, quiet environment.
+
+2025-11-01 18:14:35 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:14:40 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:14:40 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 18:14:40 - autogen.services.utils - INFO - Content: UserProxyAgent: Could you please confirm your travel dates and preferences for the trip from Tokyo to Kyoto, including any specific places or activities you're interested in? Also, let me know if you need any assistance with booking accommodations and transportation.
+
+2025-11-01 18:14:40 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:14:40 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:14:40 - autogen.services.utils - INFO - Speaker: UserProxyAgent
+
+2025-11-01 18:14:40 - autogen.services.utils - INFO - Content: Confirmed, no more preference or contraints
+
+2025-11-01 18:14:40 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:14:43 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:14:43 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 18:14:43 - autogen.services.utils - INFO - Content: WebScraperAgent: Gather content on Ryokan, Onsen Retreat, Shinkansen routes, tea ceremony events, zen meditation sessions, kaiseki cuisine experiences, and flower viewing locations in Kyoto from April 10 to April 13, 2026.
+
+2025-11-01 18:14:43 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:14:43 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Starting streaming web scraping for messages for the 1-th times...
+2025-11-01 18:14:43 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Received messages for web scraping...
+2025-11-01 18:14:43 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Log path set to: log/system_log_with_critic/14_test/53_f9f8332a-ed1b-4cdf-bd1d-d2042d39e997
+2025-11-01 18:14:43 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Generated query: I'm planning a 4 days trip from Tokyo, Japan to Kyoto, Japan, starting on April 10, 2026 and ending on April 13, 2026.  I'll be traveling alone, and would prefer to stay at either Ryokan, Onsen Retreat. I plan to get around using Shinkansen, Taxi.
+I'm especially interested in onsen, tea ceremony, zen meditation, kaiseki cuisine, flower viewing — though I do have some limitations, such as avoid rush, low activity level, quiet environment.
+Additional Instructions:
+gather content on ryokan, onsen retreat, shinkansen routes, tea ceremony events, zen meditation sessions, kaiseki cuisine experiences, and flower viewing locations in kyoto from april 10 to april 13, 2026.
+Can you help me find some information about this to better plan this trip?
+2025-11-01 18:14:43 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Sending request to http://localhost:3000/api/search with payload
+2025-11-01 18:17:14 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.lemon8-app.com/emilysachs/7216952054684729862?region=us ======
+2025-11-01 18:17:16 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 4 segments.
+2025-11-01 18:17:16 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.japan-experience.com/plan-your-trip/to-know/traveling-japan/spiritual-retreats-in-japan ======
+2025-11-01 18:17:17 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 26 segments.
+2025-11-01 18:17:17 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.lonelyplanet.com/articles/top-things-to-do-in-japan ======
+2025-11-01 18:17:17 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 93 segments.
+2025-11-01 18:17:17 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.agoda.com/travel-guides/japan/kyoto/springtime-bliss-kyoto-onsen-ryokan-cherry-blossoms/ ======
+2025-11-01 18:17:19 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Static fetch too short, trying dynamic...
+2025-11-01 18:17:20 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Navigating to: https://www.agoda.com/travel-guides/japan/kyoto/springtime-bliss-kyoto-onsen-ryokan-cherry-blossoms/
+2025-11-01 18:17:50 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [fetch_dynamic_html] networkidle failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.agoda.com/travel-guides/japan/kyoto/springtime-bliss-kyoto-onsen-ryokan-cherry-blossoms/", waiting until "networkidle"
+, retrying with domcontentloaded
+2025-11-01 18:17:50 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Selector 'main, article, div.content, div#content, div.post, section' matched.
+2025-11-01 18:17:54 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Screenshot saved: log/system_log_with_critic/14_test/53_f9f8332a-ed1b-4cdf-bd1d-d2042d39e997/dynamic_page_scraping/120341ac801fa51a881346913f9b48e1/screenshot.png
+2025-11-01 18:17:54 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Got HTML length=214280
+2025-11-01 18:17:54 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Raw HTML saved: log/system_log_with_critic/14_test/53_f9f8332a-ed1b-4cdf-bd1d-d2042d39e997/dynamic_page_scraping/120341ac801fa51a881346913f9b48e1/debug.html
+2025-11-01 18:17:54 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 81 segments.
+2025-11-01 18:17:54 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://issuu.com/wendywutours/docs/wendy_wu_tours_japan_brochure_2026-2027_nz_ ======
+2025-11-01 18:17:55 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 16 segments.
+2025-11-01 18:17:55 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://alljapantours.com/japan-group-tours/trip-detail/japan-garden-tour-autumn-leaves/ ======
+2025-11-01 18:17:57 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 224 segments.
+2025-11-01 18:17:57 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://alljapantours.com/japan/travel/what-to-do/50-Things-to-Do-in-Japan-Part-1/ ======
+2025-11-01 18:17:58 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 131 segments.
+2025-11-01 18:17:58 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.trip.com/blog/15-best-ryokan-in-kyoto/ ======
+2025-11-01 18:17:59 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 56 segments.
+2025-11-01 18:17:59 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.facebook.com/groups/japantravel/posts/1530688741383034/ ======
+2025-11-01 18:18:00 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [Pipeline] Trafilatura extraction failed, falling back to BeautifulSoup
+2025-11-01 18:18:00 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 1 segments.
+2025-11-01 18:18:00 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.japan-guide.com/e/e2029_reservations.html ======
+2025-11-01 18:18:01 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 21 segments.
+2025-11-01 18:18:01 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://atravelingfairy.com/onsen-ryokan-kaiseki-traditional-japanese-living/ ======
+2025-11-01 18:18:01 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 29 segments.
+2025-11-01 18:18:01 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.japan.travel/en/experiences-in-japan/4971/ ======
+2025-11-01 18:18:02 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 10 segments.
+2025-11-01 18:18:02 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.ryokan-kyoto.com/ ======
+2025-11-01 18:18:04 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 7 segments.
+2025-11-01 18:18:04 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://lovefortraveling.com/ryokan-with-private-onsen-kyoto/ ======
+2025-11-01 18:18:06 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 68 segments.
+2025-11-01 18:18:06 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://visitkinosaki.com/tour-packages/cultural-experiences-tea-ceremony-flower-arrangement-koto/ ======
+2025-11-01 18:18:07 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 26 segments.
+2025-11-01 18:18:07 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Starting to process scraped content...
+2025-11-01 18:18:07 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Successfully scraped 15 chunks of information.
+2025-11-01 18:18:07 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Saving scraped content to local state service
+
+2025-11-01 18:18:07 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Initial Web scraping completed in 203.54 seconds seconds.
+
+2025-11-01 18:18:07 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] - Running NLP-based filtering on scraped content...
+2025-11-01 18:18:07 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Filtering scraped content...
+2025-11-01 18:18:07 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 1/15...
+2025-11-01 18:18:10 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #1 Decision: keep
+2025-11-01 18:18:11 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 2/15...
+2025-11-01 18:18:11 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #2 Decision: keep
+2025-11-01 18:18:11 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 3/15...
+2025-11-01 18:18:13 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #3 Decision: keep
+2025-11-01 18:18:13 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 4/15...
+2025-11-01 18:18:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #4 Decision: keep
+2025-11-01 18:18:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 5/15...
+2025-11-01 18:18:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #5 Decision: drop
+2025-11-01 18:18:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 6/15...
+2025-11-01 18:18:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #6 Decision: drop
+2025-11-01 18:18:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 7/15...
+2025-11-01 18:18:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #7 Decision: drop
+2025-11-01 18:18:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 8/15...
+2025-11-01 18:18:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #8 Decision: keep
+2025-11-01 18:18:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 9/15...
+2025-11-01 18:18:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #9 Decision: keep
+2025-11-01 18:18:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 10/15...
+2025-11-01 18:18:15 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #10 Decision: keep
+2025-11-01 18:18:15 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 11/15...
+2025-11-01 18:18:15 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #11 Decision: drop
+2025-11-01 18:18:15 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 12/15...
+2025-11-01 18:18:15 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #12 Decision: keep
+2025-11-01 18:18:15 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 13/15...
+2025-11-01 18:18:15 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #13 Decision: keep
+2025-11-01 18:18:15 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 14/15...
+2025-11-01 18:18:15 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #14 Decision: keep
+2025-11-01 18:18:15 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 15/15...
+2025-11-01 18:18:16 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #15 Decision: keep
+2025-11-01 18:18:16 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Total Kept: 11, Dropped: 4
+
+2025-11-01 18:18:16 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processed 15 chunks of scraped content, and kept 11 relevant chunks after filtering.
+
+2025-11-01 18:18:16 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Finished filtering in 9.21 seconds seconds.
+
+2025-11-01 18:18:16 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Saving filtered content to local state service
+
+2025-11-01 18:18:16 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Filtering completed in 9.23 seconds seconds.
+
+2025-11-01 18:18:17 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Finished streaming web scraping in 213.54 seconds seconds.
+
+2025-11-01 18:18:17 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:18:17 - autogen.services.utils - INFO - Speaker: WebScraperAgent
+
+2025-11-01 18:18:17 - autogen.services.utils - INFO - Content: Finished scraping and filtering web searched content, and saving data to state for session `f9f8332a-ed1b-4cdf-bd1d-d2042d39e997`
+
+2025-11-01 18:18:17 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:18:26 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:18:26 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 18:18:26 - autogen.services.utils - INFO - Content: SearchAgent: Search for flights from Tokyo to Kyoto for April 10–13, 2026.
+
+2025-11-01 18:18:26 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:18:26 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 1-th times...
+2025-11-01 18:18:36 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Initiating flight search with parameters: origin=TYO, destination=KIX, departure_date=2026-04-10, return_date=None, adults=1
+2025-11-01 18:18:39 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed flight search, spent 3.13 seconds seconds to ran.
+2025-11-01 18:18:39 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-01 18:18:39 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-01 18:18:39 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['flight'], spent 0.00 seconds seconds to ran.
+2025-11-01 18:18:39 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Checked for valid results in mode flight, spent 0.00 seconds seconds to ran.
+2025-11-01 18:18:39 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'flight' has been performed with valid results, returning True, spent 0.00 seconds seconds to ran.
+2025-11-01 18:18:39 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 12.72 seconds seconds to ran.
+2025-11-01 18:18:39 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:18:39 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 18:18:39 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `f9f8332a-ed1b-4cdf-bd1d-d2042d39e997`.
+
+2025-11-01 18:18:39 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:18:47 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:18:47 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 18:18:47 - autogen.services.utils - INFO - Content: SearchAgent: Search for Ryokans and Onsen Retreats in Kyoto that offer traditional experiences such as tea ceremony, zen meditation, kaiseki cuisine, and flower viewing from April 10 to April 13, 2026.
+
+2025-11-01 18:18:47 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:18:47 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 2-th times...
+2025-11-01 18:18:57 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Searching hotels in city KGL within 10 km with amenities ['TEA_CEREMONY', 'ZEN_MEDITATION', 'Kaiseki cuisine', 'FLOWER_VIEWING']
+2025-11-01 18:18:58 - autogen.agents.search.SearchAgent - ERROR - [SearchAgent] Hotel search error: {"errors":[{"code":7211,"detail":"Invalid amenity codes","status":400,"title":"INVALID FACILITY CODE"}]}
+2025-11-01 18:18:58 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 18:18:58 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 18:18:58 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] No specific search mode requested, returning True by default, spent 0.00 seconds seconds to ran.
+2025-11-01 18:18:58 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 10.47 seconds seconds to ran.
+2025-11-01 18:18:58 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:18:58 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 18:18:58 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `f9f8332a-ed1b-4cdf-bd1d-d2042d39e997`.
+
+2025-11-01 18:18:58 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:19:05 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:19:05 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 18:19:05 - autogen.services.utils - INFO - Content: SearchAgent: Search for Shinkansen routes and taxi services that can accommodate your travel from Tokyo to Kyoto, including transfer details between train stations and accommodations.
+
+2025-11-01 18:19:05 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:19:05 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 3-th times...
+2025-11-01 18:19:16 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:16 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:16 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] No specific search mode requested, returning True by default, spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:16 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 10.21 seconds seconds to ran.
+2025-11-01 18:19:16 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:19:16 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 18:19:16 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `f9f8332a-ed1b-4cdf-bd1d-d2042d39e997`.
+
+2025-11-01 18:19:16 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:19:24 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:19:24 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 18:19:24 - autogen.services.utils - INFO - Content: SearchAgent: Search for onsen, tea ceremony events, zen meditation sessions, kaiseki cuisine experiences, and flower viewing locations in Kyoto from April 10 to April 13, 2026.
+
+2025-11-01 18:19:24 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:19:24 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 4-th times...
+2025-11-01 18:19:34 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed places search, spent 0.62 seconds seconds to ran.
+2025-11-01 18:19:34 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:34 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:34 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] No specific search mode requested, returning True by default, spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:34 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 9.96 seconds seconds to ran.
+2025-11-01 18:19:34 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:19:34 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 18:19:34 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `f9f8332a-ed1b-4cdf-bd1d-d2042d39e997`.
+
+2025-11-01 18:19:34 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:19:44 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:19:44 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 18:19:44 - autogen.services.utils - INFO - Content: ContentGenerationAgent: Generate a travel plan including flights, Ryokans or Onsen Retreats, transportation using Shinkansen and taxi, as well as suggested onsen, tea ceremony events, zen meditation sessions, kaiseki cuisine experiences, and flower viewing locations based on the provided preferences.
+
+2025-11-01 18:19:44 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting streaming content generation for messages for the 1-th times...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Received messages for content generation...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic scores for session f9f8332a-ed1b-4cdf-bd1d-d2042d39e997...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic scores found, and spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic suggestions for session f9f8332a-ed1b-4cdf-bd1d-d2042d39e997...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic suggestions found, and spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic reasoning for session f9f8332a-ed1b-4cdf-bd1d-d2042d39e997...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic reasoning found, and spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic preference_constraint_counts for session f9f8332a-ed1b-4cdf-bd1d-d2042d39e997...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic preference_constraint_counts found, and spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved scores='', suggestions='', reasoning=''
+Current counts met: 
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No rewrite triggered.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved full filtered content, and spent 0.01 seconds seconds to ran.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching search results for session f9f8332a-ed1b-4cdf-bd1d-d2042d39e997...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching flight search results for session f9f8332a-ed1b-4cdf-bd1d-d2042d39e997...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 5 search results.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching hotel search results for session f9f8332a-ed1b-4cdf-bd1d-d2042d39e997...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching tour search results for session f9f8332a-ed1b-4cdf-bd1d-d2042d39e997...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching places search results for session f9f8332a-ed1b-4cdf-bd1d-d2042d39e997...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 1 search results.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Combined search results: {'flight': [{'type': 'flight-offer', 'id': '1', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-03', 'lastTicketingDateTime': '2025-11-03', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT1H15M', 'segments': [{'departure': {'iataCode': 'HND', 'terminal': '2', 'at': '2026-04-10T07:15:00'}, 'arrival': {'iataCode': 'KIX', 'terminal': '1', 'at': '2026-04-10T08:30:00'}, 'carrierCode': 'NH', 'number': '93', 'aircraft': {'code': '738'}, 'operating': {'carrierCode': 'EH'}, 'duration': 'PT1H15M', 'id': '18', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '80.20', 'base': '67.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '80.20'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['NH'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '80.20', 'base': '67.00'}, 'fareDetailsBySegment': [{'segmentId': '18', 'cabin': 'ECONOMY', 'fareBasis': 'KNNDJ', 'brandedFare': 'DJFARENNJ', 'brandedFareLabel': 'DJ FARE NN', 'class': 'K', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}, {'type': 'flight-offer', 'id': '2', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-03', 'lastTicketingDateTime': '2025-11-03', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT1H30M', 'segments': [{'departure': {'iataCode': 'HND', 'terminal': '1', 'at': '2026-04-10T15:20:00'}, 'arrival': {'iataCode': 'KIX', 'terminal': '1', 'at': '2026-04-10T16:50:00'}, 'carrierCode': 'NH', 'number': '3825', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': '7G'}, 'duration': 'PT1H30M', 'id': '49', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '80.20', 'base': '67.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '80.20'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['NH'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '80.20', 'base': '67.00'}, 'fareDetailsBySegment': [{'segmentId': '49', 'cabin': 'ECONOMY', 'fareBasis': 'KNNDJ', 'brandedFare': 'DJFARENNJ', 'brandedFareLabel': 'DJ FARE NN', 'class': 'K', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}, {'type': 'flight-offer', 'id': '3', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-03', 'lastTicketingDateTime': '2025-11-03', 'numberOfBookableSeats': 3, 'itineraries': [{'duration': 'PT1H30M', 'segments': [{'departure': {'iataCode': 'HND', 'terminal': '1', 'at': '2026-04-10T16:25:00'}, 'arrival': {'iataCode': 'KIX', 'terminal': '1', 'at': '2026-04-10T17:55:00'}, 'carrierCode': 'NH', 'number': '3827', 'aircraft': {'code': '320'}, 'operating': {'carrierCode': '7G'}, 'duration': 'PT1H30M', 'id': '50', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '80.20', 'base': '67.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '80.20'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['NH'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '80.20', 'base': '67.00'}, 'fareDetailsBySegment': [{'segmentId': '50', 'cabin': 'ECONOMY', 'fareBasis': 'KNNDJ', 'brandedFare': 'DJFARENNJ', 'brandedFareLabel': 'DJ FARE NN', 'class': 'K', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}, {'type': 'flight-offer', 'id': '4', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-03', 'lastTicketingDateTime': '2025-11-03', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT1H25M', 'segments': [{'departure': {'iataCode': 'HND', 'terminal': '2', 'at': '2026-04-10T13:55:00'}, 'arrival': {'iataCode': 'KIX', 'terminal': '1', 'at': '2026-04-10T15:20:00'}, 'carrierCode': 'NH', 'number': '991', 'aircraft': {'code': '738'}, 'operating': {'carrierCode': 'EH'}, 'duration': 'PT1H25M', 'id': '42', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '89.00', 'base': '75.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '89.00'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['NH'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '89.00', 'base': '75.00'}, 'fareDetailsBySegment': [{'segmentId': '42', 'cabin': 'ECONOMY', 'fareBasis': 'LNNDJ', 'brandedFare': 'DJFARENNJ', 'brandedFareLabel': 'DJ FARE NN', 'class': 'L', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}, {'type': 'flight-offer', 'id': '5', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-03', 'lastTicketingDateTime': '2025-11-03', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT1H20M', 'segments': [{'departure': {'iataCode': 'HND', 'terminal': '2', 'at': '2026-04-10T20:30:00'}, 'arrival': {'iataCode': 'KIX', 'terminal': '1', 'at': '2026-04-10T21:50:00'}, 'carrierCode': 'NH', 'number': '97', 'aircraft': {'code': '772'}, 'operating': {'carrierCode': 'NH'}, 'duration': 'PT1H20M', 'id': '25', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '104.40', 'base': '89.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '104.40'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['NH'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '104.40', 'base': '89.00'}, 'fareDetailsBySegment': [{'segmentId': '25', 'cabin': 'ECONOMY', 'fareBasis': 'SNNDJ', 'brandedFare': 'DJFARENNJ', 'brandedFareLabel': 'DJ FARE NN', 'class': 'S', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}], 'hotel': [], 'tour': [], 'places': [{'id': 'ChIJgfSTMwAJAWARGd4pqOH483Y', 'types': ['amusement_center', 'point_of_interest', 'establishment'], 'formattedAddress': 'Japan, 〒600-8323 Kyoto, Shimogyo Ward, Kanayachō, ４９０ 緑風荘 ４階', 'location': {'latitude': 34.9945107, 'longitude': 135.75540239999998}, 'rating': 5.0, 'displayName': {'text': '茶道体験所 禅 (ZEN: Tea Ceremony Experience in Kyoto)', 'languageCode': 'ja'}, 'currentOpeningHours': {'openNow': False, 'periods': [{'open': {'day': 0, 'hour': 15, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 2}}, 'close': {'day': 0, 'hour': 21, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 2}}}, {'open': {'day': 5, 'hour': 15, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 7}}, 'close': {'day': 5, 'hour': 21, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 7}}}, {'open': {'day': 6, 'hour': 15, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 8}}, 'close': {'day': 6, 'hour': 21, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 8}}}], 'weekdayDescriptions': ['Monday: Closed', 'Tuesday: Closed', 'Wednesday: Closed', 'Thursday: Closed', 'Friday: 3:00\u2009–\u20099:00\u202fPM', 'Saturday: 3:00\u2009–\u20099:00\u202fPM', 'Sunday: 3:00\u2009–\u20099:00\u202fPM'], 'nextOpenTime': '2025-11-02T06:00:00Z'}}]}
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetched 5 flight, 0 hotel, 0 tour, and 1 places search results, and spent 0.01 seconds seconds to ran.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Converted search results to markdown tables, and spent 0.00 seconds seconds to ran.
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-01 18:19:44 - autogen.agents.generation.ContentGenerationTool - INFO - [ContentGenerationTool] Running content generation...
+2025-11-01 18:19:44 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-01 18:21:18 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-01 18:21:18 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-01 18:21:18 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ### Travel Plan for Kyoto, Japan
+
+#### **1. Flights**
+- **Outbound Flight:**
+  - **NH 93**: Departure from Haneda Airport (HND) to Kansai International Airport (KIX), April 10, 2026 at 7:15 AM.
+  - **Cost:** USD 80.20
+
+- **Return Flight:**
+  - **NH 97**: Departure from Kansai International Airport (KIX) to Haneda Airport (HND), April 14, 2026 at 12:30 PM.
+  - **Cost:** USD 104.40
+
+#### **2. Transportation**
+- **Shinkansen (Bullet Train):** 
+  - From Kansai International Airport to Kyoto Station
+    - **Travel Time:** Approximately 1 hour and 5 minutes
+    - **Frequency:** Multiple trains per hour, departing every 30 minutes.
+  
+- **Taxi:**
+  - From Kyoto Station to Accommodation (Ryokan or Onsen Retreat)
+    - **Fare:** Varies based on the distance but typically around 2,500 JPY (~USD 21).
+
+#### **3. Ryokans and Onsen Retreats**
+
+- **Ryokan Kiyomizu Ryujou**: A traditional ryokan located in Higashiyama with stunning views of the Kiyomizu Temple.
+  - **Address:** 548 Teramachi, Higashi-ku, Kyoto-shi, Kyoto Prefecture
+  - **Contact:** +81 (0)75-232-6901
+
+- **Onsen Retreat at Togetsukyo Inn**: A serene onsen retreat near the iconic Togetsukyo Bridge.
+  - **Address:** 1041-2 Komaba, Higashi-ku, Kyoto-shi, Kyoto Prefecture
+  - **Contact:** +81 (0)75-393-6436
+
+#### **4. Onsen Activities**
+- **Iroha Japanese Culture EX**: Participate in a tea ceremony, koto playing, and flower arrangement.
+  - **Activity Dates:**
+    - **Tea Ceremony:** April 8 to April 12, 2026
+    - **Koto Playing:** April 9 to April 13, 2026
+    - **Flower Arrangement:** April 10 to April 14, 2026
+
+- **Plan A:**
+  - **Tea Ceremony (April 8):** 
+    - **Time:** 10:30 AM - 11:30 AM
+    - **Activity Location:** IROHA Japanese Culture EX, Kinosaki-cho, Toyooka City, Hyogo-ken
+
+  - **Koto Playing (April 9):**
+    - **Time:** 10:30 AM - 11:30 AM
+    - **Activity Location:** IROHA Japanese Culture EX, Kinosaki-cho, Toyooka City, Hyogo-ken
+
+  - **Flower Arrangement (April 10):**
+    - **Time:** 10:30 AM - 11:30 AM
+    - **Activity Location:** IROHA Japanese Culture EX, Kinosaki-cho, Toyooka City, Hyogo-ken
+
+#### **5. Kaiseki Cuisine Experiences**
+- **Gion Hikyaku**: A traditional kaiseki restaurant offering a multi-course meal that showcases the season's best ingredients.
+  - **Address:** 2-16-38 Karasuma Oike, Nakagyo Ward, Kyoto
+  - **Contact:** +81 (0)75-223-4890
+
+#### **6. Zen Meditation Sessions**
+- **Zen Meditation Experience at Tenryu-ji Temple**: A serene environment for practicing zazen.
+  - **Address:** 2010 Kamigyo, Arashiyama, Ukyo Ward, Kyoto
+  - **Contact:** +81 (0)75-462-3901
+
+#### **7. Flower Viewing Locations**
+- **Philosopher’s Path**: A scenic path lined with cherry blossoms in spring.
+  - **Address:** 110-6114 Kyoto, Japan
+  - **Opening Hours:** Usually open from March to April depending on the weather.
+
+- **Kamigyo Park**: Known for its beautiful plum blossom viewing during winter and early spring.
+  - **Address:** Kamigyo Ward, Kyoto
+  - **Opening Hours:** Year-round with varying hours depending on season.
+
+#### **8. Additional Activities**
+- **Arashiyama Bamboo Grove Tour**: Explore the world-famous bamboo grove in Arashiyama.
+  - **Address:** Kamigyo Ward, Kyoto
+  - **Opening Hours:** Typically open from dawn until dusk.
+
+- **Fushimi Inari Shrine**: A famous shrine with thousands of vermilion torii gates leading up a mountain.
+  - **Address:** Fushimi, Kyoto Prefecture
+  - **Opening Hours:** Usually open 24/7 but may close for certain rituals or events.
+
+#### **9. Travel Itinerary Summary**
+- **Day 1: Arrival and Check-in at Ryokan Kiyomizu Ryujou (April 10)**
+  - Arrive at Haneda Airport.
+  - Take the Shinkansen from KIX to Kyoto Station.
+  - Check into the ryokan for the night.
+
+- **Day 2: Onsen Retreat and Tea Ceremony Experience at IROHA Japanese Culture EX (April 11)**
+  - Participate in a koto playing session.
+  - Enjoy a traditional tea ceremony.
+  - Practice flower arrangement with an instructor.
+
+- **Day 3: Kaiseki Cuisine and Zen Meditation Session (April 12)**
+  - Have lunch at Gion Hikyaku.
+  - Spend the afternoon meditating at Tenryu-ji Temple.
+
+- **Day 4: Explore Arashiyama and Fushimi Inari Shrine (April 13)**
+  - Visit the bamboo grove in Arashiyama.
+  - Walk through the famous torii gates at Fushimi Inari Shrine.
+
+- **Day 5: Return to Kyoto Station and Departure (April 14)**
+  - Take a Shinkansen back to KIX.
+  - Book your return flight from KIX to HND.
+
+This travel plan ensures you experience a blend of traditional Japanese culture, natural beauty, and historical sites in Kyoto. Enjoy your journey!
+2025-11-01 18:21:18 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ### Travel Plan for Kyoto, Japan
+
+#### **1. Flights**
+- **Outbound Flight:**
+  - **NH 93**: Departure from Haneda Airport (HND) to Kansai International Airport (KIX), April 10, 2026 at 7:15 AM.
+  - **Cost:** USD 80.20
+
+- **Return Flight:**
+  - **NH 97**: Departure from Kansai International Airport (KIX) to Haneda Airport (HND), April 14, 2026 at 12:30 PM.
+  - **Cost:** USD 104.40
+
+#### **2. Transportation**
+- **Shinkansen (Bullet Train):** 
+  - From Kansai International Airport to Kyoto Station
+    - **Travel Time:** Approximately 1 hour and 5 minutes
+    - **Frequency:** Multiple trains per hour, departing every 30 minutes.
+  
+- **Taxi:**
+  - From Kyoto Station to Accommodation (Ryokan or Onsen Retreat)
+    - **Fare:** Varies based on the distance but typically around 2,500 JPY (~USD 21).
+
+#### **3. Ryokans and Onsen Retreats**
+
+- **Ryokan Kiyomizu Ryujou**: A traditional ryokan located in Higashiyama with stunning views of the Kiyomizu Temple.
+  - **Address:** 548 Teramachi, Higashi-ku, Kyoto-shi, Kyoto Prefecture
+  - **Contact:** +81 (0)75-232-6901
+
+- **Onsen Retreat at Togetsukyo Inn**: A serene onsen retreat near the iconic Togetsukyo Bridge.
+  - **Address:** 1041-2 Komaba, Higashi-ku, Kyoto-shi, Kyoto Prefecture
+  - **Contact:** +81 (0)75-393-6436
+
+#### **4. Onsen Activities**
+- **Iroha Japanese Culture EX**: Participate in a tea ceremony, koto playing, and flower arrangement.
+  - **Activity Dates:**
+    - **Tea Ceremony:** April 8 to April 12, 2026
+    - **Koto Playing:** April 9 to April 13, 2026
+    - **Flower Arrangement:** April 10 to April 14, 2026
+
+- **Plan A:**
+  - **Tea Ceremony (April 8):** 
+    - **Time:** 10:30 AM - 11:30 AM
+    - **Activity Location:** IROHA Japanese Culture EX, Kinosaki-cho, Toyooka City, Hyogo-ken
+
+  - **Koto Playing (April 9):**
+    - **Time:** 10:30 AM - 11:30 AM
+    - **Activity Location:** IROHA Japanese Culture EX, Kinosaki-cho, Toyooka City, Hyogo-ken
+
+  - **Flower Arrangement (April 10):**
+    - **Time:** 10:30 AM - 11:30 AM
+    - **Activity Location:** IROHA Japanese Culture EX, Kinosaki-cho, Toyooka City, Hyogo-ken
+
+#### **5. Kaiseki Cuisine Experiences**
+- **Gion Hikyaku**: A traditional kaiseki restaurant offering a multi-course meal that showcases the season's best ingredients.
+  - **Address:** 2-16-38 Karasuma Oike, Nakagyo Ward, Kyoto
+  - **Contact:** +81 (0)75-223-4890
+
+#### **6. Zen Meditation Sessions**
+- **Zen Meditation Experience at Tenryu-ji Temple**: A serene environment for practicing zazen.
+  - **Address:** 2010 Kamigyo, Arashiyama, Ukyo Ward, Kyoto
+  - **Contact:** +81 (0)75-462-3901
+
+#### **7. Flower Viewing Locations**
+- **Philosopher’s Path**: A scenic path lined with cherry blossoms in spring.
+  - **Address:** 110-6114 Kyoto, Japan
+  - **Opening Hours:** Usually open from March to April depending on the weather.
+
+- **Kamigyo Park**: Known for its beautiful plum blossom viewing during winter and early spring.
+  - **Address:** Kamigyo Ward, Kyoto
+  - **Opening Hours:** Year-round with varying hours depending on season.
+
+#### **8. Additional Activities**
+- **Arashiyama Bamboo Grove Tour**: Explore the world-famous bamboo grove in Arashiyama.
+  - **Address:** Kamigyo Ward, Kyoto
+  - **Opening Hours:** Typically open from dawn until dusk.
+
+- **Fushimi Inari Shrine**: A famous shrine with thousands of vermilion torii gates leading up a mountain.
+  - **Address:** Fushimi, Kyoto Prefecture
+  - **Opening Hours:** Usually open 24/7 but may close for certain rituals or events.
+
+#### **9. Travel Itinerary Summary**
+- **Day 1: Arrival and Check-in at Ryokan Kiyomizu Ryujou (April 10)**
+  - Arrive at Haneda Airport.
+  - Take the Shinkansen from KIX to Kyoto Station.
+  - Check into the ryokan for the night.
+
+- **Day 2: Onsen Retreat and Tea Ceremony Experience at IROHA Japanese Culture EX (April 11)**
+  - Participate in a koto playing session.
+  - Enjoy a traditional tea ceremony.
+  - Practice flower arrangement with an instructor.
+
+- **Day 3: Kaiseki Cuisine and Zen Meditation Session (April 12)**
+  - Have lunch at Gion Hikyaku.
+  - Spend the afternoon meditating at Tenryu-ji Temple.
+
+- **Day 4: Explore Arashiyama and Fushimi Inari Shrine (April 13)**
+  - Visit the bamboo grove in Arashiyama.
+  - Walk through the famous torii gates at Fushimi Inari Shrine.
+
+- **Day 5: Return to Kyoto Station and Departure (April 14)**
+  - Take a Shinkansen back to KIX.
+  - Book your return flight from KIX to HND.
+
+This travel plan ensures you experience a blend of traditional Japanese culture, natural beauty, and historical sites in Kyoto. Enjoy your journey! and saving plan to Redis for session f9f8332a-ed1b-4cdf-bd1d-d2042d39e997
+2025-11-01 18:21:18 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Finished streaming content generation for messages and spent 93.73 seconds seconds to ran.
+2025-11-01 18:21:18 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:21:18 - autogen.services.utils - INFO - Speaker: ContentGenerationAgent
+
+2025-11-01 18:21:18 - autogen.services.utils - INFO - Content: Travel plan generated successfully, and saving data to state for session `f9f8332a-ed1b-4cdf-bd1d-d2042d39e997`
+
+2025-11-01 18:21:18 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:21:29 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:21:29 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 18:21:29 - autogen.services.utils - INFO - Content: TransactionAgent: Finalize and confirm the bookings for your travel from Tokyo to Kyoto, including flights, Ryokans or Onsen Retreats, transportation using Shinkansen and taxi, as well as suggested onsen, tea ceremony events, zen meditation sessions, kaiseki cuisine experiences, and flower viewing locations.
+
+2025-11-01 18:21:29 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:21:37 - autogen.agents.transaction.TransactionAgent - INFO - [TransactionAgent] Finished processing transaction, and spent 8.18 seconds seconds.
+2025-11-01 18:21:37 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:21:37 - autogen.services.utils - INFO - Speaker: TransactionAgent
+
+2025-11-01 18:21:37 - autogen.services.utils - INFO - Content: [TransactionAgent] Finished processing transaction and saving data to state for session `f9f8332a-ed1b-4cdf-bd1d-d2042d39e997`.
+
+2025-11-01 18:21:37 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:21:45 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:21:45 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 18:21:45 - autogen.services.utils - INFO - Content: TERMINATE
+
+2025-11-01 18:21:45 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 18:21:45 - __main__ - INFO - [Main] Retrieved generated plan for session f9f8332a-ed1b-4cdf-bd1d-d2042d39e997, and spent 0.01 seconds seconds to ran.
+2025-11-01 18:21:45 - __main__ - INFO - All number of rounds from agents: {'web_scraper_agent_rounds': 1, 'search_agent_rounds': 4, 'content_generation_agent_rounds': 1, 'transaction_agent_rounds': 1}
+2025-11-01 18:21:45 - __main__ - INFO - Finished autogen agent iteration 53 for user_id 53
+2025-11-01 18:21:45 - __main__ - INFO - Running autogen agent iteration 1 for user_id 1

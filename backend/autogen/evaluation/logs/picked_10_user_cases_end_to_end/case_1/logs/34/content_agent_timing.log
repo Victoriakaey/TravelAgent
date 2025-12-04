@@ -1,0 +1,121 @@
+Execution times for user_id=34 at Sat Nov  1 16:19:36 2025
+webscraper:1_web_scraping: 195.80 seconds
+webscraper:1_running_nlp_filter: 2.24 seconds
+webscraper:1_running_filter: 2.26 seconds
+webscraper:1_streaming: 198.76 seconds
+----------------------------------------
+Execution times for user_id=34 at Sat Nov  1 16:20:00 2025
+webscraper:1_web_scraping: 195.80 seconds
+webscraper:1_running_nlp_filter: 2.24 seconds
+webscraper:1_running_filter: 2.26 seconds
+webscraper:1_streaming: 198.76 seconds
+search:1_flight_search: 5.14 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_has_valid_results: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 14.50 seconds
+----------------------------------------
+Execution times for user_id=34 at Sat Nov  1 16:20:18 2025
+webscraper:1_web_scraping: 195.80 seconds
+webscraper:1_running_nlp_filter: 2.24 seconds
+webscraper:1_running_filter: 2.26 seconds
+webscraper:1_streaming: 198.76 seconds
+search:1_flight_search: 5.14 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_has_valid_results: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 14.50 seconds
+search:2_hotel_by_city_search: 1.01 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 11.13 seconds
+----------------------------------------
+Execution times for user_id=34 at Sat Nov  1 16:20:41 2025
+webscraper:1_web_scraping: 195.80 seconds
+webscraper:1_running_nlp_filter: 2.24 seconds
+webscraper:1_running_filter: 2.26 seconds
+webscraper:1_streaming: 198.76 seconds
+search:1_flight_search: 5.14 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_has_valid_results: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 14.50 seconds
+search:2_hotel_by_city_search: 1.01 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 11.13 seconds
+search:3_tour_search: 2.48 seconds
+search:3_requested_search_mode: 0.00 seconds
+search:3_is_requested_and_performed_search_align: 0.00 seconds
+search:3_streaming_run: 14.03 seconds
+----------------------------------------
+Execution times for user_id=34 at Sat Nov  1 16:22:17 2025
+webscraper:1_web_scraping: 195.80 seconds
+webscraper:1_running_nlp_filter: 2.24 seconds
+webscraper:1_running_filter: 2.26 seconds
+webscraper:1_streaming: 198.76 seconds
+search:1_flight_search: 5.14 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_has_valid_results: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 14.50 seconds
+search:2_hotel_by_city_search: 1.01 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 11.13 seconds
+search:3_tour_search: 2.48 seconds
+search:3_requested_search_mode: 0.00 seconds
+search:3_is_requested_and_performed_search_align: 0.00 seconds
+search:3_streaming_run: 14.03 seconds
+content_generation:1_fetch_critic_scores_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_suggestions_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_reasoning_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_preference_constraint_counts_from_redis: 0.00 seconds
+content_generation:1_determine_rewrite_instructions: 0.00 seconds
+content_generation:1_fetch_filtered_content_from_redis: 0.01 seconds
+content_generation:1_fetch_flight_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_hotel_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_tour_search_results_from_redis: 0.01 seconds
+content_generation:1_fetch_places_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_all_search_results_from_redis: 0.04 seconds
+content_generation:1_convert_search_results_to_markdown: 0.00 seconds
+content_generation:1_streaming_run: 87.77 seconds
+----------------------------------------
+Execution times for user_id=34 at Sat Nov  1 16:22:30 2025
+webscraper:1_web_scraping: 195.80 seconds
+webscraper:1_running_nlp_filter: 2.24 seconds
+webscraper:1_running_filter: 2.26 seconds
+webscraper:1_streaming: 198.76 seconds
+search:1_flight_search: 5.14 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_has_valid_results: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 14.50 seconds
+search:2_hotel_by_city_search: 1.01 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 11.13 seconds
+search:3_tour_search: 2.48 seconds
+search:3_requested_search_mode: 0.00 seconds
+search:3_is_requested_and_performed_search_align: 0.00 seconds
+search:3_streaming_run: 14.03 seconds
+content_generation:1_fetch_critic_scores_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_suggestions_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_reasoning_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_preference_constraint_counts_from_redis: 0.00 seconds
+content_generation:1_determine_rewrite_instructions: 0.00 seconds
+content_generation:1_fetch_filtered_content_from_redis: 0.01 seconds
+content_generation:1_fetch_flight_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_hotel_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_tour_search_results_from_redis: 0.01 seconds
+content_generation:1_fetch_places_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_all_search_results_from_redis: 0.04 seconds
+content_generation:1_convert_search_results_to_markdown: 0.00 seconds
+content_generation:1_streaming_run: 87.77 seconds
+transaction:1_streaming_run: 4.72 seconds
+----------------------------------------

@@ -1,0 +1,84 @@
+
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-12-02 12:44:27 
+================================================================================
+
+2025-12-02 12:44:27 - __main__ - INFO - Saving info logs to log/ground_truth_evaluation/critic-agent-7/17/info_runtime.log
+2025-12-02 12:44:27 - __main__ - INFO - Saving verbose logs to log/ground_truth_evaluation/critic-agent-7/17/verbose_runtime.log
+2025-12-02 12:44:27 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Initialized in test mode.
+2025-12-02 12:44:27 - autogen.agents.critic.CriticTool - INFO - [CriticTool] Prompt character count: 12252.
+2025-12-02 12:44:27 - autogen.agents.critic.CriticTool - INFO - [CriticTool] Safe character limit for model deepseek-r1: 275251.
+2025-12-02 12:44:27 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-12-02 12:44:53 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-12-02 12:44:53 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-12-02 12:44:53 - autogen.agents.critic.CriticTool - WARNING - [CriticTool] <reasoning> block required for RE-WRITE decisions.
+2025-12-02 12:44:53 - autogen.agents.critic.CriticAgent - WARNING - [CriticAgent] Invalid response format on attempt 1. Retrying...
+2025-12-02 12:44:53 - autogen.agents.critic.CriticTool - INFO - [CriticTool] Prompt character count: 12644.
+2025-12-02 12:44:53 - autogen.agents.critic.CriticTool - INFO - [CriticTool] Safe character limit for model deepseek-r1: 275251.
+2025-12-02 12:44:53 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-12-02 12:45:25 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-12-02 12:45:25 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-12-02 12:45:25 - autogen.agents.critic.CriticAgent - WARNING - [CriticAgent] No generated plan found in local state for session critic_auto_evaluation_ee0b513a-5f79-4740-8b67-51f8356a060c.
+2025-12-02 12:45:25 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] No generated plan found for session critic_auto_evaluation_ee0b513a-5f79-4740-8b67-51f8356a060c, and spent 0.02 seconds seconds to ran.
+2025-12-02 12:45:25 - autogen.agents.critic.CriticAgent - WARNING - [CriticAgent] Itinerary text is empty, cannot count preferences and constraints.
+2025-12-02 12:45:25 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Total count of Preferences and constraints from the itinerary generated: {'preferences_met': [], 'constraints_met': [], 'preferences_count': '0 / 4', 'constraints_count': '0 / 2'}
+2025-12-02 12:45:25 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Finished counting preferences and constraints, and spent 0.02 seconds seconds.
+2025-12-02 12:45:25 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Reasoning:
+The itinerary violates the duration_match criterion because it spans 12 days, while the user requested a 7-day trip. The other core criteria are met, but the duration mismatch is a critical failure.
+
+2025-12-02 12:45:25 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Checklist:
+{
+  "core": {
+    "destination_match": {"value": true, "evidence": "The itinerary clearly matches Kathmandu, Nepal."},
+    "duration_match": {"value": false, "evidence": "The itinerary spans 12 days (Dec 5-16) but the user requested a 7-day trip."},
+    "structure_ok": {"value": true, "evidence": "The itinerary follows a clear day-by-day structure."},
+    "logic_ok": {"value": true, "evidence": "The itinerary is logically feasible, with no impossible travel times."},
+    "constraints_ok": {"value": true, "evidence": "The itinerary respects the user's constraints (low budget not explicitly violated, no extreme cold mentioned)."},
+    "safety_ok": {"value": true, "evidence": "No dangerous or unsafe recommendations."},
+    "currency_ok": {"value": true, "evidence": "Prices are in NPR or currency-neutral."}
+  },
+  "optional": {
+    "personalization_ok": {"value": true, "evidence": "Preferences like spiritual retreats, monastery visits, local cuisine, and mountain views are included."}
+  }
+}
+
+2025-12-02 12:45:25 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Scores: confidence=4; relevance=3; accuracy=3; safety=5; feasibility=3; personalization=5
+
+2025-12-02 12:45:25 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Suggestions: Adjust the itinerary to fit exactly 7 days by condensing or removing days.
+
+2025-12-02 12:45:25 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Decision: RE-WRITE
+
+2025-12-02 12:45:25 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Raw Response:
+<checklist>
+{
+  "core": {
+    "destination_match": {"value": true, "evidence": "The itinerary clearly matches Kathmandu, Nepal."},
+    "duration_match": {"value": false, "evidence": "The itinerary spans 12 days (Dec 5-16) but the user requested a 7-day trip."},
+    "structure_ok": {"value": true, "evidence": "The itinerary follows a clear day-by-day structure."},
+    "logic_ok": {"value": true, "evidence": "The itinerary is logically feasible, with no impossible travel times."},
+    "constraints_ok": {"value": true, "evidence": "The itinerary respects the user's constraints (low budget not explicitly violated, no extreme cold mentioned)."},
+    "safety_ok": {"value": true, "evidence": "No dangerous or unsafe recommendations."},
+    "currency_ok": {"value": true, "evidence": "Prices are in NPR or currency-neutral."}
+  },
+  "optional": {
+    "personalization_ok": {"value": true, "evidence": "Preferences like spiritual retreats, monastery visits, local cuisine, and mountain views are included."}
+  }
+}
+</checklist>
+
+<scores>
+confidence=4; relevance=3; accuracy=3; safety=5; feasibility=3; personalization=5
+</scores>
+
+<decision>
+RE-WRITE
+</decision>
+
+<reasoning>
+The itinerary violates the duration_match criterion because it spans 12 days, while the user requested a 7-day trip. The other core criteria are met, but the duration mismatch is a critical failure.
+</reasoning>
+
+<suggestion>
+Adjust the itinerary to fit exactly 7 days by condensing or removing days.
+</suggestion>
+

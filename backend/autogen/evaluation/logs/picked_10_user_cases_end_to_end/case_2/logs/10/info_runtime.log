@@ -1,0 +1,487 @@
+
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-11-03 20:39:08 
+================================================================================
+
+2025-11-03 20:39:08 - __main__ - INFO - Saving info logs to log/new/10_56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad/info_runtime.log
+2025-11-03 20:39:08 - __main__ - INFO - Saving verbose logs to log/new/10_56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad/verbose_runtime.log
+2025-11-03 20:39:08 - __main__ - INFO - Saving timing logs to log/new/10_56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad/content_agent_timing.log
+2025-11-03 20:39:08 - __main__ - INFO - 
+User Profile:
+
+{'user_id': 10, 'age': 30, 'date_of_birth': '1993-03-22', 'name': 'David Kim', 'first_name': 'David', 'last_name': 'Kim', 'email': 'david.kim@example.com', 'preferred_language': 'Korean', 'gender': 'male', 'transportation': ['Korean Air'], 'accommodation': ['Ski Resort'], 'preferences': ['skiing', 'mountains', 'hot springs'], 'constraints': ['avoid long drives']}
+
+2025-11-03 20:39:08 - __main__ - INFO - 
+User Travel Details:
+
+{'user_id': 10, 'origin': 'Seoul, South Korea', 'destination': 'Sapporo, Japan', 'travelers': 2, 'travel_companions': 'Friend', 'duration': '5 days', 'start_date': '2026-02-01', 'end_date': '2026-02-05', 'currency': 'JPY'}
+
+2025-11-03 20:39:11 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:39:11 - autogen.services.utils - INFO - Speaker: user
+
+2025-11-03 20:39:11 - autogen.services.utils - INFO - Content: Hello, I need help with my travel plans.I'm planning a 5 days trip from Seoul, South Korea to Sapporo, Japan, starting on February 01, 2026 and ending on February 05, 2026.  I'll be traveling with Friend, and would prefer to stay at either Ski Resort. I plan to get around using Korean Air.
+I'm especially interested in skiing, mountains, hot springs — though I do have some limitations, such as avoid long drives.
+
+2025-11-03 20:39:11 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:39:17 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:39:17 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-03 20:39:17 - autogen.services.utils - INFO - Content: UserProxyAgent: Please confirm the travel dates and preferred accommodation type for your trip from Seoul to Sapporo, Japan, starting on February 01, 2026, ending on February 05, 2026, with a preference for staying at a ski resort. Also, let me know if you have any dietary restrictions or special needs that I should consider.
+
+2025-11-03 20:39:17 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:39:30 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:39:30 - autogen.services.utils - INFO - Speaker: UserProxyAgent
+
+2025-11-03 20:39:30 - autogen.services.utils - INFO - Content: confirmed
+
+2025-11-03 20:39:30 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:39:35 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:39:35 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-03 20:39:35 - autogen.services.utils - INFO - Content: WebScraperAgent: Gather content related to skiing, mountains, hot springs, and ski resorts in Sapporo, Japan, avoiding long drives, for the period February 01, 2026, to February 05, 2026.
+
+2025-11-03 20:39:35 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:39:35 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Starting streaming web scraping for messages for the 1-th times...
+2025-11-03 20:39:35 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Received messages for web scraping...
+2025-11-03 20:39:35 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Log path set to: log/new/10_56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad
+2025-11-03 20:39:35 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Generated query: I'm planning a 5 days trip from Seoul, South Korea to Sapporo, Japan, starting on February 01, 2026 and ending on February 05, 2026.  I'll be traveling with Friend, and would prefer to stay at either Ski Resort. I plan to get around using Korean Air.
+I'm especially interested in skiing, mountains, hot springs — though I do have some limitations, such as avoid long drives.
+Additional Instructions:
+gather content related to skiing, mountains, hot springs, and ski resorts in sapporo, japan, avoiding long drives, for the period february 01, 2026, to february 05, 2026.
+Can you help me find some information about this to better plan this trip?
+2025-11-03 20:39:35 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Sending request to http://localhost:3000/api/search with payload
+2025-11-03 20:40:58 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.odynovotours.com/japan/hokkaido/sapporo-snow-festival-guide.html ======
+2025-11-03 20:40:59 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 52 segments.
+2025-11-03 20:40:59 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.japanhighlights.com/japan/hokkaido ======
+2025-11-03 20:40:59 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 108 segments.
+2025-11-03 20:40:59 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.facebook.com/groups/blackskierssnowboarders/posts/10161143029993247/ ======
+2025-11-03 20:41:00 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [Pipeline] Trafilatura extraction failed, falling back to BeautifulSoup
+2025-11-03 20:41:03 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 1 segments.
+2025-11-03 20:41:03 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.reddit.com/r/JapanTravelTips/comments/1guuepm/best_time_to_visit_advice_japan_by_month/ ======
+2025-11-03 20:41:03 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 46 segments.
+2025-11-03 20:41:03 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.asiaodysseytravel.com/japan/winter.html ======
+2025-11-03 20:41:04 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 127 segments.
+2025-11-03 20:41:04 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.japanhighlights.com/japan/hokkaido/best-time-to-visit ======
+2025-11-03 20:41:04 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 50 segments.
+2025-11-03 20:41:04 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.klook.com/blog/japan-winter-guide/ ======
+2025-11-03 20:41:05 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 56 segments.
+2025-11-03 20:41:05 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.facebook.com/groups/japanpowderhounds/posts/1330266221972006/ ======
+2025-11-03 20:41:06 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [Pipeline] Trafilatura extraction failed, falling back to BeautifulSoup
+2025-11-03 20:41:06 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 1 segments.
+2025-11-03 20:41:06 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.odynovotours.com/japan/hokkaido/best-time-to-visit.html ======
+2025-11-03 20:41:06 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 41 segments.
+2025-11-03 20:41:06 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://coloradosaram.com/hokkaido-ski-trip-2025/?srsltid=AfmBOoqfo9EUuYzAp4f61BPOfZk8R4gwuEMi3oiKCUQJgH0SlK4P6z0q ======
+2025-11-03 20:41:08 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 184 segments.
+2025-11-03 20:41:08 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Starting to process scraped content...
+2025-11-03 20:41:08 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Successfully scraped 10 chunks of information.
+2025-11-03 20:41:08 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Saving scraped content to local state service
+
+2025-11-03 20:41:08 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Initial Web scraping completed in 93.05 seconds seconds.
+
+2025-11-03 20:41:08 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] - Running NLP-based filtering on scraped content...
+2025-11-03 20:41:08 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Filtering scraped content...
+2025-11-03 20:41:08 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 1/10...
+2025-11-03 20:41:12 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #1 Decision: keep
+2025-11-03 20:41:12 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 2/10...
+2025-11-03 20:41:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #2 Decision: keep
+2025-11-03 20:41:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 3/10...
+2025-11-03 20:41:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #3 Decision: keep
+2025-11-03 20:41:14 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 4/10...
+2025-11-03 20:41:15 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #4 Decision: keep
+2025-11-03 20:41:15 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 5/10...
+2025-11-03 20:41:17 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #5 Decision: drop
+2025-11-03 20:41:17 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 6/10...
+2025-11-03 20:41:18 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #6 Decision: keep
+2025-11-03 20:41:18 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 7/10...
+2025-11-03 20:41:18 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #7 Decision: keep
+2025-11-03 20:41:18 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 8/10...
+2025-11-03 20:41:19 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #8 Decision: drop
+2025-11-03 20:41:19 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 9/10...
+2025-11-03 20:41:19 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #9 Decision: keep
+2025-11-03 20:41:19 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 10/10...
+2025-11-03 20:41:20 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #10 Decision: keep
+2025-11-03 20:41:20 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Total Kept: 8, Dropped: 2
+
+2025-11-03 20:41:20 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processed 10 chunks of scraped content, and kept 8 relevant chunks after filtering.
+
+2025-11-03 20:41:20 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Finished filtering in 11.48 seconds seconds.
+
+2025-11-03 20:41:20 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Saving filtered content to local state service
+
+2025-11-03 20:41:20 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Filtering completed in 11.51 seconds seconds.
+
+2025-11-03 20:41:20 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Finished streaming web scraping in 104.56 seconds seconds.
+
+2025-11-03 20:41:20 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:41:20 - autogen.services.utils - INFO - Speaker: WebScraperAgent
+
+2025-11-03 20:41:20 - autogen.services.utils - INFO - Content: Finished scraping and filtering web searched content, and saving data to state for session `56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad`
+
+2025-11-03 20:41:20 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:41:28 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:41:28 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-03 20:41:28 - autogen.services.utils - INFO - Content: SearchAgent: Search for flights from Seoul to Sapporo on February 01, 2026.
+
+2025-11-03 20:41:28 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:41:28 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 1-th times...
+2025-11-03 20:41:39 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Initiating flight search with parameters: origin=ICN, destination=CTS, departure_date=2026-02-01, return_date=None, adults=2
+2025-11-03 20:41:44 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed flight search, spent 5.63 seconds seconds to ran.
+2025-11-03 20:41:44 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-03 20:41:44 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-03 20:41:44 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['flight'], spent 0.00 seconds seconds to ran.
+2025-11-03 20:41:44 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Checked for valid results in mode flight, spent 0.00 seconds seconds to ran.
+2025-11-03 20:41:44 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'flight' has been performed with valid results, returning True, spent 0.00 seconds seconds to ran.
+2025-11-03 20:41:44 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 15.85 seconds seconds to ran.
+2025-11-03 20:41:44 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:41:44 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-03 20:41:44 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad`.
+
+2025-11-03 20:41:44 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:41:54 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:41:54 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-03 20:41:54 - autogen.services.utils - INFO - Content: SearchAgent: Search for hotels in Sapporo that are ski resorts, close to skiing locations and hot springs, avoiding long drives, from February 01, 2026, to February 05, 2026.
+
+2025-11-03 20:41:54 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:41:54 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 2-th times...
+2025-11-03 20:42:05 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Searching hotels in city SFO within 5 km with amenities ['SKI_RESORT', 'NEAR_SKIING_LOCATIONS', 'HOT_SPRINGS']
+2025-11-03 20:42:06 - autogen.agents.search.SearchAgent - ERROR - [SearchAgent] Hotel search error: {"errors":[{"code":7211,"detail":"Invalid amenity codes","status":400,"title":"INVALID FACILITY CODE"}]}
+2025-11-03 20:42:06 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be hotel, spent 0.00 seconds seconds to ran.
+2025-11-03 20:42:06 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be hotel, spent 0.00 seconds seconds to ran.
+2025-11-03 20:42:06 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['flight'], spent 0.00 seconds seconds to ran.
+2025-11-03 20:42:06 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'hotel' not in searched modes, returning False, spent 0.00 seconds seconds to ran.
+2025-11-03 20:42:06 - autogen.agents.search.SearchAgent - WARNING - [SearchAgent] Conflict detected: PlanningAgent requested 'hotel' but SearchAgent has not performed it (or results were empty).
+2025-11-03 20:42:06 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Aborted streaming search for round 2, spent 11.36 seconds seconds.
+2025-11-03 20:42:06 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:42:06 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-03 20:42:06 - autogen.services.utils - INFO - Content: Task Failed: PlanningAgent requested a 'hotel' search, but either the current hotel results were empty or an error occurred. Length of hotel search results: 0. Error encountered: {'round': 2, 'mode': 'hotel_by_city', 'parameters': {'city_code': 'SFO', 'radius': 5, 'amenities': ['SKI_RESORT', 'NEAR_SKIING_LOCATIONS', 'HOT_SPRINGS']}, 'details': '{"errors":[{"code":7211,"detail":"Invalid amenity codes","status":400,"title":"INVALID FACILITY CODE"}]}'}. Please adjust as needed and re-do the search.
+
+2025-11-03 20:42:06 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:42:16 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:42:16 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-03 20:42:16 - autogen.services.utils - INFO - Content: UserProxyAgent: There seems to be an issue with finding a suitable hotel that meets all your preferences, specifically regarding ski resort amenities. Could you please confirm if 'SKI_RESORT', 'NEAR_SKIING_LOCATIONS', and 'HOT_SPRINGS' are correct or if there might be another type of accommodation that better fits your needs?
+
+2025-11-03 20:42:16 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:42:51 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:42:51 - autogen.services.utils - INFO - Speaker: UserProxyAgent
+
+2025-11-03 20:42:51 - autogen.services.utils - INFO - Content: don't worry about the accomodation anymore
+
+2025-11-03 20:42:51 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:42:54 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:42:54 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-03 20:42:54 - autogen.services.utils - INFO - Content: SearchAgent: Search for flights from Seoul to Sapporo on February 01, 2026.
+
+2025-11-03 20:42:54 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:42:54 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 3-th times...
+2025-11-03 20:43:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Initiating flight search with parameters: origin=ICN, destination=CTS, departure_date=2026-02-01, return_date=None, adults=1
+2025-11-03 20:43:09 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed flight search, spent 4.70 seconds seconds to ran.
+2025-11-03 20:43:09 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:09 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:09 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['flight', 'flight'], spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:09 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Checked for valid results in mode flight, spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:09 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'flight' has been performed with valid results, returning True, spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:09 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 14.14 seconds seconds to ran.
+2025-11-03 20:43:09 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:43:09 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-03 20:43:09 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad`.
+
+2025-11-03 20:43:09 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:43:19 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:43:19 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-03 20:43:19 - autogen.services.utils - INFO - Content: SearchAgent: Search for places of interest (POIs) in Sapporo, Japan, related to skiing and hot springs, avoiding long drives, from February 01, 2026, to February 05, 2026.
+
+2025-11-03 20:43:19 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:43:19 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 4-th times...
+2025-11-03 20:43:27 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed places search, spent 0.69 seconds seconds to ran.
+2025-11-03 20:43:27 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be place, spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:27 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be place, spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:27 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['flight', 'flight', 'place'], spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:27 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Checked for valid results in mode place, spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:27 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'place' has been performed with valid results, returning True, spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:27 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 8.63 seconds seconds to ran.
+2025-11-03 20:43:27 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:43:27 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-03 20:43:27 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad`.
+
+2025-11-03 20:43:27 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:43:38 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:43:38 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-03 20:43:38 - autogen.services.utils - INFO - Content: SearchAgent: Search for tours in Sapporo, Japan, related to skiing and hot springs, avoiding long drives, from February 01, 2026, to February 05, 2026.
+
+2025-11-03 20:43:38 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:43:38 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 5-th times...
+2025-11-03 20:43:49 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed tour search, spent 1.01 seconds seconds to ran.
+2025-11-03 20:43:49 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be tour, spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:49 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be tour, spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:49 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['flight', 'flight', 'place', 'tour'], spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:49 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Checked for valid results in mode tour, spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:49 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'tour' has been performed with valid results, returning True, spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:49 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 11.02 seconds seconds to ran.
+2025-11-03 20:43:49 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:43:49 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-03 20:43:49 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad`.
+
+2025-11-03 20:43:49 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:43:59 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:43:59 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-03 20:43:59 - autogen.services.utils - INFO - Content: ContentGenerationAgent: Generate the complete travel plan using data from WebScraperAgent and SearchAgent.
+
+2025-11-03 20:43:59 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting streaming content generation for messages for the 1-th times...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Received messages for content generation...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic scores for session 56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic scores found, and spent 0.01 seconds seconds to ran.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic suggestions for session 56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic suggestions found, and spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic reasoning for session 56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic reasoning found, and spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic preference_constraint_counts for session 56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic preference_constraint_counts found, and spent 0.01 seconds seconds to ran.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved scores='', suggestions='', reasoning=''
+Current counts met: 
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No rewrite triggered.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved full filtered content, and spent 0.02 seconds seconds to ran.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching search results for session 56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching flight search results for session 56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 5 search results.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching hotel search results for session 56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching tour search results for session 56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 2 search results.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching places search results for session 56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 1 search results.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Combined search results: {'flight': [{'type': 'flight-offer', 'id': '1', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2026-02-01', 'lastTicketingDateTime': '2026-02-01', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT2H50M', 'segments': [{'departure': {'iataCode': 'ICN', 'terminal': '1', 'at': '2026-02-01T10:20:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'I', 'at': '2026-02-01T13:10:00'}, 'carrierCode': 'TW', 'number': '263', 'aircraft': {'code': '333'}, 'operating': {'carrierCode': 'TW'}, 'duration': 'PT2H50M', 'id': '72', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '63.60', 'base': '35.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '63.60'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['TW'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '63.60', 'base': '35.00'}, 'fareDetailsBySegment': [{'segmentId': '72', 'cabin': 'ECONOMY', 'fareBasis': 'BKJ', 'class': 'B', 'includedCheckedBags': {'weight': 0, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}]}, {'type': 'flight-offer', 'id': '2', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2026-02-01', 'lastTicketingDateTime': '2026-02-01', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT2H40M', 'segments': [{'departure': {'iataCode': 'ICN', 'terminal': '1', 'at': '2026-02-01T07:20:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'I', 'at': '2026-02-01T10:00:00'}, 'carrierCode': '7C', 'number': '1501', 'aircraft': {'code': '738'}, 'operating': {'carrierCode': '7C'}, 'duration': 'PT2H40M', 'id': '56', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '85.80', 'base': '48.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '85.80'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['7C'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '85.80', 'base': '48.00'}, 'fareDetailsBySegment': [{'segmentId': '56', 'cabin': 'ECONOMY', 'fareBasis': 'HV3OKR', 'class': 'H', 'includedCheckedBags': {'weight': 15, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}]}, {'type': 'flight-offer', 'id': '3', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2026-02-01', 'lastTicketingDateTime': '2026-02-01', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT2H55M', 'segments': [{'departure': {'iataCode': 'ICN', 'terminal': '1', 'at': '2026-02-01T12:05:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'I', 'at': '2026-02-01T15:00:00'}, 'carrierCode': '7C', 'number': '1503', 'aircraft': {'code': '738'}, 'operating': {'carrierCode': '7C'}, 'duration': 'PT2H55M', 'id': '85', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '85.80', 'base': '48.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '85.80'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['7C'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '85.80', 'base': '48.00'}, 'fareDetailsBySegment': [{'segmentId': '85', 'cabin': 'ECONOMY', 'fareBasis': 'HV3OKR', 'class': 'H', 'includedCheckedBags': {'weight': 15, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}]}, {'type': 'flight-offer', 'id': '4', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2026-02-01', 'lastTicketingDateTime': '2026-02-01', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT2H45M', 'segments': [{'departure': {'iataCode': 'ICN', 'terminal': '2', 'at': '2026-02-01T10:05:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'I', 'at': '2026-02-01T12:50:00'}, 'carrierCode': 'KE', 'number': '765', 'aircraft': {'code': '77W'}, 'operating': {'carrierCode': 'KE'}, 'duration': 'PT2H45M', 'id': '61', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '313.50', 'base': '282.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '313.50', 'additionalServices': [{'amount': '70.00', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['KE'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '313.50', 'base': '282.00'}, 'fareDetailsBySegment': [{'segmentId': '61', 'cabin': 'ECONOMY', 'fareBasis': 'SHE00RKJ', 'brandedFare': 'EYSTANDARD', 'brandedFareLabel': 'ECONOMY STANDARD', 'class': 'S', 'includedCheckedBags': {'quantity': 1}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'MEAL', 'isChargeable': False, 'amenityType': 'MEAL', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUNDABLE TICKET', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGEABLE TICKET', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}, {'type': 'flight-offer', 'id': '5', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2026-02-01', 'lastTicketingDateTime': '2026-02-01', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT2H45M', 'segments': [{'departure': {'iataCode': 'ICN', 'terminal': '2', 'at': '2026-02-01T12:55:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'I', 'at': '2026-02-01T15:40:00'}, 'carrierCode': 'KE', 'number': '769', 'aircraft': {'code': '32Q'}, 'operating': {'carrierCode': 'KE'}, 'duration': 'PT2H45M', 'id': '62', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '313.50', 'base': '282.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '313.50', 'additionalServices': [{'amount': '70.00', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['KE'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '313.50', 'base': '282.00'}, 'fareDetailsBySegment': [{'segmentId': '62', 'cabin': 'ECONOMY', 'fareBasis': 'SHE00RKJ', 'brandedFare': 'EYSTANDARD', 'brandedFareLabel': 'ECONOMY STANDARD', 'class': 'S', 'includedCheckedBags': {'quantity': 1}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'MEAL', 'isChargeable': False, 'amenityType': 'MEAL', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUNDABLE TICKET', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGEABLE TICKET', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}], 'hotel': [], 'tour': [{'type': 'activity', 'id': '139495001', 'self': {'href': 'https://test.api.amadeus.com/v1/shopping/activities/139495001', 'methods': ['GET']}, 'name': 'Otaru Canal Private Sightseeing Tour from Sapporo Station', 'description': "<div><p>Explore Otaru's Best with Our Tourism Ambassador!</p><p>Join us for an unforgettable journey through Otaru's top attractions guided by Sapporo's Tourism Ambassador.</p><p>You will have a warm welcome with our English-speaking guide or Sightseeing Ambassador at Sapporo station to discover the historic Otaru Canal and its significance. You will also explore the picturesque Otaru City street, a hub of cultural events.</p><p>This experience includes visiting music box in Otaru that can be the memorable souvenir of your travel. If you want,We can take a look at previous Japanese banks learn about the history of Japanese money and savor Hokkaido's culinary delights at a Seafood restaurant.</p><p>Another one you will enjoy Mt.Tengu for a stunning ocean view and after sightseeing, enjoy Hot Spring Onsen in Otaru.</p><p>(※We accept tips after Tour)</p><p>We also offer our other special tours, so please check them out.</p></div>", 'geoCode': {'latitude': 43.1877986, 'longitude': 141.0162943}, 'price': {'amount': '87.0', 'currencyCode': 'USD'}, 'pictures': ['https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzFjNmNjMzJmLTM1YmMtNDIyNi1iOGI1LTI2OWZmMTBiN2U4ZSIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzllZjE0ZTZjLTVlODEtNGFjZC04M2UyLTdjZTJhZWZmZjQyYSIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzL2VjOTU0NTc5LWQ0MzMtNDVlMS1iMmVlLWNkZTYzNzBhNDM5NyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzM5N2Y5ZWE2LWI4NjYtNGRhZS1iZmRhLTFlNGVlYTM0ZjFlMyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzJiZDQ1MGFkLTIxMjUtNDhkZC04OTAzLTcxNGNlM2M0NDU0OCIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzAyMGU3OTg0LTJkOWQtNGQ0ZC1iMTQzLWU1NzY1YTE3ZTZlNCIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzE2ZDljMTU5LWM5NzQtNDU3My1hM2E2LWJlNzRhNDA2OWU0NSIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzYzNTFmZTM0LTU3M2MtNDBhMy05MjEyLWRlM2RjM2U3ZjU4MSIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzgyZTA3NGRjLTg1NjUtNDUyOC1iNWNmLTM0ZTNlNjMxMzMzNCIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzL2E4NTU2MGRkLTQ5MDAtNDFkNS05MjQwLWY2ZGU3MzZjOWZkYSIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzL2Q4MTY1ZmIzLTg2ZWItNDg0NS1hNzNiLWQwYjM5MDMxNzQ2MCIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzc3N2ZiMTY1LWI2MmQtNDdmNC1iMGM0LTAwOWM1OWRiOGViNyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzL2M4N2MwZjc3LTVmNTUtNDc0My1hZjE2LWYzNzM2MjE0ZWNkZSIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0='], 'bookingLink': 'https://amadeus.booking.holibob.tech/product/554ef62a-d840-4fd9-ba5e-a4aeaf824c45', 'minimumDuration': ''}, {'type': 'activity', 'id': '139581919', 'self': {'href': 'https://test.api.amadeus.com/v1/shopping/activities/139581919', 'methods': ['GET']}, 'name': 'Hokkaido Otaru Private Full Day Tour (Depart from Sapporo)', 'description': '<div><p>Experience a one-day tour of Otaru by charter car, starting with a stroll along the historic Otaru Canal, visiting the old warehouses, and then visiting the traditional Otaru Sakaimachi-dori shopping street for an authentic shopping experience. After visiting the Otaru Antique Museum, go to Tanaka Sake Brewery to experience the traditional sake brewing process and taste fine sake. Sanjiao Market, where you can find fresh seafood and local snacks, is a great place to experience local flavors. Finally, take a ride on the Blue Cave Glass Boat to experience the charming blue glow of the cave and the clear seabed view, adding a touch of fantasy to your trip.</p></div>', 'geoCode': {'latitude': 43.199041, 'longitude': 141.0021176}, 'price': {'amount': '600.0', 'currencyCode': 'USD'}, 'pictures': ['https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzL2JmMjg0Mjg4LThjYzYtNGM1Zi05NjhjLTU5NjM3OWNkOGM3MiIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzL2FiYmU5ZGEwLTRlYjItNGVlNC05MTQxLWY1NWExNmZjMTE4OCIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzL2FlMDgwOTc3LTZiYTMtNDhjZC1iYmY5LTk0YWM5Zjc1NDJlNSIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzhmOTY0NjlmLWEzMDUtNDdjMy05MzY4LTUzNmVhYjJhYTQ3NCIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzL2U4NDRjZTRkLTEzMTctNGJjOS1iYmQ1LWM2ZjBlMzdiNDc1OSIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzL2NmYzM1ZWQxLWJkY2MtNGQ4Ny05NjA0LTY5ZTVhMDAxNTFhNiIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzJiZTc2NDM4LTM3NTctNDg4Yy04Njk2LTAzYTlhMDQ4NDlkMSIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzlhYjA4NzJiLWFkY2EtNDRiZS1iZWJmLTQzYjEyMDgzMTQzMSIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzLzFiYWIxNWRjLWQ4ZmItNDliYy1hMDZlLWNlNDVhMTU0ODEyMSIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0=', 'https://images.holibob.tech/eyJrZXkiOiJwcm9kdWN0SW1hZ2VzL2QxZmVhNTAwLTJiZjktNDQ1Yy1hODdkLWFlOTAzNTIyMzEwYiIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoxOTIwLCJoZWlnaHQiOjEwODB9fX0='], 'bookingLink': 'https://amadeus.booking.holibob.tech/product/0b8416e4-cbe4-4f6c-a938-463c8eab23d9', 'minimumDuration': '10 hours'}], 'places': [{'id': 'ChIJW5c3mOHdCl8R0BA83tJhsSE', 'types': ['resort_hotel', 'hotel', 'lodging', 'point_of_interest', 'establishment'], 'formattedAddress': '128-1 Tokiwa, Akaigawa, Yoichi District, Hokkaido 046-0571, Japan', 'location': {'latitude': 43.0752266, 'longitude': 140.98294550000003}, 'rating': 4.7, 'displayName': {'text': 'Club Med Kiroro Grand', 'languageCode': 'en'}}]}
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetched 5 flight, 0 hotel, 2 tour, and 1 places search results, and spent 0.01 seconds seconds to ran.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Converted search results to markdown tables, and spent 0.00 seconds seconds to ran.
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-03 20:43:59 - autogen.agents.generation.ContentGenerationTool - INFO - [ContentGenerationTool] Running content generation...
+2025-11-03 20:43:59 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-03 20:45:12 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-03 20:45:12 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-03 20:45:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ### Complete Travel Plan
+
+#### Overview:
+This travel plan is designed for a ski trip to Hokkaido, Japan from February 1st, 2026. The plan includes flights, accommodations (though not specified in the provided data), tours, and other relevant details.
+
+---
+
+#### Flights:
+
+| Flight Number | Departure Time        | Arrival Time        | Fare       | Baggage   | Amenities         | Price     |
+|---------------|-----------------------|--------------------|------------|-----------|-------------------|-----------|
+| TW 263        | Feb 01, 2026 - 10:20 AM (Terminal 1) | —      | Economy (Class B) | 0 checked, 1 carry-on | None     | USD 63.60 |
+| 7C 1501       | Feb 01, 2026 - 07:20 AM (Terminal 1) | —      | Economy (Class H) | 0 checked, 1 carry-on | None     | USD 85.80 |
+| 7C 1503       | Feb 01, 2026 - 12:05 PM (Terminal 1) | —      | Economy (Class H) | 0 checked, 1 carry-on | None     | USD 85.80 |
+| KE 765        | Feb 01, 2026 - 10:05 AM (Terminal 2) | —      | Economy (Class S) | 1 checked, 1 carry-on | Refundable and Changeable, Meal | USD 313.50 |
+| KE 769        | Feb 01, 2026 - 12:55 PM (Terminal 2) | —      | Economy (Class S) | 1 checked, 1 carry-on | Refundable and Changeable, Meal | USD 313.50 |
+
+#### Tours:
+
+1. **Otaru Canal Private Sightseeing Tour from Sapporo Station**
+   - Price: $87
+   - Highlights:
+     - Historic Otaru Canal guided by a Tourism Ambassador.
+     - Stroll through the picturesque Otaru City street and explore cultural events.
+     - Visit the Otaru Antique Museum, Tanaka Sake Brewery, and Sanjiao Market for local flavors.
+     - Enjoy a hot spring onsen experience in Otaru.
+
+   [Booking Link](https://amadeus.booking.holibob.tech/product/554ef62a-d840-4fd9-ba5e-a4aeaf824c45)
+
+2. **Hokkaido Otaru Private Full Day Tour (Depart from Sapporo)**
+   - Price: $600
+   - Duration: 10 hours
+   - Highlights:
+     - Stroll along the historic Otaru Canal and visit old warehouses.
+     - Experience traditional shopping in Sakaimachi-dori.
+     - Visit the Otaru Antique Museum and Tanaka Sake Brewery for a traditional sake tasting experience.
+     - Explore Sanjiao Market, which offers fresh seafood and local snacks.
+     - Take a ride on the Blue Cave Glass Boat.
+
+   [Booking Link](https://amadeus.booking.holibob.tech/product/0b8416e4-cbe4-4f6c-a938-463c8eab23d9)
+
+#### Accommodations:
+- Not specified in the provided data. It's recommended to book a hotel or resort near ski destinations such as Niseko or Kiroro based on preferences and budget.
+
+#### Travel Insurance:
+
+- **SafetyWing**
+  - Covers emergency medical care, trip delays, and gear protection.
+  - Base plan includes recreational skiing and snowboarding at marked resorts.
+  - Consider the Adventure Sports add-on for backcountry or sidecountry trips.
+
+---
+
+### Additional Resources:
+- **Japow Apparel Collection:** Inspired by Hokkaido’s powder, designed by someone who has been there. [Browse Here](https://blog.japow.app/collections/japow-apparel)
+- **Travel Support:** Free one-on-one planning support from the author for independent travelers.
+- **Travel Insurance:** Flexible, affordable coverage for international travel and resort skiing with SafetyWing.
+
+---
+
+### Conclusion:
+This travel plan provides a comprehensive approach to your ski trip in Hokkaido. The selected flights offer various options based on preferred departure times and baggage allowances. Tours are designed to enrich your experience by exploring the historic charm of Otaru, enjoying local flavors, and experiencing unique activities like hot spring onsen.
+
+For detailed planning assistance or further queries, feel free to contact the author directly. Enjoy your trip!
+2025-11-03 20:45:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ### Complete Travel Plan
+
+#### Overview:
+This travel plan is designed for a ski trip to Hokkaido, Japan from February 1st, 2026. The plan includes flights, accommodations (though not specified in the provided data), tours, and other relevant details.
+
+---
+
+#### Flights:
+
+| Flight Number | Departure Time        | Arrival Time        | Fare       | Baggage   | Amenities         | Price     |
+|---------------|-----------------------|--------------------|------------|-----------|-------------------|-----------|
+| TW 263        | Feb 01, 2026 - 10:20 AM (Terminal 1) | —      | Economy (Class B) | 0 checked, 1 carry-on | None     | USD 63.60 |
+| 7C 1501       | Feb 01, 2026 - 07:20 AM (Terminal 1) | —      | Economy (Class H) | 0 checked, 1 carry-on | None     | USD 85.80 |
+| 7C 1503       | Feb 01, 2026 - 12:05 PM (Terminal 1) | —      | Economy (Class H) | 0 checked, 1 carry-on | None     | USD 85.80 |
+| KE 765        | Feb 01, 2026 - 10:05 AM (Terminal 2) | —      | Economy (Class S) | 1 checked, 1 carry-on | Refundable and Changeable, Meal | USD 313.50 |
+| KE 769        | Feb 01, 2026 - 12:55 PM (Terminal 2) | —      | Economy (Class S) | 1 checked, 1 carry-on | Refundable and Changeable, Meal | USD 313.50 |
+
+#### Tours:
+
+1. **Otaru Canal Private Sightseeing Tour from Sapporo Station**
+   - Price: $87
+   - Highlights:
+     - Historic Otaru Canal guided by a Tourism Ambassador.
+     - Stroll through the picturesque Otaru City street and explore cultural events.
+     - Visit the Otaru Antique Museum, Tanaka Sake Brewery, and Sanjiao Market for local flavors.
+     - Enjoy a hot spring onsen experience in Otaru.
+
+   [Booking Link](https://amadeus.booking.holibob.tech/product/554ef62a-d840-4fd9-ba5e-a4aeaf824c45)
+
+2. **Hokkaido Otaru Private Full Day Tour (Depart from Sapporo)**
+   - Price: $600
+   - Duration: 10 hours
+   - Highlights:
+     - Stroll along the historic Otaru Canal and visit old warehouses.
+     - Experience traditional shopping in Sakaimachi-dori.
+     - Visit the Otaru Antique Museum and Tanaka Sake Brewery for a traditional sake tasting experience.
+     - Explore Sanjiao Market, which offers fresh seafood and local snacks.
+     - Take a ride on the Blue Cave Glass Boat.
+
+   [Booking Link](https://amadeus.booking.holibob.tech/product/0b8416e4-cbe4-4f6c-a938-463c8eab23d9)
+
+#### Accommodations:
+- Not specified in the provided data. It's recommended to book a hotel or resort near ski destinations such as Niseko or Kiroro based on preferences and budget.
+
+#### Travel Insurance:
+
+- **SafetyWing**
+  - Covers emergency medical care, trip delays, and gear protection.
+  - Base plan includes recreational skiing and snowboarding at marked resorts.
+  - Consider the Adventure Sports add-on for backcountry or sidecountry trips.
+
+---
+
+### Additional Resources:
+- **Japow Apparel Collection:** Inspired by Hokkaido’s powder, designed by someone who has been there. [Browse Here](https://blog.japow.app/collections/japow-apparel)
+- **Travel Support:** Free one-on-one planning support from the author for independent travelers.
+- **Travel Insurance:** Flexible, affordable coverage for international travel and resort skiing with SafetyWing.
+
+---
+
+### Conclusion:
+This travel plan provides a comprehensive approach to your ski trip in Hokkaido. The selected flights offer various options based on preferred departure times and baggage allowances. Tours are designed to enrich your experience by exploring the historic charm of Otaru, enjoying local flavors, and experiencing unique activities like hot spring onsen.
+
+For detailed planning assistance or further queries, feel free to contact the author directly. Enjoy your trip! and saving plan to Redis for session 56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad
+2025-11-03 20:45:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Finished streaming content generation for messages and spent 73.05 seconds seconds to ran.
+2025-11-03 20:45:12 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:45:12 - autogen.services.utils - INFO - Speaker: ContentGenerationAgent
+
+2025-11-03 20:45:12 - autogen.services.utils - INFO - Content: Travel plan generated successfully, and saving data to state for session `56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad`
+
+2025-11-03 20:45:12 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:45:22 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:45:22 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-03 20:45:22 - autogen.services.utils - INFO - Content: TransactionAgent: Finalize and confirm the bookings for the flights, tours, and activities as per the generated travel plan.
+
+2025-11-03 20:45:22 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:45:28 - autogen.agents.transaction.TransactionAgent - INFO - [TransactionAgent] Finished processing transaction, and spent 6.21 seconds seconds.
+2025-11-03 20:45:28 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:45:28 - autogen.services.utils - INFO - Speaker: TransactionAgent
+
+2025-11-03 20:45:28 - autogen.services.utils - INFO - Content: [TransactionAgent] Finished processing transaction and saving data to state for session `56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad`.
+
+2025-11-03 20:45:28 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:45:37 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:45:37 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-03 20:45:37 - autogen.services.utils - INFO - Content: TERMINATE
+
+2025-11-03 20:45:37 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-03 20:45:37 - __main__ - INFO - [Main] Retrieved generated plan for session 56f2e1ae-f0dd-46b9-84da-3f47b6ee82ad, and spent 0.02 seconds seconds to ran.
+2025-11-03 20:45:38 - __main__ - INFO - Finished autogen agent iteration 10 for user_id 10
+2025-11-03 20:45:38 - __main__ - INFO - Running autogen agent iteration 11 for user_id 11

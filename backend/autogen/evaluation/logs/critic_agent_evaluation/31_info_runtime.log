@@ -1,0 +1,70 @@
+
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-12-02 12:54:01 
+================================================================================
+
+2025-12-02 12:54:01 - __main__ - INFO - Saving info logs to log/ground_truth_evaluation/critic-agent-7/31/info_runtime.log
+2025-12-02 12:54:01 - __main__ - INFO - Saving verbose logs to log/ground_truth_evaluation/critic-agent-7/31/verbose_runtime.log
+2025-12-02 12:54:01 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Initialized in test mode.
+2025-12-02 12:54:01 - autogen.agents.critic.CriticTool - INFO - [CriticTool] Prompt character count: 13855.
+2025-12-02 12:54:01 - autogen.agents.critic.CriticTool - INFO - [CriticTool] Safe character limit for model deepseek-r1: 275251.
+2025-12-02 12:54:01 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-12-02 12:54:54 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-12-02 12:54:54 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-12-02 12:54:54 - autogen.agents.critic.CriticTool - WARNING - [CriticTool] Missing or unclosed <decision> block in response.
+2025-12-02 12:54:54 - autogen.agents.critic.CriticAgent - WARNING - [CriticAgent] Invalid response format on attempt 1. Retrying...
+2025-12-02 12:54:54 - autogen.agents.critic.CriticTool - INFO - [CriticTool] Prompt character count: 14247.
+2025-12-02 12:54:54 - autogen.agents.critic.CriticTool - INFO - [CriticTool] Safe character limit for model deepseek-r1: 275251.
+2025-12-02 12:54:54 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-12-02 12:56:07 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-12-02 12:56:07 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-12-02 12:56:07 - autogen.agents.critic.CriticAgent - WARNING - [CriticAgent] No generated plan found in local state for session critic_auto_evaluation_675103ef-6d78-4ca4-abf1-682fdd04fd22.
+2025-12-02 12:56:07 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] No generated plan found for session critic_auto_evaluation_675103ef-6d78-4ca4-abf1-682fdd04fd22, and spent 0.03 seconds seconds to ran.
+2025-12-02 12:56:07 - autogen.agents.critic.CriticAgent - WARNING - [CriticAgent] Itinerary text is empty, cannot count preferences and constraints.
+2025-12-02 12:56:07 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Total count of Preferences and constraints from the itinerary generated: {'preferences_met': [], 'constraints_met': [], 'preferences_count': '0 / 3', 'constraints_count': '0 / 2'}
+2025-12-02 12:56:07 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Finished counting preferences and constraints, and spent 0.03 seconds seconds.
+2025-12-02 12:56:07 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Reasoning:
+The itinerary fails to align with the user's origin (Austin, TX, USA), transportation preference (American Airlines), and destination (Rome, Italy). The flights are incorrectly listed as from Sydney, the hotel is in Frascati (outside Rome), and the budget is in USD instead of Euro. These inconsistencies violate core constraints and logical feasibility.
+
+2025-12-02 12:56:07 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Checklist:
+{
+  "destination_match": "The itinerary is for Rome, Italy, which matches the user's destination.",
+  "duration_match": "The user has a 10-day trip, and the itinerary spans 10 days, so this is consistent.",
+  "structure_ok": "The itinerary has a clear day-by-day structure from Day 1 to Day 10.",
+  "logic_ok": "The itinerary has inconsistencies. The flights are listed as from Sydney (AUS), but the user's origin is Austin, TX, USA. The hotel is in Frascati, Italy, which is outside Rome, and the user's trip is to Rome. The transportation preference is American Airlines, but the flights are from United Airlines. The budget is in USD, but the trip is in Euro.",
+  "constraints_ok": "The user's origin is Austin, USA, but the itinerary assumes flights from Sydney. The user's transportation is American Airlines, but the itinerary uses United. The hotel is in Frascati, which is not the user's destination. The budget is in USD, but the trip is in Euro. These are all constraint violations."
+}
+
+2025-12-02 12:56:07 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Scores: preference=3, constraints=2, feasibility=4, clarity=3
+
+2025-12-02 12:56:07 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Suggestions: Correct the origin to Austin, update the flights to American Airlines, adjust the hotel to be in Rome, and convert the budget to Euro.
+
+2025-12-02 12:56:07 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Decision: RE-WRITE
+
+2025-12-02 12:56:07 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Raw Response:
+<checklist>
+{
+  "destination_match": "The itinerary is for Rome, Italy, which matches the user's destination.",
+  "duration_match": "The user has a 10-day trip, and the itinerary spans 10 days, so this is consistent.",
+  "structure_ok": "The itinerary has a clear day-by-day structure from Day 1 to Day 10.",
+  "logic_ok": "The itinerary has inconsistencies. The flights are listed as from Sydney (AUS), but the user's origin is Austin, TX, USA. The hotel is in Frascati, Italy, which is outside Rome, and the user's trip is to Rome. The transportation preference is American Airlines, but the flights are from United Airlines. The budget is in USD, but the trip is in Euro.",
+  "constraints_ok": "The user's origin is Austin, USA, but the itinerary assumes flights from Sydney. The user's transportation is American Airlines, but the itinerary uses United. The hotel is in Frascati, which is not the user's destination. The budget is in USD, but the trip is in Euro. These are all constraint violations."
+}
+</checklist>
+
+<scores>
+preference=3, constraints=2, feasibility=4, clarity=3
+</scores>
+
+<decision>
+RE-WRITE
+</decision>
+
+<reasoning>
+The itinerary fails to align with the user's origin (Austin, TX, USA), transportation preference (American Airlines), and destination (Rome, Italy). The flights are incorrectly listed as from Sydney, the hotel is in Frascati (outside Rome), and the budget is in USD instead of Euro. These inconsistencies violate core constraints and logical feasibility.
+</reasoning>
+
+<suggestion>
+Correct the origin to Austin, update the flights to American Airlines, adjust the hotel to be in Rome, and convert the budget to Euro.
+</suggestion>
+

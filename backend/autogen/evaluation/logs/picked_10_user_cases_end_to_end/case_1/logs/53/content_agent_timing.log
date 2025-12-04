@@ -1,0 +1,144 @@
+Execution times for user_id=53 at Sat Nov  1 18:18:17 2025
+webscraper:1_web_scraping: 203.54 seconds
+webscraper:1_running_nlp_filter: 9.21 seconds
+webscraper:1_running_filter: 9.23 seconds
+webscraper:1_streaming: 213.54 seconds
+----------------------------------------
+Execution times for user_id=53 at Sat Nov  1 18:18:39 2025
+webscraper:1_web_scraping: 203.54 seconds
+webscraper:1_running_nlp_filter: 9.21 seconds
+webscraper:1_running_filter: 9.23 seconds
+webscraper:1_streaming: 213.54 seconds
+search:1_flight_search: 3.13 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_has_valid_results: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 12.72 seconds
+----------------------------------------
+Execution times for user_id=53 at Sat Nov  1 18:18:58 2025
+webscraper:1_web_scraping: 203.54 seconds
+webscraper:1_running_nlp_filter: 9.21 seconds
+webscraper:1_running_filter: 9.23 seconds
+webscraper:1_streaming: 213.54 seconds
+search:1_flight_search: 3.13 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_has_valid_results: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 12.72 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 10.47 seconds
+----------------------------------------
+Execution times for user_id=53 at Sat Nov  1 18:19:16 2025
+webscraper:1_web_scraping: 203.54 seconds
+webscraper:1_running_nlp_filter: 9.21 seconds
+webscraper:1_running_filter: 9.23 seconds
+webscraper:1_streaming: 213.54 seconds
+search:1_flight_search: 3.13 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_has_valid_results: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 12.72 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 10.47 seconds
+search:3_requested_search_mode: 0.00 seconds
+search:3_is_requested_and_performed_search_align: 0.00 seconds
+search:3_streaming_run: 10.21 seconds
+----------------------------------------
+Execution times for user_id=53 at Sat Nov  1 18:19:34 2025
+webscraper:1_web_scraping: 203.54 seconds
+webscraper:1_running_nlp_filter: 9.21 seconds
+webscraper:1_running_filter: 9.23 seconds
+webscraper:1_streaming: 213.54 seconds
+search:1_flight_search: 3.13 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_has_valid_results: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 12.72 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 10.47 seconds
+search:3_requested_search_mode: 0.00 seconds
+search:3_is_requested_and_performed_search_align: 0.00 seconds
+search:3_streaming_run: 10.21 seconds
+search:4_places_search: 0.62 seconds
+search:4_requested_search_mode: 0.00 seconds
+search:4_is_requested_and_performed_search_align: 0.00 seconds
+search:4_streaming_run: 9.96 seconds
+----------------------------------------
+Execution times for user_id=53 at Sat Nov  1 18:21:18 2025
+webscraper:1_web_scraping: 203.54 seconds
+webscraper:1_running_nlp_filter: 9.21 seconds
+webscraper:1_running_filter: 9.23 seconds
+webscraper:1_streaming: 213.54 seconds
+search:1_flight_search: 3.13 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_has_valid_results: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 12.72 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 10.47 seconds
+search:3_requested_search_mode: 0.00 seconds
+search:3_is_requested_and_performed_search_align: 0.00 seconds
+search:3_streaming_run: 10.21 seconds
+search:4_places_search: 0.62 seconds
+search:4_requested_search_mode: 0.00 seconds
+search:4_is_requested_and_performed_search_align: 0.00 seconds
+search:4_streaming_run: 9.96 seconds
+content_generation:1_fetch_critic_scores_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_suggestions_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_reasoning_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_preference_constraint_counts_from_redis: 0.00 seconds
+content_generation:1_determine_rewrite_instructions: 0.00 seconds
+content_generation:1_fetch_filtered_content_from_redis: 0.01 seconds
+content_generation:1_fetch_flight_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_hotel_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_tour_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_places_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_all_search_results_from_redis: 0.01 seconds
+content_generation:1_convert_search_results_to_markdown: 0.00 seconds
+content_generation:1_streaming_run: 93.73 seconds
+----------------------------------------
+Execution times for user_id=53 at Sat Nov  1 18:21:37 2025
+webscraper:1_web_scraping: 203.54 seconds
+webscraper:1_running_nlp_filter: 9.21 seconds
+webscraper:1_running_filter: 9.23 seconds
+webscraper:1_streaming: 213.54 seconds
+search:1_flight_search: 3.13 seconds
+search:1_requested_search_mode: 0.00 seconds
+search:1_get_searched_modes: 0.00 seconds
+search:1_has_valid_results: 0.00 seconds
+search:1_is_requested_and_performed_search_align: 0.00 seconds
+search:1_streaming_run: 12.72 seconds
+search:2_requested_search_mode: 0.00 seconds
+search:2_is_requested_and_performed_search_align: 0.00 seconds
+search:2_streaming_run: 10.47 seconds
+search:3_requested_search_mode: 0.00 seconds
+search:3_is_requested_and_performed_search_align: 0.00 seconds
+search:3_streaming_run: 10.21 seconds
+search:4_places_search: 0.62 seconds
+search:4_requested_search_mode: 0.00 seconds
+search:4_is_requested_and_performed_search_align: 0.00 seconds
+search:4_streaming_run: 9.96 seconds
+content_generation:1_fetch_critic_scores_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_suggestions_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_reasoning_from_redis: 0.00 seconds
+content_generation:1_fetch_critic_preference_constraint_counts_from_redis: 0.00 seconds
+content_generation:1_determine_rewrite_instructions: 0.00 seconds
+content_generation:1_fetch_filtered_content_from_redis: 0.01 seconds
+content_generation:1_fetch_flight_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_hotel_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_tour_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_places_search_results_from_redis: 0.00 seconds
+content_generation:1_fetch_all_search_results_from_redis: 0.01 seconds
+content_generation:1_convert_search_results_to_markdown: 0.00 seconds
+content_generation:1_streaming_run: 93.73 seconds
+transaction:1_streaming_run: 8.18 seconds
+----------------------------------------

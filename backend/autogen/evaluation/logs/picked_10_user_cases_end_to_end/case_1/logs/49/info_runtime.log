@@ -1,0 +1,361 @@
+
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-11-01 17:53:06 
+================================================================================
+
+2025-11-01 17:53:06 - __main__ - INFO - Saving info logs to log/system_log_without_critic/14_test/49_1b84de92-69b3-4c82-b502-663a8ca2f115/info_runtime.log
+2025-11-01 17:53:06 - __main__ - INFO - Saving verbose logs to log/system_log_without_critic/14_test/49_1b84de92-69b3-4c82-b502-663a8ca2f115/verbose_runtime.log
+2025-11-01 17:53:06 - __main__ - INFO - Saving timing logs to log/system_log_without_critic/14_test/49_1b84de92-69b3-4c82-b502-663a8ca2f115/content_agent_timing.log
+2025-11-01 17:53:06 - __main__ - INFO - 
+User Profile:
+
+{'user_id': 49, 'age': 29, 'date_of_birth': '1996-07-11', 'name': 'Jessica Lin', 'first_name': 'Jessica', 'last_name': 'Lin', 'email': 'jessica.lin@example.com', 'preferred_language': 'English', 'gender': 'female', 'transportation': ['Singapore Airlines', 'Motorbike Rental'], 'accommodation': ['Surf Camp', 'Eco Lodge'], 'preferences': ['surfing', 'yoga retreat', 'jungle trekking', 'street food'], 'constraints': ['high activity level', 'solo travel safety']}
+
+2025-11-01 17:53:06 - __main__ - INFO - 
+User Travel Details:
+
+{'user_id': 49, 'origin': 'Singapore', 'destination': 'Bali, Indonesia', 'travelers': 1, 'travel_companions': '', 'duration': '6 days', 'start_date': '2026-03-10', 'end_date': '2026-03-15', 'currency': 'IDR'}
+
+2025-11-01 17:53:09 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:53:09 - autogen.services.utils - INFO - Speaker: user
+
+2025-11-01 17:53:09 - autogen.services.utils - INFO - Content: Hello, I need help with my travel plans.I'm planning a 6 days trip from Singapore to Bali, Indonesia, starting on March 10, 2026 and ending on March 15, 2026.  I'll be traveling alone, and would prefer to stay at either Surf Camp, Eco Lodge. I plan to get around using Singapore Airlines, Motorbike Rental.
+I'm especially interested in surfing, yoga retreat, jungle trekking, street food — though I do have some limitations, such as high activity level, solo travel safety.
+
+2025-11-01 17:53:09 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:53:16 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:53:16 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 17:53:16 - autogen.services.utils - INFO - Content: UserProxyAgent: Please confirm your travel dates are March 10, 2026 to March 15, 2026, and you're traveling alone from Singapore to Bali for a 6-day trip focused on surfing, yoga, jungle trekking, and street food experiences. You prefer staying at Surf Camp or Eco Lodge, and plan to use Singapore Airlines for flights and motorbike rental for transportation.
+
+WebScraperAgent: Gather travel content related to surfing, yoga retreats, jungle treks, and local street food in Bali, focusing on solo traveler safety and high activity levels.
+
+2025-11-01 17:53:16 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:53:17 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:53:17 - autogen.services.utils - INFO - Speaker: UserProxyAgent
+
+2025-11-01 17:53:17 - autogen.services.utils - INFO - Content: Confirmed, no more preference or contraints
+
+2025-11-01 17:53:17 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:53:20 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:53:20 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 17:53:20 - autogen.services.utils - INFO - Content: SearchAgent: Search for flights from Singapore to Bali departing between March 10, 2026, and March 15, 2026, with Singapore Airlines.
+
+WebScraperAgent: Gather travel content related to surfing, yoga retreats, jungle treks, and local street food in Bali, focusing on solo traveler safety and high activity levels.
+
+2025-11-01 17:53:20 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:53:20 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 1-th times...
+2025-11-01 17:53:30 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Initiating flight search with parameters: origin=SIN, destination=DPS, departure_date=2026-03-10, return_date=None, adults=1
+2025-11-01 17:53:38 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed flight search, spent 8.01 seconds seconds to ran.
+2025-11-01 17:53:38 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-01 17:53:38 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-01 17:53:38 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['flight'], spent 0.00 seconds seconds to ran.
+2025-11-01 17:53:38 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Checked for valid results in mode flight, spent 0.00 seconds seconds to ran.
+2025-11-01 17:53:38 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'flight' has been performed with valid results, returning True, spent 0.00 seconds seconds to ran.
+2025-11-01 17:53:38 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 18.30 seconds seconds to ran.
+2025-11-01 17:53:38 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:53:38 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 17:53:38 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `1b84de92-69b3-4c82-b502-663a8ca2f115`.
+
+2025-11-01 17:53:38 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:53:48 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:53:48 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 17:53:48 - autogen.services.utils - INFO - Content: SearchAgent: Search for available rooms at Surf Camp and Eco Lodge in Bali from March 10, 2026, to March 15, 2026.
+
+WebScraperAgent: Gather travel content related to surfing, yoga retreats, jungle treks, and local street food in Bali, focusing on solo traveler safety and high activity levels.
+
+2025-11-01 17:53:48 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:53:48 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 2-th times...
+2025-11-01 17:53:59 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Searching hotels in city DPS within 5 km with amenities ['RESTAURANT', 'WIFI', 'FITNESS_CENTER', 'AIR_CONDITIONING', 'PETS_ALLOWED']
+2025-11-01 17:54:00 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed hotel search, spent 1.02 seconds seconds to ran.
+2025-11-01 17:54:00 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 17:54:00 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 17:54:00 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] No specific search mode requested, returning True by default, spent 0.00 seconds seconds to ran.
+2025-11-01 17:54:00 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 11.84 seconds seconds to ran.
+2025-11-01 17:54:00 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:54:00 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 17:54:00 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `1b84de92-69b3-4c82-b502-663a8ca2f115`.
+
+2025-11-01 17:54:00 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:54:11 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:54:11 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 17:54:11 - autogen.services.utils - INFO - Content: ContentGenerationAgent: Generate travel plan including flights from Singapore Airlines, accommodation at Surf Camp or Eco Lodge, motorbike rental for transportation, and activities such as surfing, yoga retreats, jungle trekking, and street food experiences in Bali. Consider solo traveler safety and high activity levels.
+
+SearchAgent: Search for available tours related to surfing, yoga, and jungle trekking in Bali from March 10, 2026, to March 15, 2026.
+
+2025-11-01 17:54:11 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:54:11 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting streaming content generation for messages for the 1-th times...
+2025-11-01 17:54:11 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Received messages for content generation...
+2025-11-01 17:54:11 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic scores for session 1b84de92-69b3-4c82-b502-663a8ca2f115...
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic scores found, and spent 0.01 seconds seconds to ran.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic suggestions for session 1b84de92-69b3-4c82-b502-663a8ca2f115...
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic suggestions found, and spent 0.00 seconds seconds to ran.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic reasoning for session 1b84de92-69b3-4c82-b502-663a8ca2f115...
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic reasoning found, and spent 0.00 seconds seconds to ran.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic preference_constraint_counts for session 1b84de92-69b3-4c82-b502-663a8ca2f115...
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic preference_constraint_counts found, and spent 0.00 seconds seconds to ran.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved scores='', suggestions='', reasoning=''
+Current counts met: 
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No rewrite triggered.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No filtered content found, and spent 0.00 seconds seconds to ran.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching search results for session 1b84de92-69b3-4c82-b502-663a8ca2f115...
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching flight search results for session 1b84de92-69b3-4c82-b502-663a8ca2f115...
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 5 search results.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.00 seconds seconds to ran.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching hotel search results for session 1b84de92-69b3-4c82-b502-663a8ca2f115...
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 5 search results.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.01 seconds seconds to ran.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching tour search results for session 1b84de92-69b3-4c82-b502-663a8ca2f115...
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching places search results for session 1b84de92-69b3-4c82-b502-663a8ca2f115...
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Combined search results: {'flight': [{'type': 'flight-offer', 'id': '1', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2026-03-10', 'lastTicketingDateTime': '2026-03-10', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT2H45M', 'segments': [{'departure': {'iataCode': 'SIN', 'terminal': '1', 'at': '2026-03-10T17:35:00'}, 'arrival': {'iataCode': 'DPS', 'terminal': 'I', 'at': '2026-03-10T20:20:00'}, 'carrierCode': 'KL', 'number': '835', 'aircraft': {'code': '77W'}, 'operating': {'carrierCode': 'KL'}, 'duration': 'PT2H45M', 'id': '101', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '105.10', 'base': '28.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '105.10', 'additionalServices': [{'amount': '69.60', 'type': 'CHECKED_BAGS'}]}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['AF'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '105.10', 'base': '28.00'}, 'fareDetailsBySegment': [{'segmentId': '101', 'cabin': 'ECONOMY', 'fareBasis': 'RGS0BBLA', 'brandedFare': 'LIGHT', 'brandedFareLabel': 'ECONOMY LIGHT', 'class': 'R', 'includedCheckedBags': {'quantity': 0}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 1PC OF 23KG 158CM', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'SNACK', 'isChargeable': False, 'amenityType': 'MEAL', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'BEVERAGE', 'isChargeable': False, 'amenityType': 'MEAL', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'MEAL', 'isChargeable': False, 'amenityType': 'MEAL', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'SEAT SELECTION', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'MILEAGE ACCRUAL', 'isChargeable': False, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}, {'type': 'flight-offer', 'id': '2', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-03', 'lastTicketingDateTime': '2025-11-03', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT6H30M', 'segments': [{'departure': {'iataCode': 'SIN', 'terminal': '3', 'at': '2026-03-10T10:30:00'}, 'arrival': {'iataCode': 'KUL', 'terminal': '1', 'at': '2026-03-10T11:30:00'}, 'carrierCode': 'OD', 'number': '802', 'aircraft': {'code': '738'}, 'operating': {'carrierCode': 'OD'}, 'duration': 'PT1H', 'id': '71', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'KUL', 'terminal': '1', 'at': '2026-03-10T14:00:00'}, 'arrival': {'iataCode': 'DPS', 'terminal': 'D', 'at': '2026-03-10T17:00:00'}, 'carrierCode': 'ID', 'number': '5193', 'aircraft': {'code': '738'}, 'operating': {'carrierCode': 'OD'}, 'duration': 'PT3H', 'id': '72', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '125.20', 'base': '55.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '125.20'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['GP'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '125.20', 'base': '55.00'}, 'fareDetailsBySegment': [{'segmentId': '71', 'cabin': 'ECONOMY', 'fareBasis': 'XOWBSSSG', 'brandedFare': 'SS', 'brandedFareLabel': 'SUPER SAVER', 'class': 'X', 'includedCheckedBags': {'weight': 0, 'weightUnit': 'KG'}, 'includedCabinBags': {'weight': 7, 'weightUnit': 'KG'}, 'amenities': [{'description': 'UPTO44LB 20KG BAGGAGE', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'UPTO66LB 30KG BAGGAGE', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'UPTO88LB40KG BAGGAGE', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'UPTO22LB 10KG BAGGAGE', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE RESERVED SEAT ASSIGNMENT', 'isChargeable': True, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'MEALS', 'isChargeable': True, 'amenityType': 'MEAL', 'amenityProvider': {'name': 'BrandedFare'}}]}, {'segmentId': '72', 'cabin': 'ECONOMY', 'fareBasis': 'XCSOWMY', 'class': 'X', 'includedCheckedBags': {'weight': 0, 'weightUnit': 'KG'}, 'includedCabinBags': {'weight': 7, 'weightUnit': 'KG'}}]}]}, {'type': 'flight-offer', 'id': '3', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-03', 'lastTicketingDateTime': '2025-11-03', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT15H25M', 'segments': [{'departure': {'iataCode': 'SIN', 'terminal': '3', 'at': '2026-03-10T22:05:00'}, 'arrival': {'iataCode': 'CGK', 'terminal': '2', 'at': '2026-03-10T23:00:00'}, 'carrierCode': 'ID', 'number': '7158', 'aircraft': {'code': '32A'}, 'operating': {'carrierCode': 'ID'}, 'duration': 'PT1H55M', 'id': '63', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CGK', 'terminal': '2', 'at': '2026-03-11T10:40:00'}, 'arrival': {'iataCode': 'DPS', 'terminal': 'D', 'at': '2026-03-11T13:30:00'}, 'carrierCode': 'ID', 'number': '6050', 'aircraft': {'code': '32A'}, 'operating': {'carrierCode': 'ID'}, 'duration': 'PT1H50M', 'id': '64', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '141.30', 'base': '53.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '141.30'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['GP'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '141.30', 'base': '53.00'}, 'fareDetailsBySegment': [{'segmentId': '63', 'cabin': 'ECONOMY', 'fareBasis': 'XOWSG', 'class': 'X', 'includedCheckedBags': {'weight': 20, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}, {'segmentId': '64', 'cabin': 'ECONOMY', 'fareBasis': 'RIDOW', 'class': 'R', 'includedCheckedBags': {'weight': 20, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}]}, {'type': 'flight-offer', 'id': '4', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-03', 'lastTicketingDateTime': '2025-11-03', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT16H10M', 'segments': [{'departure': {'iataCode': 'SIN', 'terminal': '3', 'at': '2026-03-10T21:20:00'}, 'arrival': {'iataCode': 'CGK', 'terminal': '2', 'at': '2026-03-10T22:15:00'}, 'carrierCode': 'ID', 'number': '7152', 'aircraft': {'code': '32A'}, 'operating': {'carrierCode': 'ID'}, 'duration': 'PT1H55M', 'id': '33', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'CGK', 'terminal': '2', 'at': '2026-03-11T10:40:00'}, 'arrival': {'iataCode': 'DPS', 'terminal': 'D', 'at': '2026-03-11T13:30:00'}, 'carrierCode': 'ID', 'number': '6050', 'aircraft': {'code': '32A'}, 'operating': {'carrierCode': 'ID'}, 'duration': 'PT1H50M', 'id': '34', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '141.30', 'base': '53.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '141.30'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['GP'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '141.30', 'base': '53.00'}, 'fareDetailsBySegment': [{'segmentId': '33', 'cabin': 'ECONOMY', 'fareBasis': 'XOWSG', 'class': 'X', 'includedCheckedBags': {'weight': 20, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}, {'segmentId': '34', 'cabin': 'ECONOMY', 'fareBasis': 'RIDOW', 'class': 'R', 'includedCheckedBags': {'weight': 20, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}]}, {'type': 'flight-offer', 'id': '5', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-03', 'lastTicketingDateTime': '2025-11-03', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT6H30M', 'segments': [{'departure': {'iataCode': 'SIN', 'terminal': '3', 'at': '2026-03-10T10:30:00'}, 'arrival': {'iataCode': 'KUL', 'terminal': '1', 'at': '2026-03-10T11:30:00'}, 'carrierCode': 'OD', 'number': '802', 'aircraft': {'code': '738'}, 'operating': {'carrierCode': 'OD'}, 'duration': 'PT1H', 'id': '73', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'KUL', 'terminal': '1', 'at': '2026-03-10T14:00:00'}, 'arrival': {'iataCode': 'DPS', 'terminal': 'I', 'at': '2026-03-10T17:00:00'}, 'carrierCode': 'OD', 'number': '193', 'aircraft': {'code': '738'}, 'operating': {'carrierCode': 'OD'}, 'duration': 'PT3H', 'id': '74', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '144.00', 'base': '49.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '144.00'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['GP'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '144.00', 'base': '49.00'}, 'fareDetailsBySegment': [{'segmentId': '73', 'cabin': 'ECONOMY', 'fareBasis': 'XOWBSSSG', 'brandedFare': 'SS', 'brandedFareLabel': 'SUPER SAVER', 'class': 'X', 'includedCheckedBags': {'weight': 0, 'weightUnit': 'KG'}, 'includedCabinBags': {'weight': 7, 'weightUnit': 'KG'}, 'amenities': [{'description': 'UPTO44LB 20KG BAGGAGE', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'UPTO66LB 30KG BAGGAGE', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'UPTO88LB40KG BAGGAGE', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'UPTO22LB 10KG BAGGAGE', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE RESERVED SEAT ASSIGNMENT', 'isChargeable': True, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'MEALS', 'isChargeable': True, 'amenityType': 'MEAL', 'amenityProvider': {'name': 'BrandedFare'}}]}, {'segmentId': '74', 'cabin': 'ECONOMY', 'fareBasis': 'XOBSSMY', 'brandedFare': 'SS', 'brandedFareLabel': 'SUPER SAVER', 'class': 'X', 'includedCheckedBags': {'weight': 0, 'weightUnit': 'KG'}, 'includedCabinBags': {'weight': 7, 'weightUnit': 'KG'}, 'amenities': [{'description': 'UPTO44LB 20KG BAGGAGE', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'UPTO66LB 30KG BAGGAGE', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'UPTO88LB40KG BAGGAGE', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'UPTO22LB 10KG BAGGAGE', 'isChargeable': True, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE RESERVED SEAT ASSIGNMENT', 'isChargeable': True, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'MEALS', 'isChargeable': True, 'amenityType': 'MEAL', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}], 'hotel': [{'chainCode': 'FS', 'iataCode': 'DPS', 'dupeId': 700034165, 'name': 'FOUR SEASONS BALI AT JIMBARAN BAY', 'hotelId': 'FSDPS739', 'geoCode': {'latitude': -8.65607, 'longitude': 115.22178}, 'address': {'countryCode': 'ID', 'postalCode': '80361', 'cityName': 'DENPASAR BALI', 'lines': ['JIMBARAN BAY']}, 'distance': {'value': 0.0, 'unit': 'KM'}, 'lastUpdate': '2025-06-03T10:19:33'}, {'chainCode': 'CH', 'iataCode': 'DPS', 'dupeId': 700163426, 'name': 'TAMAN SUCI HOTEL', 'hotelId': 'CHDPSTSH', 'geoCode': {'latitude': -8.66344, 'longitude': 115.20809}, 'address': {'countryCode': 'ID', 'postalCode': '80037', 'cityName': 'DENPASAR', 'lines': ['JL. IMAM BONJOL 45', 'BALI']}, 'distance': {'value': 1.71, 'unit': 'KM'}, 'lastUpdate': '2025-06-03T10:16:02'}, {'chainCode': 'CH', 'iataCode': 'DPS', 'dupeId': 700163428, 'name': 'TAMAN SUCI SUITE AND VILLAS', 'hotelId': 'CHDPSTSV', 'geoCode': {'latitude': -8.66826, 'longitude': 115.24092}, 'address': {'countryCode': 'ID', 'postalCode': '80025', 'cityName': 'DENPASAR', 'lines': ['JL. MOHAMAD YAMIN V 1 RENON', 'BALI']}, 'distance': {'value': 2.5, 'unit': 'KM'}, 'lastUpdate': '2025-06-03T10:16:02'}, {'chainCode': 'WK', 'iataCode': 'DPS', 'dupeId': 700028059, 'name': 'WARWICK IBAH LUXURY VILLAS', 'hotelId': 'WKDPS629', 'geoCode': {'latitude': -8.67756, 'longitude': 115.2133}, 'address': {'countryCode': 'ID', 'postalCode': '80571', 'cityName': 'DENPASAR BALI', 'lines': ['JALAN TJAMPUHAN', 'P.O BOX 193']}, 'distance': {'value': 2.56, 'unit': 'KM'}, 'masterChainCode': 'TC', 'lastUpdate': '2025-06-03T10:18:07'}, {'chainCode': 'RT', 'iataCode': 'DPS', 'dupeId': 700150209, 'name': 'IBIS STYLES BALI DENPASAR', 'hotelId': 'RTDPSALS', 'geoCode': {'latitude': -8.67937, 'longitude': 115.20486}, 'address': {'countryCode': 'ID', 'postalCode': '80114', 'cityName': 'DENPASAR', 'lines': ['JL TEUKU UMAR NO 177']}, 'distance': {'value': 3.19, 'unit': 'KM'}, 'masterChainCode': 'RT', 'lastUpdate': '2025-06-03T10:17:15'}], 'tour': [], 'places': []}
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetched 5 flight, 5 hotel, 0 tour, and 0 places search results, and spent 0.03 seconds seconds to ran.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Converted search results to markdown tables, and spent 0.02 seconds seconds to ran.
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-01 17:54:12 - autogen.agents.generation.ContentGenerationTool - INFO - [ContentGenerationTool] Running content generation...
+2025-11-01 17:54:12 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-01 17:54:59 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-01 17:54:59 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-01 17:54:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ```markdown
+# Jessica Lin's Travel Itinerary to Bali, Indonesia
+
+## Overview
+- **Duration**: 6 days (March 10 - March 15, 2026)
+- **Traveler**: Solo
+- **Preferences**: Surfing, Yoga Retreats, Jungle Trekking, Street Food
+
+## Day 1: Arrival and Surf Camp
+**Morning**
+- Arrive in Bali via **Singapore Airlines Flight KL 835 (Departure Mar 10, 2026 - 05:35 PM)**
+- Check-in at the **Surf Camp** for a beginner-friendly surf lesson
+
+**Evening**
+- Explore the local beach area
+- Enjoy street food and socialize with other travelers
+
+## Day 2: Eco Lodge Stay and Yoga Retreat
+**Morning**
+- Transfer to the **Eco Lodge** (Taman Suci Suite & Villas)
+- Relax in a peaceful setting
+
+**Afternoon**
+- Participate in a yoga retreat at the lodge, focusing on flexibility and relaxation
+
+**Evening**
+- Evening stroll around the village or nearby natural areas
+- Enjoy a traditional Indonesian dinner
+
+## Day 3: Jungle Trekking Adventure
+**Morning**
+- Embark on a jungle trekking adventure with experienced guides
+- Explore the lush greenery and wildlife
+
+**Afternoon**
+- Return to the lodge, take a rest and prepare for the evening
+
+**Evening**
+- Enjoy a beachside barbecue or grill session
+- Learn about local culture and traditions from other guests
+
+## Day 4: Cultural Exploration and Street Food Tour
+**Morning**
+- Visit local markets and learn about traditional crafts and textiles
+
+**Afternoon**
+- Participate in a street food tour, sampling various regional dishes and snacks
+
+**Evening**
+- Relax at the lodge or explore nearby cafes and restaurants
+
+## Day 5: Motorbike Rental for Exploration
+**Morning**
+- Rent a motorbike from **Bali Bike Rentals** (not explicitly mentioned but assumed)
+- Explore the island's scenic routes
+
+**Afternoon**
+- Visit Tegalalang Rice Terrace or Ubud Monkey Forest
+- Capture beautiful photos and take in the natural beauty
+
+**Evening**
+- Return the bike and enjoy a sunset view at Jimbaran Bay
+
+## Day 6: Departure
+**Morning**
+- Relax or engage in last-minute activities if needed
+
+**Afternoon**
+- Check-out from the Eco Lodge
+- Head to Ngurah Rai International Airport (DPS) for departure via **Singapore Airlines Flight ID 7158 (Departure Mar 15, 2026 - 10:30 PM)**
+
+---
+
+## Accommodation and Transportation
+- **Surf Camp**: For the first day's surf lesson
+- **Eco Lodge (Taman Suci Suite & Villas)**: Staying for three nights with yoga retreats and trekking activities
+- **Singapore Airlines Flight KL 835**: Arriving on March 10, 2026, at 05:35 PM and departing from Ngurah Rai International Airport (DPS) on March 15, 2026, at 10:30 PM
+
+## Activities
+- **Surfing**: Beginner-friendly lessons provided by Surf Camp
+- **Yoga Retreats**: At the Eco Lodge
+- **Jungle Trekking**: Guided tour in the morning of Day 3
+- **Street Food**: Sample local delicacies during the street food tour on Day 4
+
+## Safety Considerations
+- Solo traveler safety measures are considered throughout the itinerary, ensuring secure and monitored activities.
+
+Enjoy your adventure in Bali!
+```
+2025-11-01 17:54:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ```markdown
+# Jessica Lin's Travel Itinerary to Bali, Indonesia
+
+## Overview
+- **Duration**: 6 days (March 10 - March 15, 2026)
+- **Traveler**: Solo
+- **Preferences**: Surfing, Yoga Retreats, Jungle Trekking, Street Food
+
+## Day 1: Arrival and Surf Camp
+**Morning**
+- Arrive in Bali via **Singapore Airlines Flight KL 835 (Departure Mar 10, 2026 - 05:35 PM)**
+- Check-in at the **Surf Camp** for a beginner-friendly surf lesson
+
+**Evening**
+- Explore the local beach area
+- Enjoy street food and socialize with other travelers
+
+## Day 2: Eco Lodge Stay and Yoga Retreat
+**Morning**
+- Transfer to the **Eco Lodge** (Taman Suci Suite & Villas)
+- Relax in a peaceful setting
+
+**Afternoon**
+- Participate in a yoga retreat at the lodge, focusing on flexibility and relaxation
+
+**Evening**
+- Evening stroll around the village or nearby natural areas
+- Enjoy a traditional Indonesian dinner
+
+## Day 3: Jungle Trekking Adventure
+**Morning**
+- Embark on a jungle trekking adventure with experienced guides
+- Explore the lush greenery and wildlife
+
+**Afternoon**
+- Return to the lodge, take a rest and prepare for the evening
+
+**Evening**
+- Enjoy a beachside barbecue or grill session
+- Learn about local culture and traditions from other guests
+
+## Day 4: Cultural Exploration and Street Food Tour
+**Morning**
+- Visit local markets and learn about traditional crafts and textiles
+
+**Afternoon**
+- Participate in a street food tour, sampling various regional dishes and snacks
+
+**Evening**
+- Relax at the lodge or explore nearby cafes and restaurants
+
+## Day 5: Motorbike Rental for Exploration
+**Morning**
+- Rent a motorbike from **Bali Bike Rentals** (not explicitly mentioned but assumed)
+- Explore the island's scenic routes
+
+**Afternoon**
+- Visit Tegalalang Rice Terrace or Ubud Monkey Forest
+- Capture beautiful photos and take in the natural beauty
+
+**Evening**
+- Return the bike and enjoy a sunset view at Jimbaran Bay
+
+## Day 6: Departure
+**Morning**
+- Relax or engage in last-minute activities if needed
+
+**Afternoon**
+- Check-out from the Eco Lodge
+- Head to Ngurah Rai International Airport (DPS) for departure via **Singapore Airlines Flight ID 7158 (Departure Mar 15, 2026 - 10:30 PM)**
+
+---
+
+## Accommodation and Transportation
+- **Surf Camp**: For the first day's surf lesson
+- **Eco Lodge (Taman Suci Suite & Villas)**: Staying for three nights with yoga retreats and trekking activities
+- **Singapore Airlines Flight KL 835**: Arriving on March 10, 2026, at 05:35 PM and departing from Ngurah Rai International Airport (DPS) on March 15, 2026, at 10:30 PM
+
+## Activities
+- **Surfing**: Beginner-friendly lessons provided by Surf Camp
+- **Yoga Retreats**: At the Eco Lodge
+- **Jungle Trekking**: Guided tour in the morning of Day 3
+- **Street Food**: Sample local delicacies during the street food tour on Day 4
+
+## Safety Considerations
+- Solo traveler safety measures are considered throughout the itinerary, ensuring secure and monitored activities.
+
+Enjoy your adventure in Bali!
+``` and saving plan to Redis for session 1b84de92-69b3-4c82-b502-663a8ca2f115
+2025-11-01 17:54:59 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Finished streaming content generation for messages and spent 47.12 seconds seconds to ran.
+2025-11-01 17:54:59 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:54:59 - autogen.services.utils - INFO - Speaker: ContentGenerationAgent
+
+2025-11-01 17:54:59 - autogen.services.utils - INFO - Content: Travel plan generated successfully, and saving data to state for session `1b84de92-69b3-4c82-b502-663a8ca2f115`
+
+2025-11-01 17:54:59 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:55:12 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:55:12 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 17:55:12 - autogen.services.utils - INFO - Content: TransactionAgent: Finalize bookings for the travel plan including flights from Singapore Airlines, accommodation at Surf Camp or Eco Lodge, motorbike rental, and tours for surfing, yoga retreats, jungle trekking, and street food experiences in Bali. Confirm all details with the user.
+
+WebScraperAgent: Gather additional travel content related to surfing, yoga retreats, jungle treks, and local street food in Bali, focusing on solo traveler safety and high activity levels.
+
+SearchAgent: Search for available tours related to surfing, yoga, and jungle trekking in Bali from March 10, 2026, to March 15, 2026.
+
+2025-11-01 17:55:12 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:55:19 - autogen.agents.transaction.TransactionAgent - INFO - [TransactionAgent] Finished processing transaction, and spent 7.05 seconds seconds.
+2025-11-01 17:55:19 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:55:19 - autogen.services.utils - INFO - Speaker: TransactionAgent
+
+2025-11-01 17:55:19 - autogen.services.utils - INFO - Content: [TransactionAgent] Finished processing transaction and saving data to state for session `1b84de92-69b3-4c82-b502-663a8ca2f115`.
+
+2025-11-01 17:55:19 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:55:27 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:55:27 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 17:55:27 - autogen.services.utils - INFO - Content: TERMINATE
+
+2025-11-01 17:55:27 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 17:55:27 - __main__ - INFO - [Main] Retrieved generated plan for session 1b84de92-69b3-4c82-b502-663a8ca2f115, and spent 0.01 seconds seconds to ran.
+2025-11-01 17:55:27 - __main__ - INFO - All number of rounds from agents: {'web_scraper_agent_rounds': 0, 'search_agent_rounds': 2, 'content_generation_agent_rounds': 1, 'transaction_agent_rounds': 1}
+2025-11-01 17:55:28 - __main__ - INFO - Finished autogen agent iteration 49 for user_id 49
+2025-11-01 17:55:28 - __main__ - INFO - Running autogen agent iteration 50 for user_id 50

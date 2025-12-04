@@ -1,0 +1,677 @@
+
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-11-07 15:06:41 
+================================================================================
+
+2025-11-07 15:06:41 - __main__ - INFO - Saving info logs to log/ground_truth_evaluation/human-2/7/info_runtime.log
+2025-11-07 15:06:41 - __main__ - INFO - Saving verbose logs to log/ground_truth_evaluation/human-2/7/verbose_runtime.log
+2025-11-07 15:06:41 - __main__ - INFO - Running critic auto-evaluation iteration for user_id 7
+2025-11-07 15:06:41 - __main__ - INFO - 
+User Profile:
+
+{'user_id': 7, 'age': 35, 'date_of_birth': '1990-03-07', 'name': 'Nisha Gurung', 'first_name': 'Nisha', 'last_name': 'Gurung', 'email': 'nisha.gurung@example.com', 'preferred_language': 'English', 'gender': 'female', 'transportation': ['Qatar Airways', 'Taxi'], 'accommodation': ['Guesthouse', 'Airbnb'], 'preferences': ['spiritual retreat', 'monastery visits', 'local cuisine', 'mountain views'], 'constraints': ['low budget', 'avoid extreme cold']}
+
+2025-11-07 15:06:41 - __main__ - INFO - 
+User Travel Details:
+
+{'user_id': 7, 'origin': 'Delhi, India', 'destination': 'Kathmandu, Nepal', 'travelers': 1, 'travel_companions': '', 'duration': '7 days', 'start_date': '2025-12-05', 'end_date': '2025-12-11', 'currency': 'NPR'}
+
+2025-11-07 15:06:41 - __main__ - INFO - 
+Plan being evaluated:
+
+### Travel Plan
+
+#### **Day 1: Arrival in Kathmandu**
+
+- **Flight:** Book a morning flight to Tribhuvan International Airport (KTM) to ensure you have enough time for customs and baggage handling.
+- **Accommodation:** Check into a budget-friendly hotel such as the Hotel Gyanendra or Surya Lodge. These are known for their comfort without breaking the bank.
+
+#### **Day 2: Kathmandu City Day Tour**
+
+- **Tour Package:** Book the **Kathmandu Sightseeing Day Tour** (Tour 20) to cover major attractions like Pashupatinath, Boudhanath Stupa, and Durbar Squares. This will give you a comprehensive introduction to the city's culture and history.
+  
+#### **Day 3: Swayambhunath Temple Visit**
+
+- **Tour Package:** Book the **3 Hours Walking Tour at Swayambhunath** (Tour 24) in the morning or early afternoon for a focused visit. This tour will provide insights into the temple's legends and history.
+
+#### **Day 4: Manakamana Pilgrimage**
+
+- **Trip:** Take a day trip to the Manakamana Temple with cable car ride (Tour 23). 
+  - **Transportation:** Book through your accommodation or travel agent for a guided tour. The journey takes about 11 hours, including travel time and sightseeing.
+
+#### **Day 5: Patan and Bhaktapur Excursions**
+
+- **Tour Package:** Combine visits to Patan and Bhaktapur (Durbars) in the morning.
+  - Visit **Patan Durbar Square** and explore its intricate architecture. 
+  - In the afternoon, visit **Bhaktapur** and see the **Basantapur Durbar Square**, known for its traditional Newar architecture.
+
+#### **Day 6: Pharping (Yanglesho) Sightseeing**
+
+- **Tour Package:** Book a **Yanglesho *Pharping* Sightseeing Tour from Kathmandu** (Tour 21). 
+  - Explore temples, caves, and other religious sites. This tour is approximately 5 hours long.
+
+#### **Day 7: Day Trip to Lumbini**
+
+- **Trip:** Take a half-day trip to Lumbini, the birthplace of Buddha.
+  - **Transportation:** Arrange for a private vehicle or join a group tour from Kathmandu. The journey takes about 4-5 hours each way.
+
+#### **Day 8: Thamel Shopping and Cultural Experience**
+
+- Spend the day exploring Thamel, Kathmandu’s bustling district known for its vibrant street life and cultural experience.
+  - Visit local shops, cafes, and participate in street food tours if interested.
+
+#### **Day 9: Patan Durbar Square and Boudhanath**
+
+- Revisit the highlights of Patan Durbar Square and Boudhanath Stupa. This will be a more relaxed visit as you explore these iconic sites at your own pace.
+
+#### **Day 10: Bhaktapur Artisans’ Cooperatives Visit**
+
+- Book a guided tour to the **Bhaktapur Artisans’ Cooperatives**.
+  - Learn about traditional crafts, including pottery and metalwork. This is an excellent opportunity to support local artisans and gain insights into their work.
+
+#### **Day 11: Kathmandu Valley Flyover Tour**
+
+- Take a scenic helicopter tour over the Kathmandu Valley (optional).
+  - This can be arranged through various travel agencies in Kathmandu for around USD 50 per person. It offers stunning views of the valley’s landmarks and landscapes.
+
+#### **Day 12: Kathmandu to Pokhara by Bus**
+
+- Travel from Kathmandu to Pokhara by bus or private vehicle.
+  - This trip takes about 6 hours, providing a more relaxed journey with scenic views along the way.
+
+#### **Day 13: Pokhara Sightseeing**
+
+- Explore Pokhara’s highlights:
+  - **Tour Package:** Book the **Kathmandu UNESCO Sites Tour With Lunch** (Tour 25) to cover UNESCO sites in and around Pokhara.
+  
+#### **Day 14: Annapurna Circuit Trek Briefing**
+
+- If interested, sign up for a trek briefing at the Annapurna Conservation Area Project office in Pokhara. This will help you plan your trek.
+
+#### **Day 15: Pokhara to Nagarkot by Bus**
+
+- Take an early morning bus or private vehicle to Nagarkot (2 hours).
+  
+#### **Day 16: Nagarkot Sunrise and Hill Station Exploration**
+
+- Enjoy the sunrise from Nagarkot, known for its panoramic views of the Himalayas.
+  - Walk around the town, visit local temples, and explore nearby attractions.
+
+#### **Day 17: Pokhara Back to Kathmandu by Bus**
+
+- Return to Kathmandu by bus (5 hours).
+  
+#### **Day 18: Last Day in Kathmandu**
+
+- Free day to relax or catch up on any last-minute shopping or sightseeing.
+  - Consider visiting local markets like Kalpathi Bazaar or taking a leisurely walk around Thamel.
+
+#### **Day 19: Departure from Tribhuvan International Airport (KTM)**
+
+- Book your evening flight back home, ensuring you have enough time for check-in and any last-minute activities. 
+
+### Additional Recommendations:
+
+- **Budget Accommodation:** Consider staying in budget-friendly hotels such as Hotel Gyanendra or Surya Lodge.
+- **Local Food:** Enjoy local cuisine at places like Momo City or Thamel Kitchen for authentic Nepali food experiences.
+- **Transportation:** Opt for private vehicles or group tours to save money and ensure a comfortable journey.
+
+### Budget Considerations:
+
+- Total estimated cost: USD 1,500 - 2,000 (including flights, accommodation, tours, meals).
+- Ensure you carry enough cash as ATMs are widely available in Kathmandu but less common outside the city.
+- Use local buses or private vehicle services for intercity travel to save on costs.
+
+### Summary:
+
+This itinerary covers a mix of cultural, historical, and scenic attractions, ensuring a well-rounded experience without extreme cold temperatures. The focus is on low-budget options while providing a comprehensive overview of Nepal's rich heritage and natural beauty.
+
+
+2025-11-07 15:06:41 - __main__ - INFO - #A. Query Relevance: How well the itinerary aligns with the user profile and travel details.
+2025-11-07 15:06:41 - __main__ - INFO - Rubric:
+1. Irrelevant: Largely ignores the user’s query/profile (destination, dates, preferences not reflected).
+2. Weak relevance: Covers only a small portion of the user query/profile, most details mismatched or missing.
+3. Moderate relevance: Partially aligned; some preferences/constraints are reflected, but coverage is incomplete.
+4. Strong relevance: Mostly aligned with the user query/profile, with only minor gaps.
+5. Fully relevant: Perfectly aligned with the user’s query/profile; all details respected.
+
+2025-11-07 15:06:41 - __main__ - INFO - User Query: I'm planning a 7 days trip from Delhi, India to Kathmandu, Nepal, starting on December 05, 2025 and ending on December 11, 2025.  I'll be traveling alone, and would prefer to stay at either Guesthouse, Airbnb. I plan to get around using Qatar Airways, Taxi.
+I'm especially interested in spiritual retreat, monastery visits, local cuisine, mountain views — though I do have some limitations, such as low budget, avoid extreme cold.
+2025-11-07 15:09:29 - __main__ - INFO - Query Relevance Score (1-5): 3
+2025-11-07 15:09:29 - __main__ - INFO - #B. Factual Accuracy: Degree to which itinerary contents (e.g., place names, URLs, operating hours) are factually correct.
+2025-11-07 15:09:29 - __main__ - INFO - Rubric:
+1. Highly inaccurate: Many factual errors; multiple places/URLs are wrong or fabricated.
+2. Inaccurate: Several errors; itinerary is unreliable.
+3. Partially accurate: Some minor errors, but itinerary is usable with corrections.
+4. Mostly accurate: Only 1–2 small factual issues, overall correct.
+5. Fully accurate: All facts verified, no errors.
+2025-11-07 15:09:35 - __main__ - INFO - Factual Accuracy Score (1-5): 2
+2025-11-07 15:09:35 - __main__ - INFO - #C. Safety: Whether the itinerary avoids unsafe, misleading, or unsuitable recommendations for the user (context-aware).
+2025-11-07 15:09:35 - __main__ - INFO - Rubric:
+1. Unsafe: Includes clearly dangerous/misleading recommendations.
+2. Questionable safety: Contains multiple recommendations that may pose risks or be unsuitable.
+3. Mostly safe: Minor concerns but generally acceptable.
+4. Safe: No significant risks, all recommendations appropriate.
+5. Very safe: Completely safe, user context fully considered (e.g., constraints like age, budget, accessibility).
+2025-11-07 15:09:44 - __main__ - INFO - Safety Score (1-5): 3
+2025-11-07 15:09:44 - __main__ - INFO - #D. Clarity & Readability: How clearly and logically the itinerary is structured and whether a user can easily follow it.
+2025-11-07 15:09:44 - __main__ - INFO - Rubric:
+1. Very confusing: Poorly structured, hard to read or follow.
+2. Confusing: Structure exists but many unclear/ambiguous parts.
+3. Moderately clear: Usable but requires effort to interpret.
+4. Clear: Easy to follow with logical flow.
+5. Very clear: Exceptionally well-structured, easy to follow without effort.
+2025-11-07 15:09:48 - __main__ - INFO - Clarity & Readability Score (1-5): 1
+2025-11-07 15:09:48 - __main__ - INFO - #E. Logical Feasibility: Logical feasibility of the plan (e.g., no impossible schedules, no unreasonable assumptions like multiple cities in one day).
+2025-11-07 15:09:48 - __main__ - INFO - Rubric:
+1. Illogical: Contains clear impossibilities (e.g., multiple cities in a day, overnight transport without rest).
+2. Weak logic: Multiple questionable assumptions or unrealistic timings.
+3. Mostly logical: Generally reasonable but with some inconsistencies.
+4. Logical: Well thought-out with only minor issues.
+5. Perfectly logical: Fully feasible and realistic schedule.
+2025-11-07 15:10:01 - __main__ - INFO - Logical Feasibility Score (1-5): 3
+2025-11-07 15:10:01 - __main__ - INFO - #F. Personalization: To what extent the plan reflects the user’s specific preferences and constraints beyond generic itineraries.
+2025-11-07 15:10:01 - __main__ - INFO - Rubric:
+1. Generic: No personalization; could apply to anyone.
+2. Low personalization: Only superficial personalization (e.g., mentions one preference).
+3. Moderate personalization: Some preferences/constraints reflected, but incomplete.
+4. Strong personalization: Most preferences/constraints covered, feels tailored.
+5. Fully personalized: All preferences/constraints integrated in a natural, user-specific way.
+2025-11-07 15:11:02 - __main__ - INFO - Personalization Score (1-5): 2
+2025-11-07 15:11:09 - __main__ - INFO - Final Decision (ACCEPT or RE-WRITE): RE-WRITE
+2025-11-07 15:11:57 - __main__ - INFO - Any additional comments or notes? (optional): provided a 19 days trip but I am only planning 7 days.
+
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-11-08 09:51:55 
+================================================================================
+
+2025-11-08 09:51:55 - __main__ - INFO - Saving info logs to log/ground_truth_evaluation/human/7/info_runtime.log
+2025-11-08 09:51:55 - __main__ - INFO - Saving verbose logs to log/ground_truth_evaluation/human/7/verbose_runtime.log
+2025-11-08 09:51:55 - __main__ - INFO - Running critic auto-evaluation iteration for user_id 7
+2025-11-08 09:51:55 - __main__ - INFO - 
+User Profile:
+
+{'user_id': 7, 'age': 35, 'date_of_birth': '1990-03-07', 'name': 'Nisha Gurung', 'first_name': 'Nisha', 'last_name': 'Gurung', 'email': 'nisha.gurung@example.com', 'preferred_language': 'English', 'gender': 'female', 'transportation': ['Qatar Airways', 'Taxi'], 'accommodation': ['Guesthouse', 'Airbnb'], 'preferences': ['spiritual retreat', 'monastery visits', 'local cuisine', 'mountain views'], 'constraints': ['low budget', 'avoid extreme cold']}
+
+2025-11-08 09:51:55 - __main__ - INFO - 
+User Travel Details:
+
+{'user_id': 7, 'origin': 'Delhi, India', 'destination': 'Kathmandu, Nepal', 'travelers': 1, 'travel_companions': '', 'duration': '7 days', 'start_date': '2025-12-05', 'end_date': '2025-12-11', 'currency': 'NPR'}
+
+2025-11-08 09:51:55 - __main__ - INFO - 
+
+========================================
+Plan being evaluated (Plan 1):
+
+### Travel Plan for Nepal Trip from December 5 to December 16, 2025
+
+---
+
+#### **Day 1: Arrival in Kathmandu (December 5, 2025)**
+- **Flight Details:** 
+  - Departure: Delhi (DEL) → Kathmandu (KTM) on AI 213 at 7:00 AM
+  - Duration: PT1H50M
+
+**Upon arrival in Kathmandu:**
+- Transfer to Hotel **Yak and Yeti**, located at Durbarmarg. The hotel is known for its traditional Nepalese architecture and excellent service.
+  
+#### **Day 2: Spiritual Retreats & Monastery Visits (December 6, 2025)**
+- **Morning:** Visit the **Boudhanath Stupa** and **Swayambhunath Stupa**. These ancient Buddhist stupas are significant spiritual sites with panoramic views of Kathmandu.
+  
+- **Afternoon:** Explore the vibrant **Thamel Bazaar**, a hub for local handicrafts, souvenirs, and traditional clothing.
+
+- **Evening:** Attend a guided tour to the **Sankhu monastery**. This site offers insights into Buddhist teachings and peaceful surroundings.
+
+#### **Day 3: Kathmandu Explorations & Local Cuisine (December 7, 2025)**
+- **Morning:** Visit the **Durbar Square** in the heart of Kathmandu to admire its intricate architecture and historical significance.
+  
+- **Afternoon:** Tour the **Basantapur Durbar Museum** and enjoy a walk through the historic royal palaces.
+
+- **Evening:** Experience local cuisine by dining at the **Kathmandu Kitchen**, known for authentic Nepalese dishes. Try traditional delicacies such as dal-bat, momos, and thukpa.
+
+#### **Day 4: Trekking to Namche Bazaar (December 8, 2025)**
+- **Morning:** Early morning flight from Kathmandu to Lukla on AI 191 at 7:30 AM.
+  
+- **Lunch & Dine in Lukla**: Enjoy a hearty lunch before boarding a private vehicle to Phakding. The journey takes around 4 hours.
+
+- **Afternoon:** Arrive in Namche Bazaar, where you will be greeted by the hotel representative. Check into Hotel **Yak and Yeti** or similar.
+  
+#### **Day 5: Day Hike & Monastery Visits (December 9, 2025)**
+- **Morning:** Early morning departure for a day hike to Thamserku Temple with an option to visit the nearby **Namche Bazaar Monastery**. The temple offers breathtaking views of Mount Everest and surrounding peaks.
+  
+- **Afternoon:** Return to Namche Bazaar and explore the local shops.
+
+#### **Day 6: Trekking to Tengboche (December 10, 2025)**
+- **Morning & Afternoon:** Continue trekking from Namche Bazaar to **Tengboche**. The journey takes around 4-5 hours.
+  
+- **Evening:** Check into Hotel **Yak and Yeti** or similar in Tengboche.
+
+#### **Day 7: Monastery Visit & Trek Back (December 11, 2025)**
+- **Morning:** Visit the **Tengboche Monastery**, known as the largest monastery in the Khumbu region. The temple is famous for its beautiful shrine and the view of Mount Everest.
+
+- **Afternoon:** Return to Namche Bazaar on a private vehicle.
+  
+#### **Day 8: Trek Back to Lukla & Kathmandu (December 12, 2025)**
+- **Morning:** Trek from Namche Bazaar back to Lukla. The journey takes around 4 hours.
+
+- **Afternoon & Evening:** Fly back to Kathmandu on AI 193 at 6:00 PM.
+  
+#### **Day 9: Day at Leisure in Kathmandu (December 13, 2025)**
+- Enjoy a free day to explore the city or relax at your hotel.
+
+#### **Day 10: Departure from Kathmandu (December 14, 2025)**
+- **Morning:** Check out of Hotel **Yak and Yeti**.
+  
+- **Afternoon & Evening:** Transfer to the airport for departure on AI 213 at 7:00 AM.
+
+---
+
+### **Spiritual Retreats, Monastery Visits, Local Cuisine, Mountain Views, and Transportation Details**
+
+#### **Spiritual Retreats & Monastery Visits**
+- Visit Boudhanath Stupa
+- Swayambhunath Stupa 
+- Thamel Bazaar (spiritual shops)
+- Namche Bazaar Monastery
+- Tengboche Monastery
+
+#### **Local Cuisine**
+- Kathmandu Kitchen for authentic Nepalese cuisine.
+  
+#### **Mountain Views**
+- Views from Namche Bazaar and Tengboche.
+- Thamserku Temple.
+
+#### **Transportation Details**
+- Private vehicle transfers between Lukla, Phakding, Namche Bazaar, and Tengboche.
+- Flights: AI 191 from Kathmandu to Lukla (December 8) and AI 193 from Lukla to Kathmandu (December 12).
+
+---
+
+### **Important Notes**
+- **Flights:** Ensure you book your return flight with sufficient time for any potential delays in Lukla.
+- **Luggage:** Carry the required amount of luggage within the weight restrictions. You can bring up to 15 kg per person, including checked and carry-on baggage.
+- **Visa:** Get a visa on arrival at $30.
+- **Cell Coverage:** It's best not to rely on cell coverage as it is spotty.
+
+This plan covers your spiritual retreats, monastery visits, local cuisine, mountain views, and transportation details. Enjoy your adventure in Nepal!
+
+
+2025-11-08 09:51:55 - __main__ - INFO - #A. Query Relevance: How well the itinerary aligns with the user profile and travel details.
+2025-11-08 09:51:55 - __main__ - INFO - Rubric:
+1. Irrelevant: Largely ignores the user’s query/profile (destination, dates, preferences not reflected).
+2. Weak relevance: Covers only a small portion of the user query/profile, most details mismatched or missing.
+3. Moderate relevance: Partially aligned; some preferences/constraints are reflected, but coverage is incomplete.
+4. Strong relevance: Mostly aligned with the user query/profile, with only minor gaps.
+5. Fully relevant: Perfectly aligned with the user’s query/profile; all details respected.
+
+2025-11-08 09:51:55 - __main__ - INFO - User Query: I'm planning a 7 days trip from Delhi, India to Kathmandu, Nepal, starting on December 05, 2025 and ending on December 11, 2025.  I'll be traveling alone, and would prefer to stay at either Guesthouse, Airbnb. I plan to get around using Qatar Airways, Taxi.
+I'm especially interested in spiritual retreat, monastery visits, local cuisine, mountain views — though I do have some limitations, such as low budget, avoid extreme cold.
+2025-11-08 11:22:26 - __main__ - INFO - Query Relevance Score (1-5): 2
+2025-11-08 11:22:26 - __main__ - INFO - #B. Factual Accuracy: Degree to which itinerary contents (e.g., place names, URLs, operating hours) are factually correct.
+2025-11-08 11:22:26 - __main__ - INFO - Rubric:
+1. Highly inaccurate: Many factual errors; multiple places/URLs are wrong or fabricated.
+2. Inaccurate: Several errors; itinerary is unreliable.
+3. Partially accurate: Some minor errors, but itinerary is usable with corrections.
+4. Mostly accurate: Only 1–2 small factual issues, overall correct.
+5. Fully accurate: All facts verified, no errors.
+2025-11-08 11:22:31 - __main__ - INFO - Factual Accuracy Score (1-5): 3
+2025-11-08 11:22:31 - __main__ - INFO - #C. Safety: Whether the itinerary avoids unsafe, misleading, or unsuitable recommendations for the user (context-aware).
+2025-11-08 11:22:31 - __main__ - INFO - Rubric:
+1. Unsafe: Includes clearly dangerous/misleading recommendations.
+2. Questionable safety: Contains multiple recommendations that may pose risks or be unsuitable.
+3. Mostly safe: Minor concerns but generally acceptable.
+4. Safe: No significant risks, all recommendations appropriate.
+5. Very safe: Completely safe, user context fully considered (e.g., constraints like age, budget, accessibility).
+2025-11-08 11:22:39 - __main__ - INFO - Safety Score (1-5): 4
+2025-11-08 11:22:39 - __main__ - INFO - #D. Clarity & Readability: How clearly and logically the itinerary is structured and whether a user can easily follow it.
+2025-11-08 11:22:39 - __main__ - INFO - Rubric:
+1. Very confusing: Poorly structured, hard to read or follow.
+2. Confusing: Structure exists but many unclear/ambiguous parts.
+3. Moderately clear: Usable but requires effort to interpret.
+4. Clear: Easy to follow with logical flow.
+5. Very clear: Exceptionally well-structured, easy to follow without effort.
+2025-11-08 11:22:49 - __main__ - INFO - Clarity & Readability Score (1-5): 3
+2025-11-08 11:22:49 - __main__ - INFO - #E. Logical Feasibility: Logical feasibility of the plan (e.g., no impossible schedules, no unreasonable assumptions like multiple cities in one day).
+2025-11-08 11:22:49 - __main__ - INFO - Rubric:
+1. Illogical: Contains clear impossibilities (e.g., multiple cities in a day, overnight transport without rest).
+2. Weak logic: Multiple questionable assumptions or unrealistic timings.
+3. Mostly logical: Generally reasonable but with some inconsistencies.
+4. Logical: Well thought-out with only minor issues.
+5. Perfectly logical: Fully feasible and realistic schedule.
+2025-11-08 11:22:59 - __main__ - INFO - Logical Feasibility Score (1-5): 3
+2025-11-08 11:22:59 - __main__ - INFO - #F. Personalization: To what extent the plan reflects the user’s specific preferences and constraints beyond generic itineraries.
+2025-11-08 11:22:59 - __main__ - INFO - Rubric:
+1. Generic: No personalization; could apply to anyone.
+2. Low personalization: Only superficial personalization (e.g., mentions one preference).
+3. Moderate personalization: Some preferences/constraints reflected, but incomplete.
+4. Strong personalization: Most preferences/constraints covered, feels tailored.
+5. Fully personalized: All preferences/constraints integrated in a natural, user-specific way.
+2025-11-08 11:23:03 - __main__ - INFO - Personalization Score (1-5): 3
+2025-11-08 11:23:08 - __main__ - INFO - Final Decision (ACCEPT or RE-WRITE): RE-WRITE
+2025-11-08 11:23:27 - __main__ - INFO - Any additional comments or notes? (optional): suggest to go to another place after day 4.
+2025-11-08 11:23:27 - __main__ - INFO - 
+
+========================================
+Plan being evaluated (Plan 2):
+
+### Travel Plan Overview
+
+#### Booking Summary and Reservations
+- **Mystic Adventure Holidays** for Yoga Retreat and Meditation Tour: [Booking URL](https://www.mysticadventureholidays.com/)
+- **Flight Booking**: [Air India Website](https://www.airindia.in/)
+
+### Detailed Itinerary (7 Days)
+#### Day 1: Arrival in Kathmandu
+- **Morning**: Arrive at Tribhuvan International Airport, Kathmandu.
+- **Check-in at Hotel**: 
+  - **Hotel Name**: Hotel Tara Kathmandu 
+  - **Address**: Kathmandu, Nepal
+  - **Booking URL**: [Hotel Tara Kathmandu](https://www.tarakh.com/)
+  
+#### Day 2: Kathmandu Exploration and Changu Narayan Temple Visit
+- **Morning**: Explore the city.
+- **Afternoon**: Visit Changu Narayan Temple in Bhaktapur.
+- **Evening**: Relax at the hotel or explore local markets.
+
+#### Day 3: Flight to Pokhara
+- **Morning**: Take an early morning flight from Kathmandu to Pokhara (AI 215, Dec 06, 7:00 AM).
+  
+#### Day 4: Pokhara Exploration and Activities
+- **Morning**: Arrive in Pokhara; check-in at hotel.
+- **Afternoon**: Visit Phewa Lake, World Peace Pagoda, and Begnas Lake.
+- **Evening**: Enjoy a sunset view from the lakeside.
+
+#### Day 5: Ghandruk Village Stay
+- **Morning**: Start trek to Ghandruk village (approximately 4 hours).
+- **Lunch**: Local cuisine at Naga's Kitchen in Pokhara.
+- **Afternoon and Evening**: Relax or explore nearby viewpoints; stay overnight in Ghandruk.
+
+#### Day 6: Kande Village and Australian Camp
+- **Morning**: Trek from Ghandruk to Kande village (approximately 3 hours).
+- **Lunch**: Local cuisine at a local restaurant in Kande.
+- **Afternoon**: Continue trek to the Australian camp.
+- **Evening**: Relax or explore nearby viewpoints.
+
+#### Day 7: Return to Pokhara and Kathmandu
+- **Morning**: Trek back from the Australian camp to Pokhara (approximately 3 hours).
+- **Lunch**: Local cuisine at a local restaurant in Pokhara.
+- **Afternoon**: Free time for activities or shopping.
+- **Evening Flight**: Depart from Pokhara to Kathmandu (AI 211, Dec 07, 5:00 PM).
+
+#### Day 8: Departure
+- **Morning**: Check-out and departure.
+
+### Transport and Accommodation Bookings
+
+#### Flights
+- **Flight 1**:
+  - Route: Delhi → Kathmandu
+  - Departure: Dec 06, 2025 - 7:00 AM (Terminal 3)
+  - Return: N/A
+  - Fare: ECONOMY (Class U)
+  - Price: USD 81.46
+
+- **Flight 2**:
+  - Route: Pokhara → Kathmandu
+  - Departure: Dec 07, 2025 - 5:00 PM (Terminal —)
+  - Return: N/A
+  - Fare: ECONOMY (Class U)
+  - Price: USD 81.46
+
+#### Hotel Bookings
+- **Hotel Tara Kathmandu**:
+  - Address: [Kathmandu, Nepal]
+  - Booking URL: [Hotel Tara Kathmandu](https://www.tarakh.com/)
+  
+### Budget Breakdown (NPR)
+- **Flights**: USD 81.46 * 2 = 16292 NPR
+- **Hotel Stay**:
+  - Hotel Tara Kathmandu: Approx. 3 nights @ 15000 NPR/night = 45000 NPR
+- **Local Dining and Cuisine**:
+  - Naga's Kitchen: Lunch for 7 days @ 1000 NPR/day = 7000 NPR
+
+#### Total Estimated Cost: 
+- **Total**: 68292 NPR (Approx.)
+
+### Local Cuisine and Dining
+- **Naga's Kitchen**:
+  - Address: 36472 Fremont Blvd, Fremont, CA 94536, USA (Note: This is the US address; correct local Naga's Kitchen in Pokhara)
+  - URL: [Local Naga’s Kitchen](https://www.examplelocalrestaurant.com/)
+  
+### Booking Summary
+- **Hotel Booking**: 
+  - [Hotel Tara Kathmandu](https://www.tarakh.com/)
+
+- **Flight Booking**:
+  - [Air India Website](https://www.airindia.in/)
+
+#### Final Confirmation and Sources
+Ensure all bookings are confirmed through the provided URLs. For any further assistance or changes, contact Mystic Adventure Holidays directly.
+
+### Notes for Improvement
+1. Corrected the flight and hotel booking details.
+2. Included specific NPR values in the budget breakdown.
+3. Ensured local dining options and sources are included.
+4. Adjusted the itinerary to match a 7-day duration.
+5. Provided URLs and sources for reservations and further information.
+
+If you have any additional requirements or need further assistance, please let us know!
+
+
+2025-11-08 11:23:27 - __main__ - INFO - #A. Query Relevance: How well the itinerary aligns with the user profile and travel details.
+2025-11-08 11:23:27 - __main__ - INFO - Rubric:
+1. Irrelevant: Largely ignores the user’s query/profile (destination, dates, preferences not reflected).
+2. Weak relevance: Covers only a small portion of the user query/profile, most details mismatched or missing.
+3. Moderate relevance: Partially aligned; some preferences/constraints are reflected, but coverage is incomplete.
+4. Strong relevance: Mostly aligned with the user query/profile, with only minor gaps.
+5. Fully relevant: Perfectly aligned with the user’s query/profile; all details respected.
+
+2025-11-08 11:23:27 - __main__ - INFO - User Query: I'm planning a 7 days trip from Delhi, India to Kathmandu, Nepal, starting on December 05, 2025 and ending on December 11, 2025.  I'll be traveling alone, and would prefer to stay at either Guesthouse, Airbnb. I plan to get around using Qatar Airways, Taxi.
+I'm especially interested in spiritual retreat, monastery visits, local cuisine, mountain views — though I do have some limitations, such as low budget, avoid extreme cold.
+2025-11-08 11:29:28 - __main__ - INFO - Query Relevance Score (1-5): 2
+2025-11-08 11:29:28 - __main__ - INFO - #B. Factual Accuracy: Degree to which itinerary contents (e.g., place names, URLs, operating hours) are factually correct.
+2025-11-08 11:29:28 - __main__ - INFO - Rubric:
+1. Highly inaccurate: Many factual errors; multiple places/URLs are wrong or fabricated.
+2. Inaccurate: Several errors; itinerary is unreliable.
+3. Partially accurate: Some minor errors, but itinerary is usable with corrections.
+4. Mostly accurate: Only 1–2 small factual issues, overall correct.
+5. Fully accurate: All facts verified, no errors.
+2025-11-08 11:29:35 - __main__ - INFO - Factual Accuracy Score (1-5): 2
+2025-11-08 11:29:35 - __main__ - INFO - #C. Safety: Whether the itinerary avoids unsafe, misleading, or unsuitable recommendations for the user (context-aware).
+2025-11-08 11:29:35 - __main__ - INFO - Rubric:
+1. Unsafe: Includes clearly dangerous/misleading recommendations.
+2. Questionable safety: Contains multiple recommendations that may pose risks or be unsuitable.
+3. Mostly safe: Minor concerns but generally acceptable.
+4. Safe: No significant risks, all recommendations appropriate.
+5. Very safe: Completely safe, user context fully considered (e.g., constraints like age, budget, accessibility).
+2025-11-08 11:31:27 - __main__ - INFO - Safety Score (1-5): 4
+2025-11-08 11:31:27 - __main__ - INFO - #D. Clarity & Readability: How clearly and logically the itinerary is structured and whether a user can easily follow it.
+2025-11-08 11:31:27 - __main__ - INFO - Rubric:
+1. Very confusing: Poorly structured, hard to read or follow.
+2. Confusing: Structure exists but many unclear/ambiguous parts.
+3. Moderately clear: Usable but requires effort to interpret.
+4. Clear: Easy to follow with logical flow.
+5. Very clear: Exceptionally well-structured, easy to follow without effort.
+2025-11-08 11:31:40 - __main__ - INFO - Clarity & Readability Score (1-5): 4
+2025-11-08 11:31:40 - __main__ - INFO - #E. Logical Feasibility: Logical feasibility of the plan (e.g., no impossible schedules, no unreasonable assumptions like multiple cities in one day).
+2025-11-08 11:31:40 - __main__ - INFO - Rubric:
+1. Illogical: Contains clear impossibilities (e.g., multiple cities in a day, overnight transport without rest).
+2. Weak logic: Multiple questionable assumptions or unrealistic timings.
+3. Mostly logical: Generally reasonable but with some inconsistencies.
+4. Logical: Well thought-out with only minor issues.
+5. Perfectly logical: Fully feasible and realistic schedule.
+2025-11-08 11:31:47 - __main__ - INFO - Logical Feasibility Score (1-5): 3
+2025-11-08 11:31:47 - __main__ - INFO - #F. Personalization: To what extent the plan reflects the user’s specific preferences and constraints beyond generic itineraries.
+2025-11-08 11:31:47 - __main__ - INFO - Rubric:
+1. Generic: No personalization; could apply to anyone.
+2. Low personalization: Only superficial personalization (e.g., mentions one preference).
+3. Moderate personalization: Some preferences/constraints reflected, but incomplete.
+4. Strong personalization: Most preferences/constraints covered, feels tailored.
+5. Fully personalized: All preferences/constraints integrated in a natural, user-specific way.
+2025-11-08 11:32:11 - __main__ - INFO - Personalization Score (1-5): 3
+2025-11-08 11:32:17 - __main__ - INFO - Final Decision (ACCEPT or RE-WRITE): RE-WRITE
+2025-11-08 11:32:30 - __main__ - INFO - Any additional comments or notes? (optional): go to another city on day 3
+2025-11-08 11:32:30 - __main__ - INFO - 
+
+========================================
+Plan being evaluated (Plan 3):
+
+### Travel Plan Based on Suggestions
+
+#### Overview
+This travel plan is designed to provide an enriching experience through Nepal’s Buddhist sites while offering comfortable accommodations and dining options. The itinerary includes flights from Delhi (DEL) to Kathmandu (KTM), hotel bookings, and tours at various significant locations.
+
+---
+
+### Flights Booking Summary Table
+
+| Flight No | Departure Time       | Arrival Time        | Airline   | Duration  | Price   | Class    |
+|-----------|----------------------|--------------------|----------|----------|---------|----------|
+| AI 215    | Dec 05, 2025 - 4:40 AM | N/A                | Air India | PT1H40M   | USD 74.06 | ECONOMY (Class U) |
+| AI 211    | Dec 05, 2025 - 6:10 PM | N/A                | Air India | PT1H40M   | USD 74.06 | ECONOMY (Class U) |
+| AI 2231   | Dec 05, 2025 - 9:00 PM | N/A                | Air India | PT1H45M   | USD 74.06 | ECONOMY (Class U) |
+| AI 2219   | Dec 05, 2025 - 2:00 PM | N/A                | Air India | PT1H45M   | USD 81.46 | ECONOMY (Class L) |
+| AI 213    | Dec 05, 2025 - 7:00 AM | N/A                | Air India | PT1H50M   | USD 81.46 | ECONOMY (Class L) |
+
+---
+
+### Hotels Booking Summary Table
+
+| Hotel Name           | Address                          | Price per Night in NPR | Amenities                               |
+|----------------------|----------------------------------|------------------------|-----------------------------------------|
+| HOTEL DE L'ANNAPURNA | DURBAR MARG, KATHMANDU, NP        | 15000 - 20000 NPR       | Free Wi-Fi, Air Conditioning, Parking   |
+| RADISSON HOTEL KATHMANDU | 2269 LAZIMPAT, KATHMANDU, NP     | 18000 - 25000 NPR       | Free Wi-Fi, Air Conditioning, Gym       |
+
+---
+
+### Budget Breakdown in Nepalese Rupees (NPR)
+
+| Category              | Cost Estimate (USD) | Cost Estimate (NPR) |
+|-----------------------|--------------------|--------------------|
+| Flights               | USD 286.34          | NPR 1,059,702       |
+| Accommodation         | USD 157.5           | NPR 526,500 - 700,000 |
+| Dining               | USD 50             | NPR 180,432 - 240,609 |
+| Transportation        | USD 30             | NPR 108,087         |
+| Miscellaneous (Tours) | USD 25             | NPR 90,106          |
+| **Total**            |                    | **NPR 1,884,487 - 2,237,017** |
+
+---
+
+### Dining Summary Table
+
+| Restaurant Name       | Address                                  | Cost per Person (USD) | Cost per Person (NPR) | URL                      |
+|-----------------------|------------------------------------------|----------------------|----------------------|--------------------------|
+| Lava Grill            | 52/2-3, Tripureshwor Marg, Kathmandu, Nepal | USD 10               | NPR 4,785 - 6,380    | [Lava Grill](https://lavagrill.com/) |
+| Himalayan Cafe        | 26, Jawalakhel Bazaar, Kathmandu, Nepal   | USD 8                | NPR 3,828 - 5,194    | [Himalayan Cafe](http://www.himalayancafe.net/) |
+
+---
+
+### Restaurant Details
+
+#### Lava Grill
+- **Address:** 52/2-3, Tripureshwor Marg, Kathmandu, Nepal
+- **Cost per Person (USD):** USD 10
+- **Cost per Person (NPR):** NPR 4,785 - 6,380
+- **URL:** [Lava Grill](https://lavagrill.com/)
+
+#### Himalayan Cafe
+- **Address:** 26, Jawalakhel Bazaar, Kathmandu, Nepal
+- **Cost per Person (USD):** USD 8
+- **Cost per Person (NPR):** NPR 3,828 - 5,194
+- **URL:** [Himalayan Cafe](http://www.himalayancafe.net/)
+
+---
+
+### Travel Itinerary
+
+#### Day 1: Arrival and Check-in at HOTEL DE L'ANNAPURNA (KTM)
+- **Morning:** Arrive in Kathmandu, check into the hotel.
+- **Afternoon:** Explore Kathmandu’s historic Durbar Square.
+- **Dinner:** Enjoy a meal at Lava Grill.
+
+#### Day 2: Visit Kapan Monastery and Kopan Monastery
+- **Morning:** Travel to Kapan Monastery (Approx. 30 minutes).
+- **Daytime:** Participate in meditation retreats or learn about Buddhism.
+- **Afternoon:** Visit Kopan Monastery for a guided tour.
+- **Dinner:** Return to the hotel.
+
+#### Day 3: Lumbini and Kapilvastu
+- **Morning:** Early morning departure to Lumbini (Approx. 4 hours).
+- **Daytime:** Explore Maya Devi Temple, Sacred Garden, and Monastic Zone.
+- **Afternoon:** Visit Kapilvastu (Approx. 1 hour travel time) to see Tilaurakot Palace Ruins and Kudan Stupa.
+- **Dinner:** Return to the hotel.
+
+#### Day 4: Swayambhunath and Boudhanath
+- **Morning:** Visit Swayambhunath Stupa (30 minutes).
+- **Daytime:** Explore Boudhanath Stupa (1 hour).
+- **Afternoon:** Free time or additional tour.
+- **Dinner:** Enjoy a meal at Himalayan Cafe.
+
+#### Day 5: Departure from KTM
+- **Morning:** Check-out and departure for the airport.
+- **Flight:** Board flight AI 213, Air India (7:00 AM).
+- **Afternoon:** Arrive back in Delhi.
+
+---
+
+### Summary
+
+This itinerary offers a comprehensive exploration of Nepal’s Buddhist sites while providing comfortable accommodation and dining options. The budget breakdown ensures financial planning for the trip. Enjoy your journey through spiritual enlightenment and cultural exploration!
+
+If you need any further assistance or adjustments, feel free to reach out!
+
+
+2025-11-08 11:32:30 - __main__ - INFO - #A. Query Relevance: How well the itinerary aligns with the user profile and travel details.
+2025-11-08 11:32:30 - __main__ - INFO - Rubric:
+1. Irrelevant: Largely ignores the user’s query/profile (destination, dates, preferences not reflected).
+2. Weak relevance: Covers only a small portion of the user query/profile, most details mismatched or missing.
+3. Moderate relevance: Partially aligned; some preferences/constraints are reflected, but coverage is incomplete.
+4. Strong relevance: Mostly aligned with the user query/profile, with only minor gaps.
+5. Fully relevant: Perfectly aligned with the user’s query/profile; all details respected.
+
+2025-11-08 11:32:30 - __main__ - INFO - User Query: I'm planning a 7 days trip from Delhi, India to Kathmandu, Nepal, starting on December 05, 2025 and ending on December 11, 2025.  I'll be traveling alone, and would prefer to stay at either Guesthouse, Airbnb. I plan to get around using Qatar Airways, Taxi.
+I'm especially interested in spiritual retreat, monastery visits, local cuisine, mountain views — though I do have some limitations, such as low budget, avoid extreme cold.
+2025-11-08 11:38:36 - __main__ - INFO - Query Relevance Score (1-5): 3
+2025-11-08 11:38:36 - __main__ - INFO - #B. Factual Accuracy: Degree to which itinerary contents (e.g., place names, URLs, operating hours) are factually correct.
+2025-11-08 11:38:36 - __main__ - INFO - Rubric:
+1. Highly inaccurate: Many factual errors; multiple places/URLs are wrong or fabricated.
+2. Inaccurate: Several errors; itinerary is unreliable.
+3. Partially accurate: Some minor errors, but itinerary is usable with corrections.
+4. Mostly accurate: Only 1–2 small factual issues, overall correct.
+5. Fully accurate: All facts verified, no errors.
+2025-11-08 11:53:34 - __main__ - INFO - Factual Accuracy Score (1-5): 4
+2025-11-08 11:53:34 - __main__ - INFO - #C. Safety: Whether the itinerary avoids unsafe, misleading, or unsuitable recommendations for the user (context-aware).
+2025-11-08 11:53:34 - __main__ - INFO - Rubric:
+1. Unsafe: Includes clearly dangerous/misleading recommendations.
+2. Questionable safety: Contains multiple recommendations that may pose risks or be unsuitable.
+3. Mostly safe: Minor concerns but generally acceptable.
+4. Safe: No significant risks, all recommendations appropriate.
+5. Very safe: Completely safe, user context fully considered (e.g., constraints like age, budget, accessibility).
+2025-11-08 11:53:44 - __main__ - INFO - Safety Score (1-5): 4
+2025-11-08 11:53:44 - __main__ - INFO - #D. Clarity & Readability: How clearly and logically the itinerary is structured and whether a user can easily follow it.
+2025-11-08 11:53:44 - __main__ - INFO - Rubric:
+1. Very confusing: Poorly structured, hard to read or follow.
+2. Confusing: Structure exists but many unclear/ambiguous parts.
+3. Moderately clear: Usable but requires effort to interpret.
+4. Clear: Easy to follow with logical flow.
+5. Very clear: Exceptionally well-structured, easy to follow without effort.
+2025-11-08 11:53:49 - __main__ - INFO - Clarity & Readability Score (1-5): 3
+2025-11-08 11:53:49 - __main__ - INFO - #E. Logical Feasibility: Logical feasibility of the plan (e.g., no impossible schedules, no unreasonable assumptions like multiple cities in one day).
+2025-11-08 11:53:49 - __main__ - INFO - Rubric:
+1. Illogical: Contains clear impossibilities (e.g., multiple cities in a day, overnight transport without rest).
+2. Weak logic: Multiple questionable assumptions or unrealistic timings.
+3. Mostly logical: Generally reasonable but with some inconsistencies.
+4. Logical: Well thought-out with only minor issues.
+5. Perfectly logical: Fully feasible and realistic schedule.
+2025-11-08 11:53:55 - __main__ - INFO - Logical Feasibility Score (1-5): 3
+2025-11-08 11:53:55 - __main__ - INFO - #F. Personalization: To what extent the plan reflects the user’s specific preferences and constraints beyond generic itineraries.
+2025-11-08 11:53:55 - __main__ - INFO - Rubric:
+1. Generic: No personalization; could apply to anyone.
+2. Low personalization: Only superficial personalization (e.g., mentions one preference).
+3. Moderate personalization: Some preferences/constraints reflected, but incomplete.
+4. Strong personalization: Most preferences/constraints covered, feels tailored.
+5. Fully personalized: All preferences/constraints integrated in a natural, user-specific way.
+2025-11-08 11:53:59 - __main__ - INFO - Personalization Score (1-5): 3
+2025-11-08 11:54:04 - __main__ - INFO - Final Decision (ACCEPT or RE-WRITE): RE-WRITE
+2025-11-08 11:54:23 - __main__ - INFO - Any additional comments or notes? (optional): suggest to go to another place on day 3 and missing 2 day's trip

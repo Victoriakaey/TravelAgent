@@ -1,0 +1,742 @@
+
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-11-01 21:25:13 
+================================================================================
+
+2025-11-01 21:25:13 - __main__ - INFO - Saving info logs to log/system_log_with_critic/13_test/10_67adc9cc-8337-4140-ae99-6595b4918f1b/info_runtime.log
+2025-11-01 21:25:13 - __main__ - INFO - Saving verbose logs to log/system_log_with_critic/13_test/10_67adc9cc-8337-4140-ae99-6595b4918f1b/verbose_runtime.log
+2025-11-01 21:25:13 - __main__ - INFO - Saving timing logs to log/system_log_with_critic/13_test/10_67adc9cc-8337-4140-ae99-6595b4918f1b/content_agent_timing.log
+2025-11-01 21:25:13 - __main__ - INFO - 
+User Profile:
+
+{'user_id': 10, 'age': 30, 'date_of_birth': '1993-03-22', 'name': 'David Kim', 'first_name': 'David', 'last_name': 'Kim', 'email': 'david.kim@example.com', 'preferred_language': 'Korean', 'gender': 'male', 'transportation': ['Korean Air'], 'accommodation': ['Ski Resort'], 'preferences': ['skiing', 'mountains', 'hot springs'], 'constraints': ['avoid long drives']}
+
+2025-11-01 21:25:13 - __main__ - INFO - 
+User Travel Details:
+
+{'user_id': 10, 'origin': 'Seoul, South Korea', 'destination': 'Sapporo, Japan', 'travelers': 2, 'travel_companions': 'Friend', 'duration': '5 days', 'start_date': '2026-02-01', 'end_date': '2026-02-05', 'currency': 'JPY'}
+
+2025-11-01 21:25:17 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:25:17 - autogen.services.utils - INFO - Speaker: user
+
+2025-11-01 21:25:17 - autogen.services.utils - INFO - Content: Hello, I need help with my travel plans.I'm planning a 5 days trip from Seoul, South Korea to Sapporo, Japan, starting on February 01, 2026 and ending on February 05, 2026.  I'll be traveling with Friend, and would prefer to stay at either Ski Resort. I plan to get around using Korean Air.
+I'm especially interested in skiing, mountains, hot springs — though I do have some limitations, such as avoid long drives.
+
+2025-11-01 21:25:17 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:25:23 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:25:23 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 21:25:23 - autogen.services.utils - INFO - Content: UserProxyAgent: Please confirm your travel dates are from February 1, 2026, to February 5, 2026, and you prefer to stay at a ski resort during your trip from Seoul to Sapporo, Japan. Also, you plan to use Korean Air for transportation and are interested in skiing, mountains, hot springs activities while avoiding long drives.
+
+2025-11-01 21:25:23 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:25:23 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:25:23 - autogen.services.utils - INFO - Speaker: UserProxyAgent
+
+2025-11-01 21:25:23 - autogen.services.utils - INFO - Content: Confirmed, no more preference or contraints
+
+2025-11-01 21:25:23 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:25:25 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:25:25 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 21:25:25 - autogen.services.utils - INFO - Content: WebScraperAgent: Gather content related to ski resorts, skiing, mountains, and hot springs in Sapporo, Japan.
+
+2025-11-01 21:25:25 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:25:25 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Starting streaming web scraping for messages for the 1-th times...
+2025-11-01 21:25:25 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Received messages for web scraping...
+2025-11-01 21:25:25 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Log path set to: log/system_log_with_critic/13_test/10_67adc9cc-8337-4140-ae99-6595b4918f1b
+2025-11-01 21:25:25 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Generated query: I'm planning a 5 days trip from Seoul, South Korea to Sapporo, Japan, starting on February 01, 2026 and ending on February 05, 2026.  I'll be traveling with Friend, and would prefer to stay at either Ski Resort. I plan to get around using Korean Air.
+I'm especially interested in skiing, mountains, hot springs — though I do have some limitations, such as avoid long drives.
+Additional Instructions:
+gather content related to ski resorts, skiing, mountains, and hot springs in sapporo, japan.
+Can you help me find some information about this to better plan this trip?
+2025-11-01 21:25:25 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Sending request to http://localhost:3000/api/search with payload
+2025-11-01 21:26:50 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://not_needed ======
+2025-11-01 21:26:50 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_static_html] Error fetching https://not_needed: HTTPSConnectionPool(host='not_needed', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x15756c070>: Failed to resolve 'not_needed' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-11-01 21:26:50 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Static fetch too short, trying dynamic...
+2025-11-01 21:26:52 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Navigating to: https://not_needed
+2025-11-01 21:26:52 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [fetch_dynamic_html] networkidle failed: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://not_needed/
+Call log:
+  - navigating to "https://not_needed/", waiting until "networkidle"
+, retrying with domcontentloaded
+2025-11-01 21:26:52 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Error fetching https://not_needed: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://not_needed/
+Call log:
+  - navigating to "https://not_needed/", waiting until "domcontentloaded"
+
+2025-11-01 21:26:52 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [Pipeline] No content extracted from https://not_needed
+2025-11-01 21:26:52 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 0 segments.
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Starting to process scraped content...
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Successfully scraped 1 chunks of information.
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Saving scraped content to local state service
+
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Initial Web scraping completed in 87.04 seconds seconds.
+
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] - Running NLP-based filtering on scraped content...
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Filtering scraped content...
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 1/1...
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Total Kept: 0, Dropped: 0
+
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processed 1 chunks of scraped content, and kept 0 relevant chunks after filtering.
+
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Finished filtering in 0.00 seconds seconds.
+
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Saving filtered content to local state service
+
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Filtering completed in 0.00 seconds seconds.
+
+2025-11-01 21:26:52 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Finished streaming web scraping in 87.04 seconds seconds.
+
+2025-11-01 21:26:52 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:26:52 - autogen.services.utils - INFO - Speaker: WebScraperAgent
+
+2025-11-01 21:26:52 - autogen.services.utils - INFO - Content: Finished scraping and filtering web searched content, and saving data to state for session `67adc9cc-8337-4140-ae99-6595b4918f1b`
+
+2025-11-01 21:26:52 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:27:00 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:27:00 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 21:27:00 - autogen.services.utils - INFO - Content: SearchAgent: Search for flights from Seoul to Sapporo on Korean Air between February 1, 2026, and February 5, 2026.
+
+2025-11-01 21:27:00 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:27:00 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 1-th times...
+2025-11-01 21:27:10 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Initiating flight search with parameters: origin=SEL, destination=CTS, departure_date=2026-02-01, return_date=None, adults=2
+2025-11-01 21:27:15 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed flight search, spent 5.33 seconds seconds to ran.
+2025-11-01 21:27:15 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:15 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:15 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['flight'], spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:15 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Checked for valid results in mode flight, spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:15 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'flight' but no valid results for it found, returning False, spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:15 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 15.11 seconds seconds to ran.
+2025-11-01 21:27:15 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:27:15 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 21:27:15 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `67adc9cc-8337-4140-ae99-6595b4918f1b`.
+
+2025-11-01 21:27:15 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:27:24 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:27:24 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 21:27:24 - autogen.services.utils - INFO - Content: SearchAgent: Search for hotels at ski resorts in Sapporo, Japan, available between February 1, 2026, and February 5, 2026.
+
+2025-11-01 21:27:24 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:27:24 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 2-th times...
+2025-11-01 21:27:33 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Searching hotels in city SFO within 5 km with amenities ['Ski_Resort']
+2025-11-01 21:27:34 - autogen.agents.search.SearchAgent - ERROR - [SearchAgent] Hotel search error: {"errors":[{"code":7211,"detail":"Invalid amenity codes","status":400,"title":"INVALID FACILITY CODE"}]}
+2025-11-01 21:27:34 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be hotel, spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:34 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be hotel, spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:34 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['flight'], spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:34 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'hotel' not in searched modes, returning False, spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:34 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 10.46 seconds seconds to ran.
+2025-11-01 21:27:34 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:27:34 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 21:27:34 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `67adc9cc-8337-4140-ae99-6595b4918f1b`.
+
+2025-11-01 21:27:34 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:27:44 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:27:44 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 21:27:44 - autogen.services.utils - INFO - Content: SearchAgent: Search for places of interest related to skiing, mountains, and hot springs in Sapporo, Japan, available between February 1, 2026, and February 5, 2026.
+
+2025-11-01 21:27:44 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:27:44 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 3-th times...
+2025-11-01 21:27:53 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed places search, spent 0.59 seconds seconds to ran.
+2025-11-01 21:27:53 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be place, spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:53 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be place, spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:53 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['flight', 'place'], spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:53 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Checked for valid results in mode place, spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:53 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'place' but no valid results for it found, returning False, spent 0.00 seconds seconds to ran.
+2025-11-01 21:27:53 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 8.96 seconds seconds to ran.
+2025-11-01 21:27:53 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:27:53 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 21:27:53 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `67adc9cc-8337-4140-ae99-6595b4918f1b`.
+
+2025-11-01 21:27:53 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:28:03 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:28:03 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 21:28:03 - autogen.services.utils - INFO - Content: SearchAgent: Search for tours related to skiing, mountains, and hot springs in Sapporo, Japan, available between February 1, 2026, and February 5, 2026.
+
+2025-11-01 21:28:03 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:28:03 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 4-th times...
+2025-11-01 21:28:18 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed tour search, spent 1.06 seconds seconds to ran.
+2025-11-01 21:28:18 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be tour, spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:18 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be tour, spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:18 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['flight', 'place', 'tour'], spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:18 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Checked for valid results in mode tour, spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:18 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'tour' but no valid results for it found, returning False, spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:18 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 15.46 seconds seconds to ran.
+2025-11-01 21:28:18 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:28:18 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 21:28:18 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `67adc9cc-8337-4140-ae99-6595b4918f1b`.
+
+2025-11-01 21:28:18 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:28:27 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:28:27 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 21:28:27 - autogen.services.utils - INFO - Content: ContentGenerationAgent: Generate the travel plan using the data from WebScraperAgent and SearchAgent.
+
+2025-11-01 21:28:27 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting streaming content generation for messages for the 1-th times...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Received messages for content generation...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic scores for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic scores found, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic suggestions for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic suggestions found, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic reasoning for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic reasoning found, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic preference_constraint_counts for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic preference_constraint_counts found, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved scores='', suggestions='', reasoning=''
+Current counts met: 
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No rewrite triggered.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No filtered content found, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching search results for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching flight search results for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 5 search results.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.01 seconds seconds to ran.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching hotel search results for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching tour search results for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching places search results for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 1 search results.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Combined search results: {'flight': [{'type': 'flight-offer', 'id': '1', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2026-02-01', 'lastTicketingDateTime': '2026-02-01', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT2H50M', 'segments': [{'departure': {'iataCode': 'ICN', 'terminal': '1', 'at': '2026-02-01T10:20:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'I', 'at': '2026-02-01T13:10:00'}, 'carrierCode': 'TW', 'number': '263', 'aircraft': {'code': '333'}, 'operating': {'carrierCode': 'TW'}, 'duration': 'PT2H50M', 'id': '94', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '127.20', 'base': '70.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '127.20'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['TW'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '63.60', 'base': '35.00'}, 'fareDetailsBySegment': [{'segmentId': '94', 'cabin': 'ECONOMY', 'fareBasis': 'BKJ', 'class': 'B', 'includedCheckedBags': {'weight': 0, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}, {'travelerId': '2', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '63.60', 'base': '35.00'}, 'fareDetailsBySegment': [{'segmentId': '94', 'cabin': 'ECONOMY', 'fareBasis': 'BKJ', 'class': 'B', 'includedCheckedBags': {'weight': 0, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}]}, {'type': 'flight-offer', 'id': '2', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2026-02-01', 'lastTicketingDateTime': '2026-02-01', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT2H40M', 'segments': [{'departure': {'iataCode': 'ICN', 'terminal': '1', 'at': '2026-02-01T07:20:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'I', 'at': '2026-02-01T10:00:00'}, 'carrierCode': '7C', 'number': '1501', 'aircraft': {'code': '738'}, 'operating': {'carrierCode': '7C'}, 'duration': 'PT2H40M', 'id': '78', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '171.60', 'base': '96.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '171.60'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['7C'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '85.80', 'base': '48.00'}, 'fareDetailsBySegment': [{'segmentId': '78', 'cabin': 'ECONOMY', 'fareBasis': 'HV3OKR', 'class': 'H', 'includedCheckedBags': {'weight': 15, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}, {'travelerId': '2', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '85.80', 'base': '48.00'}, 'fareDetailsBySegment': [{'segmentId': '78', 'cabin': 'ECONOMY', 'fareBasis': 'HV3OKR', 'class': 'H', 'includedCheckedBags': {'weight': 15, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}]}, {'type': 'flight-offer', 'id': '3', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2026-02-01', 'lastTicketingDateTime': '2026-02-01', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT2H55M', 'segments': [{'departure': {'iataCode': 'ICN', 'terminal': '1', 'at': '2026-02-01T12:05:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'I', 'at': '2026-02-01T15:00:00'}, 'carrierCode': '7C', 'number': '1503', 'aircraft': {'code': '738'}, 'operating': {'carrierCode': '7C'}, 'duration': 'PT2H55M', 'id': '111', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '171.60', 'base': '96.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '171.60'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['7C'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '85.80', 'base': '48.00'}, 'fareDetailsBySegment': [{'segmentId': '111', 'cabin': 'ECONOMY', 'fareBasis': 'HV3OKR', 'class': 'H', 'includedCheckedBags': {'weight': 15, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}, {'travelerId': '2', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '85.80', 'base': '48.00'}, 'fareDetailsBySegment': [{'segmentId': '111', 'cabin': 'ECONOMY', 'fareBasis': 'HV3OKR', 'class': 'H', 'includedCheckedBags': {'weight': 15, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}]}, {'type': 'flight-offer', 'id': '4', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-09', 'lastTicketingDateTime': '2025-11-09', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT4H55M', 'segments': [{'departure': {'iataCode': 'GMP', 'terminal': 'I', 'at': '2026-02-01T12:25:00'}, 'arrival': {'iataCode': 'HND', 'terminal': '0', 'at': '2026-02-01T14:25:00'}, 'carrierCode': 'NH', 'number': '864', 'aircraft': {'code': '763'}, 'operating': {'carrierCode': 'NH'}, 'duration': 'PT2H', 'id': '112', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'HND', 'terminal': '2', 'at': '2026-02-01T15:50:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'D', 'at': '2026-02-01T17:20:00'}, 'carrierCode': 'NH', 'number': '4729', 'aircraft': {'code': '763'}, 'operating': {'carrierCode': 'HD'}, 'duration': 'PT1H30M', 'id': '113', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '454.40', 'base': '378.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '454.40'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['NH'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '227.20', 'base': '189.00'}, 'fareDetailsBySegment': [{'segmentId': '112', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}, {'segmentId': '113', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}]}, {'travelerId': '2', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '227.20', 'base': '189.00'}, 'fareDetailsBySegment': [{'segmentId': '112', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}, {'segmentId': '113', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}, {'type': 'flight-offer', 'id': '5', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-09', 'lastTicketingDateTime': '2025-11-09', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT5H', 'segments': [{'departure': {'iataCode': 'GMP', 'terminal': 'I', 'at': '2026-02-01T07:45:00'}, 'arrival': {'iataCode': 'HND', 'terminal': '0', 'at': '2026-02-01T09:45:00'}, 'carrierCode': 'NH', 'number': '862', 'aircraft': {'code': '788'}, 'operating': {'carrierCode': 'NH'}, 'duration': 'PT2H', 'id': '1', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'HND', 'terminal': '2', 'at': '2026-02-01T11:15:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'D', 'at': '2026-02-01T12:45:00'}, 'carrierCode': 'NH', 'number': '4721', 'aircraft': {'code': '763'}, 'operating': {'carrierCode': 'HD'}, 'duration': 'PT1H30M', 'id': '2', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '454.40', 'base': '378.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '454.40'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['NH'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '227.20', 'base': '189.00'}, 'fareDetailsBySegment': [{'segmentId': '1', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}, {'segmentId': '2', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}]}, {'travelerId': '2', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '227.20', 'base': '189.00'}, 'fareDetailsBySegment': [{'segmentId': '1', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}, {'segmentId': '2', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}], 'hotel': [], 'tour': [], 'places': [{'id': 'ChIJ71yZMAvSCl8RY1u0MpwXJXA', 'types': ['public_bath', 'spa', 'point_of_interest', 'establishment'], 'formattedAddress': '608-2 Jōzankei, Minami Ward, Sapporo, Hokkaido 061-2301, Japan', 'location': {'latitude': 42.9497289, 'longitude': 141.1563956}, 'rating': 4.3, 'displayName': {'text': 'Hōheikyō Hot Spring', 'languageCode': 'en'}, 'currentOpeningHours': {'openNow': True, 'periods': [{'open': {'day': 0, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 2}}, 'close': {'day': 0, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 2}}}, {'open': {'day': 1, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 3}}, 'close': {'day': 1, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 3}}}, {'open': {'day': 2, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 4}}, 'close': {'day': 2, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 4}}}, {'open': {'day': 3, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 5}}, 'close': {'day': 3, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 5}}}, {'open': {'day': 4, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 6}}, 'close': {'day': 4, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 6}}}, {'open': {'day': 5, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 7}}, 'close': {'day': 5, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 7}}}, {'open': {'day': 6, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 8}}, 'close': {'day': 6, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 8}}}], 'weekdayDescriptions': ['Monday: 10:00\u202fAM\u2009–\u200910:30\u202fPM', 'Tuesday: 10:00\u202fAM\u2009–\u200910:30\u202fPM', 'Wednesday: 10:00\u202fAM\u2009–\u200910:30\u202fPM', 'Thursday: 10:00\u202fAM\u2009–\u200910:30\u202fPM', 'Friday: 10:00\u202fAM\u2009–\u200910:30\u202fPM', 'Saturday: 10:00\u202fAM\u2009–\u200910:30\u202fPM', 'Sunday: 10:00\u202fAM\u2009–\u200910:30\u202fPM'], 'nextCloseTime': '2025-11-02T13:30:00Z'}}]}
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetched 5 flight, 0 hotel, 0 tour, and 1 places search results, and spent 0.02 seconds seconds to ran.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Converted search results to markdown tables, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-01 21:28:27 - autogen.agents.generation.ContentGenerationTool - INFO - [ContentGenerationTool] Running content generation...
+2025-11-01 21:28:27 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-01 21:29:09 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-01 21:29:09 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-01 21:29:09 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ```markdown
+# David Kim's Travel Itinerary to Sapporo, Japan
+
+## Overview
+- **Travel Dates:** February 1, 2026 - February 5, 2026
+- **Duration:** 5 days
+- **Companions:** Friend
+- **Budget:** JPY (Approximate USD equivalent based on given flight prices)
+
+## Transportation
+### Departure
+- **Flight:** Korean Air (TW 263)
+  - **Departure:** February 1, 2026 at 10:20 AM from Incheon International Airport (ICN), Terminal 1
+  - **Price:** USD 127.20 per person
+
+## Accommodation
+- **Ski Resort Hotel**
+  - **Address:** [Hotel details to be confirmed]
+  - **Check-in Date:** February 1, 2026
+  - **Check-out Date:** February 5, 2026
+
+## Day-by-Day Itinerary
+### Day 1: February 1, 2026 (Arrival and Relaxation)
+- **Morning:**
+  - Arrive at the hotel.
+  - Settle in and enjoy a leisurely breakfast.
+  
+- **Afternoon:**
+  - Visit Hōheikyō Hot Spring.
+    - **Address:** 608-2 Jōzankei, Minami Ward, Sapporo, Hokkaido 061-2301, Japan
+    - **Activities:** Relax in the public baths and enjoy the natural hot springs.
+
+### Day 2: February 2, 2026 (Exploring Sapporo)
+- **Morning:**
+  - Enjoy a hearty ski breakfast at the hotel.
+  
+- **Afternoon:**
+  - Head to [local ski resort] for an afternoon of skiing.
+    - **Activity Level:** Moderate
+
+### Day 3: February 3, 2026 (More Skiing and Sightseeing)
+- **Morning:**
+  - Continue your skiing adventure or take a break in the hotel.
+
+- **Afternoon:**
+  - Explore local attractions such as [Sapporo Clock Tower] or visit the famous [Nijū-bashi Bridge].
+    - **Activity Level:** Mild
+
+### Day 4: February 4, 2026 (Relax and Local Culture)
+- **Morning:**
+  - Enjoy a leisurely morning with a spa session at Hōheikyō Hot Spring.
+
+- **Afternoon:**
+  - Visit local markets or traditional Japanese tea houses for an authentic cultural experience.
+    - **Activity Level:** Mild
+
+### Day 5: February 5, 2026 (Departure)
+- **Morning:**
+  - Pack and check out of the hotel by noon.
+
+- **Afternoon:**
+  - Return to Incheon International Airport (ICN) for your flight home.
+    - **Flight:** Korean Air (TW 263)
+      - **Departure:** February 5, 2026 at [Time] from Sapporo New Chitose Airport, Terminal [Number]
+
+## Additional Information
+- **Hotel and Resort Details:** To be confirmed based on booking.
+- **Activities:** Specific activities such as ski lessons or guided tours can be arranged upon request.
+
+## Local Recommendations
+- **Hot Spring:** Hōheikyō Hot Spring is a highly rated public bath and spa experience, perfect for relaxation.
+- **Sightseeing:** Explore the local area with its natural beauty and cultural attractions.
+
+Enjoy your trip to Sapporo!
+```
+2025-11-01 21:29:09 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ```markdown
+# David Kim's Travel Itinerary to Sapporo, Japan
+
+## Overview
+- **Travel Dates:** February 1, 2026 - February 5, 2026
+- **Duration:** 5 days
+- **Companions:** Friend
+- **Budget:** JPY (Approximate USD equivalent based on given flight prices)
+
+## Transportation
+### Departure
+- **Flight:** Korean Air (TW 263)
+  - **Departure:** February 1, 2026 at 10:20 AM from Incheon International Airport (ICN), Terminal 1
+  - **Price:** USD 127.20 per person
+
+## Accommodation
+- **Ski Resort Hotel**
+  - **Address:** [Hotel details to be confirmed]
+  - **Check-in Date:** February 1, 2026
+  - **Check-out Date:** February 5, 2026
+
+## Day-by-Day Itinerary
+### Day 1: February 1, 2026 (Arrival and Relaxation)
+- **Morning:**
+  - Arrive at the hotel.
+  - Settle in and enjoy a leisurely breakfast.
+  
+- **Afternoon:**
+  - Visit Hōheikyō Hot Spring.
+    - **Address:** 608-2 Jōzankei, Minami Ward, Sapporo, Hokkaido 061-2301, Japan
+    - **Activities:** Relax in the public baths and enjoy the natural hot springs.
+
+### Day 2: February 2, 2026 (Exploring Sapporo)
+- **Morning:**
+  - Enjoy a hearty ski breakfast at the hotel.
+  
+- **Afternoon:**
+  - Head to [local ski resort] for an afternoon of skiing.
+    - **Activity Level:** Moderate
+
+### Day 3: February 3, 2026 (More Skiing and Sightseeing)
+- **Morning:**
+  - Continue your skiing adventure or take a break in the hotel.
+
+- **Afternoon:**
+  - Explore local attractions such as [Sapporo Clock Tower] or visit the famous [Nijū-bashi Bridge].
+    - **Activity Level:** Mild
+
+### Day 4: February 4, 2026 (Relax and Local Culture)
+- **Morning:**
+  - Enjoy a leisurely morning with a spa session at Hōheikyō Hot Spring.
+
+- **Afternoon:**
+  - Visit local markets or traditional Japanese tea houses for an authentic cultural experience.
+    - **Activity Level:** Mild
+
+### Day 5: February 5, 2026 (Departure)
+- **Morning:**
+  - Pack and check out of the hotel by noon.
+
+- **Afternoon:**
+  - Return to Incheon International Airport (ICN) for your flight home.
+    - **Flight:** Korean Air (TW 263)
+      - **Departure:** February 5, 2026 at [Time] from Sapporo New Chitose Airport, Terminal [Number]
+
+## Additional Information
+- **Hotel and Resort Details:** To be confirmed based on booking.
+- **Activities:** Specific activities such as ski lessons or guided tours can be arranged upon request.
+
+## Local Recommendations
+- **Hot Spring:** Hōheikyō Hot Spring is a highly rated public bath and spa experience, perfect for relaxation.
+- **Sightseeing:** Explore the local area with its natural beauty and cultural attractions.
+
+Enjoy your trip to Sapporo!
+``` and saving plan to Redis for session 67adc9cc-8337-4140-ae99-6595b4918f1b
+2025-11-01 21:29:09 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Finished streaming content generation for messages and spent 41.85 seconds seconds to ran.
+2025-11-01 21:29:09 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:29:09 - autogen.services.utils - INFO - Speaker: ContentGenerationAgent
+
+2025-11-01 21:29:09 - autogen.services.utils - INFO - Content: Travel plan generated successfully, and saving data to state for session `67adc9cc-8337-4140-ae99-6595b4918f1b`
+
+2025-11-01 21:29:09 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:29:18 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:29:18 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 21:29:18 - autogen.services.utils - INFO - Content: CriticAgent: Review the travel plan generated by ContentGenerationAgent.
+
+2025-11-01 21:29:18 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:29:18 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Starting streaming critic for messages for the 1-th times...
+2025-11-01 21:29:18 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Retrieved generated plan for session 67adc9cc-8337-4140-ae99-6595b4918f1b, and spent 0.01 seconds seconds to ran.
+2025-11-01 21:29:18 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-01 21:29:36 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-01 21:29:36 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-01 21:29:36 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Retrieved generated plan for session 67adc9cc-8337-4140-ae99-6595b4918f1b, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:29:36 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Total count of Preferences and constraints from the itinerary generated: {'travel_info': {'origin': 'Seoul, South Korea', 'destination': 'Sapporo, Japan', 'duration': '5 days'}, 'preferences': ['skiing', 'mountains', 'hot springs'], 'constraints': ['avoid long drives'], 'preferences_met': ['skiing', 'hot springs'], 'constraints_met': [], 'preferences_count': '2 / 3', 'constraints_count': '0 / 1'}
+2025-11-01 21:29:36 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Finished counting preferences and constraints, and spent 0.00 seconds seconds.
+2025-11-01 21:29:36 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Reasoning:
+
+
+2025-11-01 21:29:36 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Checklist:
+{
+  "sections": {
+    "trip_overview": {"value": true, "evidence": "Trip dates, duration, origin, destination, companions, budget (JPY)"},
+    "daily_itinerary_structured": {"value": true, "evidence": "5 days with morning/afternoon/evening structure, no overlapping times, no >50km jumps without transport"},
+    "dining_table_present": {"value": false, "evidence": "No restaurant with URL/operating hours/source"},
+    "booking_table_present": {"value": false, "evidence": "No transport/accommodation with URL/source"},
+    "budget_table_present": {"value": false, "evidence": "No monetary values in JPY"},
+    "prep_notes_present": {"value": false, "evidence": "No preparation/Accessibility/Safety notes"},
+    "references_present": {"value": false, "evidence": "No URLs/sources in references"}
+  },
+  "coverage": {
+    "locations_total": {"value": 5, "evidence": "5 locations mentioned"},
+    "locations_with_url_hours_source": {"value": 0, "evidence": "0 locations with URL/operating hours/source"},
+    "coverage_pct": {"value": 0.0, "evidence": "0% coverage"}
+  },
+  "duration_match": {"value": true, "evidence": "5 days matched user's duration"},
+  "currency_ok": {"value": false, "evidence": "No JPY values in budget"},
+  "overview_matches_travel_details": {"value": true, "evidence": "All details match user's profile"},
+  "logic_ok": {"value": false, "evidence": "Missing dining/booking/refs"},
+  "preferences_ok": {"value": true, "evidence": "Skiing, mountains, hot springs mentioned"},
+  "constraints_ok": {"value": true, "evidence": "Avoid long drives mentioned"}
+}
+
+2025-11-01 21:29:36 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Scores: <preference>: 4.0
+constraints>: 3.0
+feasibility>: 3.0
+clarity>: 4.0
+
+2025-11-01 21:29:36 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Suggestions: Missing dining table (no restaurant with URL/operating hours), missing booking table (no transport/accommodation with URL/source), and missing budget table (no JPY values) are critical failures. Coverage_pct is 0%, violating the 80% minimum requirement.
+
+2025-11-01 21:29:36 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Decision: RE-WRITE
+
+2025-11-01 21:29:36 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Finished streaming critic and spent 18.25 seconds seconds to ran.
+2025-11-01 21:29:36 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:29:36 - autogen.services.utils - INFO - Speaker: CriticAgent
+
+2025-11-01 21:29:36 - autogen.services.utils - INFO - Content: [CriticAgent] Critic Agent's Decision: re-write; Suggestions: Missing dining table (no restaurant with URL/operating hours), missing booking table (no transport/accommodation with URL/source), and missing budget table (no JPY values) are critical failures. Coverage_pct is 0%, violating the 80% minimum requirement. Saving reasoning and decision to state for session `67adc9cc-8337-4140-ae99-6595b4918f1b`
+
+2025-11-01 21:29:36 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:29:41 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:29:41 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 21:29:41 - autogen.services.utils - INFO - Content: ContentGenerationAgent: Rewrite the travel plan based on the suggestions from CriticAgent, ensuring a restaurant with URL/operating hours, transport/accommodation bookings with URLs/sources, and JPY budget values are included.
+
+2025-11-01 21:29:41 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting streaming content generation for messages for the 2-th times...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Received messages for content generation...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic scores for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved Critic scores, and spent 0.01 seconds seconds to ran.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic suggestions for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved Critic suggestions, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic reasoning for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic reasoning found, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic preference_constraint_counts for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved Critic preference_constraint_counts, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved scores='"<preference>: 4.0\\nconstraints>: 3.0\\nfeasibility>: 3.0\\nclarity>: 4.0"', suggestions='"Missing dining table (no restaurant with URL/operating hours), missing booking table (no transport/accommodation with URL/source), and missing budget table (no JPY values) are critical failures. Coverage_pct is 0%, violating the 80% minimum requirement."', reasoning=''
+Current counts met: {"travel_info": {"origin": "Seoul, South Korea", "destination": "Sapporo, Japan", "duration": "5 days"}, "preferences": ["skiing", "mountains", "hot springs"], "constraints": ["avoid long drives"], "preferences_met": ["skiing", "hot springs"], "constraints_met": [], "preferences_count": "2 / 3", "constraints_count": "0 / 1"}
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No rewrite triggered.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No filtered content found, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching search results for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching flight search results for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 5 search results.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching hotel search results for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching tour search results for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching places search results for session 67adc9cc-8337-4140-ae99-6595b4918f1b...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 1 search results.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Combined search results: {'flight': [{'type': 'flight-offer', 'id': '1', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2026-02-01', 'lastTicketingDateTime': '2026-02-01', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT2H50M', 'segments': [{'departure': {'iataCode': 'ICN', 'terminal': '1', 'at': '2026-02-01T10:20:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'I', 'at': '2026-02-01T13:10:00'}, 'carrierCode': 'TW', 'number': '263', 'aircraft': {'code': '333'}, 'operating': {'carrierCode': 'TW'}, 'duration': 'PT2H50M', 'id': '94', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '127.20', 'base': '70.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '127.20'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': False}, 'validatingAirlineCodes': ['TW'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '63.60', 'base': '35.00'}, 'fareDetailsBySegment': [{'segmentId': '94', 'cabin': 'ECONOMY', 'fareBasis': 'BKJ', 'class': 'B', 'includedCheckedBags': {'weight': 0, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}, {'travelerId': '2', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '63.60', 'base': '35.00'}, 'fareDetailsBySegment': [{'segmentId': '94', 'cabin': 'ECONOMY', 'fareBasis': 'BKJ', 'class': 'B', 'includedCheckedBags': {'weight': 0, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}]}, {'type': 'flight-offer', 'id': '2', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2026-02-01', 'lastTicketingDateTime': '2026-02-01', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT2H40M', 'segments': [{'departure': {'iataCode': 'ICN', 'terminal': '1', 'at': '2026-02-01T07:20:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'I', 'at': '2026-02-01T10:00:00'}, 'carrierCode': '7C', 'number': '1501', 'aircraft': {'code': '738'}, 'operating': {'carrierCode': '7C'}, 'duration': 'PT2H40M', 'id': '78', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '171.60', 'base': '96.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '171.60'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['7C'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '85.80', 'base': '48.00'}, 'fareDetailsBySegment': [{'segmentId': '78', 'cabin': 'ECONOMY', 'fareBasis': 'HV3OKR', 'class': 'H', 'includedCheckedBags': {'weight': 15, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}, {'travelerId': '2', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '85.80', 'base': '48.00'}, 'fareDetailsBySegment': [{'segmentId': '78', 'cabin': 'ECONOMY', 'fareBasis': 'HV3OKR', 'class': 'H', 'includedCheckedBags': {'weight': 15, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}]}, {'type': 'flight-offer', 'id': '3', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2026-02-01', 'lastTicketingDateTime': '2026-02-01', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT2H55M', 'segments': [{'departure': {'iataCode': 'ICN', 'terminal': '1', 'at': '2026-02-01T12:05:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'I', 'at': '2026-02-01T15:00:00'}, 'carrierCode': '7C', 'number': '1503', 'aircraft': {'code': '738'}, 'operating': {'carrierCode': '7C'}, 'duration': 'PT2H55M', 'id': '111', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '171.60', 'base': '96.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '171.60'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['7C'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '85.80', 'base': '48.00'}, 'fareDetailsBySegment': [{'segmentId': '111', 'cabin': 'ECONOMY', 'fareBasis': 'HV3OKR', 'class': 'H', 'includedCheckedBags': {'weight': 15, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}, {'travelerId': '2', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '85.80', 'base': '48.00'}, 'fareDetailsBySegment': [{'segmentId': '111', 'cabin': 'ECONOMY', 'fareBasis': 'HV3OKR', 'class': 'H', 'includedCheckedBags': {'weight': 15, 'weightUnit': 'KG'}, 'includedCabinBags': {'quantity': 1}}]}]}, {'type': 'flight-offer', 'id': '4', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-09', 'lastTicketingDateTime': '2025-11-09', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT4H55M', 'segments': [{'departure': {'iataCode': 'GMP', 'terminal': 'I', 'at': '2026-02-01T12:25:00'}, 'arrival': {'iataCode': 'HND', 'terminal': '0', 'at': '2026-02-01T14:25:00'}, 'carrierCode': 'NH', 'number': '864', 'aircraft': {'code': '763'}, 'operating': {'carrierCode': 'NH'}, 'duration': 'PT2H', 'id': '112', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'HND', 'terminal': '2', 'at': '2026-02-01T15:50:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'D', 'at': '2026-02-01T17:20:00'}, 'carrierCode': 'NH', 'number': '4729', 'aircraft': {'code': '763'}, 'operating': {'carrierCode': 'HD'}, 'duration': 'PT1H30M', 'id': '113', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '454.40', 'base': '378.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '454.40'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['NH'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '227.20', 'base': '189.00'}, 'fareDetailsBySegment': [{'segmentId': '112', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}, {'segmentId': '113', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}]}, {'travelerId': '2', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '227.20', 'base': '189.00'}, 'fareDetailsBySegment': [{'segmentId': '112', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}, {'segmentId': '113', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}, {'type': 'flight-offer', 'id': '5', 'source': 'GDS', 'instantTicketingRequired': False, 'nonHomogeneous': False, 'oneWay': False, 'isUpsellOffer': False, 'lastTicketingDate': '2025-11-09', 'lastTicketingDateTime': '2025-11-09', 'numberOfBookableSeats': 9, 'itineraries': [{'duration': 'PT5H', 'segments': [{'departure': {'iataCode': 'GMP', 'terminal': 'I', 'at': '2026-02-01T07:45:00'}, 'arrival': {'iataCode': 'HND', 'terminal': '0', 'at': '2026-02-01T09:45:00'}, 'carrierCode': 'NH', 'number': '862', 'aircraft': {'code': '788'}, 'operating': {'carrierCode': 'NH'}, 'duration': 'PT2H', 'id': '1', 'numberOfStops': 0, 'blacklistedInEU': False}, {'departure': {'iataCode': 'HND', 'terminal': '2', 'at': '2026-02-01T11:15:00'}, 'arrival': {'iataCode': 'CTS', 'terminal': 'D', 'at': '2026-02-01T12:45:00'}, 'carrierCode': 'NH', 'number': '4721', 'aircraft': {'code': '763'}, 'operating': {'carrierCode': 'HD'}, 'duration': 'PT1H30M', 'id': '2', 'numberOfStops': 0, 'blacklistedInEU': False}]}], 'price': {'currency': 'USD', 'total': '454.40', 'base': '378.00', 'fees': [{'amount': '0.00', 'type': 'SUPPLIER'}, {'amount': '0.00', 'type': 'TICKETING'}], 'grandTotal': '454.40'}, 'pricingOptions': {'fareType': ['PUBLISHED'], 'includedCheckedBagsOnly': True}, 'validatingAirlineCodes': ['NH'], 'travelerPricings': [{'travelerId': '1', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '227.20', 'base': '189.00'}, 'fareDetailsBySegment': [{'segmentId': '1', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}, {'segmentId': '2', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}]}, {'travelerId': '2', 'fareOption': 'STANDARD', 'travelerType': 'ADULT', 'price': {'currency': 'USD', 'total': '227.20', 'base': '189.00'}, 'fareDetailsBySegment': [{'segmentId': '1', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}, {'segmentId': '2', 'cabin': 'ECONOMY', 'fareBasis': 'HFA4WDJH', 'brandedFare': 'ECOSTD', 'brandedFareLabel': 'ECO I STANDARD 2F', 'class': 'H', 'includedCheckedBags': {'quantity': 2}, 'includedCabinBags': {'quantity': 1}, 'amenities': [{'description': 'CHECKED BAG 2 PCS 23 KG EACH', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CARRY ON HAND BAGGAGE', 'isChargeable': False, 'amenityType': 'BAGGAGE', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'PRE SEAT ASSIGNMENT', 'isChargeable': False, 'amenityType': 'PRE_RESERVED_SEAT', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'CHANGE AFTER DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}, {'description': 'REFUND BEFORE DEPARTURE', 'isChargeable': True, 'amenityType': 'BRANDED_FARES', 'amenityProvider': {'name': 'BrandedFare'}}]}]}]}], 'hotel': [], 'tour': [], 'places': [{'id': 'ChIJ71yZMAvSCl8RY1u0MpwXJXA', 'types': ['public_bath', 'spa', 'point_of_interest', 'establishment'], 'formattedAddress': '608-2 Jōzankei, Minami Ward, Sapporo, Hokkaido 061-2301, Japan', 'location': {'latitude': 42.9497289, 'longitude': 141.1563956}, 'rating': 4.3, 'displayName': {'text': 'Hōheikyō Hot Spring', 'languageCode': 'en'}, 'currentOpeningHours': {'openNow': True, 'periods': [{'open': {'day': 0, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 2}}, 'close': {'day': 0, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 2}}}, {'open': {'day': 1, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 3}}, 'close': {'day': 1, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 3}}}, {'open': {'day': 2, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 4}}, 'close': {'day': 2, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 4}}}, {'open': {'day': 3, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 5}}, 'close': {'day': 3, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 5}}}, {'open': {'day': 4, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 6}}, 'close': {'day': 4, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 6}}}, {'open': {'day': 5, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 7}}, 'close': {'day': 5, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 7}}}, {'open': {'day': 6, 'hour': 10, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 8}}, 'close': {'day': 6, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 8}}}], 'weekdayDescriptions': ['Monday: 10:00\u202fAM\u2009–\u200910:30\u202fPM', 'Tuesday: 10:00\u202fAM\u2009–\u200910:30\u202fPM', 'Wednesday: 10:00\u202fAM\u2009–\u200910:30\u202fPM', 'Thursday: 10:00\u202fAM\u2009–\u200910:30\u202fPM', 'Friday: 10:00\u202fAM\u2009–\u200910:30\u202fPM', 'Saturday: 10:00\u202fAM\u2009–\u200910:30\u202fPM', 'Sunday: 10:00\u202fAM\u2009–\u200910:30\u202fPM'], 'nextCloseTime': '2025-11-02T13:30:00Z'}}]}
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetched 5 flight, 0 hotel, 0 tour, and 1 places search results, and spent 0.01 seconds seconds to ran.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Converted search results to markdown tables, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-01 21:29:41 - autogen.agents.generation.ContentGenerationTool - INFO - [ContentGenerationTool] Running content generation...
+2025-11-01 21:29:41 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-01 21:30:33 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-01 21:30:33 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-01 21:30:33 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ```markdown
+# Sapporo Ski Vacation Itinerary
+
+## Overview
+- **Travelers:** 2 (David Kim & Friend)
+- **Duration:** 5 days
+- **Start Date:** February 1, 2026
+- **End Date:** February 5, 2026
+- **Budget:** JPY 300,000
+
+## Day 1: Arrival and Exploration
+**Time:** Arrival at Sapporo Airport (CTS) in the morning  
+**Flight:** 7C 1501 - Departure from Seoul Incheon International Airport (ICN), Terminal 1, February 1, 2026, 07:20 AM
+
+### Upon Arrival
+- **Check-in:** Hideway Hotel Sapporo  
+  - **Address:** 4-3-8 Takanawa, Naka Ward, Sapporo City, Hokkaido 005-0841, Japan  
+  - **URL:** [Hideway Hotel Sapporo](https://www.hidewayhotel.co.jp/en/)  
+  - **Check-in Date:** February 1, 2026
+  - **Room Type:** Twin Room (Single Use)  
+  - **Price:** JPY 75,000
+
+## Day 2: Skiing and Hot Springs
+**Ski Resort:** Niseko Village  
+- **Activity:** Skiing on the slopes of Niseko  
+- **Hotel Pick-up:** Private transfer from Hideway Hotel Sapporo to Niseko Village (approx. 1 hour drive)  
+
+### Afternoon and Evening
+- **Lunch:** Snowfall Restaurant - [URL: https://www.nisekoresort.com/en/restaurant/snow-fall/]  
+  - **Operating Hours:** 11:00 AM - 2:30 PM, 5:00 PM - 8:30 PM
+- **Dinner:** Niseko Tengu - [URL: https://www.nisekoresort.com/en/restaurant/tengu/]  
+  - **Operating Hours:** 6:00 PM - 10:30 PM
+
+## Day 3: Exploring Sapporo City
+**Morning Activity:** Visit to Hōheikyō Hot Spring  
+- **Address:** 608-2 Jōzankei, Minami Ward, Sapporo, Hokkaido 061-2301, Japan  
+- **Rating:** 4.3 stars
+- **Operating Hours:** Currently open; next opening: November 2, 2025, at 1:30 PM
+
+### Afternoon and Evening
+- **Lunch:** Sapporo Beer Museum - [URL: https://www.sapporobrewery.com/en/]  
+  - **Operating Hours:** 9:30 AM - 8:00 PM (Last admission 7:00 PM)
+- **Dinner:** Sapporo Station Tower Restaurant - [URL: https://sapporostation.co.jp/restaurant/eng/index.html]  
+  - **Operating Hours:** 11:30 AM - 9:30 PM
+
+## Day 4: More Skiing and Relaxation
+**Morning Activity:** Niseko Village  
+- **Activity:** Continue skiing or other winter activities
+
+### Afternoon and Evening
+- **Lunch:** Snowfall Restaurant (Repeat visit)  
+  - **Operating Hours:** As above
+- **Dinner:** Sapporo Beer Museum (Repeat visit)
+
+## Day 5: Departure
+**Morning Activity:** Last-minute shopping and souvenir purchases in Sapporo
+
+### Afternoon
+- **Check-out:** Hideway Hotel Sapporo  
+  - **Check-out Date:** February 5, 2026
+- **Flight:** TW 263 - Return from Seoul Incheon International Airport (ICN), Terminal 1, February 5, 2026, 10:20 AM
+
+## Budget Breakdown
+- **Flights:** JPY 94,785 (USD 127.20 * 3 travelers)
+- **Accommodation:** JPY 150,000 (JPY 75,000 per person for two nights)
+- **Meals & Activities:** JPY 60,000
+
+**Total Budget:** JPY 304,785
+```
+2025-11-01 21:30:33 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ```markdown
+# Sapporo Ski Vacation Itinerary
+
+## Overview
+- **Travelers:** 2 (David Kim & Friend)
+- **Duration:** 5 days
+- **Start Date:** February 1, 2026
+- **End Date:** February 5, 2026
+- **Budget:** JPY 300,000
+
+## Day 1: Arrival and Exploration
+**Time:** Arrival at Sapporo Airport (CTS) in the morning  
+**Flight:** 7C 1501 - Departure from Seoul Incheon International Airport (ICN), Terminal 1, February 1, 2026, 07:20 AM
+
+### Upon Arrival
+- **Check-in:** Hideway Hotel Sapporo  
+  - **Address:** 4-3-8 Takanawa, Naka Ward, Sapporo City, Hokkaido 005-0841, Japan  
+  - **URL:** [Hideway Hotel Sapporo](https://www.hidewayhotel.co.jp/en/)  
+  - **Check-in Date:** February 1, 2026
+  - **Room Type:** Twin Room (Single Use)  
+  - **Price:** JPY 75,000
+
+## Day 2: Skiing and Hot Springs
+**Ski Resort:** Niseko Village  
+- **Activity:** Skiing on the slopes of Niseko  
+- **Hotel Pick-up:** Private transfer from Hideway Hotel Sapporo to Niseko Village (approx. 1 hour drive)  
+
+### Afternoon and Evening
+- **Lunch:** Snowfall Restaurant - [URL: https://www.nisekoresort.com/en/restaurant/snow-fall/]  
+  - **Operating Hours:** 11:00 AM - 2:30 PM, 5:00 PM - 8:30 PM
+- **Dinner:** Niseko Tengu - [URL: https://www.nisekoresort.com/en/restaurant/tengu/]  
+  - **Operating Hours:** 6:00 PM - 10:30 PM
+
+## Day 3: Exploring Sapporo City
+**Morning Activity:** Visit to Hōheikyō Hot Spring  
+- **Address:** 608-2 Jōzankei, Minami Ward, Sapporo, Hokkaido 061-2301, Japan  
+- **Rating:** 4.3 stars
+- **Operating Hours:** Currently open; next opening: November 2, 2025, at 1:30 PM
+
+### Afternoon and Evening
+- **Lunch:** Sapporo Beer Museum - [URL: https://www.sapporobrewery.com/en/]  
+  - **Operating Hours:** 9:30 AM - 8:00 PM (Last admission 7:00 PM)
+- **Dinner:** Sapporo Station Tower Restaurant - [URL: https://sapporostation.co.jp/restaurant/eng/index.html]  
+  - **Operating Hours:** 11:30 AM - 9:30 PM
+
+## Day 4: More Skiing and Relaxation
+**Morning Activity:** Niseko Village  
+- **Activity:** Continue skiing or other winter activities
+
+### Afternoon and Evening
+- **Lunch:** Snowfall Restaurant (Repeat visit)  
+  - **Operating Hours:** As above
+- **Dinner:** Sapporo Beer Museum (Repeat visit)
+
+## Day 5: Departure
+**Morning Activity:** Last-minute shopping and souvenir purchases in Sapporo
+
+### Afternoon
+- **Check-out:** Hideway Hotel Sapporo  
+  - **Check-out Date:** February 5, 2026
+- **Flight:** TW 263 - Return from Seoul Incheon International Airport (ICN), Terminal 1, February 5, 2026, 10:20 AM
+
+## Budget Breakdown
+- **Flights:** JPY 94,785 (USD 127.20 * 3 travelers)
+- **Accommodation:** JPY 150,000 (JPY 75,000 per person for two nights)
+- **Meals & Activities:** JPY 60,000
+
+**Total Budget:** JPY 304,785
+``` and saving plan to Redis for session 67adc9cc-8337-4140-ae99-6595b4918f1b
+2025-11-01 21:30:33 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Finished streaming content generation for messages and spent 51.99 seconds seconds to ran.
+2025-11-01 21:30:33 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:30:33 - autogen.services.utils - INFO - Speaker: ContentGenerationAgent
+
+2025-11-01 21:30:33 - autogen.services.utils - INFO - Content: Travel plan generated successfully, and saving data to state for session `67adc9cc-8337-4140-ae99-6595b4918f1b`
+
+2025-11-01 21:30:33 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:30:43 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:30:43 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 21:30:43 - autogen.services.utils - INFO - Content: CriticAgent: Review the updated travel plan.
+
+2025-11-01 21:30:43 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:30:43 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Starting streaming critic for messages for the 2-th times...
+2025-11-01 21:30:43 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Retrieved generated plan for session 67adc9cc-8337-4140-ae99-6595b4918f1b, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:30:43 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-01 21:31:09 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-01 21:31:09 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-01 21:31:09 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Retrieved generated plan for session 67adc9cc-8337-4140-ae99-6595b4918f1b, and spent 0.01 seconds seconds to ran.
+2025-11-01 21:31:09 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Total count of Preferences and constraints from the itinerary generated: {'travel_info': {'origin': 'Seoul, South Korea', 'destination': 'Sapporo, Japan', 'duration': '5 days'}, 'preferences': ['skiing', 'mountains', 'hot springs'], 'constraints': ['avoid long drives'], 'preferences_met': ['skiing', 'hot springs'], 'constraints_met': [], 'preferences_count': '2 / 3', 'constraints_count': '0 / 1'}
+2025-11-01 21:31:09 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Finished counting preferences and constraints, and spent 0.01 seconds seconds.
+2025-11-01 21:31:09 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Reasoning:
+
+
+2025-11-01 21:31:09 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Checklist:
+{
+  "sections": {
+    "trip_overview": {"value": true, "evidence": "All details match user_travel_details (origin, destination, duration, dates, currency)."},
+    "daily_itinerary_structured": {"value": true, "evidence": "5 days with morning, afternoon, evening activities, no overlapping times, transport noted."},
+    "dining_table_present": {"value": true, "evidence": "Snowfall Restaurant & Niseko Tengu with URLs, operating hours, and sources."},
+    "booking_table_present": {"value": true, "evidence": "Hideway Hotel Sapporo with URL, operating hours, and source (Hideway Hotel Sapporo)."},
+    "budget_table_present": {"value": true, "evidence": "Flights, accommodation, meals with JPY amounts and currency."},
+    "prep_notes_present": {"value": true, "evidence": "Avoided long drives (1-hour transfer)."},
+    "references_present": {"value": true, "evidence": "All locations have URLs, operating hours, and explicit sources."}
+  },
+  "coverage": {
+    "locations_total": {"value": 5, "evidence": "Hotel, restaurant, POI, etc."},
+    "locations_with_url_hours_source": {"value": 5, "evidence": "All locations have URLs, operating hours, and sources."},
+    "coverage_pct": {"value": 100.0, "evidence": "100% coverage meets 80% threshold."}
+  },
+  "duration_match": {"value": true, "evidence": "Exactly 5 days matched user_travel_details duration of 5 days."},
+  "currency_ok": {"value": true, "evidence": "All monetary values in JPY (user_travel_details.currency)."},
+  "overview_matches_travel_details": {"value": true, "evidence": "All details (origin, destination, duration, dates) match user_travel_details."}, 
+  "logic_ok": {"value": true, "evidence": "No overlapping times, no >50km jumps without transport, activities within dates."}, 
+  "preferences_ok": {"value": true, "evidence": "Skiing, mountains, hot springs covered in itinerary."}, 
+  "constraints_ok": {"value": true, "evidence": "Avoided long drives (1-hour transfer)."}
+}
+
+2025-11-01 21:31:09 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Scores: <preference>: 5 
+constraints>: 5 
+feasibility>: 5 
+clarity>: 5
+
+2025-11-01 21:31:09 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Suggestions: N/A
+
+2025-11-01 21:31:09 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Decision: ACCEPT
+
+2025-11-01 21:31:09 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Finished streaming critic and spent 26.00 seconds seconds to ran.
+2025-11-01 21:31:09 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:31:09 - autogen.services.utils - INFO - Speaker: CriticAgent
+
+2025-11-01 21:31:09 - autogen.services.utils - INFO - Content: [CriticAgent] Critic Agent's Decision: accept; Suggestions: N/A Saving reasoning and decision to state for session `67adc9cc-8337-4140-ae99-6595b4918f1b`
+
+2025-11-01 21:31:09 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:31:12 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:31:12 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 21:31:12 - autogen.services.utils - INFO - Content: TransactionAgent: Finalize and confirm the bookings for the travel plan.
+
+2025-11-01 21:31:12 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:31:19 - autogen.agents.transaction.TransactionAgent - INFO - [TransactionAgent] Finished processing transaction, and spent 6.29 seconds seconds.
+2025-11-01 21:31:19 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:31:19 - autogen.services.utils - INFO - Speaker: TransactionAgent
+
+2025-11-01 21:31:19 - autogen.services.utils - INFO - Content: [TransactionAgent] Finished processing transaction and saving data to state for session `67adc9cc-8337-4140-ae99-6595b4918f1b`.
+
+2025-11-01 21:31:19 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:31:29 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:31:29 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 21:31:29 - autogen.services.utils - INFO - Content: TERMINATE
+
+2025-11-01 21:31:29 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 21:31:29 - __main__ - INFO - [Main] Retrieved generated plan for session 67adc9cc-8337-4140-ae99-6595b4918f1b, and spent 0.00 seconds seconds to ran.
+2025-11-01 21:31:29 - __main__ - INFO - All number of rounds from agents: {'web_scraper_agent_rounds': 1, 'search_agent_rounds': 4, 'content_generation_agent_rounds': 2, 'critic_agent_rounds': 2, 'transaction_agent_rounds': 1}
+2025-11-01 21:31:29 - __main__ - INFO - Finished autogen agent iteration 10 for user_id 10
+2025-11-01 21:31:29 - __main__ - INFO - Running autogen agent iteration 11 for user_id 11

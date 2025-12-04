@@ -1,0 +1,879 @@
+[
+    {
+        "test_id": "good_tokyo_cultural_7d_1",
+        "user_profile": {
+            "user_id": 1,
+            "age": 45,
+            "date_of_birth": "1980-05-15",
+            "name": "Alice Johnson",
+            "first_name": "Alice",
+            "last_name": "Johnson",
+            "email": "alice.johnson@example.com",
+            "preferred_language": "Chinese",
+            "gender": "female",
+            "transportation": [
+                "Alaska Airlines",
+                "BART",
+                "Tokyo Metro",
+                "JR Yamanote Line"
+            ],
+            "accommodation": [
+                "Hilton Hotel",
+                "Airbnb"
+            ],
+            "preferences": [
+                "traditional arts",
+                "local cuisine",
+                "cultural experiences",
+                "market exploration",
+                "seafood",
+                "calm scenic walks"
+            ],
+            "constraints": [
+                "moderate budget",
+                "medium activity level",
+                "no nightlife",
+                "no extreme sports"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 1,
+            "origin": "San Francisco, CA, USA",
+            "destination": "Tokyo, Japan",
+            "travelers": 1,
+            "travel_companions": "",
+            "duration": "7 days",
+            "start_date": "2025-10-31",
+            "end_date": "2025-11-06",
+            "currency": "USD"
+        },
+        "itinerary_text": "# 7-Day Tokyo Cultural & Scenic Trip (October 31 – November 6, 2025)\n\n## Day 1 — Arrival & Soft Start (Oct 31)\n- Arrive in Tokyo (HND/NRT) from San Francisco.\n- Transfer to hotel via limousine bus or train.\n- Check in at Hilton Tokyo (Shinjuku) or nearby Airbnb.\n- Calm scenic walk in Shinjuku Chuo Park.\n- Dinner at a moderate-budget local restaurant.\n- Early rest (no nightlife).\n\n## Day 2 — Traditional Tokyo (Nov 1)\n- Tokyo Metro to Asakusa.\n- Visit Senso-ji Temple and Nakamise Street.\n- Scenic stroll in Sumida Park.\n- Lunch: soba or tempura (local cuisine).\n- Optional visit: Edo Taito Traditional Crafts Museum.\n- Return to Shinjuku.\n\n## Day 3 — Ueno Culture Day (Nov 2)\n- JR Yamanote Line to Ueno.\n- Explore Tokyo National Museum.\n- Calm walk in Ueno Park.\n- Visit Ameya-Yokocho Market.\n- Dinner: seafood donburi.\n\n## Day 4 — Tsukiji + Ginza (Nov 3)\n- Morning at Tsukiji Outer Market.\n- Enjoy seafood bowls or grilled skewers.\n- Walk or metro to Ginza for cultural browsing.\n- Visit Kabuki-za Gallery.\n- Light dinner.\n\n## Day 5 — Meiji Shrine & Omotesando (Nov 4)\n- Visit Meiji Shrine.\n- Walk Omotesando boulevard.\n- Explore Omotesando Hills or Aoyama cafés.\n- Lunch: traditional Japanese set meal.\n- Simple evening.\n\n## Day 6 — Odaiba Relaxation Day (Nov 5)\n- Yurikamome Line to Odaiba.\n- Walk in Odaiba Seaside Park.\n- Visit teamLab Borderless or Miraikan.\n- Afternoon café break by Tokyo Bay.\n- Moderate-budget dinner.\n\n## Day 7 — Final Stroll & Departure (Nov 6)\n- Morning walk in Shinjuku Gyoen.\n- Souvenir shopping.\n- Airport transfer.\n- Flight back to San Francisco."
+    },
+    {
+        "test_id": "good_tokyo_cultural_7d_2",
+        "user_profile": {
+            "user_id":1,
+            "age": 45,
+            "date_of_birth": "1980-05-15",
+            "name": "Alice Johnson",
+            "first_name": "Alice",
+            "last_name": "Johnson",
+            "email": "alice.johnson@example.com",
+            "preferred_language": "Chinese",
+            "gender": "female",
+            "transportation": [
+                "Alaska Airlines",
+                "BART",
+                "Tokyo Metro",
+                "JR Yamanote Line"
+            ],
+            "accommodation": [
+                "Hilton Hotel",
+                "Airbnb"
+            ],
+            "preferences": [
+                "traditional arts",
+                "local cuisine",
+                "cultural experiences",
+                "market exploration",
+                "seafood",
+                "calm scenic walks"
+            ],
+            "constraints": [
+                "moderate budget",
+                "medium activity level",
+                "no nightlife",
+                "no extreme sports"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 1,
+            "origin": "San Francisco, CA, USA",
+            "destination": "Tokyo, Japan",
+            "travelers": 1,
+            "travel_companions": "",
+            "duration": "7 days",
+            "start_date": "2025-10-31",
+            "end_date": "2025-11-06",
+            "currency": "USD"
+        },
+        "itinerary_text": "# 7-Day Slow-Travel Tokyo for Arts, Markets & Scenic Walks (Oct 31 – Nov 6, 2025)\n\n## Day 1 — Arrival & Shinjuku Calm Walk (Oct 31)\n- Arrive at Tokyo (HND/NRT) from San Francisco.\n- Airport limousine bus to Shinjuku; check into Hilton Tokyo or Airbnb.\n- Take a calm stroll in Shinjuku Chuo Park.\n- Simple dinner at a local noodle shop.\n- Early rest (no nightlife).\n\n## Day 2 — Yanaka Old Town & Traditional Arts (Nov 1)\n- Metro to **Yanaka Ginza**, one of Tokyo's preserved old districts.\n- Explore handicraft shops and quiet backstreets (traditional arts + calm walk).\n- Visit **Yanaka Cemetery Park** for seasonal scenery.\n- Lunch at a small tonkatsu or soba shop (local cuisine).\n- Afternoon visit to **Asakura Museum of Sculpture** (traditional arts).\n- Return to Shinjuku for a quiet dinner.\n\n## Day 3 — Ueno Museums & Park Walk (Nov 2)\n- JR Yamanote Line to **Ueno**.\n- Explore **Tokyo Metropolitan Art Museum** or **Ueno Royal Museum**.\n- Relaxing walk in Ueno Park (medium activity, calm scenic walk).\n- Browse Ameya-Yokocho Market (market exploration).\n- Dinner: moderate-budget seafood or donburi bowl.\n\n## Day 4 — Daikanyama & Nakameguro Lifestyle Day (Nov 3)\n- Metro to **Daikanyama T-Site** for design bookstores and cafés.\n- Walk to **Nakameguro Canal** (calm scenic walk).\n- Lunch at a Japanese-Western fusion café (moderate budget).\n- Explore small artisan shops (cultural experiences).\n- Light dinner back in Shinjuku.\n\n## Day 5 — Tsukiji Gastronomy & Hamarikyu Gardens (Nov 4)\n- Morning at **Tsukiji Outer Market** for local cuisine and seafood.\n- Try grilled scallops or sushi bites (moderate budget).\n- Walk to **Hamarikyu Gardens**, a serene traditional garden.\n- Tea break at the garden teahouse (traditional culture).\n- Simple dinner in Ginza; return early.\n\n## Day 6 — Odaiba Bay & Museum Walk (Nov 5)\n- Yurikamome Line to **Odaiba**.\n- Walk along the seaside promenade (calm scenic walk).\n- Visit **teamLab Borderless** or **Miraikan** (cultural/tech).\n- Afternoon break at a bay-view café.\n- Affordable dinner near Tokyo Teleport.\n\n## Day 7 — Shinjuku Gyoen & Departure (Nov 6)\n- Gentle morning walk in **Shinjuku Gyoen National Garden**.\n- Last-minute souvenir shopping.\n- Airport transfer by limousine bus/train.\n- Fly back to San Francisco."
+    },
+    {
+        "test_id": "bad_tokyo_cultural_7d_1",
+        "user_profile": {
+            "user_id": 1,
+            "age": 45,
+            "date_of_birth": "1980-05-15",
+            "name": "Alice Johnson",
+            "first_name": "Alice",
+            "last_name": "Johnson",
+            "email": "alice.johnson@example.com",
+            "preferred_language": "Chinese",
+            "gender": "female",
+            "transportation": [
+                "Alaska Airlines",
+                "BART",
+                "Tokyo Metro",
+                "JR Yamanote Line"
+            ],
+            "accommodation": [
+                "Hilton Hotel",
+                "Airbnb"
+            ],
+            "preferences": [
+                "traditional arts",
+                "local cuisine",
+                "cultural experiences",
+                "market exploration",
+                "seafood",
+                "calm scenic walks"
+            ],
+            "constraints": [
+                "moderate budget",
+                "medium activity level",
+                "no nightlife",
+                "no extreme sports"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 1,
+            "origin": "San Francisco, CA, USA",
+            "destination": "Tokyo, Japan",
+            "travelers": 1,
+            "travel_companions": "",
+            "duration": "7 days",
+            "start_date": "2025-10-31",
+            "end_date": "2025-11-06",
+            "currency": "USD"
+        },
+        "itinerary_text": "# Tokyo Trip Itinerary\n\n## Day 1\n- Arrive in Tokyo.\n- Immediately go bungee jumping at a private site outside the city.\n- Evening: Explore Shibuya nightlife until 2am.\n\n## Day 2\n- Morning: Take the Shinkansen to Osaka for a quick visit.\n- Noon: Universal Studios Japan full-day adventure.\n- Evening: Return to Tokyo.\n\n## Day 3\n- Visit random shopping malls.\n- Evening: Bar hopping tour in Roppongi.\n\n## Day 4\n- Early morning hiking challenge in the mountains outside Tokyo (10-hour trail).\n- Evening: Attend a nightclub event.\n\n## Day 5\n- Free day, no specific plan.\n- Evening: Try a cocktail tasting experience.\n\n## Day 6\n- Day trip to Kyoto.\n- Explore as many temples as possible in one afternoon.\n\n## Day 7\n- Depart.\n\nNo specific budgets, no dining plan, no accommodation or transport details, no cultural activities, no references, and no structured morning/afternoon/evening sections."
+    },
+    {
+        "test_id": "bad_tokyo_cultural_7d_2",
+        "user_profile": {
+            "user_id": 1,
+            "age": 45,
+            "date_of_birth": "1980-05-15",
+            "name": "Alice Johnson",
+            "first_name": "Alice",
+            "last_name": "Johnson",
+            "email": "alice.johnson@example.com",
+            "preferred_language": "Chinese",
+            "gender": "female",
+            "transportation": [
+                "Alaska Airlines",
+                "BART",
+                "Tokyo Metro",
+                "JR Yamanote Line"
+            ],
+            "accommodation": [
+                "Hilton Hotel",
+                "Airbnb"
+            ],
+            "preferences": [
+                "traditional arts",
+                "local cuisine",
+                "cultural experiences",
+                "market exploration",
+                "seafood",
+                "calm scenic walks"
+            ],
+            "constraints": [
+                "moderate budget",
+                "medium activity level",
+                "no nightlife",
+                "no extreme sports"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 1,
+            "origin": "San Francisco, CA, USA",
+            "destination": "Tokyo, Japan",
+            "travelers": 1,
+            "travel_companions": "",
+            "duration": "7 days",
+            "start_date": "2025-10-31",
+            "end_date": "2025-11-06",
+            "currency": "USD"
+        },
+        "itinerary_text": "# 5-Day Kyoto Temple Tour\n\n## Day 1\nStart your trip in Kyoto with a visit to Kiyomizu-dera.\n\n## Day 2\nExplore Fushimi Inari Shrine and hike all the way to the summit.\n\n## Day 3\nVisit Kinkaku-ji and Ryoan-ji.\n\n## Day 4\nSpend the entire day at Arashiyama, including bamboo forest and monkey park.\n\n## Day 5\nReturn home from Kyoto.\n\nNo daily structure, no accommodation details, no Tokyo activities, no references, no dining plan, no budget, no transport, wrong destination, wrong duration."
+    },
+    {
+        "test_id": "good_paris_mixed_10d_1",
+        "user_profile": {
+            "user_id": 2,
+            "age": 30,
+            "date_of_birth": "1995-03-22",
+            "name": "Bob Smith",
+            "first_name": "Bob",
+            "last_name": "Smith",
+            "email": "bob.smith@example.com",
+            "preferred_language": "English",
+            "gender": "male",
+            "transportation": [
+                "Delta Airlines",
+                "Uber"
+            ],
+            "accommodation": [
+                "Marriott Hotel",
+                "Hostel"
+            ],
+            "preferences": [
+                "modern art",
+                "fine dining",
+                "nightlife",
+                "shopping",
+                "hiking"
+            ],
+            "constraints": [
+                "high budget",
+                "high activity level"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 2,
+            "origin": "New York, NY, USA",
+            "destination": "Paris, France",
+            "travelers": 2,
+            "travel_companions": "Jane Doe",
+            "duration": "10 days",
+            "start_date": "2025-11-01",
+            "end_date": "2025-11-10",
+            "currency": "USD"
+        },
+        "itinerary_text": "# 10-Day High-Activity Paris Trip (Nov 1–10, 2025)\n\n## Day 1 — Arrival & Champs-Élysées Warm-Up (Nov 1)\n- Arrive from New York to Paris (CDG). Transfer via Uber to Marriott.\n- Afternoon walk along Champs-Élysées.\n- Fine dining dinner at a Michelin bistro.\n- Optional upscale cocktail bar (safe nightlife).\n\n## Day 2 — Modern Art: Centre Pompidou + Le Marais (Nov 2)\n- Morning visit to Centre Pompidou (modern art).\n- Explore Le Marais boutiques (shopping).\n- Afternoon gallery browsing.\n- Dinner at contemporary French restaurant.\n- Nightlife: rooftop bar with Seine views.\n\n## Day 3 — Louvre + Seine Walk (Nov 3)\n- Half-day exploration of Louvre highlights.\n- Scenic walk along the Seine.\n- Shopping around Rivoli.\n- Dinner tasting menu.\n- Evening cocktail lounge.\n\n## Day 4 — Montmartre Hills & Hiking (Nov 4)\n- Active morning: hike the Montmartre hill stair routes.\n- Visit Sacré-Cœur.\n- Explore artist studios in the backstreets.\n- Dinner in Montmartre.\n- Optional wine bar.\n\n## Day 5 — Fondation Louis Vuitton + Bois de Boulogne (Nov 5)\n- Visit Fondation Louis Vuitton (modern art).\n- Afternoon walk through Bois de Boulogne (light hiking).\n- Luxury shopping in 16th arrondissement.\n- Tasting-menu dinner.\n\n## Day 6 — Versailles Active Day (Nov 6)\n- Train to Versailles.\n- Explore palace + gardens.\n- High-activity walking day (~15k steps).\n- Return to Paris.\n- Dinner near Opéra.\n\n## Day 7 — Fine Dining + Modern Galleries (Nov 7)\n- Modern art galleries in Saint-Germain.\n- Lunch at high-end café.\n- Afternoon shopping at Le Bon Marché.\n- Dinner at a Michelin restaurant.\n- Nightlife: jazz bar.\n\n## Day 8 — Fontainebleau Hiking Day Trip (Nov 8)\n- Travel to Fontainebleau.\n- Half-day hike in Fontainebleau Forest.\n- Short visit to Château de Fontainebleau.\n- Return to Paris for dinner.\n\n## Day 9 — Contemporary Culture + Seine Night Walk (Nov 9)\n- Visit Atelier des Lumières.\n- Shopping time in Marais.\n- Contemporary fine dining.\n- Night walk along the river.\n\n## Day 10 — Departure (Nov 10)\n- Final boutique stops.\n- Transfer to CDG by Uber.\n- Fly back to New York."
+    },
+    {
+        "test_id": "good_paris_mixed_10d_2",
+        "user_profile": {
+            "user_id": 2,
+            "age": 30,
+            "date_of_birth": "1995-03-22",
+            "name": "Bob Smith",
+            "first_name": "Bob",
+            "last_name": "Smith",
+            "email": "bob.smith@example.com",
+            "preferred_language": "English",
+            "gender": "male",
+            "transportation": [
+                "Delta Airlines",
+                "Uber"
+            ],
+            "accommodation": [
+                "Marriott Hotel",
+                "Hostel"
+            ],
+            "preferences": [
+                "modern art",
+                "fine dining",
+                "nightlife",
+                "shopping",
+                "hiking"
+            ],
+            "constraints": [
+                "high budget",
+                "high activity level"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 2,
+            "origin": "New York, NY, USA",
+            "destination": "Paris, France",
+            "travelers": 2,
+            "travel_companions": "Jane Doe",
+            "duration": "10 days",
+            "start_date": "2025-11-01",
+            "end_date": "2025-11-10",
+            "currency": "USD"
+        },
+        "itinerary_text": "# 10-Day Modern & Active Paris Trip (Nov 1–10, 2025)\n\n## Day 1 — Arrival & Saint-Honoré Walk (Nov 1)\n- Arrive from NYC to CDG; Uber to Marriott.\n- Afternoon warm-up walk along Rue Saint-Honoré (designer shops).\n- Fine dining dinner at a modern Michelin bistro.\n- Optional upscale cocktail lounge.\n\n## Day 2 — Palais de Tokyo + Trocadéro Nightlights (Nov 2)\n- Morning visit to Palais de Tokyo (modern art).\n- Lunch at museum café.\n- Afternoon walk from Trocadéro to Eiffel Tower.\n- Dinner tasting menu.\n- Evening Seine-side nightlife (safe, upscale).\n\n## Day 3 — Le Marais Architecture + Bourse de Commerce (Nov 3)\n- Active walking tour through Le Marais courtyards.\n- Afternoon at Bourse de Commerce–Pinault Collection.\n- Shopping in designer boutiques.\n- Dinner near Les Halles.\n- Night: river walk.\n\n## Day 4 — Elevated Walkway + Bastille (Nov 4)\n- Walk the promenade plantée (elevated hiking-style urban trail).\n- Explore Bastille and Opera district.\n- Lunch at a high-end brasserie.\n- Evening modern gastronomy dinner.\n- Optional speakeasy.\n\n## Day 5 — Montmartre Active Day (Nov 5)\n- Morning stair-hike from Pigalle to Montmartre.\n- Visit small contemporary galleries.\n- Lunch with city view.\n- Explore Sacré-Cœur surroundings.\n- Dinner in Montmartre.\n\n## Day 6 — Versailles Gardens + Luxury Dinner (Nov 6)\n- Train to Versailles.\n- High-activity walking in gardens.\n- Visit contemporary exhibitions if available.\n- Return to Paris.\n- Fine dining tasting menu.\n\n## Day 7 — Atelier des Lumières + Canal Saint-Martin (Nov 7)\n- Morning immersive art at Atelier des Lumières.\n- Walk along Canal Saint-Martin (active, scenic).\n- Trendy boutique shopping.\n- Dinner at a fusion Michelin spot.\n\n## Day 8 — Fondation Cartier + Left Bank (Nov 8)\n- Visit Fondation Cartier (modern art architecture).\n- Explore Left Bank bookstores and ateliers.\n- Afternoon high-end shopping at Le Bon Marché.\n- Elegant dinner and optional wine bar.\n\n## Day 9 — Buttes-Chaumont Hills + Final Night Out (Nov 9)\n- Active morning hiking loop in Parc des Buttes-Chaumont.\n- Afternoon coffee in Belleville art district.\n- Final fine dining experience.\n- Evening Seine nighttime stroll.\n\n## Day 10 — Departure (Nov 10)\n- Final boutique stops.\n- Uber to CDG.\n- Fly back to New York."
+    },
+    {
+        "test_id": "bad_paris_mixed_10d_1",
+        "user_profile": {
+            "user_id": 2,
+            "age": 30,
+            "date_of_birth": "1995-03-22",
+            "name": "Bob Smith",
+            "first_name": "Bob",
+            "last_name": "Smith",
+            "email": "bob.smith@example.com",
+            "preferred_language": "English",
+            "gender": "male",
+            "transportation": [
+                "Delta Airlines",
+                "Uber"
+            ],
+            "accommodation": [
+                "Marriott Hotel",
+                "Hostel"
+            ],
+            "preferences": [
+                "modern art",
+                "fine dining",
+                "nightlife",
+                "shopping",
+                "hiking"
+            ],
+            "constraints": [
+                "high budget",
+                "high activity level"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 2,
+            "origin": "New York, NY, USA",
+            "destination": "Paris, France",
+            "travelers": 2,
+            "travel_companions": "Jane Doe",
+            "duration": "10 days",
+            "start_date": "2025-11-01",
+            "end_date": "2025-11-10",
+            "currency": "USD"
+        },
+        "itinerary_text": "# 6-Day Europe Trip\n\n## Day 1\nArrive in London and check into a budget hostel.\n\n## Day 2\nExplore central London on foot and visit random shops.\n\n## Day 3\nTravel to Paris in the afternoon but no specific activities planned.\n\n## Day 4\nTake a flight to Nice for a beach day and return back to Paris at night.\n\n## Day 5\nRelax in the hotel all day.\n\n## Day 6\nDepart from Paris.\n\nNo dining plan, no modern art, no fine dining, no nightlife, no hiking, no shopping schedule, no structure, no references, no transportation details, and uses EUR prices instead of USD."
+    },
+    {
+        "test_id": "bad_paris_mixed_10d_2",
+        "user_profile": {
+            "user_id": 2,
+            "age": 30,
+            "date_of_birth": "1995-03-22",
+            "name": "Bob Smith",
+            "first_name": "Bob",
+            "last_name": "Smith",
+            "email": "bob.smith@example.com",
+            "preferred_language": "English",
+            "gender": "male",
+            "transportation": [
+                "Delta Airlines",
+                "Uber"
+            ],
+            "accommodation": [
+                "Marriott Hotel",
+                "Hostel"
+            ],
+            "preferences": [
+                "modern art",
+                "fine dining",
+                "nightlife",
+                "shopping",
+                "hiking"
+            ],
+            "constraints": [
+                "high budget",
+                "high activity level"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 2,
+            "origin": "New York, NY, USA",
+            "destination": "Paris, France",
+            "travelers": 2,
+            "travel_companions": "Jane Doe",
+            "duration": "10 days",
+            "start_date": "2025-11-01",
+            "end_date": "2025-11-10",
+            "currency": "USD"
+        },
+        "itinerary_text": "# 11-Day Paris Adventure Trip\n\n## Day 1 (Nov 1)\nArrive in Paris and walk around random streets.\n\n## Day 2 (Nov 2)\nVisit the Eiffel Tower, then take a quick train to London for dinner and return at night.\n\n## Day 3 (Nov 3)\nExplore Montmartre and then go to a nightclub until 3am.\n\n## Day 4 (Nov 4)\nTake a day trip to Brussels for beer tasting.\n\n## Day 5 (Nov 5)\nSpend the day resting in the hotel.\n\n## Day 6 (Nov 6)\nTry street food near train stations.\n\n## Day 7 (Nov 7)\nGo clubbing again and attend an EDM event.\n\n## Day 8 (Nov 8)\nVisit random markets and eat fast food.\n\n## Day 9 (Nov 9)\nTake another trip to London for sightseeing.\n\n## Day 10 (Nov 10)\nDo nothing, relax in the room.\n\n## Day 11 (Nov 11)\nDepart from Paris.\n\nNo structured schedule, no fine dining, no modern art, no shopping plan, no hiking, no budget details, unsafe nightlife, multi-country same-day trips, and duration longer than the user's trip."
+    },
+    {
+        "test_id": "good_rome_mixed_10d_1",
+        "user_profile": {
+            "user_id": 3,
+            "age": 50,
+            "date_of_birth": "1975-03-22",
+            "name": "Carlos Martinez",
+            "first_name": "Carlos",
+            "last_name": "Martinez",
+            "email": "carlos.martinez@example.com",
+            "preferred_language": "Spanish",
+            "gender": "male",
+            "transportation": [
+                "American Airlines"
+            ],
+            "accommodation": [
+                "Boutique Hotel"
+            ],
+            "preferences": [
+                "museums",
+                "historical tours",
+                "wine tasting"
+            ],
+            "constraints": [
+                "moderate budget",
+                "no long walks"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 3,
+            "origin": "Austin, TX, USA",
+            "destination": "Rome, Italy",
+            "travelers": 2,
+            "travel_companions": "Spouse",
+            "duration": "10 days",
+            "start_date": "2025-12-02",
+            "end_date": "2025-12-11",
+            "currency": "EUR"
+        },
+        "itinerary_text": "# 10-Day Rome Cultural & Wine Experience (Dec 2–11, 2025)\n\n## Day 1 — Arrival & Piazza Navona (Dec 2)\n- Arrive from Austin to Fiumicino Airport; private car transfer to boutique hotel.\n- Short stroll around Piazza Navona (minimal walking).\n- Dinner at a moderate-budget trattoria.\n\n## Day 2 — Vatican Museums (Dec 3)\n- Morning reserved-entry Vatican Museums tour (museum preference).\n- Afternoon rest at nearby café.\n- Dinner with small local wine tasting.\n\n## Day 3 — Colosseum + Roman Forum (Dec 4)\n- Join a guided historical tour with skip-the-line access.\n- Afternoon relaxation at hotel lounge.\n- Dinner in Monti neighborhood.\n\n## Day 4 — Galleria Borghese (Dec 5)\n- Timed-entry visit to Galleria Borghese (museum preference).\n- Limited walking: taxi to/from gallery.\n- Evening wine bar visit.\n\n## Day 5 — Historic Churches & Pantheon (Dec 6)\n- Visit Pantheon and nearby historic churches (short distances, taxi between stops).\n- Afternoon espresso break.\n- Dinner at moderate-budget enoteca.\n\n## Day 6 — Day Trip: Frascati Wine Tasting (Dec 7)\n- Relaxed guided trip to Frascati for winery tour and tasting.\n- Minimal walking required.\n- Return to Rome for dinner.\n\n## Day 7 — Castel Sant'Angelo (Dec 8)\n- Morning museum visit.\n- Afternoon rest along the Tiber River cafés.\n- Dinner near Prati.\n\n## Day 8 — Capitoline Museums (Dec 9)\n- Museum visit with accessible routes (no long walking).\n- Afternoon gelato and rest.\n- Evening wine tasting flight.\n\n## Day 9 — Trastevere Culture Day (Dec 10)\n- Guided historical walk through Trastevere (short, slow-paced).\n- Afternoon relaxing lunch.\n- Light dinner near the hotel.\n\n## Day 10 — Departure (Dec 11)\n- Short shopping stop for souvenirs.\n- Private car transfer to airport.\n- Fly back to Austin."
+    },
+    {
+        "test_id": "good_rome_mixed_10d_2",
+        "user_profile": {
+            "user_id": 3,
+            "age": 50,
+            "date_of_birth": "1975-03-22",
+            "name": "Carlos Martinez",
+            "first_name": "Carlos",
+            "last_name": "Martinez",
+            "email": "carlos.martinez@example.com",
+            "preferred_language": "Spanish",
+            "gender": "male",
+            "transportation": [
+                "American Airlines"
+            ],
+            "accommodation": [
+                "Boutique Hotel"
+            ],
+            "preferences": [
+                "museums",
+                "historical tours",
+                "wine tasting"
+            ],
+            "constraints": [
+                "moderate budget",
+                "no long walks"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 3,
+            "origin": "Austin, TX, USA",
+            "destination": "Rome, Italy",
+            "travelers": 2,
+            "travel_companions": "Spouse",
+            "duration": "10 days",
+            "start_date": "2025-12-02",
+            "end_date": "2025-12-11",
+            "currency": "EUR"
+        },
+        "itinerary_text": "# 10-Day Relaxed Rome Art & Wine Journey (Dec 2–11, 2025)\n\n## Day 1 — Arrival & Easy Piazza Exploration (Dec 2)\n- Arrive in Rome (FCO) from Austin; private car to boutique hotel.\n- Light exploration around Campo de' Fiori (short, gentle walking).\n- Dinner at a cozy trattoria.\n\n## Day 2 — Vatican Art Day (Dec 3)\n- Reserved-entry guided tour of Vatican Museums (museum preference).\n- Afternoon rest at hotel café.\n- Dinner with local wine flight at moderate-budget enoteca.\n\n## Day 3 — Roman History Without Long Walking (Dec 4)\n- Visit the Colosseum with an accessible guided tour (minimal walking required).\n- Afternoon coffee near Via dei Fori Imperiali.\n- Dinner in a quiet local osteria.\n\n## Day 4 — Galleria Doria Pamphilj (Dec 5)\n- Morning museum visit to Doria Pamphilj Gallery.\n- Taxi transfers between all locations.\n- Afternoon rest and short souvenir shopping.\n- Wine-pairing dinner.\n\n## Day 5 — Wine & Relaxation Day (Dec 6)\n- Visit a central Rome wine cellar for a curated tasting session.\n- Light lunch nearby.\n- Afternoon at leisure.\n- Dinner near the hotel.\n\n## Day 6 — Day Trip: Tivoli by Car (Dec 7)\n- Private car to Tivoli for Villa d'Este (historical gardens with benches and rests).\n- Slow-paced guided tour.\n- Return to Rome for dinner.\n\n## Day 7 — Capitoline Museums & Easy Afternoon (Dec 8)\n- Visit Capitoline Museums using elevator-accessible paths.\n- Afternoon gelato and rest.\n- Evening wine bar.\n\n## Day 8 — Borghese Gallery Timed Entry (Dec 9)\n- Morning Galleria Borghese (museum preference).\n- Taxi return for afternoon rest.\n- Dinner at moderate-budget trattoria.\n\n## Day 9 — Trastevere History Walk (Dec 10)\n- Short, slow-paced guided tour of Trastevere’s medieval streets.\n- Relaxing lunch by the river.\n- Evening free time.\n\n## Day 10 — Departure (Dec 11)\n- Breakfast near hotel.\n- Private car to Fiumicino Airport.\n- Fly back to Austin."
+    },
+    {
+        "test_id": "bad_rome_mixed_10d_1",
+        "user_profile": {
+            "user_id": 3,
+            "age": 50,
+            "date_of_birth": "1975-03-22",
+            "name": "Carlos Martinez",
+            "first_name": "Carlos",
+            "last_name": "Martinez",
+            "email": "carlos.martinez@example.com",
+            "preferred_language": "Spanish",
+            "gender": "male",
+            "transportation": [
+                "American Airlines"
+            ],
+            "accommodation": [
+                "Boutique Hotel"
+            ],
+            "preferences": [
+                "museums",
+                "historical tours",
+                "wine tasting"
+            ],
+            "constraints": [
+                "moderate budget",
+                "no long walks"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 3,
+            "origin": "Austin, TX, USA",
+            "destination": "Rome, Italy",
+            "travelers": 2,
+            "travel_companions": "Spouse",
+            "duration": "10 days",
+            "start_date": "2025-12-02",
+            "end_date": "2025-12-11",
+            "currency": "EUR"
+        },
+        "itinerary_text": "# 8-Day Italy Adventure Trip\n\n## Day 1\nArrive in Rome and immediately start a long walking tour around the entire city.\n\n## Day 2\nTake a train to Florence early in the morning, walk to Piazzale Michelangelo, then spend the evening walking across the city.\n\n## Day 3\nTravel to Venice for the day and explore everything on foot, including Rialto Bridge and San Marco.\n\n## Day 4\nReturn to Rome but join a hiking group in the nearby countryside for a long trail.\n\n## Day 5\nSpend the entire day shopping in large outlet malls outside Rome (requires lots of walking).\n\n## Day 6\nAnother full day walking tour of Rome from Trastevere to Villa Borghese.\n\n## Day 7\nGo back to Florence for more walking.\n\n## Day 8\nDepart from Rome.\n\nNo museums, no historical guided tours, no wine tasting, no moderate budgeting, no structure, excessive walking every day, multi-city jumps, wrong duration, and no references or detailed planning."
+    },
+    {
+        "test_id": "bad_rome_mixed_10d_2",
+        "user_profile": {
+            "user_id": 3,
+            "age": 50,
+            "date_of_birth": "1975-03-22",
+            "name": "Carlos Martinez",
+            "first_name": "Carlos",
+            "last_name": "Martinez",
+            "email": "carlos.martinez@example.com",
+            "preferred_language": "Spanish",
+            "gender": "male",
+            "transportation": [
+                "American Airlines"
+            ],
+            "accommodation": [
+                "Boutique Hotel"
+            ],
+            "preferences": [
+                "museums",
+                "historical tours",
+                "wine tasting"
+            ],
+            "constraints": [
+                "moderate budget",
+                "no long walks"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 3,
+            "origin": "Austin, TX, USA",
+            "destination": "Rome, Italy",
+            "travelers": 2,
+            "travel_companions": "Spouse",
+            "duration": "10 days",
+            "start_date": "2025-12-02",
+            "end_date": "2025-12-11",
+            "currency": "EUR"
+        },
+        "itinerary_text": "# 9-Day Rome Visit\n\n## Day 1\nArrive in Rome and walk around the area near the hotel to explore the neighborhood.\n\n## Day 2\nSpend the day visiting several historical streets in Rome on foot, stopping at various cafes.\n\n## Day 3\nTake a full-day walking tour of the ancient city center, including the Colosseum and the Roman Forum.\n\n## Day 4\nExplore the Trastevere district entirely on foot, visiting small shops and local markets.\n\n## Day 5\nVisit Piazza di Spagna and walk through Via del Corso for shopping.\n\n## Day 6\nRelax in Villa Borghese and explore the surrounding area by walking.\n\n## Day 7\nHave a luxury dinner at a Michelin 3-star restaurant followed by more walking to see the city lights.\n\n## Day 8\nEat street food and spend the day freely walking through different neighborhoods.\n\n## Day 9\nDepart from Rome.\n\nNo wine tasting, minimal museum visits, excessive walking, no structure, wrong duration, and missing references."
+    },
+    {
+        "test_id": "good_bangkok_streetfood_5d_1",
+        "user_profile": {
+            "user_id": 4,
+            "age": 26,
+            "date_of_birth": "1999-03-22",
+            "name": "Liam Chen",
+            "first_name": "Liam",
+            "last_name": "Chen",
+            "email": "liam.chen@example.com",
+            "preferred_language": "English",
+            "gender": "male",
+            "transportation": [
+                "Thai Airways"
+            ],
+            "accommodation": [
+                "Hostel"
+            ],
+            "preferences": [
+                "street food",
+                "markets",
+                "temples"
+            ],
+            "constraints": [
+                "low budget",
+                "hostel stay"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 4,
+            "origin": "Singapore",
+            "destination": "Bangkok, Thailand",
+            "travelers": 1,
+            "travel_companions": "Solo",
+            "duration": "5 days",
+            "start_date": "2026-04-05",
+            "end_date": "2026-04-09",
+            "currency": "THB"
+        },
+        "itinerary_text": "# 5-Day Bangkok Street Food, Markets & Temples Trip (Apr 5–9, 2026)\n\n## Day 1 — Arrival & Chinatown Street Food (Apr 5)\n- Arrive from Singapore to Bangkok (BKK). Check into a central hostel.\n- Explore Yaowarat Road (Chinatown) for iconic Thai-Chinese street food.\n- Light evening walk and early rest.\n\n## Day 2 — Grand Palace & Wat Pho (Apr 6)\n- Visit the Grand Palace with a short guided tour.\n- Explore Wat Pho (Reclining Buddha) with minimal walking between areas.\n- Lunch from nearby local vendors.\n- Evening visit to Pak Khlong Talat (flower market).\n\n## Day 3 — Chatuchak Market & Night Market (Apr 7)\n- Morning visit to Chatuchak Weekend Market (if open) or Or Tor Kor Market for food stalls.\n- Afternoon rest at hostel lounge.\n- Evening at Ratchada Train Night Market (street food + budget shopping).\n\n## Day 4 — Wat Arun & Thonburi Food Walk (Apr 8)\n- Short ferry ride to Wat Arun (temple preference).\n- Explore Thonburi neighborhood with a local food walk.\n- Affordable dinner at riverside street stalls.\n\n## Day 5 — Souvenirs & Departure (Apr 9)\n- Quick visit to a budget-friendly market (MBK or local stalls).\n- Return to hostel to pack.\n- Transfer to BKK Airport and fly back to Singapore."
+    },
+    {
+        "test_id": "good_bangkok_streetfood_5d_2",
+        "user_profile": {
+            "user_id": 4,
+            "age": 26,
+            "date_of_birth": "1999-03-22",
+            "name": "Liam Chen",
+            "first_name": "Liam",
+            "last_name": "Chen",
+            "email": "liam.chen@example.com",
+            "preferred_language": "English",
+            "gender": "male",
+            "transportation": [
+                "Thai Airways"
+            ],
+            "accommodation": [
+                "Hostel"
+            ],
+            "preferences": [
+                "street food",
+                "markets",
+                "temples"
+            ],
+            "constraints": [
+                "low budget",
+                "hostel stay"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 4,
+            "origin": "Singapore",
+            "destination": "Bangkok, Thailand",
+            "travelers": 1,
+            "travel_companions": "Solo",
+            "duration": "5 days",
+            "start_date": "2026-04-05",
+            "end_date": "2026-04-09",
+            "currency": "THB"
+        },
+        "itinerary_text": "# 5-Day Bangkok Temples, Markets & Street Eats (Apr 5–9, 2026)\n\n## Day 1 — Arrival & Khao San Street Eats (Apr 5)\nCheck into a budget-friendly hostel near Khao San Road. Explore nearby street food stalls (pad thai, mango sticky rice) and visit the small local market area for snacks. Enjoy a relaxed evening walk and rest early.\n\n## Day 2 — Temple Loop: Wat Saket & Wat Pho (Apr 6)\nStart with Wat Saket (Golden Mount) for a calm morning view (minimal walking required). Continue to Wat Pho for the Reclining Buddha. Lunch from local vendors around Tha Tien. Afternoon rest back at the hostel. Evening street stalls near Sanam Luang.\n\n## Day 3 — Old Town Markets + Bangkok Art & Culture Center (Apr 7)\nVisit Saphan Lek Market for budget shopping and snacks. Explore Wang Lang Market using a short ferry crossing. Afternoon stop at Bangkok Art & Culture Centre for a low-cost cultural visit. Dinner at Siam food court or nearby street vendors.\n\n## Day 4 — Wat Arun + Thonburi Local Life (Apr 8)\nTake a short ferry to Wat Arun in the morning. Explore Thonburi’s riverside alleys at a slow, comfortable pace. Lunch at local family-run stalls. Evening at the Ratchada Train Night Market for street food and shopping (low budget friendly).\n\n## Day 5 — Souvenirs & Departure (Apr 9)\nVisit MBK Center for final souvenirs (budget-friendly). Return to hostel to pack. Transfer to BKK Airport and fly back to Singapore."
+    },
+    {
+        "test_id": "bad_bangkok_streetfood_5d_1",
+        "user_profile": {
+            "user_id": 4,
+            "age": 26,
+            "date_of_birth": "1999-03-22",
+            "name": "Liam Chen",
+            "first_name": "Liam",
+            "last_name": "Chen",
+            "email": "liam.chen@example.com",
+            "preferred_language": "English",
+            "gender": "male",
+            "transportation": [
+                "Thai Airways"
+            ],
+            "accommodation": [
+                "Hostel"
+            ],
+            "preferences": [
+                "street food",
+                "markets",
+                "temples"
+            ],
+            "constraints": [
+                "low budget",
+                "hostel stay"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 4,
+            "origin": "Singapore",
+            "destination": "Bangkok, Thailand",
+            "travelers": 1,
+            "travel_companions": "Solo",
+            "duration": "5 days",
+            "start_date": "2026-04-05",
+            "end_date": "2026-04-09",
+            "currency": "THB"
+        },
+        "itinerary_text": "# 3-Day Bangkok Luxury Retreat\n\n## Day 1\nArrive in Bangkok and check into a 5-star riverside resort. Spend the evening enjoying a gourmet international seafood buffet.\n\n## Day 2\nRelax with a full-day spa package including massages, facials, and a private aromatherapy session. Have dinner at a fine dining riverside restaurant.\n\n## Day 3\nTake a luxury dinner cruise along the Chao Phraya River and enjoy live music before heading to the airport for departure.\n\nNo street food, no markets, no temples, no hostel stay, extremely high cost, duration shorter than required, missing structure, missing tables, and no references."
+    },
+    {
+        "test_id": "bad_bangkok_streetfood_5d_2",
+        "user_profile": {
+            "user_id": 4,
+            "age": 26,
+            "date_of_birth": "1999-03-22",
+            "name": "Liam Chen",
+            "first_name": "Liam",
+            "last_name": "Chen",
+            "email": "liam.chen@example.com",
+            "preferred_language": "English",
+            "gender": "male",
+            "transportation": [
+                "Thai Airways"
+            ],
+            "accommodation": [
+                "Hostel"
+            ],
+            "preferences": [
+                "street food",
+                "markets",
+                "temples"
+            ],
+            "constraints": [
+                "low budget",
+                "hostel stay"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 4,
+            "origin": "Singapore",
+            "destination": "Bangkok, Thailand",
+            "travelers": 1,
+            "travel_companions": "Solo",
+            "duration": "5 days",
+            "start_date": "2026-04-05",
+            "end_date": "2026-04-09",
+            "currency": "THB"
+        },
+        "itinerary_text": "# 4-Day Bangkok Trip\n\n## Day 1\nArrive in Bangkok and check into a luxury riverside hotel. Have dinner at a high-end international restaurant.\n\n## Day 2\nSpend the entire day in luxury malls such as IconSiam and CentralWorld. Enjoy cocktails at a rooftop bar late into the night.\n\n## Day 3\nTake a full-day trip to Pattaya and return to Bangkok in the evening. Eat at a Western-style restaurant.\n\n## Day 4\nRelax at the hotel pool, have brunch, and prepare for departure.\n\nNo street food, no temples, no markets, no hostel stay, high budget activities, wrong duration, unsafe nightlife, and no references or structured itinerary."
+    },
+    {
+        "test_id": "good_berlin_nightlife_4d_1",
+        "user_profile": {
+            "user_id": 5,
+            "age": 22,
+            "date_of_birth": "2003-03-22",
+            "name": "Olivia Brown",
+            "first_name": "Olivia",
+            "last_name": "Brown",
+            "email": "olivia.brown@example.com",
+            "preferred_language": "English",
+            "gender": "female",
+            "transportation": [
+                "train",
+                "budget airline"
+            ],
+            "accommodation": [
+                "Hostel",
+                "Budget Hotel"
+            ],
+            "preferences": [
+                "nightlife",
+                "shopping",
+                "street food"
+            ],
+            "constraints": [
+                "student budget"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 5,
+            "origin": "London, UK",
+            "destination": "Berlin, Germany",
+            "travelers": 2,
+            "travel_companions": "College friend",
+            "duration": "4 days",
+            "start_date": "2025-05-20",
+            "end_date": "2025-05-23",
+            "currency": "EUR"
+        },
+        "itinerary_text": "# 4-Day Berlin Student-Budget Nightlife, Shopping & Street Food Trip (May 20–23, 2025)\n\n## Day 1 — Arrival & Kreuzberg Street Food (May 20)\nArrive from London via budget airline and check into a hostel in Friedrichshain. Explore Kreuzberg's street food stalls (Mustafa's Gemüse Kebap, Curry 36) and take an evening walk along the Landwehr Canal. Light bar hopping at student-friendly venues.\n\n## Day 2 — East Side Gallery + Thrift Shopping + Nightlife (May 21)\nVisit the East Side Gallery in the morning. Shop at budget-friendly thrift stores around Friedrichshain and Boxhagener Platz. Lunch from local food trucks. Rest at hostel in late afternoon. Nightlife in a safe, student-friendly area such as RAW-Gelände (bars, music, outdoor areas).\n\n## Day 3 — Museum Island + Flea Market + Food Hall (May 22)\nVisit Museum Island (choose 1–2 museums to fit budget). Explore the nearby street vendors for cheap lunch. Afternoon at Mauerpark Flea Market for vintage shopping. Dinner at Markthalle Neun food hall for diverse street food options.\n\n## Day 4 — Local Markets & Departure (May 23)\nStop by Hackescher Markt for souvenirs and affordable stalls. Return to hostel to pack. Take train to BER Airport and fly back to London."
+    },
+        {
+        "test_id": "good_berlin_nightlife_4d_2",
+        "user_profile": {
+            "user_id": 5,
+            "age": 22,
+            "date_of_birth": "2003-03-22",
+            "name": "Olivia Brown",
+            "first_name": "Olivia",
+            "last_name": "Brown",
+            "email": "olivia.brown@example.com",
+            "preferred_language": "English",
+            "gender": "female",
+            "transportation": [
+                "train",
+                "budget airline"
+            ],
+            "accommodation": [
+                "Hostel",
+                "Budget Hotel"
+            ],
+            "preferences": [
+                "nightlife",
+                "shopping",
+                "street food"
+            ],
+            "constraints": [
+                "student budget"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 5,
+            "origin": "London, UK",
+            "destination": "Berlin, Germany",
+            "travelers": 2,
+            "travel_companions": "College friend",
+            "duration": "4 days",
+            "start_date": "2025-05-20",
+            "end_date": "2025-05-23",
+            "currency": "EUR"
+        },
+        "itinerary_text": "# 4-Day Berlin Student-Budget Urban Culture, Night Markets & Nightlife (May 20–23, 2025)\n\n## Day 1 — Arrival, Friedrichshain Food Stalls & Chill Night (May 20)\nFly from London to Berlin via budget airline and take the train to a hostel in Friedrichshain. Start with classic street food at local kebab and döner stalls. Explore the East Side Gallery at sunset. Enjoy a relaxed student-friendly nightlife scene around Warschauer Straße.\n\n## Day 2 — Neukölln Shopping, Food Trucks & Nightlife (May 21)\nHead to Neukölln for vintage shopping and thrift stores (Weserstraße area). Try street food at the nearby food truck parks. Afternoon rest at the hostel. In the evening, explore student-budget nightlife at Klunkerkranich (rooftop bar, low-cost drinks) with panoramic city views.\n\n## Day 3 — Mauerpark Flea Market + Street Food Hall (May 22)\nVisit the Mauerpark Flea Market in the morning for budget shopping. Lunch at nearby food stalls. Spend the afternoon at Markthalle Neun for international street food stands. Evening walk around Kreuzberg’s canal area for casual bars suitable for young travelers.\n\n## Day 4 — Local Markets & Departure (May 23)\nShop for small souvenirs at Hackescher Höfe and its surrounding local stalls. Return to the hostel to pack. Take the train to BER Airport and fly back to London."
+    },
+    {
+        "test_id": "bad_berlin_nightlife_4d_1",
+        "user_profile": {
+            "user_id": 5,
+            "age": 22,
+            "date_of_birth": "2003-03-22",
+            "name": "Olivia Brown",
+            "first_name": "Olivia",
+            "last_name": "Brown",
+            "email": "olivia.brown@example.com",
+            "preferred_language": "English",
+            "gender": "female",
+            "transportation": [
+                "train",
+                "budget airline"
+            ],
+            "accommodation": [
+                "Hostel",
+                "Budget Hotel"
+            ],
+            "preferences": [
+                "nightlife",
+                "shopping",
+                "street food"
+            ],
+            "constraints": [
+                "student budget"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 5,
+            "origin": "London, UK",
+            "destination": "Berlin, Germany",
+            "travelers": 2,
+            "travel_companions": "College friend",
+            "duration": "4 days",
+            "start_date": "2025-05-20",
+            "end_date": "2025-05-23",
+            "currency": "EUR"
+        },
+        "itinerary_text": "# 4-Day Berlin Trip\n\n## Day 1\nFly to Berlin and check into a boutique design hotel near Brandenburg Gate. Have dinner at a Michelin-star restaurant.\n\n## Day 2\nFull-day bus tour to Hamburg to explore the harbor and museums. Return to Berlin at night.\n\n## Day 3\nRelax at a luxury spa and enjoy a private rooftop dinner. Spend the evening at an exclusive cocktail bar with a dress code.\n\n## Day 4\nFree time for brunch and packing before flying back to London. No specific street food or nightlife suggestions included."
+    },
+    {
+        "test_id": "bad_berlin_nightlife_4d_2",
+        "user_profile": {
+            "user_id": 5,
+            "age": 22,
+            "date_of_birth": "2003-03-22",
+            "name": "Olivia Brown",
+            "first_name": "Olivia",
+            "last_name": "Brown",
+            "email": "olivia.brown@example.com",
+            "preferred_language": "English",
+            "gender": "female",
+            "transportation": [
+                "train",
+                "budget airline"
+            ],
+            "accommodation": [
+                "Hostel",
+                "Budget Hotel"
+            ],
+            "preferences": [
+                "nightlife",
+                "shopping",
+                "street food"
+            ],
+            "constraints": [
+                "student budget"
+            ]
+        },
+        "user_travel_details": {
+            "user_id": 5,
+            "origin": "London, UK",
+            "destination": "Berlin, Germany",
+            "travelers": 2,
+            "travel_companions": "College friend",
+            "duration": "4 days",
+            "start_date": "2025-05-20",
+            "end_date": "2025-05-23",
+            "currency": "EUR"
+        },
+        "itinerary_text": "# Berlin 4-Day Trip (May 20–24)\n\n## Day 1: Arrival\nArrive in Berlin and check in to a comfortable mid-range hotel near Potsdamer Platz. Have dinner at a modern fusion restaurant.\n\n## Day 2: Day Trip to Prague\nTake an early morning train to Prague to explore Old Town Square, Charles Bridge, and local attractions. Return to Berlin late at night.\n\n## Day 3: Museum Day\nSpend the entire day exploring the Pergamon Museum and several exhibitions at Museum Island. Dine at an upscale restaurant.\n\n## Day 4: Departure\nBrunch at a trendy café before heading to the airport. No nightlife or shopping planned."
+    }
+
+]

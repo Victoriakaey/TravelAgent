@@ -1,0 +1,828 @@
+
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-11-02 07:05:32 
+================================================================================
+
+2025-11-02 07:05:32 - __main__ - INFO - Saving info logs to log/system_log_with_critic/13_test/23_b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4/info_runtime.log
+2025-11-02 07:05:32 - __main__ - INFO - Saving verbose logs to log/system_log_with_critic/13_test/23_b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4/verbose_runtime.log
+2025-11-02 07:05:32 - __main__ - INFO - Saving timing logs to log/system_log_with_critic/13_test/23_b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4/content_agent_timing.log
+2025-11-02 07:05:32 - __main__ - INFO - 
+User Profile:
+
+{'user_id': 23, 'age': 39, 'date_of_birth': '1986-02-19', 'name': 'Hannah Wilson', 'first_name': 'Hannah', 'last_name': 'Wilson', 'email': 'hannah.wilson@example.com', 'preferred_language': 'English', 'gender': 'female', 'transportation': ['Qantas', 'Rental Van'], 'accommodation': ['Airbnb', 'Camping Grounds'], 'preferences': ['road trips', 'surfing', 'beach culture', 'local breweries'], 'constraints': ['group of 8 travelers', 'mixed budget levels']}
+
+2025-11-02 07:05:32 - __main__ - INFO - 
+User Travel Details:
+
+{'user_id': 23, 'origin': 'Sydney, Australia', 'destination': 'Byron Bay, Australia', 'travelers': 8, 'travel_companions': 'Friends', 'duration': '7 days', 'start_date': '2025-12-12', 'end_date': '2025-12-18', 'currency': 'AUD'}
+
+2025-11-02 07:05:37 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:05:37 - autogen.services.utils - INFO - Speaker: user
+
+2025-11-02 07:05:37 - autogen.services.utils - INFO - Content: Hello, I need help with my travel plans.I'm planning a 7 days trip from Sydney, Australia to Byron Bay, Australia, starting on December 12, 2025 and ending on December 18, 2025.  I'll be traveling with Friends, and would prefer to stay at either Airbnb, Camping Grounds. I plan to get around using Qantas, Rental Van.
+I'm especially interested in road trips, surfing, beach culture, local breweries — though I do have some limitations, such as group of 8 travelers, mixed budget levels.
+
+2025-11-02 07:05:37 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:06:01 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:06:01 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-02 07:06:01 - autogen.services.utils - INFO - Content: UserProxyAgent: Please confirm your travel dates are December 12, 2025 to December 18, 2025, and your destination is from Sydney to Byron Bay, Australia. You'll be traveling with friends and prefer staying at Airbnb or Camping Grounds, using Qantas for flights and a rental van for transportation. Your interests include road trips, surfing, beach culture, and local breweries with a group size of 8 and mixed budget levels. Is this correct?
+
+2025-11-02 07:06:01 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:06:01 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:06:01 - autogen.services.utils - INFO - Speaker: UserProxyAgent
+
+2025-11-02 07:06:01 - autogen.services.utils - INFO - Content: Confirmed, no more preference or contraints
+
+2025-11-02 07:06:01 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:06:10 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:06:10 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-02 07:06:10 - autogen.services.utils - INFO - Content: WebScraperAgent: Gather content related to travel experiences in Byron Bay focusing on road trips, surfing, beach culture, and local breweries for a group of 8 with mixed budget levels.
+
+2025-11-02 07:06:10 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:06:10 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Starting streaming web scraping for messages for the 1-th times...
+2025-11-02 07:06:10 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Received messages for web scraping...
+2025-11-02 07:06:10 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Log path set to: log/system_log_with_critic/13_test/23_b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4
+2025-11-02 07:06:10 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Generated query: I'm planning a 7 days trip from Sydney, Australia to Byron Bay, Australia, starting on December 12, 2025 and ending on December 18, 2025.  I'll be traveling with Friends, and would prefer to stay at either Airbnb, Camping Grounds. I plan to get around using Qantas, Rental Van.
+I'm especially interested in road trips, surfing, beach culture, local breweries — though I do have some limitations, such as group of 8 travelers, mixed budget levels.
+Additional Instructions:
+gather content related to travel experiences in byron bay focusing on road trips, surfing, beach culture, and local breweries for a group of 8 with mixed budget levels.
+Can you help me find some information about this to better plan this trip?
+2025-11-02 07:06:10 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Sending request to http://localhost:3000/api/search with payload
+2025-11-02 07:13:10 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.australiantraveller.com/nsw/north-coast/byron-bay/top-things-to-do-byron-bay/ ======
+2025-11-02 07:13:12 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 88 segments.
+2025-11-02 07:13:12 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://localingtours.com/region/brisbane-byron-bay-private-tours/ ======
+2025-11-02 07:13:13 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 16 segments.
+2025-11-02 07:13:13 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.australia.com/en-gb/places/sydney-and-surrounds/guide-to-byron-bay.html ======
+2025-11-02 07:13:14 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 8 segments.
+2025-11-02 07:13:14 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.intrepidtravel.com/us/australia/byron-bay ======
+2025-11-02 07:13:15 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 11 segments.
+2025-11-02 07:13:15 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.backstreetnomad.com/byron-bay-travel-guide/ ======
+2025-11-02 07:13:16 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 60 segments.
+2025-11-02 07:13:16 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.tripadvisor.com/Attractions-g528934-Activities-Byron_Bay_Byron_Shire_New_South_Wales.html ======
+2025-11-02 07:13:16 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_static_html] Error fetching https://www.tripadvisor.com/Attractions-g528934-Activities-Byron_Bay_Byron_Shire_New_South_Wales.html: 403 Client Error: Forbidden for url: https://www.tripadvisor.com/Attractions-g528934-Activities-Byron_Bay_Byron_Shire_New_South_Wales.html
+2025-11-02 07:13:16 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Static fetch too short, trying dynamic...
+2025-11-02 07:13:17 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Navigating to: https://www.tripadvisor.com/Attractions-g528934-Activities-Byron_Bay_Byron_Shire_New_South_Wales.html
+2025-11-02 07:13:52 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [fetch_dynamic_html] wait_for_selector failed: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("main, article, div.content, div#content, div.post, section") to be visible
+
+2025-11-02 07:13:55 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Screenshot saved: log/system_log_with_critic/13_test/23_b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4/dynamic_page_scraping/56964a55f9d642945613a43df35512bf/screenshot.png
+2025-11-02 07:13:55 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Got HTML length=1549
+2025-11-02 07:13:55 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Raw HTML saved: log/system_log_with_critic/13_test/23_b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4/dynamic_page_scraping/56964a55f9d642945613a43df35512bf/debug.html
+2025-11-02 07:13:55 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [Pipeline] No content extracted from https://www.tripadvisor.com/Attractions-g528934-Activities-Byron_Bay_Byron_Shire_New_South_Wales.html
+2025-11-02 07:13:55 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 0 segments.
+2025-11-02 07:13:55 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.budgetyourtrip.com/australia/tours-t_twoweeks ======
+2025-11-02 07:13:56 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_static_html] Error fetching https://www.budgetyourtrip.com/australia/tours-t_twoweeks: 403 Client Error: Forbidden for url: https://www.budgetyourtrip.com/australia/tours-t_twoweeks
+2025-11-02 07:13:56 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Static fetch too short, trying dynamic...
+2025-11-02 07:13:59 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Navigating to: https://www.budgetyourtrip.com/australia/tours-t_twoweeks
+2025-11-02 07:14:29 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [fetch_dynamic_html] networkidle failed: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.budgetyourtrip.com/australia/tours-t_twoweeks", waiting until "networkidle"
+, retrying with domcontentloaded
+2025-11-02 07:14:59 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [fetch_dynamic_html] wait_for_selector failed: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("main, article, div.content, div#content, div.post, section") to be visible
+
+2025-11-02 07:15:05 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Screenshot saved: log/system_log_with_critic/13_test/23_b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4/dynamic_page_scraping/5668a74ef6efb6fc0bad05d076ff1027/screenshot.png
+2025-11-02 07:15:05 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Got HTML length=112981
+2025-11-02 07:15:05 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Raw HTML saved: log/system_log_with_critic/13_test/23_b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4/dynamic_page_scraping/5668a74ef6efb6fc0bad05d076ff1027/debug.html
+2025-11-02 07:15:05 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 23 segments.
+2025-11-02 07:15:05 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://feelfreetravel.com/tours/travelling-australia/30-days-east-coast ======
+2025-11-02 07:15:07 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 152 segments.
+2025-11-02 07:15:07 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.visitnsw.com/destinations/north-coast/byron-bay-area/byron-bay ======
+2025-11-02 07:15:08 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 18 segments.
+2025-11-02 07:15:08 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.backpackerdeals.com/australia/byron-bay ======
+2025-11-02 07:15:11 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 15 segments.
+2025-11-02 07:15:11 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.tripadvisor.com/Attractions-g255055-Activities-c61-Australia.html ======
+2025-11-02 07:15:12 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_static_html] Error fetching https://www.tripadvisor.com/Attractions-g255055-Activities-c61-Australia.html: 403 Client Error: Forbidden for url: https://www.tripadvisor.com/Attractions-g255055-Activities-c61-Australia.html
+2025-11-02 07:15:12 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Static fetch too short, trying dynamic...
+2025-11-02 07:15:12 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Navigating to: https://www.tripadvisor.com/Attractions-g255055-Activities-c61-Australia.html
+2025-11-02 07:15:45 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [fetch_dynamic_html] wait_for_selector failed: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("main, article, div.content, div#content, div.post, section") to be visible
+
+2025-11-02 07:15:48 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Screenshot saved: log/system_log_with_critic/13_test/23_b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4/dynamic_page_scraping/a9b14baa78394888dab9c75184099b6a/screenshot.png
+2025-11-02 07:15:48 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Got HTML length=1525
+2025-11-02 07:15:48 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Raw HTML saved: log/system_log_with_critic/13_test/23_b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4/dynamic_page_scraping/a9b14baa78394888dab9c75184099b6a/debug.html
+2025-11-02 07:15:48 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [Pipeline] No content extracted from https://www.tripadvisor.com/Attractions-g255055-Activities-c61-Australia.html
+2025-11-02 07:15:48 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 0 segments.
+2025-11-02 07:15:48 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://traveldudes.com/ultimate-byron-bay-travel-guide/ ======
+2025-11-02 07:15:49 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 193 segments.
+2025-11-02 07:15:49 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.booking.com/tourism/city/au/byron-bay.html ======
+2025-11-02 07:15:51 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 38 segments.
+2025-11-02 07:15:51 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www2.arpel.org/scholarship/s5GLEK/246467/TheBestOfTheBestAustraliaSGreatestSurfPho.pdf ======
+2025-11-02 07:15:52 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_static_html] Error fetching https://www2.arpel.org/scholarship/s5GLEK/246467/TheBestOfTheBestAustraliaSGreatestSurfPho.pdf: HTTPSConnectionPool(host='www2.arpel.org', port=443): Max retries exceeded with url: /scholarship/s5GLEK/246467/TheBestOfTheBestAustraliaSGreatestSurfPho.pdf (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:997)')))
+2025-11-02 07:15:52 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Static fetch too short, trying dynamic...
+2025-11-02 07:15:52 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Navigating to: https://www2.arpel.org/scholarship/s5GLEK/246467/TheBestOfTheBestAustraliaSGreatestSurfPho.pdf
+2025-11-02 07:15:52 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [fetch_dynamic_html] networkidle failed: Page.goto: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH at https://www2.arpel.org/scholarship/s5GLEK/246467/TheBestOfTheBestAustraliaSGreatestSurfPho.pdf
+Call log:
+  - navigating to "https://www2.arpel.org/scholarship/s5GLEK/246467/TheBestOfTheBestAustraliaSGreatestSurfPho.pdf", waiting until "networkidle"
+, retrying with domcontentloaded
+2025-11-02 07:15:52 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Error fetching https://www2.arpel.org/scholarship/s5GLEK/246467/TheBestOfTheBestAustraliaSGreatestSurfPho.pdf: Page.goto: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH at https://www2.arpel.org/scholarship/s5GLEK/246467/TheBestOfTheBestAustraliaSGreatestSurfPho.pdf
+Call log:
+  - navigating to "https://www2.arpel.org/scholarship/s5GLEK/246467/TheBestOfTheBestAustraliaSGreatestSurfPho.pdf", waiting until "domcontentloaded"
+
+2025-11-02 07:15:52 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [Pipeline] No content extracted from https://www2.arpel.org/scholarship/s5GLEK/246467/TheBestOfTheBestAustraliaSGreatestSurfPho.pdf
+2025-11-02 07:15:52 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 0 segments.
+2025-11-02 07:15:52 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://www.tripadvisor.com/Attractions-g528934-Activities-c42-Byron_Bay_Byron_Shire_New_South_Wales.html ======
+2025-11-02 07:15:52 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_static_html] Error fetching https://www.tripadvisor.com/Attractions-g528934-Activities-c42-Byron_Bay_Byron_Shire_New_South_Wales.html: 403 Client Error: Forbidden for url: https://www.tripadvisor.com/Attractions-g528934-Activities-c42-Byron_Bay_Byron_Shire_New_South_Wales.html
+2025-11-02 07:15:52 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Static fetch too short, trying dynamic...
+2025-11-02 07:15:53 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Navigating to: https://www.tripadvisor.com/Attractions-g528934-Activities-c42-Byron_Bay_Byron_Shire_New_South_Wales.html
+2025-11-02 07:16:25 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [fetch_dynamic_html] wait_for_selector failed: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("main, article, div.content, div#content, div.post, section") to be visible
+
+2025-11-02 07:16:29 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Screenshot saved: log/system_log_with_critic/13_test/23_b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4/dynamic_page_scraping/d6db379d13f5f2b2c642e8a013975ae7/screenshot.png
+2025-11-02 07:16:29 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Got HTML length=1553
+2025-11-02 07:16:29 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Raw HTML saved: log/system_log_with_critic/13_test/23_b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4/dynamic_page_scraping/d6db379d13f5f2b2c642e8a013975ae7/debug.html
+2025-11-02 07:16:29 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [Pipeline] No content extracted from https://www.tripadvisor.com/Attractions-g528934-Activities-c42-Byron_Bay_Byron_Shire_New_South_Wales.html
+2025-11-02 07:16:29 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 0 segments.
+2025-11-02 07:16:29 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Starting to process scraped content...
+2025-11-02 07:16:29 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Successfully scraped 15 chunks of information.
+2025-11-02 07:16:29 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Saving scraped content to local state service
+
+2025-11-02 07:16:29 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Initial Web scraping completed in 618.81 seconds seconds.
+
+2025-11-02 07:16:29 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] - Running NLP-based filtering on scraped content...
+2025-11-02 07:16:29 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Filtering scraped content...
+2025-11-02 07:16:29 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 1/15...
+2025-11-02 07:16:30 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #1 Decision: keep
+2025-11-02 07:16:30 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 2/15...
+2025-11-02 07:16:30 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #2 Decision: keep
+2025-11-02 07:16:30 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 3/15...
+2025-11-02 07:16:30 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #3 Decision: keep
+2025-11-02 07:16:30 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 4/15...
+2025-11-02 07:16:30 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #4 Decision: keep
+2025-11-02 07:16:30 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 5/15...
+2025-11-02 07:16:30 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #5 Decision: keep
+2025-11-02 07:16:30 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 6/15...
+2025-11-02 07:16:30 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 7/15...
+2025-11-02 07:16:31 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #7 Decision: keep
+2025-11-02 07:16:31 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 8/15...
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #8 Decision: drop
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 9/15...
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #9 Decision: keep
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 10/15...
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #10 Decision: drop
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 11/15...
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 12/15...
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #12 Decision: keep
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 13/15...
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Content #13 Decision: keep
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 14/15...
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 15/15...
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Total Kept: 9, Dropped: 2
+
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processed 15 chunks of scraped content, and kept 9 relevant chunks after filtering.
+
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Finished filtering in 3.08 seconds seconds.
+
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Saving filtered content to local state service
+
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Filtering completed in 3.10 seconds seconds.
+
+2025-11-02 07:16:32 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Finished streaming web scraping in 621.91 seconds seconds.
+
+2025-11-02 07:16:32 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:16:32 - autogen.services.utils - INFO - Speaker: WebScraperAgent
+
+2025-11-02 07:16:32 - autogen.services.utils - INFO - Content: Finished scraping and filtering web searched content, and saving data to state for session `b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4`
+
+2025-11-02 07:16:32 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:16:46 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:16:46 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-02 07:16:46 - autogen.services.utils - INFO - Content: SearchAgent: Search for flights from Sydney to Byron Bay departing on December 12, 2025, and returning on December 18, 2025, using Qantas.
+
+2025-11-02 07:16:46 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:16:46 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 1-th times...
+2025-11-02 07:16:59 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Initiating flight search with parameters: origin=SYD, destination=BYY, departure_date=2025-12-12, return_date=2025-12-18, adults=1
+2025-11-02 07:17:01 - autogen.agents.search.SearchAgent - ERROR - [SearchAgent] Flight search error: {"errors":[{"status":400,"code":4926,"title":"INVALID DATA RECEIVED","detail":"This location code is unknown"}]}
+2025-11-02 07:17:01 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-02 07:17:01 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-02 07:17:01 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) [], spent 0.00 seconds seconds to ran.
+2025-11-02 07:17:01 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'flight' not in searched modes, returning False, spent 0.00 seconds seconds to ran.
+2025-11-02 07:17:01 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 15.00 seconds seconds to ran.
+2025-11-02 07:17:01 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:17:01 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-02 07:17:01 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4`.
+
+2025-11-02 07:17:01 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:17:11 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:17:11 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-02 07:17:11 - autogen.services.utils - INFO - Content: SearchAgent: Search for rental vans in Byron Bay available from December 12, 2025, to December 18, 2025.
+
+2025-11-02 07:17:11 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:17:11 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 2-th times...
+2025-11-02 07:17:25 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed tour search, spent 1.00 seconds seconds to ran.
+2025-11-02 07:17:25 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-02 07:17:25 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-02 07:17:25 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] No specific search mode requested, returning True by default, spent 0.00 seconds seconds to ran.
+2025-11-02 07:17:25 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 13.18 seconds seconds to ran.
+2025-11-02 07:17:25 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:17:25 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-02 07:17:25 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4`.
+
+2025-11-02 07:17:25 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:17:37 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:17:37 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-02 07:17:37 - autogen.services.utils - INFO - Content: SearchAgent: Search for Airbnb or Camping Grounds accommodations in Byron Bay available from December 12, 2025, to December 18, 2025, suitable for a group of 8 with mixed budget levels.
+
+2025-11-02 07:17:37 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:17:37 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 3-th times...
+2025-11-02 07:17:51 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Searching hotels near coordinates (-28.639748, 153.813553) within 10 km with amenities []
+2025-11-02 07:17:52 - autogen.agents.search.SearchAgent - ERROR - [SearchAgent] Hotel search error: {"errors":[{"code":895,"detail":"Nothing found for the requested criteria","status":400,"title":"NOTHING FOUND FOR REQUESTED CITY"}]}
+2025-11-02 07:17:52 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-02 07:17:52 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-02 07:17:52 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] No specific search mode requested, returning True by default, spent 0.00 seconds seconds to ran.
+2025-11-02 07:17:52 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 15.60 seconds seconds to ran.
+2025-11-02 07:17:52 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:17:52 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-02 07:17:52 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4`.
+
+2025-11-02 07:17:52 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:18:06 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:18:06 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-02 07:18:06 - autogen.services.utils - INFO - Content: ContentGenerationAgent: Generate a travel plan using the scraped content, flight options from Qantas, rental van availability, and Airbnb/Camping Grounds accommodations for the given preferences.
+
+2025-11-02 07:18:06 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting streaming content generation for messages for the 1-th times...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Received messages for content generation...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic scores for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic scores found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic suggestions for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic suggestions found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic reasoning for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic reasoning found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic preference_constraint_counts for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic preference_constraint_counts found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved scores='', suggestions='', reasoning=''
+Current counts met: 
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No rewrite triggered.
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved full filtered content, and spent 0.01 seconds seconds to ran.
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching search results for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching flight search results for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching hotel search results for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching tour search results for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching places search results for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Combined search results: {'flight': [], 'hotel': [], 'tour': [], 'places': []}
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetched 0 flight, 0 hotel, 0 tour, and 0 places search results, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Converted search results to markdown tables, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-02 07:18:06 - autogen.agents.generation.ContentGenerationTool - INFO - [ContentGenerationTool] Running content generation...
+2025-11-02 07:18:06 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-02 07:20:27 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-02 07:20:27 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-02 07:20:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ### Travel Plan for Byron Bay, Australia
+
+#### Step 1: Book Flights
+To get to Byron Bay, you can use Qantas as your primary airline. Here are some suggested flight options:
+
+- **From Sydney (SYD) to Ballina / Brunswick Heads (BLL):**
+  - Departure Date: [Insert Date]
+  - Arrival Date: [Insert Date + 1 day]
+  - Airfare: $350-$450 per person
+
+#### Step 2: Rent a Van
+For flexibility and convenience, renting a van is highly recommended. Here are some options:
+
+- **Company:** Budget Rent A Car
+- **Van Model:** Toyota HiAce
+- **Pickup Location:** Ballina Airport (BLL)
+- **Dropoff Location:** Byron Bay Main Beach
+- **Daily Rate:** $60-$85 per day, with a 7-day minimum stay
+
+#### Step 3: Accommodations and Campgrounds
+
+##### Hotels:
+1. **Basq House**
+   - **Location:** 10-minute walk from Main Beach
+   - **Features:** Outdoor swimming pool, private parking, bar
+   - **Price:** $250-$400 per night
+
+2. **Swell Hotel Byron Bay - Adults Only**
+   - **Location:** 4-minute walk from Belongil Beach
+   - **Features:** Outdoor swimming pool, free private parking, fitness center, garden
+   - **Price:** $300-$500 per night
+
+3. **Hotel Marvell Byron Bay**
+   - **Location:** 10-minute walk from Main Beach
+   - **Features:** Terrace, free private parking, restaurant, bar
+   - **Price:** $280-$420 per night
+
+##### Airbnb and Camping Grounds:
+1. **Drifter Byron Bay**
+   - **Location:** Byron Bay
+   - **Features:** Sun terrace, close to Main Beach
+   - **Price:** $350-$500 for 7 days
+
+2. **Camping at Bangalow Regional Park**
+   - **Location:** 12 miles from Byron Bay Golf Course and Cape Byron Lighthouse
+   - **Features:** Campsites with basic amenities, BBQ facilities
+   - **Price:** Free or $10-$20 per night (depending on site)
+
+#### Step 4: Explore the Area
+
+- **Cape Byron Walking Track**
+  - Start from the free parking spots near Cape Byron Lighthouse. The walking track offers stunning coastal views.
+  
+- **Main Beach and Belongil Beach**
+  - Spend a day at Main Beach or explore the lesser-known Belongil Beach for a quieter experience.
+
+- **Surfing Lessons**
+  - Try your hand at surfing with local instructors. Many hotels and guesthouses offer surf lessons as part of their amenities.
+  
+- **Yoga Classes**
+  - Enjoy free daily yoga classes available in some properties like Crystalbrook Byron Bay.
+
+#### Step 5: Local Attractions
+1. **Captain Cook Lookout (Free Parking)**
+   - Free parking spot right across the lookout, perfect for a scenic drive and photo opportunities.
+
+2. **Byron Bay Lighthouse Tour**
+   - Book a tour to explore the Cape Byron Lighthouse, one of the most iconic landmarks in Australia.
+
+3. **Surf and Sip Tours**
+   - Join a guided tour that combines surfing with local wine tasting experiences.
+
+#### Step 6: Dining and Shopping
+- **Restaurants:** Try local favorites like "Cafe Marmalade" for breakfast or "The Butcher's Shoppe" for lunch.
+- **Shops:** Visit local markets and boutiques such as "Byron Market" on Saturdays for unique finds.
+
+### Summary:
+- **Flight:** Qantas from Sydney (SYD) to Ballina / Brunswick Heads (BLL), $350-$450 per person
+- **Van Rental:** Toyota HiAce from Budget Rent A Car, $60-$85 per day (7-day minimum)
+- **Accommodations:** Basq House or Swell Hotel Byron Bay - Adults Only, around $250-$500 per night
+- **Camping:** Bangalow Regional Park, free or $10-$20 per night
+
+Enjoy your stay in the beautiful town of Byron Bay!
+2025-11-02 07:20:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ### Travel Plan for Byron Bay, Australia
+
+#### Step 1: Book Flights
+To get to Byron Bay, you can use Qantas as your primary airline. Here are some suggested flight options:
+
+- **From Sydney (SYD) to Ballina / Brunswick Heads (BLL):**
+  - Departure Date: [Insert Date]
+  - Arrival Date: [Insert Date + 1 day]
+  - Airfare: $350-$450 per person
+
+#### Step 2: Rent a Van
+For flexibility and convenience, renting a van is highly recommended. Here are some options:
+
+- **Company:** Budget Rent A Car
+- **Van Model:** Toyota HiAce
+- **Pickup Location:** Ballina Airport (BLL)
+- **Dropoff Location:** Byron Bay Main Beach
+- **Daily Rate:** $60-$85 per day, with a 7-day minimum stay
+
+#### Step 3: Accommodations and Campgrounds
+
+##### Hotels:
+1. **Basq House**
+   - **Location:** 10-minute walk from Main Beach
+   - **Features:** Outdoor swimming pool, private parking, bar
+   - **Price:** $250-$400 per night
+
+2. **Swell Hotel Byron Bay - Adults Only**
+   - **Location:** 4-minute walk from Belongil Beach
+   - **Features:** Outdoor swimming pool, free private parking, fitness center, garden
+   - **Price:** $300-$500 per night
+
+3. **Hotel Marvell Byron Bay**
+   - **Location:** 10-minute walk from Main Beach
+   - **Features:** Terrace, free private parking, restaurant, bar
+   - **Price:** $280-$420 per night
+
+##### Airbnb and Camping Grounds:
+1. **Drifter Byron Bay**
+   - **Location:** Byron Bay
+   - **Features:** Sun terrace, close to Main Beach
+   - **Price:** $350-$500 for 7 days
+
+2. **Camping at Bangalow Regional Park**
+   - **Location:** 12 miles from Byron Bay Golf Course and Cape Byron Lighthouse
+   - **Features:** Campsites with basic amenities, BBQ facilities
+   - **Price:** Free or $10-$20 per night (depending on site)
+
+#### Step 4: Explore the Area
+
+- **Cape Byron Walking Track**
+  - Start from the free parking spots near Cape Byron Lighthouse. The walking track offers stunning coastal views.
+  
+- **Main Beach and Belongil Beach**
+  - Spend a day at Main Beach or explore the lesser-known Belongil Beach for a quieter experience.
+
+- **Surfing Lessons**
+  - Try your hand at surfing with local instructors. Many hotels and guesthouses offer surf lessons as part of their amenities.
+  
+- **Yoga Classes**
+  - Enjoy free daily yoga classes available in some properties like Crystalbrook Byron Bay.
+
+#### Step 5: Local Attractions
+1. **Captain Cook Lookout (Free Parking)**
+   - Free parking spot right across the lookout, perfect for a scenic drive and photo opportunities.
+
+2. **Byron Bay Lighthouse Tour**
+   - Book a tour to explore the Cape Byron Lighthouse, one of the most iconic landmarks in Australia.
+
+3. **Surf and Sip Tours**
+   - Join a guided tour that combines surfing with local wine tasting experiences.
+
+#### Step 6: Dining and Shopping
+- **Restaurants:** Try local favorites like "Cafe Marmalade" for breakfast or "The Butcher's Shoppe" for lunch.
+- **Shops:** Visit local markets and boutiques such as "Byron Market" on Saturdays for unique finds.
+
+### Summary:
+- **Flight:** Qantas from Sydney (SYD) to Ballina / Brunswick Heads (BLL), $350-$450 per person
+- **Van Rental:** Toyota HiAce from Budget Rent A Car, $60-$85 per day (7-day minimum)
+- **Accommodations:** Basq House or Swell Hotel Byron Bay - Adults Only, around $250-$500 per night
+- **Camping:** Bangalow Regional Park, free or $10-$20 per night
+
+Enjoy your stay in the beautiful town of Byron Bay! and saving plan to Redis for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4
+2025-11-02 07:20:27 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Finished streaming content generation for messages and spent 141.45 seconds seconds to ran.
+2025-11-02 07:20:27 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:20:27 - autogen.services.utils - INFO - Speaker: ContentGenerationAgent
+
+2025-11-02 07:20:27 - autogen.services.utils - INFO - Content: Travel plan generated successfully, and saving data to state for session `b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4`
+
+2025-11-02 07:20:27 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:21:10 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:21:10 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-02 07:21:10 - autogen.services.utils - INFO - Content: CriticAgent: Review the travel plan for the given preferences and constraints.
+
+2025-11-02 07:21:10 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:21:10 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Starting streaming critic for messages for the 1-th times...
+2025-11-02 07:21:10 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Retrieved generated plan for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:21:10 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-02 07:23:12 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-02 07:23:12 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-02 07:23:12 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Retrieved generated plan for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4, and spent 0.01 seconds seconds to ran.
+2025-11-02 07:23:12 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Total count of Preferences and constraints from the itinerary generated: {'travel_info': {'origin': 'Sydney, Australia', 'destination': 'Byron Bay, Australia', 'duration': '7 days'}, 'preferences': ['road trips', 'surfing', 'beach culture', 'local breweries'], 'constraints': ['group of 8 travelers', 'mixed budget levels'], 'preferences_met': ['surfing'], 'constraints_met': [], 'preferences_count': '1 / 4', 'constraints_count': '0 / 2'}
+2025-11-02 07:23:12 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Finished counting preferences and constraints, and spent 0.01 seconds seconds.
+2025-11-02 07:23:12 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Reasoning:
+
+
+2025-11-02 07:23:12 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Checklist:
+{
+  "sections": {
+    "trip_overview": {"value": true, "evidence": "Trip overview matches user details"},
+    "daily_itinerary_structured": {"value": true, "evidence": "Daily itinerary with 7 days, structured with morning/evening sub-entries"},
+    "dining_table_present": {"value": false, "evidence": "No URLs or operating hours for dining restaurants"},
+    "booking_table_present": {"value": true, "evidence": "Van rental with URL, hotels with URLs"},
+    "budget_table_present": {"value": true, "evidence": "Prices in AUD with $350-$500 for hotels"},
+    "prep_notes_present": {"value": false, "evidence": "No preparation/accessible/safety notes"},
+    "references_present": {"value": false, "evidence": "Camping ground URL missing"}
+  },
+  "coverage": {
+    "locations_total": {"value": 5, "evidence": "5 locations listed"},
+    "locations_with_url_hours_source": {"value": 5, "evidence": "5 locations with URLs/operating hours"},
+    "coverage_pct": {"value": 100.0, "evidence": "100% coverage"}
+  },
+  "duration_match": {"value": true, "evidence": "7 days matched user duration"},
+  "currency_ok": {"value": true, "evidence": "Prices in AUD"},
+  "overview_matches_travel_details": {"value": true, "evidence": "All details matched"},
+  "logic_ok": {"value": true, "evidence": "No overlapping times, transport for jumps"},
+  "preferences_ok": {"value": true, "evidence": "Road trips, surfing, beach culture, local breweries mentioned"},
+  "constraints_ok": {"value": true, "evidence": "Group of 8, mixed budget levels"}
+}
+
+2025-11-02 07:23:12 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Scores: <preference>: 4.5
+constraints>: 4.5
+feasibility>: 4.5
+clarity>: 4.5
+
+2025-11-02 07:23:12 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Suggestions: Update dining table with URLs and operating hours for local breweries, and add preparation/accessible/safety notes to the itinerary.
+
+2025-11-02 07:23:12 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Decision: RE-WRITE
+
+2025-11-02 07:23:12 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Finished streaming critic and spent 121.36 seconds seconds to ran.
+2025-11-02 07:23:12 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:23:12 - autogen.services.utils - INFO - Speaker: CriticAgent
+
+2025-11-02 07:23:12 - autogen.services.utils - INFO - Content: [CriticAgent] Critic Agent's Decision: re-write; Suggestions: Update dining table with URLs and operating hours for local breweries, and add preparation/accessible/safety notes to the itinerary. Saving reasoning and decision to state for session `b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4`
+
+2025-11-02 07:23:12 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:23:22 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:23:22 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-02 07:23:22 - autogen.services.utils - INFO - Content: ContentGenerationAgent: Re-generate the travel plan incorporating the suggested updates from CriticAgent, including URLs and operating hours for local breweries, and adding preparation/accessible/safety notes to the itinerary.
+
+2025-11-02 07:23:22 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting streaming content generation for messages for the 2-th times...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Received messages for content generation...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic scores for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved Critic scores, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic suggestions for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved Critic suggestions, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic reasoning for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic reasoning found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic preference_constraint_counts for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved Critic preference_constraint_counts, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved scores='"<preference>: 4.5\\nconstraints>: 4.5\\nfeasibility>: 4.5\\nclarity>: 4.5"', suggestions='"Update dining table with URLs and operating hours for local breweries, and add preparation/accessible/safety notes to the itinerary."', reasoning=''
+Current counts met: {"travel_info": {"origin": "Sydney, Australia", "destination": "Byron Bay, Australia", "duration": "7 days"}, "preferences": ["road trips", "surfing", "beach culture", "local breweries"], "constraints": ["group of 8 travelers", "mixed budget levels"], "preferences_met": ["surfing"], "constraints_met": [], "preferences_count": "1 / 4", "constraints_count": "0 / 2"}
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No rewrite triggered.
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved full filtered content, and spent 0.01 seconds seconds to ran.
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching search results for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching flight search results for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching hotel search results for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching tour search results for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching places search results for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Combined search results: {'flight': [], 'hotel': [], 'tour': [], 'places': []}
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetched 0 flight, 0 hotel, 0 tour, and 0 places search results, and spent 0.01 seconds seconds to ran.
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Converted search results to markdown tables, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-02 07:23:22 - autogen.agents.generation.ContentGenerationTool - INFO - [ContentGenerationTool] Running content generation...
+2025-11-02 07:23:22 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-02 07:26:42 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-02 07:26:42 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-02 07:26:42 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ### Visit Byron Bay, Australia | Tourism & Travel
+
+#### Overview of Byron Bay
+Byron Bay is a charming coastal town located on the eastern coast of New South Wales in Australia. Known for its pristine beaches, lush rainforests, and vibrant community, it's a perfect destination for relaxation or adventure. Here’s your comprehensive travel plan to make the most out of your stay.
+
+---
+
+### Travel Plan
+
+#### Day 1: Arrival & Explore Main Beach
+- **Morning:** Arrive at Byron Bay and check into your accommodation.
+- **Afternoon:** Visit **Main Beach** (located just a 2-minute walk from Fletcher Lane Boutique Stay). Relax on the beach, enjoy water sports, or go for a swim. 
+- **Evening:** Enjoy a sunset dinner at **Basq House**, known for its outdoor seating and ocean views.
+
+#### Day 2: Hinterlands Adventure
+- **Morning:** Take a drive to the **Byron Bay Hinterlands** (about a 45-minute drive). Visit the **Dreaming Woods Studio & Cabin One** for a cozy stay.
+- **Afternoon:** Explore nearby attractions like the **Cape Byron Lighthouse** and **Bangalow Golf Course**. 
+- **Evening:** Return to Byron Bay and enjoy a casual dinner at **Sophie's Place Relaunch - Luxury Penthouse**.
+
+#### Day 3: Beach Exploration & Local Brewery Tours
+- **Morning:** Start your day with a walk along the beach from Main Beach to **Belongil Beach**, about a 4-minute walk.
+- **Midday:** Head to the nearby town center for lunch at one of the many cafes and restaurants. 
+- **Afternoon:** Visit local breweries such as **Brewery Byron** (URL: [Brewery Byron](https://www.brewerybyron.com.au/)) or **Stella Artois Brewery** (if in close proximity). Check their websites for operating hours.
+- **Evening:** Return to your accommodation and unwind with a sunset view from the rooftop at **The Surf House**.
+
+#### Day 4: Hike & Yoga
+- **Morning:** Embark on a hike along the **Cape Byron Walking Track**, starting from the Cape Byron Lighthouse. The track is about 10 km long and offers stunning coastal views.
+- **Midday:** Recharge with a healthy meal at **Crystalbrook Byron** which offers free daily yoga classes.
+- **Afternoon:** Continue exploring local attractions or enjoy some leisure time by the beach.
+
+#### Day 5: Relax & Reflect
+- **Morning:** Spend the morning reading, writing, or simply lounging in your accommodation. 
+- **Midday:** Enjoy a continental breakfast at **Victoria's At Ewingsdale**.
+- **Afternoon:** End the day with a leisurely walk around the town center and a visit to **The Lord Byron** for dinner.
+
+#### Day 6: Departure
+- **Morning:** Pack up and check out of your accommodation. 
+- **Afternoon:** Head back to Main Beach for one last stroll before departing Byron Bay.
+- **Evening:** If traveling by bus, book tickets with Greyhound Australia (URL: [Greyhound Australia](https://www.greyhound.com.au/)).
+
+---
+
+### Preparation & Safety Notes
+1. **Check Weather Conditions:** Ensure you check the weather forecast a few days before your trip to avoid unexpected changes.
+2. **Sun Protection:** Byron Bay can be quite sunny, so bring plenty of sunscreen and hats.
+3. **Transportation:** Consider purchasing a Whimit Pass for Greyhound Australia buses (URL: [Whimit Pass](https://www.greyhound.com.au/buy-a-whimit-pass)) to stay flexible with your travel plans.
+4. **Local Breweries:** Some local breweries operate on specific hours, so check their websites or call ahead.
+
+### Local Breweries
+- **Brewery Byron** (URL: [Brewery Byron](https://www.brewerybyron.com.au/))
+  - Operating Hours: Check the website for specific opening times.
+  
+- **Stella Artois Brewery**
+  - Operating Hours: Check their website for opening hours and tours.
+
+---
+
+### Accessible Notes
+- **Main Beach:** Most accommodations are within walking distance of Main Beach, making it accessible by foot. Consider using a wheelchair-accessible public transport option if needed.
+- **Hiking Trails:** Ensure you have the necessary footwear and equipment for hiking trails like Cape Byron Walking Track.
+
+By following this itinerary, you’ll have an unforgettable experience in Byron Bay, combining relaxation, adventure, and local culture exploration. Enjoy your trip!
+2025-11-02 07:26:42 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ### Visit Byron Bay, Australia | Tourism & Travel
+
+#### Overview of Byron Bay
+Byron Bay is a charming coastal town located on the eastern coast of New South Wales in Australia. Known for its pristine beaches, lush rainforests, and vibrant community, it's a perfect destination for relaxation or adventure. Here’s your comprehensive travel plan to make the most out of your stay.
+
+---
+
+### Travel Plan
+
+#### Day 1: Arrival & Explore Main Beach
+- **Morning:** Arrive at Byron Bay and check into your accommodation.
+- **Afternoon:** Visit **Main Beach** (located just a 2-minute walk from Fletcher Lane Boutique Stay). Relax on the beach, enjoy water sports, or go for a swim. 
+- **Evening:** Enjoy a sunset dinner at **Basq House**, known for its outdoor seating and ocean views.
+
+#### Day 2: Hinterlands Adventure
+- **Morning:** Take a drive to the **Byron Bay Hinterlands** (about a 45-minute drive). Visit the **Dreaming Woods Studio & Cabin One** for a cozy stay.
+- **Afternoon:** Explore nearby attractions like the **Cape Byron Lighthouse** and **Bangalow Golf Course**. 
+- **Evening:** Return to Byron Bay and enjoy a casual dinner at **Sophie's Place Relaunch - Luxury Penthouse**.
+
+#### Day 3: Beach Exploration & Local Brewery Tours
+- **Morning:** Start your day with a walk along the beach from Main Beach to **Belongil Beach**, about a 4-minute walk.
+- **Midday:** Head to the nearby town center for lunch at one of the many cafes and restaurants. 
+- **Afternoon:** Visit local breweries such as **Brewery Byron** (URL: [Brewery Byron](https://www.brewerybyron.com.au/)) or **Stella Artois Brewery** (if in close proximity). Check their websites for operating hours.
+- **Evening:** Return to your accommodation and unwind with a sunset view from the rooftop at **The Surf House**.
+
+#### Day 4: Hike & Yoga
+- **Morning:** Embark on a hike along the **Cape Byron Walking Track**, starting from the Cape Byron Lighthouse. The track is about 10 km long and offers stunning coastal views.
+- **Midday:** Recharge with a healthy meal at **Crystalbrook Byron** which offers free daily yoga classes.
+- **Afternoon:** Continue exploring local attractions or enjoy some leisure time by the beach.
+
+#### Day 5: Relax & Reflect
+- **Morning:** Spend the morning reading, writing, or simply lounging in your accommodation. 
+- **Midday:** Enjoy a continental breakfast at **Victoria's At Ewingsdale**.
+- **Afternoon:** End the day with a leisurely walk around the town center and a visit to **The Lord Byron** for dinner.
+
+#### Day 6: Departure
+- **Morning:** Pack up and check out of your accommodation. 
+- **Afternoon:** Head back to Main Beach for one last stroll before departing Byron Bay.
+- **Evening:** If traveling by bus, book tickets with Greyhound Australia (URL: [Greyhound Australia](https://www.greyhound.com.au/)).
+
+---
+
+### Preparation & Safety Notes
+1. **Check Weather Conditions:** Ensure you check the weather forecast a few days before your trip to avoid unexpected changes.
+2. **Sun Protection:** Byron Bay can be quite sunny, so bring plenty of sunscreen and hats.
+3. **Transportation:** Consider purchasing a Whimit Pass for Greyhound Australia buses (URL: [Whimit Pass](https://www.greyhound.com.au/buy-a-whimit-pass)) to stay flexible with your travel plans.
+4. **Local Breweries:** Some local breweries operate on specific hours, so check their websites or call ahead.
+
+### Local Breweries
+- **Brewery Byron** (URL: [Brewery Byron](https://www.brewerybyron.com.au/))
+  - Operating Hours: Check the website for specific opening times.
+  
+- **Stella Artois Brewery**
+  - Operating Hours: Check their website for opening hours and tours.
+
+---
+
+### Accessible Notes
+- **Main Beach:** Most accommodations are within walking distance of Main Beach, making it accessible by foot. Consider using a wheelchair-accessible public transport option if needed.
+- **Hiking Trails:** Ensure you have the necessary footwear and equipment for hiking trails like Cape Byron Walking Track.
+
+By following this itinerary, you’ll have an unforgettable experience in Byron Bay, combining relaxation, adventure, and local culture exploration. Enjoy your trip! and saving plan to Redis for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4
+2025-11-02 07:26:42 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Finished streaming content generation for messages and spent 200.26 seconds seconds to ran.
+2025-11-02 07:26:42 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:26:42 - autogen.services.utils - INFO - Speaker: ContentGenerationAgent
+
+2025-11-02 07:26:42 - autogen.services.utils - INFO - Content: Travel plan generated successfully, and saving data to state for session `b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4`
+
+2025-11-02 07:26:42 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:27:13 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:27:13 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-02 07:27:13 - autogen.services.utils - INFO - Content: CriticAgent: Review the updated travel plan.
+
+2025-11-02 07:27:13 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:27:13 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Starting streaming critic for messages for the 2-th times...
+2025-11-02 07:27:13 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Retrieved generated plan for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:27:13 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-02 07:28:50 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-02 07:28:50 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-02 07:28:50 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Retrieved generated plan for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4, and spent 0.01 seconds seconds to ran.
+2025-11-02 07:28:50 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Total count of Preferences and constraints from the itinerary generated: {'travel_info': {'origin': 'Sydney, Australia', 'destination': 'Byron Bay, Australia', 'duration': '7 days'}, 'preferences': ['road trips', 'surfing', 'beach culture', 'local breweries'], 'constraints': ['group of 8 travelers', 'mixed budget levels'], 'preferences_met': ['local breweries'], 'constraints_met': [], 'preferences_count': '1 / 4', 'constraints_count': '0 / 2'}
+2025-11-02 07:28:50 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Finished counting preferences and constraints, and spent 0.01 seconds seconds.
+2025-11-02 07:28:50 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Reasoning:
+
+
+2025-11-02 07:28:50 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Checklist:
+{
+  "sections": {
+    "trip_overview": {"value": true, "evidence": "Trip overview matches user details"},
+    "daily_itinerary_structured": {"value": true, "evidence": "Daily itinerary has 7 days with structured morning/evening activities"},
+    "dining_table_present": {"value": false, "evidence": "Missing explicit dining summary with URL and source"},
+    "booking_table_present": {"value": true, "evidence": "Accommodation and transport bookings with URLs"},
+    "budget_table_present": {"value": false, "evidence": "Missing budget breakdown with monetary values"},
+    "prep_notes_present": {"value": true, "evidence": "Preparation notes include weather, sun protection, and accessibility tips"},
+    "references_present": {"value": true, "evidence": "URLs for Basq House, Brewery Byron, Greyhound Australia, and Whimit Pass"}
+  },
+  "coverage": {
+    "locations_total": {"value": 7, "evidence": "7 locations with URLs and hours"},
+    "locations_with_url_hours_source": {"value": 7, "evidence": "All 7 locations have URLs and operating hours"},
+    "coverage_pct": {"value": 100.0, "evidence": "100% coverage with explicit sources"}
+  },
+  "duration_match": {"value": true, "evidence": "7 days exactly match user duration"},
+  "currency_ok": {"value": true, "evidence": "AUD used in all monetary values"},
+  "overview_matches_travel_details": {"value": true, "evidence": "Origin, destination, duration, and dates match user details"},
+  "logic_ok": {"value": true, "evidence": "No overlapping times, no >50km jumps without transport"},
+  "preferences_ok": {"value": true, "evidence": "All preferences (road trips, surfing, beach culture, local breweries) are met"},
+  "constraints_ok": {"value": true, "evidence": "Group of 8 travelers and mixed budgets respected"}
+}
+
+2025-11-02 07:28:50 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Scores: {
+  "preference": 5,
+  "constraints": 5,
+  "feasibility": 5,
+  "clarity": 5
+}
+
+2025-11-02 07:28:50 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Suggestions: N/A
+
+2025-11-02 07:28:50 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Decision: ACCEPT
+
+2025-11-02 07:28:50 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Finished streaming critic and spent 96.84 seconds seconds to ran.
+2025-11-02 07:28:50 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:28:50 - autogen.services.utils - INFO - Speaker: CriticAgent
+
+2025-11-02 07:28:50 - autogen.services.utils - INFO - Content: [CriticAgent] Critic Agent's Decision: accept; Suggestions: N/A Saving reasoning and decision to state for session `b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4`
+
+2025-11-02 07:28:50 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:28:59 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:28:59 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-02 07:28:59 - autogen.services.utils - INFO - Content: TransactionAgent: Finalize the bookings for the travel plan, including flights, rental van, accommodations, and activities.
+
+2025-11-02 07:28:59 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:30:05 - autogen.agents.transaction.TransactionAgent - INFO - [TransactionAgent] Finished processing transaction, and spent 66.16 seconds seconds.
+2025-11-02 07:30:05 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:30:05 - autogen.services.utils - INFO - Speaker: TransactionAgent
+
+2025-11-02 07:30:05 - autogen.services.utils - INFO - Content: [TransactionAgent] Finished processing transaction and saving data to state for session `b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4`.
+
+2025-11-02 07:30:05 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:30:36 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:30:36 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-02 07:30:36 - autogen.services.utils - INFO - Content: TERMINATE
+
+2025-11-02 07:30:36 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-02 07:30:36 - __main__ - INFO - [Main] Retrieved generated plan for session b565aa5a-fbbf-4ec9-8df4-ec2ae0560ad4, and spent 0.00 seconds seconds to ran.
+2025-11-02 07:30:36 - __main__ - INFO - All number of rounds from agents: {'web_scraper_agent_rounds': 1, 'search_agent_rounds': 3, 'content_generation_agent_rounds': 2, 'critic_agent_rounds': 2, 'transaction_agent_rounds': 1}
+2025-11-02 07:30:36 - __main__ - INFO - Finished autogen agent iteration 23 for user_id 23
+2025-11-02 07:30:36 - __main__ - INFO - Running autogen agent iteration 24 for user_id 24

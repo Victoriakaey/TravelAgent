@@ -1,0 +1,108 @@
+
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-12-02 13:19:53 
+================================================================================
+
+2025-12-02 13:19:53 - __main__ - INFO - Saving info logs to log/ground_truth_evaluation/critic-agent-8/29/info_runtime.log
+2025-12-02 13:19:53 - __main__ - INFO - Saving verbose logs to log/ground_truth_evaluation/critic-agent-8/29/verbose_runtime.log
+2025-12-02 13:19:53 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Initialized in test mode.
+2025-12-02 13:19:53 - autogen.agents.critic.CriticTool - INFO - [CriticTool] Prompt character count: 11660.
+2025-12-02 13:19:53 - autogen.agents.critic.CriticTool - INFO - [CriticTool] Safe character limit for model deepseek-r1: 275251.
+2025-12-02 13:19:53 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-12-02 13:21:11 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-12-02 13:21:11 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-12-02 13:21:11 - autogen.agents.critic.CriticTool - WARNING - [CriticTool] Response missing or unclosed <checklist> block.
+2025-12-02 13:21:11 - autogen.agents.critic.CriticTool - WARNING - [CriticTool] Response missing or unclosed <suggestion> block.
+2025-12-02 13:21:11 - autogen.agents.critic.CriticTool - WARNING - [CriticTool] Response missing or unclosed <checklist> block.
+2025-12-02 13:21:11 - autogen.agents.critic.CriticTool - WARNING - [CriticTool] Response missing or unclosed <suggestion> block.
+2025-12-02 13:21:11 - autogen.agents.critic.CriticAgent - WARNING - [CriticAgent] No generated plan found in local state for session critic_auto_evaluation_a2a6c155-f24b-48b0-a7a9-30ae0db76a90.
+2025-12-02 13:21:11 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] No generated plan found for session critic_auto_evaluation_a2a6c155-f24b-48b0-a7a9-30ae0db76a90, and spent 0.05 seconds seconds to ran.
+2025-12-02 13:21:11 - autogen.agents.critic.CriticAgent - WARNING - [CriticAgent] Itinerary text is empty, cannot count preferences and constraints.
+2025-12-02 13:21:11 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Total count of Preferences and constraints from the itinerary generated: {'preferences_met': [], 'constraints_met': [], 'preferences_count': '0 / 4', 'constraints_count': '0 / 2'}
+2025-12-02 13:21:11 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Finished counting preferences and constraints, and spent 0.05 seconds seconds.
+2025-12-02 13:21:11 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Reasoning:
+
+
+2025-12-02 13:21:11 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Checklist:
+
+
+2025-12-02 13:21:11 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Scores: confidence=5; relevance=5; accuracy=5; safety=5; feasibility=5; personalization=4
+
+2025-12-02 13:21:11 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Suggestions: 
+
+2025-12-02 13:21:11 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Decision: ACCEPT
+
+2025-12-02 13:21:11 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Raw Response:
+<scores>
+confidence=5; relevance=5; accuracy=5; safety=5; feasibility=5; personalization=4
+</scores>
+<decision>
+ACCEPT
+</decision>
+<reasoning>
+The itinerary meets all core criteria: destination_match to Bali, duration_match with 6 days, structure_ok with a clear activity grouping though no daily breakdown, logic_ok with feasible activities and travel times, constraints_ok respecting high activity level and solo travel safety, safety_ok with no dangerous activities, and currency_ok using IDR.
+<scores>
+confidence=5; relevance=5; accuracy=5; safety=5; feasibility=5; personalization=4
+</scores>
+<decision>
+ACCEPT
+</decision>
+<reasoning>
+The itinerary meets all core criteria: destination_match to Bali, duration_match with 6 days, structure_ok with a clear activity grouping though no daily breakdown, logic_ok with feasible activities and travel times, constraints_ok respecting high activity level and solo travel safety, safety_ok with no dangerous activities, and currency_ok using IDR.
+<scores>
+confidence=5; relevance=5; accuracy=5; safety=5; feasibility=5; personalization=4
+</scores>
+<decision>
+ACCEPT
+</decision>
+<reasoning>
+The itinerary meets all core criteria: destination_match to Bali, duration_match with 6 days, structure_ok with a clear activity grouping though no daily breakdown, logic_ok with feasible activities and travel times, constraints_ok respecting high activity level and solo travel safety, safety_ok with no dangerous activities, and currency_ok using IDR.
+<scores>
+confidence=5; relevance=5; accuracy=5; safety=5; feasibility=5; personalization=4
+</scores>
+<decision>
+ACCEPT
+</decision>
+<reasoning>
+The itinerary meets all core criteria: destination_match to Bali, duration_match with 6 days, structure_ok with a clear activity grouping though no daily breakdown, logic_ok with feasible activities and travel times, constraints_ok respecting high activity level and solo travel safety, safety_ok with no dangerous activities, and currency_ok using IDR.
+<scores>
+confidence=5; relevance=5; accuracy=5; safety=5; feasibility=5; personalization=4
+</scores>
+<decision>
+ACCEPT
+</decision>
+<reasoning>
+The itinerary meets all core criteria: destination_match to Bali, duration_match with 6 days, structure_ok with a clear activity grouping though no daily breakdown, logic_ok with feasible activities and travel times, constraints_ok respecting high activity level and solo travel safety, safety_ok with no dangerous activities, and currency_ok using IDR.
+<scores>
+confidence=5; relevance=5; accuracy=5; safety=5; feasibility=5; personalization=4
+</scores>
+<decision>
+ACCEPT
+</decision>
+<reasoning>
+The itinerary meets all core criteria: destination_match to Bali, duration_match with 6 days, structure_ok with a clear activity grouping though no daily breakdown, logic_ok with feasible activities and travel times, constraints_ok respecting high activity level and solo travel safety, safety_ok with no dangerous activities, and currency_ok using IDR.
+<scores>
+confidence=5; relevance=5; accuracy=5; safety=5; feasibility=5; personalization=4
+</scores>
+<decision>
+ACCEPT
+</decision>
+<reasoning>
+The itinerary meets all core criteria: destination_match to Bali, duration_match with 6 days, structure_ok with a clear activity grouping though no daily breakdown, logic_ok with feasible activities and travel times, constraints_ok respecting high activity level and solo travel safety, safety_ok with no dangerous activities, and currency_ok using IDR.
+<scores>
+confidence=5; relevance=5; accuracy=5; safety=5; feasibility=5; personalization=4
+</scores>
+<decision>
+ACCEPT
+</decision>
+<reasoning>
+The itinerary meets all core criteria: destination_match to Bali, duration_match with 6 days, structure_ok with a clear activity grouping though no daily breakdown, logic_ok with feasible activities and travel times, constraints_ok respecting high activity level and solo travel safety, safety_ok with no dangerous activities, and currency_ok using IDR.
+<scores>
+confidence=5; relevance=5; accuracy=5; safety=5; feasibility=5; personalization=4
+</scores>
+<decision>
+ACCEPT
+</decision>
+<reasoning>
+The itinerary meets all core criteria: destination_match to Bali, duration_match with 6 days, structure_ok with a clear activity grouping though no daily breakdown, logic_ok with feasible activities and travel times, constraints_ok respecting high activity level and solo travel safety, safety_ok with no dangerous activities, and currency_ok using IDR.
+

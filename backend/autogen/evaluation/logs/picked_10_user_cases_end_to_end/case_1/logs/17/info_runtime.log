@@ -1,0 +1,449 @@
+
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-11-01 13:36:46 
+================================================================================
+
+2025-11-01 13:36:46 - __main__ - INFO - Saving info logs to log/system_log_without_critic/14_test/17_4e1e0fa2-0d09-4f98-930d-2c268a7d9e38/info_runtime.log
+2025-11-01 13:36:46 - __main__ - INFO - Saving verbose logs to log/system_log_without_critic/14_test/17_4e1e0fa2-0d09-4f98-930d-2c268a7d9e38/verbose_runtime.log
+2025-11-01 13:36:46 - __main__ - INFO - Saving timing logs to log/system_log_without_critic/14_test/17_4e1e0fa2-0d09-4f98-930d-2c268a7d9e38/content_agent_timing.log
+2025-11-01 13:36:46 - __main__ - INFO - 
+User Profile:
+
+{'user_id': 17, 'age': 38, 'date_of_birth': '1987-03-30', 'name': 'Fatima Khan', 'first_name': 'Fatima', 'last_name': 'Khan', 'email': 'fatima.khan@example.com', 'preferred_language': 'Arabic', 'gender': 'female', 'transportation': ['Emirates', 'Private Car'], 'accommodation': ['Luxury Resort'], 'preferences': ['desert safari', 'fine dining', 'shopping malls', 'spa treatments'], 'constraints': ['high budget', 'low activity level']}
+
+2025-11-01 13:36:46 - __main__ - INFO - 
+User Travel Details:
+
+{'user_id': 17, 'origin': 'Dubai, UAE', 'destination': 'Muscat, Oman', 'travelers': 2, 'travel_companions': 'family', 'duration': '4 days', 'start_date': '2025-12-05', 'end_date': '2025-12-08', 'currency': 'OMR'}
+
+2025-11-01 13:36:49 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:36:49 - autogen.services.utils - INFO - Speaker: user
+
+2025-11-01 13:36:49 - autogen.services.utils - INFO - Content: Hello, I need help with my travel plans.I'm planning a 4 days trip from Dubai, UAE to Muscat, Oman, starting on December 05, 2025 and ending on December 08, 2025.  I'll be traveling with family, and would prefer to stay at either Luxury Resort. I plan to get around using Emirates, Private Car.
+I'm especially interested in desert safari, fine dining, shopping malls, spa treatments — though I do have some limitations, such as high budget, low activity level.
+
+2025-11-01 13:36:49 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:36:56 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:36:56 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 13:36:56 - autogen.services.utils - INFO - Content: UserProxyAgent: Could you please confirm the dates and preferred accommodations for your trip from Dubai to Muscat? Additionally, let me know if there are any specific Desert Safari operators or fine dining restaurants you prefer.
+
+2025-11-01 13:36:56 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:36:56 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:36:56 - autogen.services.utils - INFO - Speaker: UserProxyAgent
+
+2025-11-01 13:36:56 - autogen.services.utils - INFO - Content: Confirmed, no more preference or contraints
+
+2025-11-01 13:36:56 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:37:00 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:37:00 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 13:37:00 - autogen.services.utils - INFO - Content: WebScraperAgent: Gather content on luxury resorts, desert safaris, fine dining, shopping malls, and spa treatments in Muscat, Oman.
+
+2025-11-01 13:37:00 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:37:00 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Starting streaming web scraping for messages for the 1-th times...
+2025-11-01 13:37:00 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Received messages for web scraping...
+2025-11-01 13:37:00 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Log path set to: log/system_log_with_critic/14_test/17_4e1e0fa2-0d09-4f98-930d-2c268a7d9e38
+2025-11-01 13:37:00 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Generated query: I'm planning a 4 days trip from Dubai, UAE to Muscat, Oman, starting on December 05, 2025 and ending on December 08, 2025.  I'll be traveling with family, and would prefer to stay at either Luxury Resort. I plan to get around using Emirates, Private Car.
+I'm especially interested in desert safari, fine dining, shopping malls, spa treatments — though I do have some limitations, such as high budget, low activity level.
+Additional Instructions:
+gather content on luxury resorts, desert safaris, fine dining, shopping malls, and spa treatments in muscat, oman.
+Can you help me find some information about this to better plan this trip?
+2025-11-01 13:37:00 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Sending request to http://localhost:3000/api/search with payload
+2025-11-01 13:42:20 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - 
+====== Scraping URL: https://not_needed ======
+2025-11-01 13:42:20 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_static_html] Error fetching https://not_needed: HTTPSConnectionPool(host='not_needed', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x15b597970>: Failed to resolve 'not_needed' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-11-01 13:42:20 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Static fetch too short, trying dynamic...
+2025-11-01 13:42:21 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Navigating to: https://not_needed
+2025-11-01 13:42:21 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [fetch_dynamic_html] networkidle failed: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://not_needed/
+Call log:
+  - navigating to "https://not_needed/", waiting until "networkidle"
+, retrying with domcontentloaded
+2025-11-01 13:42:21 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [fetch_dynamic_html] Error fetching https://not_needed: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://not_needed/
+Call log:
+  - navigating to "https://not_needed/", waiting until "domcontentloaded"
+
+2025-11-01 13:42:21 - autogen.agents.scraper.helpers._scrape_content_from_url - WARNING - [Pipeline] No content extracted from https://not_needed
+2025-11-01 13:42:21 - autogen.agents.scraper.helpers._scrape_content_from_url - INFO - [Pipeline] Chunked into 0 segments.
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Starting to process scraped content...
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperTool - INFO - [WebScraperTool] Successfully scraped 1 chunks of information.
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Saving scraped content to local state service
+
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Initial Web scraping completed in 320.54 seconds seconds.
+
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] - Running NLP-based filtering on scraped content...
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Filtering scraped content...
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processing content 1/1...
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Total Kept: 0, Dropped: 0
+
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Processed 1 chunks of scraped content, and kept 0 relevant chunks after filtering.
+
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Finished filtering in 0.00 seconds seconds.
+
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Saving filtered content to local state service
+
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Filtering completed in 0.00 seconds seconds.
+
+2025-11-01 13:42:21 - autogen.agents.scraper.WebScraperAgent - INFO - [WebScraperAgent] Finished streaming web scraping in 320.54 seconds seconds.
+
+2025-11-01 13:42:21 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:42:21 - autogen.services.utils - INFO - Speaker: WebScraperAgent
+
+2025-11-01 13:42:21 - autogen.services.utils - INFO - Content: Finished scraping and filtering web searched content, and saving data to state for session `4e1e0fa2-0d09-4f98-930d-2c268a7d9e38`
+
+2025-11-01 13:42:21 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:42:36 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:42:36 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 13:42:36 - autogen.services.utils - INFO - Content: SearchAgent: Search for flights from Dubai to Muscat departing on December 5, 2025.
+
+2025-11-01 13:42:36 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:42:36 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 1-th times...
+2025-11-01 13:43:02 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Initiating flight search with parameters: origin=DXB, destination=MUS, departure_date=2025-12-05, return_date=None, adults=1
+2025-11-01 13:43:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed flight search, spent 1.85 seconds seconds to ran.
+2025-11-01 13:43:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-01 13:43:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Determined requested search mode to be flight, spent 0.00 seconds seconds to ran.
+2025-11-01 13:43:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Retrieved searched modes (performed search modes) ['flight'], spent 0.00 seconds seconds to ran.
+2025-11-01 13:43:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Checked for valid results in mode flight, spent 0.00 seconds seconds to ran.
+2025-11-01 13:43:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Requested mode 'flight' has been performed with valid results, returning True, spent 0.00 seconds seconds to ran.
+2025-11-01 13:43:04 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 27.80 seconds seconds to ran.
+2025-11-01 13:43:04 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:43:04 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 13:43:04 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `4e1e0fa2-0d09-4f98-930d-2c268a7d9e38`.
+
+2025-11-01 13:43:04 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:43:22 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:43:22 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 13:43:22 - autogen.services.utils - INFO - Content: SearchAgent: Search for luxury resorts in Muscat, Oman for the duration of your stay from December 5 to December 8, 2025.
+
+2025-11-01 13:43:22 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:43:22 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 2-th times...
+2025-11-01 13:43:53 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Searching hotels in city MUS within 10 km with amenities ['WIFI', 'ROOM_SERVICE', 'KITCHEN', 'MEETING_ROOMS', 'SAUNA']
+2025-11-01 13:43:54 - autogen.agents.search.SearchAgent - ERROR - [SearchAgent] Hotel search error: {"errors":[{"code":895,"detail":"Nothing found for the requested criteria","status":400,"title":"NOTHING FOUND FOR REQUESTED CITY"}]}
+2025-11-01 13:43:54 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 13:43:54 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 13:43:54 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] No specific search mode requested, returning True by default, spent 0.00 seconds seconds to ran.
+2025-11-01 13:43:54 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 32.36 seconds seconds to ran.
+2025-11-01 13:43:54 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:43:54 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 13:43:54 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `4e1e0fa2-0d09-4f98-930d-2c268a7d9e38`.
+
+2025-11-01 13:43:54 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:44:15 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:44:16 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 13:44:16 - autogen.services.utils - INFO - Content: SearchAgent: Search for desert safari experiences in Muscat, Oman.
+
+2025-11-01 13:44:16 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:44:16 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 3-th times...
+2025-11-01 13:44:43 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed places search, spent 0.57 seconds seconds to ran.
+2025-11-01 13:44:43 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 13:44:43 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 13:44:43 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] No specific search mode requested, returning True by default, spent 0.00 seconds seconds to ran.
+2025-11-01 13:44:43 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 27.79 seconds seconds to ran.
+2025-11-01 13:44:43 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:44:43 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 13:44:43 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `4e1e0fa2-0d09-4f98-930d-2c268a7d9e38`.
+
+2025-11-01 13:44:43 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:45:02 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:45:03 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 13:45:03 - autogen.services.utils - INFO - Content: SearchAgent: Search for fine dining restaurants in Muscat, Oman.
+
+2025-11-01 13:45:03 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:45:03 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 4-th times...
+2025-11-01 13:45:45 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed places search, spent 0.36 seconds seconds to ran.
+2025-11-01 13:45:45 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 13:45:45 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 13:45:45 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] No specific search mode requested, returning True by default, spent 0.00 seconds seconds to ran.
+2025-11-01 13:45:45 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 42.18 seconds seconds to ran.
+2025-11-01 13:45:45 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:45:45 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 13:45:45 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `4e1e0fa2-0d09-4f98-930d-2c268a7d9e38`.
+
+2025-11-01 13:45:45 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:46:05 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:46:05 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 13:46:05 - autogen.services.utils - INFO - Content: SearchAgent: Search for shopping malls in Muscat, Oman.
+
+2025-11-01 13:46:05 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:46:05 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 5-th times...
+2025-11-01 13:46:58 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed places search, spent 0.40 seconds seconds to ran.
+2025-11-01 13:46:58 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 13:46:58 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 13:46:58 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] No specific search mode requested, returning True by default, spent 0.00 seconds seconds to ran.
+2025-11-01 13:46:58 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 52.81 seconds seconds to ran.
+2025-11-01 13:46:58 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:46:58 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 13:46:58 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `4e1e0fa2-0d09-4f98-930d-2c268a7d9e38`.
+
+2025-11-01 13:46:58 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:47:19 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:47:19 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 13:47:19 - autogen.services.utils - INFO - Content: SearchAgent: Search for spa treatments in Muscat, Oman.
+
+2025-11-01 13:47:19 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:47:19 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Starting streaming search for messages for the 6-th times...
+2025-11-01 13:48:05 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Completed places search, spent 0.42 seconds seconds to ran.
+2025-11-01 13:48:05 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:05 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Returned None value in requested_search_mode, spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:05 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] No specific search mode requested, returning True by default, spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:05 - autogen.agents.search.SearchAgent - INFO - [SearchAgent] Finished streaming search for messages, spent 46.43 seconds seconds to ran.
+2025-11-01 13:48:05 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:48:05 - autogen.services.utils - INFO - Speaker: SearchAgent
+
+2025-11-01 13:48:05 - autogen.services.utils - INFO - Content: [SearchAgent] Finished searching and saving data to state for session `4e1e0fa2-0d09-4f98-930d-2c268a7d9e38`.
+
+2025-11-01 13:48:05 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:48:25 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:48:25 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 13:48:25 - autogen.services.utils - INFO - Content: ContentGenerationAgent: Generate a travel plan including flights, accommodations, desert safari, fine dining, shopping malls, and spa treatments based on the collected data.
+
+2025-11-01 13:48:25 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting streaming content generation for messages for the 1-th times...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Received messages for content generation...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic scores for session 4e1e0fa2-0d09-4f98-930d-2c268a7d9e38...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic scores found, and spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic suggestions for session 4e1e0fa2-0d09-4f98-930d-2c268a7d9e38...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic suggestions found, and spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic reasoning for session 4e1e0fa2-0d09-4f98-930d-2c268a7d9e38...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic reasoning found, and spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching Critic preference_constraint_counts for session 4e1e0fa2-0d09-4f98-930d-2c268a7d9e38...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No Critic preference_constraint_counts found, and spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved scores='', suggestions='', reasoning=''
+Current counts met: 
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No rewrite triggered.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No filtered content found, and spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching search results for session 4e1e0fa2-0d09-4f98-930d-2c268a7d9e38...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching flight search results for session 4e1e0fa2-0d09-4f98-930d-2c268a7d9e38...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching hotel search results for session 4e1e0fa2-0d09-4f98-930d-2c268a7d9e38...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching tour search results for session 4e1e0fa2-0d09-4f98-930d-2c268a7d9e38...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] No search results found, and spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetching places search results for session 4e1e0fa2-0d09-4f98-930d-2c268a7d9e38...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Retrieved 4 search results.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Returned top 25 search results, and spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Combined search results: {'flight': [], 'hotel': [], 'tour': [], 'places': [{'id': 'ChIJt04-KkD_kT4R-WdL5zZQBrY', 'types': ['travel_agency', 'point_of_interest', 'establishment'], 'formattedAddress': 'Al Ghubrah Ash Shamaliyyah, Muscat 130, Oman', 'location': {'latitude': 23.6003933, 'longitude': 58.3926364}, 'rating': 5.0, 'displayName': {'text': 'Oman Wahiba Sands Desert Tours', 'languageCode': 'en'}, 'currentOpeningHours': {'openNow': False, 'periods': [{'open': {'day': 0, 'hour': 8, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 2}}, 'close': {'day': 0, 'hour': 23, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 2}}}, {'open': {'day': 1, 'hour': 8, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 3}}, 'close': {'day': 1, 'hour': 23, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 3}}}, {'open': {'day': 2, 'hour': 8, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 4}}, 'close': {'day': 2, 'hour': 23, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 4}}}, {'open': {'day': 3, 'hour': 8, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 5}}, 'close': {'day': 3, 'hour': 23, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 5}}}, {'open': {'day': 4, 'hour': 8, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 6}}, 'close': {'day': 4, 'hour': 23, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 6}}}, {'open': {'day': 5, 'hour': 8, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 7}}, 'close': {'day': 5, 'hour': 23, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 7}}}, {'open': {'day': 6, 'hour': 8, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 8}}, 'close': {'day': 6, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 8}}}], 'weekdayDescriptions': ['Monday: 8:30\u202fAM\u2009–\u200911:30\u202fPM', 'Tuesday: 8:30\u202fAM\u2009–\u200911:30\u202fPM', 'Wednesday: 8:30\u202fAM\u2009–\u200911:30\u202fPM', 'Thursday: 8:30\u202fAM\u2009–\u200911:30\u202fPM', 'Friday: 8:30\u202fAM\u2009–\u200911:30\u202fPM', 'Saturday: 8:30\u202fAM\u2009–\u200910:30\u202fPM', 'Sunday: 8:30\u202fAM\u2009–\u200911:30\u202fPM'], 'nextOpenTime': '2025-11-02T04:30:00Z'}}, {'id': 'ChIJefNsyc3zkT4RIAxj4sJSJBQ', 'types': ['fine_dining_restaurant', 'diner', 'mediterranean_restaurant', 'restaurant', 'food', 'point_of_interest', 'establishment'], 'formattedAddress': 'Barr, 100 Al Jissah St, مسقط 100, Oman', 'location': {'latitude': 23.551875, 'longitude': 58.6599361}, 'rating': 4.5, 'displayName': {'text': 'Sultanah, Shangri-La Al Husn', 'languageCode': 'en'}, 'currentOpeningHours': {'openNow': False, 'periods': [{'open': {'day': 0, 'hour': 19, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 2}}, 'close': {'day': 0, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 2}}}, {'open': {'day': 1, 'hour': 19, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 3}}, 'close': {'day': 1, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 3}}}, {'open': {'day': 2, 'hour': 19, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 4}}, 'close': {'day': 2, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 4}}}, {'open': {'day': 3, 'hour': 19, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 5}}, 'close': {'day': 3, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 5}}}, {'open': {'day': 4, 'hour': 19, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 6}}, 'close': {'day': 4, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 6}}}, {'open': {'day': 5, 'hour': 19, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 7}}, 'close': {'day': 5, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 7}}}, {'open': {'day': 6, 'hour': 19, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 8}}, 'close': {'day': 6, 'hour': 22, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 8}}}], 'weekdayDescriptions': ['Monday: 7:30\u2009–\u200910:30\u202fPM', 'Tuesday: 7:30\u2009–\u200910:30\u202fPM', 'Wednesday: 7:30\u2009–\u200910:30\u202fPM', 'Thursday: 7:30\u2009–\u200910:30\u202fPM', 'Friday: 7:30\u2009–\u200910:30\u202fPM', 'Saturday: 7:30\u2009–\u200910:30\u202fPM', 'Sunday: 7:30\u2009–\u200910:30\u202fPM'], 'nextOpenTime': '2025-11-02T15:30:00Z'}, 'priceRange': {'startPrice': {'currencyCode': 'OMR', 'units': '10'}}}, {'id': 'ChIJhwb7DKb_kT4Rl-UA5JqKhio', 'types': ['shopping_mall', 'point_of_interest', 'establishment'], 'formattedAddress': 'OM, شارع دوحة الأدب، مسقط 113, Oman', 'location': {'latitude': 23.5896598, 'longitude': 58.4125277}, 'rating': 4.3, 'displayName': {'text': 'Muscat Grand Mall', 'languageCode': 'en'}, 'currentOpeningHours': {'openNow': False, 'periods': [{'open': {'day': 0, 'hour': 8, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 2}}, 'close': {'day': 1, 'hour': 0, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 3}}}, {'open': {'day': 1, 'hour': 8, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 3}}, 'close': {'day': 2, 'hour': 0, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 4}}}, {'open': {'day': 2, 'hour': 8, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 4}}, 'close': {'day': 3, 'hour': 0, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 5}}}, {'open': {'day': 3, 'hour': 8, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 5}}, 'close': {'day': 4, 'hour': 0, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 6}}}, {'open': {'day': 4, 'hour': 8, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 6}}, 'close': {'day': 5, 'hour': 0, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 7}}}, {'open': {'day': 5, 'hour': 8, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 7}}, 'close': {'day': 6, 'hour': 0, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 8}}}, {'open': {'day': 6, 'hour': 8, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 8}}, 'close': {'day': 6, 'hour': 23, 'minute': 59, 'truncated': True, 'date': {'year': 2025, 'month': 11, 'day': 8}}}], 'weekdayDescriptions': ['Monday: 8:00\u202fAM\u2009–\u200912:00\u202fAM', 'Tuesday: 8:00\u202fAM\u2009–\u200912:00\u202fAM', 'Wednesday: 8:00\u202fAM\u2009–\u200912:00\u202fAM', 'Thursday: 8:00\u202fAM\u2009–\u200912:00\u202fAM', 'Friday: 8:00\u202fAM\u2009–\u200912:00\u202fAM', 'Saturday: 8:00\u202fAM\u2009–\u200912:00\u202fAM', 'Sunday: 8:00\u202fAM\u2009–\u200912:00\u202fAM'], 'nextOpenTime': '2025-11-02T04:00:00Z'}}, {'id': 'ChIJP90t50j_kT4RRGpwHcft-Ek', 'types': ['spa', 'point_of_interest', 'establishment'], 'formattedAddress': 'Al Kharjiyah Street,, second floor, Al Sarooj Plaza, Al Shatti Qurum, مسقط 103, Oman', 'location': {'latitude': 23.606421299999997, 'longitude': 58.4532804}, 'rating': 4.6, 'displayName': {'text': 'Ayana Spa (Exclusively for Ladies)', 'languageCode': 'en'}, 'currentOpeningHours': {'openNow': False, 'periods': [{'open': {'day': 0, 'hour': 9, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 2}}, 'close': {'day': 0, 'hour': 20, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 2}}}, {'open': {'day': 1, 'hour': 9, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 3}}, 'close': {'day': 1, 'hour': 20, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 3}}}, {'open': {'day': 2, 'hour': 9, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 4}}, 'close': {'day': 2, 'hour': 20, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 4}}}, {'open': {'day': 3, 'hour': 9, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 5}}, 'close': {'day': 3, 'hour': 20, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 5}}}, {'open': {'day': 4, 'hour': 9, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 6}}, 'close': {'day': 4, 'hour': 20, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 6}}}, {'open': {'day': 5, 'hour': 9, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 7}}, 'close': {'day': 5, 'hour': 20, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 7}}}, {'open': {'day': 6, 'hour': 9, 'minute': 30, 'date': {'year': 2025, 'month': 11, 'day': 8}}, 'close': {'day': 6, 'hour': 19, 'minute': 0, 'date': {'year': 2025, 'month': 11, 'day': 8}}}], 'weekdayDescriptions': ['Monday: 9:30\u202fAM\u2009–\u20098:00\u202fPM', 'Tuesday: 9:30\u202fAM\u2009–\u20098:00\u202fPM', 'Wednesday: 9:30\u202fAM\u2009–\u20098:00\u202fPM', 'Thursday: 9:30\u202fAM\u2009–\u20098:00\u202fPM', 'Friday: 9:30\u202fAM\u2009–\u20098:00\u202fPM', 'Saturday: 9:30\u202fAM\u2009–\u20097:00\u202fPM', 'Sunday: 9:30\u202fAM\u2009–\u20098:00\u202fPM'], 'nextOpenTime': '2025-11-02T05:30:00Z'}}]}
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Fetched 0 flight, 0 hotel, 0 tour, and 4 places search results, and spent 0.01 seconds seconds to ran.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Converted search results to markdown tables, and spent 0.00 seconds seconds to ran.
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Starting to generate travel plan...
+2025-11-01 13:48:25 - autogen.agents.generation.ContentGenerationTool - INFO - [ContentGenerationTool] Running content generation...
+2025-11-01 13:48:25 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-11-01 13:49:53 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-11-01 13:49:54 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-11-01 13:49:54 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ```markdown
+# Fatima Khan's 4-Day Trip to Muscat, Oman
+
+## Overview
+- **Travel Dates:** December 5, 2025 - December 8, 2025
+- **Duration:** 4 days
+- **Budget:** High budget (OMR)
+- **Companions:** Family
+- **Activity Level:** Low activity level
+
+## Day 1: Arrival and Relaxation
+### Morning
+- **Arrival in Muscat, Oman**
+  - Board flight with Emirates at 08:00 AM local time.
+  
+### Afternoon
+- **Check-in at Sultanah, Shangri-La Al Husn**
+  - Address: Barr, 100 Al Jissah St, مسقط 100, Oman
+  - A fine dining restaurant with a rating of 4.5.
+
+### Evening
+- **Dinner at Sultanah, Shangri-La Al Husn**
+  - Enjoy a relaxing dinner and explore the Mediterranean cuisine offerings.
+  
+## Day 2: Desert Safari Experience
+### Morning
+- **Depart for Oman Wahiba Sands Desert Tours**
+  - Address: Al Ghubrah Ash Shamaliyyah, Muscat 130, Oman
+
+### Afternoon
+- **Explore the Desert**
+  - Enjoy a desert safari including camel rides and traditional Omani hospitality.
+  
+## Day 3: Shopping and Spa Treatments
+### Morning
+- **Visit Muscat Grand Mall**
+  - Address: OM, شارع دوحة الأدب، مسقط 113, Oman
+  - A shopping mall with a rating of 4.3.
+
+### Afternoon
+- **Relax at Ayana Spa (Exclusively for Ladies)**
+  - Address: Al Kharjiyah Street,, second floor, Al Sarooj Plaza, Al Shatti Qurum, مسقط 103, Oman
+  - Enjoy spa treatments and relaxation with a rating of 4.6.
+
+### Evening
+- **Relaxing Evening in the Hotel**
+  - Take some time to unwind at Sultanah, Shangri-La Al Husn.
+
+## Day 4: Local Exploration and Departure
+### Morning
+- **Explore Muscat City Center**
+  - Spend the morning exploring the city and its attractions.
+  
+### Afternoon
+- **Departure from Muscat International Airport**
+  - Board flight with Emirates at 15:00 PM local time, heading back to Dubai.
+
+## Additional Notes
+- All accommodations and activities have been chosen considering your preferences for luxury and low activity levels.
+- The itinerary includes high-end dining experiences and shopping malls to cater to your desires.
+- Desert safaris are a highlight of the trip, offering an authentic Omani experience.
+- Relaxation and spa treatments will help you unwind during your stay.
+
+Enjoy your trip!
+```
+2025-11-01 13:49:54 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Generated travel plan: ```markdown
+# Fatima Khan's 4-Day Trip to Muscat, Oman
+
+## Overview
+- **Travel Dates:** December 5, 2025 - December 8, 2025
+- **Duration:** 4 days
+- **Budget:** High budget (OMR)
+- **Companions:** Family
+- **Activity Level:** Low activity level
+
+## Day 1: Arrival and Relaxation
+### Morning
+- **Arrival in Muscat, Oman**
+  - Board flight with Emirates at 08:00 AM local time.
+  
+### Afternoon
+- **Check-in at Sultanah, Shangri-La Al Husn**
+  - Address: Barr, 100 Al Jissah St, مسقط 100, Oman
+  - A fine dining restaurant with a rating of 4.5.
+
+### Evening
+- **Dinner at Sultanah, Shangri-La Al Husn**
+  - Enjoy a relaxing dinner and explore the Mediterranean cuisine offerings.
+  
+## Day 2: Desert Safari Experience
+### Morning
+- **Depart for Oman Wahiba Sands Desert Tours**
+  - Address: Al Ghubrah Ash Shamaliyyah, Muscat 130, Oman
+
+### Afternoon
+- **Explore the Desert**
+  - Enjoy a desert safari including camel rides and traditional Omani hospitality.
+  
+## Day 3: Shopping and Spa Treatments
+### Morning
+- **Visit Muscat Grand Mall**
+  - Address: OM, شارع دوحة الأدب، مسقط 113, Oman
+  - A shopping mall with a rating of 4.3.
+
+### Afternoon
+- **Relax at Ayana Spa (Exclusively for Ladies)**
+  - Address: Al Kharjiyah Street,, second floor, Al Sarooj Plaza, Al Shatti Qurum, مسقط 103, Oman
+  - Enjoy spa treatments and relaxation with a rating of 4.6.
+
+### Evening
+- **Relaxing Evening in the Hotel**
+  - Take some time to unwind at Sultanah, Shangri-La Al Husn.
+
+## Day 4: Local Exploration and Departure
+### Morning
+- **Explore Muscat City Center**
+  - Spend the morning exploring the city and its attractions.
+  
+### Afternoon
+- **Departure from Muscat International Airport**
+  - Board flight with Emirates at 15:00 PM local time, heading back to Dubai.
+
+## Additional Notes
+- All accommodations and activities have been chosen considering your preferences for luxury and low activity levels.
+- The itinerary includes high-end dining experiences and shopping malls to cater to your desires.
+- Desert safaris are a highlight of the trip, offering an authentic Omani experience.
+- Relaxation and spa treatments will help you unwind during your stay.
+
+Enjoy your trip!
+``` and saving plan to Redis for session 4e1e0fa2-0d09-4f98-930d-2c268a7d9e38
+2025-11-01 13:49:54 - autogen.agents.generation.ContentGenerationAgent - INFO - [ContentGenerationAgent] Finished streaming content generation for messages and spent 88.20 seconds seconds to ran.
+2025-11-01 13:49:54 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:49:54 - autogen.services.utils - INFO - Speaker: ContentGenerationAgent
+
+2025-11-01 13:49:54 - autogen.services.utils - INFO - Content: Travel plan generated successfully, and saving data to state for session `4e1e0fa2-0d09-4f98-930d-2c268a7d9e38`
+
+2025-11-01 13:49:54 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:50:14 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:50:14 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 13:50:14 - autogen.services.utils - INFO - Content: TransactionAgent: Finalize bookings for the travel plan including flights, accommodations, desert safari, fine dining, shopping malls, and spa treatments.
+
+2025-11-01 13:50:14 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:50:33 - autogen.agents.transaction.TransactionAgent - INFO - [TransactionAgent] Finished processing transaction, and spent 19.22 seconds seconds.
+2025-11-01 13:50:33 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:50:33 - autogen.services.utils - INFO - Speaker: TransactionAgent
+
+2025-11-01 13:50:33 - autogen.services.utils - INFO - Content: [TransactionAgent] Finished processing transaction and saving data to state for session `4e1e0fa2-0d09-4f98-930d-2c268a7d9e38`.
+
+2025-11-01 13:50:33 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:50:53 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:50:53 - autogen.services.utils - INFO - Speaker: PlanningAgent
+
+2025-11-01 13:50:53 - autogen.services.utils - INFO - Content: TERMINATE
+
+2025-11-01 13:50:53 - autogen.services.utils - INFO - 
+────────────────────────────────────────────────────────────
+2025-11-01 13:50:53 - __main__ - INFO - [Main] Retrieved generated plan for session 4e1e0fa2-0d09-4f98-930d-2c268a7d9e38, and spent 0.01 seconds seconds to ran.
+2025-11-01 13:50:53 - __main__ - INFO - All number of rounds from agents: {'web_scraper_agent_rounds': 1, 'search_agent_rounds': 6, 'content_generation_agent_rounds': 1, 'transaction_agent_rounds': 1}
+2025-11-01 13:50:53 - __main__ - INFO - Finished autogen agent iteration 17 for user_id 17
+2025-11-01 13:50:53 - __main__ - INFO - Running autogen agent iteration 18 for user_id 18

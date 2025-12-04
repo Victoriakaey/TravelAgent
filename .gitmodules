@@ -1,0 +1,5 @@
+[submodule "backend/autogen/agents/source/Perplexica"]
+	path = backend/autogen/agents/source/Perplexica
+	url = git@github.com:Victoriakaey/Perplexica.git
+	branch = travel-agent
+

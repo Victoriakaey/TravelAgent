@@ -1,0 +1,49 @@
+================================================================================
+ NEW LOGGING SESSION STARTED — 2025-12-02 15:29:24 
+================================================================================
+
+2025-12-02 15:29:24 - __main__ - INFO - Saving info logs to log/ground_truth_evaluation/critic-agent-10/39/info_runtime.log
+2025-12-02 15:29:24 - __main__ - INFO - Saving verbose logs to log/ground_truth_evaluation/critic-agent-10/39/verbose_runtime.log
+2025-12-02 15:29:24 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Initialized in test mode.
+2025-12-02 15:29:24 - autogen.agents.critic.CriticTool - INFO - [CriticTool] Prompt character count: 11476.
+2025-12-02 15:29:24 - autogen.agents.critic.CriticTool - INFO - [CriticTool] Safe character limit for model deepseek-r1: 275251.
+2025-12-02 15:29:24 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Sending request to Ollama...
+2025-12-02 15:30:06 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Received response: 200
+2025-12-02 15:30:06 - autogen.agents.source._ollama_client - INFO - [OllamaClient] Finished processing with Ollama.
+2025-12-02 15:30:06 - autogen.agents.critic.CriticTool - WARNING - [CriticTool] Response missing or unclosed <reasoning> block.
+2025-12-02 15:30:06 - autogen.agents.critic.CriticTool - WARNING - [CriticTool] Response missing or unclosed <checklist> block.
+2025-12-02 15:30:06 - autogen.agents.critic.CriticTool - WARNING - [CriticTool] Response missing or unclosed <suggestion> block.
+2025-12-02 15:30:06 - autogen.agents.critic.CriticTool - WARNING - [CriticTool] Response missing or unclosed <reasoning> block.
+2025-12-02 15:30:06 - autogen.agents.critic.CriticTool - WARNING - [CriticTool] Response missing or unclosed <checklist> block.
+2025-12-02 15:30:06 - autogen.agents.critic.CriticTool - WARNING - [CriticTool] Response missing or unclosed <suggestion> block.
+2025-12-02 15:30:06 - autogen.agents.critic.CriticAgent - WARNING - [CriticAgent] No generated plan found in local state for session critic_auto_evaluation_95c47f56-092f-479f-b6b1-c4264e00a5b3.
+2025-12-02 15:30:06 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] No generated plan found for session critic_auto_evaluation_95c47f56-092f-479f-b6b1-c4264e00a5b3, and spent 0.04 seconds seconds to ran.
+2025-12-02 15:30:06 - autogen.agents.critic.CriticAgent - WARNING - [CriticAgent] Itinerary text is empty, cannot count preferences and constraints.
+2025-12-02 15:30:06 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Total count of Preferences and constraints from the itinerary generated: {'preferences_met': [], 'constraints_met': [], 'preferences_count': '0 / 4', 'constraints_count': '0 / 2'}
+2025-12-02 15:30:06 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Finished counting preferences and constraints, and spent 0.04 seconds seconds.
+2025-12-02 15:30:06 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Reasoning:
+
+
+2025-12-02 15:30:06 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Checklist:
+
+
+2025-12-02 15:30:06 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Scores: **
+confidence=5; relevance=5; accuracy=5; safety=5; feasibility=5; personalization=3
+**
+
+2025-12-02 15:30:06 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Suggestions: 
+
+2025-12-02 15:30:06 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Decision: **
+ACCEPT
+**
+
+2025-12-02 15:30:06 - autogen.agents.critic.CriticAgent - INFO - [CriticAgent] Raw Response:
+**<reasoning>**
+The itinerary aligns with the destination (Bali), duration (6 days), and user constraints (high activity level, solo travel safety). Structure is logical, with daily activities spread appropriately. No core criteria are violated, and the plan is safe and currency-appropriate.  
+**<scores>**
+confidence=5; relevance=5; accuracy=5; safety=5; feasibility=5; personalization=3
+**</scores>**
+**<decision>**
+ACCEPT
+**</decision>**
+
