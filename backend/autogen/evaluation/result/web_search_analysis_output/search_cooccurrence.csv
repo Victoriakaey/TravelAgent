@@ -1,7 +1,0 @@
-mode_a,mode_b,count_same_request
-flight,hotel,34
-flight,tour,30
-flight,place,42
-hotel,tour,23
-hotel,place,30
-place,tour,27

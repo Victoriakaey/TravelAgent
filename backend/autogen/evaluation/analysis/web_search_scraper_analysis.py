@@ -249,7 +249,7 @@ def analyze_scraper(rows: List[Any]) -> Tuple[pd.DataFrame, Dict[str, Any]]:
 # --------------------
 SEARCH_PATH = "data/search_mode.jsonl"
 SCRAPER_PATH = "data/total_kept_dropped_content.jsonl"
-OUTDIR = "autogen/evaluation/result/web_search_analysis_output"
+OUTDIR = "autogen/evaluation/web_search_analysis_output"
 
 def main():
     outdir = Path(OUTDIR)

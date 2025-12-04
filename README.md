@@ -371,7 +371,7 @@ Different `case-num`: 1 (baseline), 2 (with fallback), 3 (with critic), or 4 (fu
 
 #### C. `CriticAgent` Analysis Datasets
 
-The 40 sets of critic agent's [scores (confidence, relevance, accuracy, safety, feasibility, and personalization)](./backend/autogen/evaluation/analysis/data/critic_agent_scores.jsonl) and [decisions (`ACCEPT` or RE-`WRITE`)](./backend/autogen/evaluation/analysis/data/critic_agent_decision.jsonl) are curated by running the [`critic_agent_evaluation.py`](./backend/autogen/evaluation/ground_truth_curation/critic_agent_evaluation.py) script. Logs of [the critic agent evaluation process](./backend/autogen/evaluation/logs/critic_agent_evaluation/) could be found in the [logs](./backend/autogen/evaluation/logs/) folder.
+The 40 sets of critic agent's [scores (confidence, relevance, accuracy, safety, feasibility, and personalization)](./backend/autogen/evaluation/analysis/data/critic_agent_scores.jsonl) and [decisions (`ACCEPT` or `RE-WRITE`)](./backend/autogen/evaluation/analysis/data/critic_agent_decision.jsonl) are curated by running the [`critic_agent_evaluation.py`](./backend/autogen/evaluation/ground_truth_curation/critic_agent_evaluation.py) script. Logs of [the critic agent evaluation process](./backend/autogen/evaluation/logs/critic_agent_evaluation/) could be found in the [logs](./backend/autogen/evaluation/logs/) folder.
 
 ```bash
 python -m autogen.evaluation.ground_truth_curation.critic_agent_evaluation
