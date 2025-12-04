@@ -80,7 +80,7 @@ TravelAgent requires the following services to be running:
 
 ## How to Setup
 
-The following instructions describe how to set up all core services required to run TravelAgent-Omega, including Python environments, Redis, SearXNG, Perplexica, Ollama, and API credentials for the SearchAgent.
+The following instructions describe how to set up all core services required to run TravelAgent, including Python environments, Redis, SearXNG, Perplexica, Ollama, and API credentials for the SearchAgent.
 
 ### 1. Create Conda Virtual Environment
 
